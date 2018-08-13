@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+<!--<![endif]-->
+<head>
+	<meta charset="utf-8" />
+	<title>TB CRM</title>
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
+	<meta content="" name="description" />
+	<meta content="" name="author" />
+	
+	<!-- ================== BEGIN BASE CSS STYLE ================== -->
+	<link href="http://fonts.googleapis.com/css?family=Roboto:300,400,700|Material+Icons" rel="stylesheet" />
+	<link href="assets/plugins/jquery-ui/themes/base/minified/jquery-ui.min.css" rel="stylesheet" />
+	<link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+	<link href="assets/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+	<link href="assets/css/template.css" rel="stylesheet" />
+	<link href="assets/css/template-responsive.css" rel="stylesheet" />
+    <link href="assets/plugins/switchery/switchery.min.css" rel="stylesheet" />
+	<link href="assets/css/custom.css" rel="stylesheet" />
+	<!-- ================== END BASE CSS STYLE ================== -->
+	
+	<!-- ================== BEGIN PAGE LEVEL STYLE ================== -->
+	<link href="assets/plugins/jquery-jvectormap/jquery-jvectormap-1.2.2.css" rel="stylesheet" />
+	<link href="assets/plugins/bootstrap-datepicker/css/datepicker.css" rel="stylesheet" />
+	<link href="assets/plugins/bootstrap-datepicker/css/datepicker3.css" rel="stylesheet" />
+	<link href="assets/plugins/DataTables/media/css/dataTables.bootstrap.min.css" rel="stylesheet" />
+	<link href="assets/plugins/DataTables/extensions/Select/css/select.bootstrap.min.css" rel="stylesheet" />
+	<link href="assets/plugins/DataTables/extensions/Responsive/css/responsive.bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/plugins/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet" />
+	<!-- ================== END PAGE LEVEL STYLE ================== -->
+</head>
+<body>
+	
+	<!-- begin #page-container -->
+	<div id="page-container" class="fade page-sidebar-fixed in">
+		
+		<!-- begin #sidebar -->
+		<div id="sidebar" class="sidebar">
+			<!-- begin sidebar scrollbar -->
+			<div data-scrollbar="true" data-height="100%">
+				<!-- begin sidebar user -->
+				<ul class="nav">
+					<li class="nav-profile">
+						<div class="info">
+							<a href="#"><img src="assets/img/logo.png" alt="logo"></a>
+						</div>
+					</li>
+				</ul>
+				<!-- end sidebar user -->
+				<!-- begin sidebar nav -->
+				<ul class="nav nav-main">
+					<li>
+						<a href="#">
+						    <i class="material-icons">dashboard</i>
+						    <span>Dashboard</span>
+					    </a>
+					</li>
+					<li class="active">
+						<a href="#">
+							<i class="material-icons">check_circle</i>
+							<span>Customer List</span>
+						</a>
+					</li>
+					<li class="has-sub">
+						<a href="javascript:;">
+						    <b class="caret pull-right"></b>
+						    <i class="material-icons">assessment</i>
+						    <span>Reports</span> 
+						</a>
+						<ul class="sub-menu">
+							<li><a href="#">Submenu 1</a></li>
+							<li><a href="#">Submenu 2</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">
+						    <i class="material-icons">people</i>
+						    <span>Users</span>
+						</a>
+					</li>
+			        <!-- begin sidebar minify button -->
+					<li><a href="javascript:;" class="sidebar-minify-btn" data-click="sidebar-minify"><i class="fa fa-angle-double-left"></i></a></li>
+			        <!-- end sidebar minify button -->
+				</ul>
+				<!-- end sidebar nav -->
+			</div>
+			<!-- end sidebar scrollbar -->
+		</div>
+		<div class="sidebar-bg"></div>
+		<!-- end #sidebar -->
+		
+		<!-- begin #content -->
+		<div id="content" class="content">
+			
+			<!-- begin page-header -->
+			<h1 class="page-header">Work List</h1>
+			<!-- end page-header -->
+
+			<div class="row">
+				<div class="col-xs-12">
+					<ul class="category-list">
+						<li><a href="#"><b>Web Regs</b> (105)</a></li>
+						<li class="active"><a href="index.html"><b>Common Worklist Tasks</b> (5)</a></li>
+						<li><a href="cases.html"><b>My Cases</b> (5)</a></li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-xs-12">
+					<ul class="subcategory-list">
+						<li><input type="radio" name="subcategory" id="subcat1" checked> <label for="subcat1">All</label></li>
+						<li><input type="radio" name="subcategory" id="subcat2"> <label for="subcat2">Follow Ups</label></li>
+						<li><input type="radio" name="subcategory" id="subcat3"> <label for="subcat3">Reversions</label></li>
+						<li><input type="radio" name="subcategory" id="subcat4"> <label for="subcat4">OTS (UA) Updates</label></li>
+						<li><input type="radio" name="subcategory" id="subcat5"> <label for="subcat5">Outstanding Fees (Ofees)</label></li>
+					</ul>
+				</div>
+			</div>
+
+			<!-- begin row -->
+			<div class="row">
+				<div class="col-xs-12">
+					<div class="group-sort">
+						<div class="group-by">
+							<strong>Group by:</strong>
+							<select>
+								<option>None</option>
+								<option>Option 2</option>
+								<option>Option 3</option>
+							</select>
+						</div>
+                        <div class="group-sort datehistory">
+                            <div class="group-by">
+                                <div class="switch"><input type="checkbox" class="js-switch-blue small" checked /></div> 
+                                <strong>Show History</strong> (
+                                    <div id="reportrange">
+                                        <input type="text" value="08/23/2017-08/29/2017"><b class="caret"></b>
+                                    </div>
+                                    )
+                            
+                        </div></div>
+						<div class="filters">
+							<a href="#">2 filters <i class="material-icons">settings</i></a>
+						</div>
+					</div>
+					<div class="group-sort-expand">
+						<div class="filters">
+							<table border="0" cellpadding="0" cellspacing="0" width="100%">
+								<tr>
+									<td class="title">
+										<strong>2 filters</strong>
+										<a href="#">Reset to default</a>
+									</td>
+									<td>
+										<div class="filters-list">
+											<ul>	
+												<li>
+													TY <span>>2014</span>
+													<a href="#" class="close">&times;</a>
+												</li>
+												<li class="or">OR</li>
+												<li>
+													Rev. Team <span>"TOC>FC"</span>
+													<a href="#" class="close">&times;</a>
+												</li>
+											</ul>
+											<ul>
+												<li class="add">
+													<a href="#">+ Add Filter</a>
+												</li>
+											</ul>
+										</div>
+										<div class="filter-add">
+											<form class="form-inline" action="/" method="POST">
+												<div class="form-group m-r-10">
+													<select class="form-control">
+														<option>Appl. ID</option>
+														<option>Option 2</option>
+														<option>Option 3</option>
+													</select>
+												</div>
+												<div class="form-group m-r-10">
+													<select class="form-control">
+														<option>Contains</option>
+														<option>Option 2</option>
+														<option>Option 3</option>
+													</select>
+												</div>
+												<div class="form-group m-r-10">
+													<input type="text" class="form-control">
+												</div>
+												<button type="submit" class="btn btn-apply m-r-30">Apply</button>
+												<a href="#" class="cancel">Cancel</button>
+											</form>
+										</div>
+									</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+					<div class="table-caption webRegsActBtns">
+						<h3>Common Group</h3>
+						<div class="options">
+							<span class="selected"><span class="count">0</span> of <span class="all">0</span> records selected</span>
+							<button name="assignTo" class="btn btn-default rounded" onclick="openNav('assign')">Assign To</button>
+						</div>
+					</div>
+                    <div class="row">
+						<div class="col-xs-12 table-responsive">
+						<table border="0" cellpadding="0" cellspacing="0" class="table data-table">
+							<thead>
+								<tr>
+									<th>Business Team</th>
+									<th>Follow-Up Type</th>
+									<th>Appl. ID</th>
+									<th>TC</th>
+									<th>TS</th>
+									<th>TY</th>
+									<th>Over Due Days</th>
+									<th>Follow-Up Date</th>
+									<th>Time (for pop-up)</th>
+									<th>Reminder Importance</th>
+									<th>Status</th>
+									<th>Phone Code</th>
+									<th>Lead Score</th>
+									<th>Phone Success</th>
+									<th>Last Phone Call Attempt Date</th>
+									<th>Succ. Calls</th>
+									<th>Last Comment</th>
+									<th>Comment Date</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Sales Team</td>
+									<td>Reminder</td>
+									<td>123456789</td>
+									<td>IE</td>
+									<td>PAYE</td>
+									<td>2014-2016</td>
+									<td>3</td>
+									<td>2017-12-20</td>
+									<td>10:30</td>
+									<td>Low</td>
+									<td>Assigned (Processed)</td>
+									<td>Ireland (+353)</td>
+									<td>Low</td>
+									<td>No</td>
+									<td>2017-12-23</td>
+									<td>2 (4)</td>
+									<td>Lorem ipsul dolor sit amet</td>
+									<td>2017-12-23</td>
+								</tr>
+								<tr>
+									<td>Docs Team</td>
+									<td>TL Task</td>
+									<td>123456789</td>
+									<td>IE</td>
+									<td>SA</td>
+									<td>2017</td>
+									<td>2</td>
+									<td>2017-12-20</td>
+									<td>15:30</td>
+									<td>Medium</td>
+									<td>Assigned (Not Processed)</td>
+									<td>Ireland (+353)</td>
+									<td>High</td>
+									<td>Yes</td>
+									<td>2017-12-19</td>
+									<td>1 (2)</td>
+									<td>Lorem ipsul dolor sit amet</td>
+									<td>2017-12-20</td>
+								</tr>
+								<tr>
+									<td>Sales Team</td>
+									<td>Docs Expected</td>
+									<td>123456789</td>
+									<td>IE</td>
+									<td>PAYE</td>
+									<td>2013-2017</td>
+									<td>2</td>
+									<td>2017-12-21</td>
+									<td>11:00</td>
+									<td>High</td>
+									<td>Assigned (Not Processed)</td>
+									<td>Finland (+358)</td>
+									<td>Medium</td>
+									<td>Voice Message (VM)</td>
+									<td>2017-12-20</td>
+									<td>3 (3)</td>
+									<td>Lorem ipsul dolor sit amet</td>
+									<td>2017-12-20</td>
+								</tr>
+								<tr>
+									<td>DRT Team</td>
+									<td>Communication Plan</td>
+									<td>123456789</td>
+									<td>IE</td>
+									<td>PAYE</td>
+									<td>2017</td>
+									<td>1</td>
+									<td>2017-12-22</td>
+									<td>9:50</td>
+									<td>Medium</td>
+									<td>Assigned (Not Processed)</td>
+									<td>Ireland (+353)</td>
+									<td>High</td>
+									<td>Yes</td>
+									<td>2017-12-19</td>
+									<td>5 (7)</td>
+									<td>Lorem ipsul dolor sit amet</td>
+									<td>2017-12-20</td>
+								</tr>
+								<tr>
+									<td>Sales Team</td>
+									<td>Reminder</td>
+									<td>123456789</td>
+									<td>IE</td>
+									<td>PAYE</td>
+									<td>2013, 2015, 2017</td>
+									<td>0</td>
+									<td>2017-12-23</td>
+									<td>14:40</td>
+									<td>High</td>
+									<td>Assigned (Not Processed)</td>
+									<td>Bulgaria (+352)</td>
+									<td>Medium</td>
+									<td>Voice Message (VM)</td>
+									<td>2017-12-20</td>
+									<td>4 (5)</td>
+									<td>Lorem ipsul dolor sit amet</td>
+									<td>2017-12-20</td>
+								</tr>
+							</tbody>
+						</table>
+                    </div></div>
+				</div>
+			</div>
+			<!-- end row -->
+			
+		</div>
+		<!-- end #content -->
+        
+        <!-- begin drawer menu -->
+        <div id="rightMenu" class="sidenav default-skin">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav('case')">&times;</a>
+            <div class="innerContent">
+                <div class="caseCheck">
+                    <h2>Case Check</h2>
+                    <ul class="list-unstyled">
+                        <li>
+                            <p>OZ, Income 2016 <span>+353 (Ireland)</span></p>
+                        </li>
+                        <li class="active">
+                            <p>IE, PAYE 2015 <span>+353 (Ireland)</span></p>
+                        </li>
+                    </ul>
+                    <div class="controls">
+                        <button class="btn btn-primary">Add a Case</button>
+                        <button class="btn btn-default">Manual Check</button>
+                    </div>
+                </div>
+                <div class="webregDetails">
+                    <h2>Web Reg Details</h2>
+                    
+                    <h4>Tax Details</h4>
+                    <ul>
+                        <li>Country I want a tax refund from: <strong>Ireland</strong></li>
+                        <li>Tax Year: <strong>2017</strong></li>
+                    </ul>
+                    
+                    <h4>Customer contact details</h4>
+                    <ul>
+                        <li>First Name: <strong>John</strong></li>  
+                        <li>Surname: <strong>Smith</strong></li>
+                        <li>Email address: <a href="mailto:johnsmith@gmail.com"><strong>johnsmith@gmail.com</strong></a></li>
+                        <li>Line Type: <strong>Mobile/Cell</strong></li>
+                        <li>Country Code: <strong>Ireland (+353)</strong></li>
+                        <li>Area Code: <strong>"empty"</strong></li>
+                        <li>Phone number: <strong>851073519</strong></li>
+                    </ul>
+                    
+                    <h4>Marketing Info</h4>
+                    <ul>
+                        <li>LinkID: <strong>"empty"</strong></li>
+                        <li>RefferalID: <strong>same as above</strong></li>
+                        <li>DB Referral ID: <strong>125426</strong></li>
+                        <li>DB Referral: <strong>125426</strong></li>
+                    </ul>
+                    
+                    <h4>Other</h4>
+                    <ul>
+                        <li>{"cookie_id": "20170813200942.1502644182505.f518d9cd3e52e0852238eff62fb1d8d1"}</li>
+                        <li>{"link_slug":"Direct","partner_id":"125260","date":"2017-08-13"}</li>
+                        <li>{"link_slug":"Direct","partner_id":"125260","date":"2017-08-22"}utm_taf – tell a friend</li>
+                        <li>UID: 70822123456.1503394496514.938e9cdea349b40791a4</li>
+                        <li>reff_uri_url - <a href="https://chatserver.comm100.com/chatwindowmobile.aspx?siteId=180590&planId=91&visitType=1&byHref=1&partnerId=-1">https://chatserver.comm100.com/chatwindowmobile.aspx?siteId=180590&planId=91&visitType=1&byHref=1&partnerId=-1</a></li>
+                        <li>page_id – 136</li>
+                        <li>search_keywords – intended for search terms that lead customer to the page, but not sure it’s working after all the changes.</li>
+                        <li>initial_referral - </li>
+                        <li>reff_uri</li>
+                        <li>full_uri – URL of the page where the form is</li>
+                        <li>Country – IE</li>
+                        <li>Registration type – REGCB</li>
+                        <li>timezone_customer – UTC+1</li>
+                        <li>Language used – en</li>
+                        <li>Domain used – www.taxback.com</li>
+                        <li>IP – 51.37.55.158</li>
+                    </ul>
+                </div>  
+                            
+            </div>
+        </div>
+        <!-- end drawer menu -->
+        
+        <!-- begin drawer menu -->
+        <div id="rightMenuAssign" class="sidenav default-skin">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav('assign')">&times;</a>
+            <div class="innerContent">
+                <h2>Assign selected to</h2>
+                <ul id="assigneesList" class="list-unstyled">
+                    <li>
+                        <div class="col-sm-3 personImg">
+                            <div class="circle">
+                                <img src="assets/img/samplePersonImg1.jpg" class="img-responsive">
+                            </div>
+                        </div>
+                        <div class="col-sm-9 personDetails">
+                            <div class="row">
+                                <div class="col-xs-12 name">
+                                    <span><strong>ALB</strong> (86)</span>
+									Alina Sabadus<br>
+                                    <button class="assignBtn" data-toggle="tooltip" data-placement="top" title="Assign">+</button>
+									<button class="transferBtn" data-toggle="tooltip" data-placement="top" title="Assign and transfer ownership"></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                    </li>
+                    <li class="selected">
+                        <div class="col-sm-3 personImg">
+                            <div class="circle">
+                                <img src="assets/img/samplePersonImg2.jpg" class="img-responsive">
+                            </div>
+                        </div>
+                        <div class="col-sm-9 personDetails">
+                            <div class="row">
+                                <div class="col-xs-12 name">
+                                    <span><strong>EKGN</strong></span>
+									Elvira King<br>
+                                    <button class="assignBtn" data-toggle="tooltip" data-placement="top" title="Assign">+</button>
+									<button class="transferBtn" data-toggle="tooltip" data-placement="top" title="Assign and transfer ownership"></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                    </li>
+                    <li>
+                        <div class="col-sm-3 personImg">
+                            <div class="circle">
+                                <img src="assets/img/samplePersonImg3.jpg" class="img-responsive">
+                            </div>
+                        </div>
+                        <div class="col-sm-9 personDetails">
+                            <div class="row">
+                                <div class="col-xs-12 name">
+                                    <span><strong>MRDM</strong></span>
+									Mairead Morgan<br>
+                                    <button class="assignBtn" data-toggle="tooltip" data-placement="top" title="Assign">+</button>
+									<button class="transferBtn" data-toggle="tooltip" data-placement="top" title="Assign and transfer ownership"></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                    </li>
+                    <li>
+                        <div class="col-sm-3 personImg">
+                            <div class="circle">
+                                <img src="assets/img/samplePersonImg4.jpg" class="img-responsive">
+                            </div>
+                        </div>
+                        <div class="col-sm-9 personDetails">
+                            <div class="row">
+                                <div class="col-xs-12 name">
+                                    <span><strong>LBDN</strong></span>
+									Lorena Beldean<br>
+                                    <button class="assignBtn" data-toggle="tooltip" data-placement="top" title="Assign">+</button>
+									<button class="transferBtn" data-toggle="tooltip" data-placement="top" title="Assign and transfer ownership"></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                    </li>
+                    <li>
+                        <div class="col-sm-3 personImg">
+                            <div class="circle">
+                                <img src="assets/img/samplePersonImg5.jpg" class="img-responsive">
+                            </div>
+                        </div>
+                        <div class="col-sm-9 personDetails">
+                            <div class="row">
+                                <div class="col-xs-12 name">
+                                    <span><strong>SNF</strong></span>
+                                    Shane Finn<br>
+                                    <button class="assignBtn" data-toggle="tooltip" data-placement="top" title="Assign">+</button>
+									<button class="transferBtn" data-toggle="tooltip" data-placement="top" title="Assign and transfer ownership"></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                    </li>
+                </ul>            
+            </div>
+        </div>
+        <!-- end drawer menu -->
+        
+		
+		<!-- begin scroll to top btn -->
+		<a href="javascript:;" class="btn btn-icon btn-circle btn-success btn-scroll-to-top fade" data-click="scroll-top"><i class="fa fa-angle-up"></i></a>
+		<!-- end scroll to top btn -->
+	</div>
+	<!-- end page container -->
+	
+	<!-- ================== BEGIN BASE JS ================== -->
+	<script src="assets/plugins/jquery/jquery-1.9.1.min.js"></script>
+	<script src="assets/plugins/jquery/jquery-migrate-1.1.0.min.js"></script>
+	<script src="assets/plugins/jquery-ui/ui/minified/jquery-ui.min.js"></script>
+	<script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+	<!--[if lt IE 9]>
+		<script src="assets/crossbrowserjs/html5shiv.js"></script>
+		<script src="assets/crossbrowserjs/respond.min.js"></script>
+		<script src="assets/crossbrowserjs/excanvas.min.js"></script>
+	<![endif]-->
+	<!-- ================== END BASE JS ================== -->
+	
+	<!-- ================== BEGIN PAGE LEVEL JS ================== -->
+	<script src="assets/plugins/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
+	<script src="assets/plugins/DataTables/media/js/jquery.dataTables.js"></script>
+	<script src="assets/plugins/DataTables/media/js/dataTables.bootstrap.min.js"></script>
+	<script src="assets/plugins/DataTables/extensions/Select/js/dataTables.select.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/bootstrap-daterangepicker/moment.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/bootstrap-daterangepicker/daterangepicker.js"></script>
+	<script src="assets/js/dashboard.min.js"></script>
+	<script src="assets/js/apps.min.js"></script>
+	<script src="assets/js/scripts.js"></script>
+	<!-- ================== END PAGE LEVEL JS ================== -->
+    <script type="text/javascript">
+        $(function() {
+            $('#reportrange').daterangepicker({
+                "ranges": {
+                    "Today": [
+                        "2017-08-29T13:25:28.335Z",
+                        "2017-08-29T13:25:28.335Z"
+                    ],
+                    "Yesterday": [
+                        "2017-08-28T13:25:28.335Z",
+                        "2017-08-28T13:25:28.335Z"
+                    ],
+                    "Last 7 Days": [
+                        "2017-08-23T13:25:28.335Z",
+                        "2017-08-29T13:25:28.335Z"
+                    ],
+                    "Last 30 Days": [
+                        "2017-07-31T13:25:28.335Z",
+                        "2017-08-29T13:25:28.335Z"
+                    ],
+                    "This Month": [
+                        "2017-07-31T21:00:00.000Z",
+                        "2017-08-31T20:59:59.999Z"
+                    ],
+                    "Last Month": [
+                        "2017-06-30T21:00:00.000Z",
+                        "2017-07-31T20:59:59.999Z"
+                    ]
+                },
+                "alwaysShowCalendars": true,
+                "startDate": "08/23/2017",
+                "endDate": "08/29/2017"
+            }, function(start, end, label) {
+                console.log("New date range selected: ' + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD') + ' (predefined range: ' + label + ')");
+            });
+        });
+        
+        
+    </script>
+	<script>
+		$(document).ready(function() {
+			TableManageTableSelect.init();
+			App.init();
+			Dashboard.init();
+		});
+	</script>
+    
+    <script src="assets/plugins/switchery/switchery.min.js"></script>
+    <script>
+    // Default
+      // if-else statement used only for fixing <IE9 issues
+      if (Array.prototype.forEach) {
+        var elems = Array.prototype.slice.call(document.querySelectorAll('.js-switch'));
+
+        elems.forEach(function(html) {
+          var switchery = new Switchery(html);
+        });
+      } else {
+        var elems = document.querySelectorAll('.js-switch');
+
+        for (var i = 0; i < elems.length; i++) {
+          var switchery = new Switchery(elems[i]);
+        }
+      }
+
+      // Colored switches
+      var blue = document.querySelector('.js-switch-blue');
+      var switchery = new Switchery(blue, { color: '#03aad6', jackColor: '#ffffff' });
+
+      
+      // CSS3 Pie for <IE9
+      if (window.PIE) {
+        var wrapper = document.querySelectorAll('.switchery')
+          , handle = document.querySelectorAll('.switchery > small');
+
+        if (wrapper.length == handle.length) {
+          for (var i = 0; i < wrapper.length; i++) {
+            PIE.attach(wrapper[i]);
+            PIE.attach(handle[i]);
+          }
+        }
+      }
+    </script>
+</body>
+</html>

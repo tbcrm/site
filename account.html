@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+<!--<![endif]-->
+<head>
+	<meta charset="utf-8" />
+	<title>Account | TB CRM</title>
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
+	<meta content="" name="description" />
+	<meta content="" name="author" />
+	
+	<!-- ================== BEGIN BASE CSS STYLE ================== -->
+	<link href="http://fonts.googleapis.com/css?family=Roboto:300,400,700|Material+Icons" rel="stylesheet" />
+	<link href="assets/plugins/jquery-ui/themes/base/minified/jquery-ui.min.css" rel="stylesheet" />
+	<link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+	<link href="assets/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+	<link href="assets/css/template.css" rel="stylesheet" />
+	<link href="assets/css/template-responsive.css" rel="stylesheet" />
+    <link href="assets/plugins/switchery/switchery.min.css" rel="stylesheet" />
+	<link href="assets/css/custom.css" rel="stylesheet" />
+	<!-- ================== END BASE CSS STYLE ================== -->
+	
+	<!-- ================== BEGIN PAGE LEVEL STYLE ================== -->
+	<link href="assets/plugins/jquery-jvectormap/jquery-jvectormap-1.2.2.css" rel="stylesheet" />
+	<link href="assets/plugins/bootstrap-datepicker/css/datepicker.css" rel="stylesheet" />
+	<link href="assets/plugins/bootstrap-datepicker/css/datepicker3.css" rel="stylesheet" />
+	<link href="assets/plugins/DataTables/media/css/dataTables.bootstrap.min.css" rel="stylesheet" />
+	<link href="assets/plugins/DataTables/extensions/Select/css/select.bootstrap.min.css" rel="stylesheet" />
+	<link href="assets/plugins/DataTables/extensions/Responsive/css/responsive.bootstrap.min.css" rel="stylesheet" />
+	<link href="assets/css/jquery.mCustomScrollbar.css" rel="stylesheet" />
+    <link href="assets/plugins/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet" />
+	<!-- ================== END PAGE LEVEL STYLE ================== -->
+</head>
+<body>
+	
+	<!-- begin #page-container -->
+	<div id="page-container" class="fade page-sidebar-fixed in">
+		
+		<!-- begin #sidebar -->
+		<div id="sidebar" class="sidebar">
+			<!-- begin sidebar scrollbar -->
+			<div data-scrollbar="true" data-height="100%">
+				<!-- begin sidebar user -->
+				<ul class="nav">
+					<li class="nav-profile">
+						<div class="info">
+							<a href="#"><img src="assets/img/logo.png" alt="logo"></a>
+						</div>
+					</li>
+				</ul>
+				<!-- end sidebar user -->
+				<!-- begin sidebar nav -->
+				<ul class="nav nav-main">
+					<li>
+						<a href="#">
+						    <i class="material-icons">dashboard</i>
+						    <span>Dashboard</span>
+					    </a>
+					</li>
+					<li>
+						<a href="#">
+							<i class="material-icons">check_circle</i>
+							<span>Customer List</span>
+						</a>
+					</li>
+					<li class="has-sub">
+						<a href="javascript:;">
+						    <b class="caret pull-right"></b>
+						    <i class="material-icons">assessment</i>
+						    <span>Reports</span> 
+						</a>
+						<ul class="sub-menu">
+							<li><a href="#">Submenu 1</a></li>
+							<li><a href="#">Submenu 2</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">
+						    <i class="material-icons">people</i>
+						    <span>Users</span>
+						</a>
+					</li>
+					<li class="active">
+						<a href="#">
+						    <i class="material-icons">account_circle</i>
+						    <span>Account</span>
+						</a>
+					</li>
+			        <!-- begin sidebar minify button -->
+					<li><a href="javascript:;" class="sidebar-minify-btn" data-click="sidebar-minify"><i class="fa fa-angle-double-left"></i></a></li>
+			        <!-- end sidebar minify button -->
+				</ul>
+				<!-- end sidebar nav -->
+			</div>
+			<!-- end sidebar scrollbar -->
+		</div>
+		<div class="sidebar-bg"></div>
+		<!-- end #sidebar -->
+		
+		<!-- begin #content -->
+		<div class="content top">
+			<div class="row">
+				<div class="col-xs-12">
+					<ul class="category-list notopborder">
+						<li class="active"><a href="account.html"><b>General Settings</b></a></li>
+						<li><a href="#"><b>Menu</b></a></li>
+						<li><a href="#"><b>Menu</b></a></li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="customer-details-cols account">
+				<div class="buttons">
+						<button class="btn btn-primary">Save Changes</button>
+						<button class="btn btn-secondary">Discard Changes</button>
+				</div>
+				<div class="col">
+					<div class="avatar">
+						<img src="assets/img/avatar.jpg" alt="">
+						<button class="btn btn-change">Change Image</button>
+					</div>
+					<p class="title">
+						<span class="editable select">Ms</span>
+						<select class="editable-select">
+							<option>Mr</option>
+							<option>Mrs</option>
+							<option selected>Ms</option>
+						</select>
+					</p>
+					<p class="fullname">
+						<span class="editable text name">Elvira</span>
+						<input type="text" class="editable-text name"><br>
+						<span class="editable text name">Radisson</span>
+						<input type="text" class="editable-text name"><br>
+						<span class="editable text name">King</span>
+						<input type="text" class="editable-text name">
+					</p>
+					<p>
+						<span class="editable select name-title">Sales team</span>
+						<select class="editable-select">
+							<option selected>Sales team</option>
+							<option>Option 2</option>
+							<option>Option 3</option>
+						</select>
+					</p>
+				</div>
+				<div class="col">
+					<p>Extension: <span class="editable text">1424</span>
+					<input type="text" class="editable-text"></p>
+					<p>Mobile: <span class="editable text">(+359)882635458</span>
+					<input type="text" class="editable-text"></p>
+					<p>Email: <span class="editable text text">eking@taxback.com</span>
+					<input type="text" class="editable-text"></p>
+					<p>Location: 
+						<span class="editable select name-title">Varna BK</span>
+						<select class="editable-select">
+							<option selected="selected">Varna BK</option>
+							<option>Option 1</option>
+							<option>OPtion 2</option>
+						</select>
+					</p>
+					<p>DOB: <span class="editable text date">03-JAN-1986</span>
+						<input type="text" class="editable-text date datepicker"></p>
+				</div>
+				<div class="col">
+					<p>Registration date: <span class="editable text date">01-JAN-2016</span>
+					<input type="text" class="editable-text date datepicker"></p>
+					<p>Status: 
+						<span class="editable select name-title">Active</span>
+						<select class="editable-select">
+							<option selected="selected">Active</option>
+							<option>Option 1</option>
+							<option>OPtion 2</option>
+						</select>
+					</p>
+					<p>Username: <span class="editable text">eking</span>
+					<input type="text" class="editable-text"></p>
+					<p>User code: <span class="editable text">12345</span>
+					<input type="text" class="editable-text"></p>
+					<p>Password: <span class="editable text text">**********</span>
+					<input type="password" class="editable-text"> <a href="#" data-toggle="modal" data-target="#changePassword"><i class="material-icons">tab</i></a></p>
+				</div>
+			</div>
+		</div>
+		<div id="content" class="content">
+
+			<div class="section expandable">
+				<div class="title">
+					<h3><a href="#">User Roles &amp; Modules</a></h3>
+					<button class="btn btn-change">Standard / Executive</button>
+				</div>
+				<div class="box">
+					<div class="col">
+						<h6>User Placement</h6>
+						<strong>ST:</strong> Unit VN; Unit KK
+					</div>
+					<div class="col">
+						<h6>Modules</h6>
+						Customer Overview; ST Common Worklist; ST My Cases Worklist; Search;
+					</div>
+					<div class="col">
+						<h6>Services</h6>
+						<strong>IE:</strong> PAYE; Self assessed;<br>
+						<strong>US:</strong> PAYE; Self assessed;<br>
+						<strong>CA:</strong> Income;
+					</div>
+				</div>
+			</div>
+
+			<div class="section expandable">
+				<div class="title">
+					<h3><a href="#">Auto Assignment</a></h3>
+				</div>
+				<div class="box">
+					<ul class="auto-assign">
+						<li>
+							<span class="name">Countries:</span>
+							<span class="col blue">
+								<a href="#">Brasil</a>
+								<a href="#">Bulgaria</a>
+								<a href="#">Canada</a>
+							</span>
+							<span class="col red">
+								<a href="#">Ireland</a>
+							</span>
+						</li>
+						<li>
+							<span class="name">Language:</span>
+							<span class="col blue">
+								<a href="#">Bulgarian</a>
+								<a href="#">Russian</a>
+								<a href="#">English</a>
+							</span>
+							<span class="col red">&nbsp;</span>
+						</li>
+						<li>
+							<span class="name">Web Reg Types</span>
+							<span class="col blue">
+								<a href="#">Bulgarian</a>
+								<a href="#">Russian</a>
+								<a href="#">English</a>
+							</span>
+							<span class="col red">
+								<a href="#">Exp. Expatriate</a>
+							</span>
+						</li>
+						<li>
+							<span class="name">Referral IDs</span>
+							<span class="col blue">&nbsp;</span>
+							<span class="col red">
+								<a href="#">1234567</a>
+							</span>
+						</li>
+					</ul>
+				</div>
+			</div>
+        
+        <!-- begin drawer menu -->
+        <div id="rightMenu" class="sidenav default-skin">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav('case')">&times;</a>
+            <div class="innerContent">
+                <div class="caseCheck">
+                    <h2>Case Check</h2>
+                    <ul class="list-unstyled">
+                        <li>
+                            <p>OZ, Income 2016 <span>+353 (Ireland)</span></p>
+                        </li>
+                        <li class="active">
+                            <p>IE, PAYE 2015 <span>+353 (Ireland)</span></p>
+                        </li>
+                    </ul>
+                    <div class="controls">
+                        <button class="btn btn-primary">Add a Case</button>
+                        <button class="btn btn-default">Manual Check</button>
+                    </div>
+                </div>
+                <div class="webregDetails">
+                    <h2>Web Reg Details</h2>
+                    
+                    <h4>Tax Details</h4>
+                    <ul>
+                        <li>Country I want a tax refund from: <strong>Ireland</strong></li>
+                        <li>Tax Year: <strong>2017</strong></li>
+                    </ul>
+                    
+                    <h4>Customer contact details</h4>
+                    <ul>
+                        <li>First Name: <strong>John</strong></li>  
+                        <li>Surname: <strong>Smith</strong></li>
+                        <li>Email address: <a href="mailto:johnsmith@gmail.com"><strong>johnsmith@gmail.com</strong></a></li>
+                        <li>Line Type: <strong>Mobile/Cell</strong></li>
+                        <li>Country Code: <strong>Ireland (+353)</strong></li>
+                        <li>Area Code: <strong>"empty"</strong></li>
+                        <li>Phone number: <strong>851073519</strong></li>
+                    </ul>
+                    
+                    <h4>Marketing Info</h4>
+                    <ul>
+                        <li>LinkID: <strong>"empty"</strong></li>
+                        <li>RefferalID: <strong>same as above</strong></li>
+                        <li>DB Referral ID: <strong>125426</strong></li>
+                        <li>DB Referral: <strong>125426</strong></li>
+                    </ul>
+                    
+                    <h4>Other</h4>
+                    <ul>
+                        <li>{"cookie_id": "20170813200942.1502644182505.f518d9cd3e52e0852238eff62fb1d8d1"}</li>
+                        <li>{"link_slug":"Direct","partner_id":"125260","date":"2017-08-13"}</li>
+                        <li>{"link_slug":"Direct","partner_id":"125260","date":"2017-08-22"}utm_taf – tell a friend</li>
+                        <li>UID: 70822123456.1503394496514.938e9cdea349b40791a4</li>
+                        <li>reff_uri_url - <a href="https://chatserver.comm100.com/chatwindowmobile.aspx?siteId=180590&planId=91&visitType=1&byHref=1&partnerId=-1">https://chatserver.comm100.com/chatwindowmobile.aspx?siteId=180590&planId=91&visitType=1&byHref=1&partnerId=-1</a></li>
+                        <li>page_id – 136</li>
+                        <li>search_keywords – intended for search terms that lead customer to the page, but not sure it’s working after all the changes.</li>
+                        <li>initial_referral - </li>
+                        <li>reff_uri</li>
+                        <li>full_uri – URL of the page where the form is</li>
+                        <li>Country – IE</li>
+                        <li>Registration type – REGCB</li>
+                        <li>timezone_customer – UTC+1</li>
+                        <li>Language used – en</li>
+                        <li>Domain used – www.taxback.com</li>
+                        <li>IP – 51.37.55.158</li>
+                    </ul>
+                </div>  
+                            
+            </div>
+        </div>
+        <!-- end drawer menu -->
+        
+        <!-- begin drawer menu -->
+        <div id="rightMenuAssign" class="sidenav default-skin">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav('assign')">&times;</a>
+            <div class="innerContent">
+                <h2>Assign selected to</h2>
+                <ul id="assigneesList" class="list-unstyled">
+                    <li>
+                        <div class="col-sm-3 personImg">
+                            <div class="circle">
+                                <img src="assets/img/samplePersonImg1.jpg" class="img-responsive">
+                            </div>
+                        </div>
+                        <div class="col-sm-9 personDetails">
+                            <div class="row">
+                                <div class="col-xs-12 name">
+                                    <span><strong>ALB</strong> (86)</span>
+									Alina Sabadus<br>
+                                    <button class="assignBtn" data-toggle="tooltip" data-placement="top" title="Assign">+</button>
+									<button class="transferBtn" data-toggle="tooltip" data-placement="top" title="Assign and transfer ownership"></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                    </li>
+                    <li class="selected">
+                        <div class="col-sm-3 personImg">
+                            <div class="circle">
+                                <img src="assets/img/samplePersonImg2.jpg" class="img-responsive">
+                            </div>
+                        </div>
+                        <div class="col-sm-9 personDetails">
+                            <div class="row">
+                                <div class="col-xs-12 name">
+                                    <span><strong>EKGN</strong></span>
+									Elvira King<br>
+                                    <button class="assignBtn" data-toggle="tooltip" data-placement="top" title="Assign">+</button>
+									<button class="transferBtn" data-toggle="tooltip" data-placement="top" title="Assign and transfer ownership"></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                    </li>
+                    <li>
+                        <div class="col-sm-3 personImg">
+                            <div class="circle">
+                                <img src="assets/img/samplePersonImg3.jpg" class="img-responsive">
+                            </div>
+                        </div>
+                        <div class="col-sm-9 personDetails">
+                            <div class="row">
+                                <div class="col-xs-12 name">
+                                    <span><strong>MRDM</strong></span>
+									Mairead Morgan<br>
+                                    <button class="assignBtn" data-toggle="tooltip" data-placement="top" title="Assign">+</button>
+									<button class="transferBtn" data-toggle="tooltip" data-placement="top" title="Assign and transfer ownership"></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                    </li>
+                    <li>
+                        <div class="col-sm-3 personImg">
+                            <div class="circle">
+                                <img src="assets/img/samplePersonImg4.jpg" class="img-responsive">
+                            </div>
+                        </div>
+                        <div class="col-sm-9 personDetails">
+                            <div class="row">
+                                <div class="col-xs-12 name">
+                                    <span><strong>LBDN</strong></span>
+									Lorena Beldean<br>
+                                    <button class="assignBtn" data-toggle="tooltip" data-placement="top" title="Assign">+</button>
+									<button class="transferBtn" data-toggle="tooltip" data-placement="top" title="Assign and transfer ownership"></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                    </li>
+                    <li>
+                        <div class="col-sm-3 personImg">
+                            <div class="circle">
+                                <img src="assets/img/samplePersonImg5.jpg" class="img-responsive">
+                            </div>
+                        </div>
+                        <div class="col-sm-9 personDetails">
+                            <div class="row">
+                                <div class="col-xs-12 name">
+                                    <span><strong>SNF</strong></span>
+                                    Shane Finn<br>
+                                    <button class="assignBtn" data-toggle="tooltip" data-placement="top" title="Assign">+</button>
+									<button class="transferBtn" data-toggle="tooltip" data-placement="top" title="Assign and transfer ownership"></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                    </li>
+                </ul>            
+            </div>
+        </div>
+		<!-- end drawer menu -->
+		
+		<!-- Change Password Modal -->
+	<div class="modal fade" id="changePassword" tabindex="-1" role="dialog" aria-labelledby="changePasswordLabel">
+			<div class="modal-dialog modal-sm" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title">Change Password</h4>
+					</div>
+					<div class="modal-body">
+						<form class="form-horizontal">
+							<fieldset>
+								<div class="form-group">
+									<div class="col-sm-5">
+										<label>Current Password</label>
+									</div>
+									<div class="col-sm-7">
+										<input type="password" class="form-control">
+									</div>
+								</div>
+								<div class="form-group">
+									<div class="col-sm-5">
+										<label>New Password</label>
+									</div>
+									<div class="col-sm-7">
+										<input type="password" class="form-control">
+									</div>
+								</div>
+								<div class="form-group">
+									<div class="col-sm-5">
+										<label>Confirm New Password</label>
+									</div>
+									<div class="col-sm-7">
+										<input type="password" class="form-control">
+									</div>
+								</div>
+								<div class="form-group">
+									<div class="col-sm-12">
+										<p><strong>Your password MUST:</strong><br>
+										- be long at least 7 characters<br>
+										- contain digits, small letters and capital letters</p>
+									</div>
+								</div>
+							</fieldset>
+						</form>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-save" data-dismiss="modal">Save</button>
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+					</div>
+				</div>
+			</div>
+		</div>
+        
+		
+		<!-- begin scroll to top btn -->
+		<a href="javascript:;" class="btn btn-icon btn-circle btn-success btn-scroll-to-top fade" data-click="scroll-top"><i class="fa fa-angle-up"></i></a>
+		<!-- end scroll to top btn -->
+	</div>
+	<!-- end page container -->
+	
+	<!-- ================== BEGIN BASE JS ================== -->
+	<script src="assets/plugins/jquery/jquery-1.9.1.min.js"></script>
+	<script src="assets/plugins/jquery/jquery-migrate-1.1.0.min.js"></script>
+	<script src="assets/plugins/jquery-ui/ui/minified/jquery-ui.min.js"></script>
+	<script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+	<!--[if lt IE 9]>
+		<script src="assets/crossbrowserjs/html5shiv.js"></script>
+		<script src="assets/crossbrowserjs/respond.min.js"></script>
+		<script src="assets/crossbrowserjs/excanvas.min.js"></script>
+	<![endif]-->
+	<!-- ================== END BASE JS ================== -->
+	
+	<!-- ================== BEGIN PAGE LEVEL JS ================== -->
+	<script src="assets/plugins/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
+	<script src="assets/plugins/DataTables/media/js/jquery.dataTables.js"></script>
+	<script src="assets/plugins/DataTables/media/js/dataTables.bootstrap.min.js"></script>
+	<script src="assets/plugins/DataTables/extensions/Select/js/dataTables.select.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/bootstrap-daterangepicker/moment.min.js"></script>
+	<script src="assets/plugins/slimscroll/jquery.slimscroll.min.js"></script> 
+    <script type="text/javascript" src="assets/plugins/bootstrap-daterangepicker/daterangepicker.js"></script>
+	<script src="assets/js/dashboard.min.js"></script>
+	<script src="assets/js/jquery.mousewheel.min.js"></script>
+	<script src="assets/js/apps.min.js"></script>
+	<script src="assets/js/scripts.js"></script>
+	<!-- ================== END PAGE LEVEL JS ================== -->
+    <script type="text/javascript">
+        $(function() {
+            $('#reportrange').daterangepicker({
+                "ranges": {
+                    "Today": [
+                        "2017-08-29T13:25:28.335Z",
+                        "2017-08-29T13:25:28.335Z"
+                    ],
+                    "Yesterday": [
+                        "2017-08-28T13:25:28.335Z",
+                        "2017-08-28T13:25:28.335Z"
+                    ],
+                    "Last 7 Days": [
+                        "2017-08-23T13:25:28.335Z",
+                        "2017-08-29T13:25:28.335Z"
+                    ],
+                    "Last 30 Days": [
+                        "2017-07-31T13:25:28.335Z",
+                        "2017-08-29T13:25:28.335Z"
+                    ],
+                    "This Month": [
+                        "2017-07-31T21:00:00.000Z",
+                        "2017-08-31T20:59:59.999Z"
+                    ],
+                    "Last Month": [
+                        "2017-06-30T21:00:00.000Z",
+                        "2017-07-31T20:59:59.999Z"
+                    ]
+                },
+                "alwaysShowCalendars": true,
+                "startDate": "08/23/2017",
+                "endDate": "08/29/2017"
+            }, function(start, end, label) {
+                console.log("New date range selected: ' + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD') + ' (predefined range: ' + label + ')");
+            });
+        });
+        
+        
+    </script>
+	<script>
+		$(document).ready(function() {
+			TableManageTableSelect.init();
+			App.init();
+			Dashboard.init();
+		});
+	</script>
+    
+    <script src="assets/plugins/switchery/switchery.min.js"></script>
+    <script>
+    // Default
+      // if-else statement used only for fixing <IE9 issues
+      if (Array.prototype.forEach) {
+        var elems = Array.prototype.slice.call(document.querySelectorAll('.js-switch'));
+
+        elems.forEach(function(html) {
+          var switchery = new Switchery(html);
+        });
+      } else {
+        var elems = document.querySelectorAll('.js-switch');
+
+        for (var i = 0; i < elems.length; i++) {
+          var switchery = new Switchery(elems[i]);
+        }
+      }
+
+      // Colored switches
+      var blue = document.querySelector('.js-switch-blue');
+      var switchery = new Switchery(blue, { color: '#03aad6', jackColor: '#ffffff' });
+
+      
+      // CSS3 Pie for <IE9
+      if (window.PIE) {
+        var wrapper = document.querySelectorAll('.switchery')
+          , handle = document.querySelectorAll('.switchery > small');
+
+        if (wrapper.length == handle.length) {
+          for (var i = 0; i < wrapper.length; i++) {
+            PIE.attach(wrapper[i]);
+            PIE.attach(handle[i]);
+          }
+        }
+      }
+    </script>
+</body>
+</html>

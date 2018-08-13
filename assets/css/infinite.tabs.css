@@ -1,0 +1,51 @@
+.infinite-tabs .wrapper {
+    position:relative;
+    margin:0 auto;
+    overflow:hidden;
+	padding:0!important;
+  	height:43px;
+}
+.infinite-tabs .nav-tabs { 
+    background: transparent; 
+}
+.infinite-tabs .list {
+    position:absolute;
+    top:0px;
+    min-width:9999px;
+    margin: 0;
+    -webkit-padding-start: 0;
+}
+.infinite-tabs .list li{
+	display:table-cell;
+    position:relative;
+    text-align:center;
+    cursor:grab;
+    cursor:-webkit-grab;
+    vertical-align:middle;
+}
+.infinite-tabs .nav-tabs>li.active>a, 
+.infinite-tabs .nav-tabs>li.active>a:focus, 
+.infinite-tabs .nav-tabs>li.active>a:hover,
+.infinite-tabs .nav-tabs>li>a, 
+.infinite-tabs .nav-tabs>li>a:focus, 
+.infinite-tabs .nav-tabs>li>a:hover {
+    background: transparent;
+}
+.infinite-tabs .scroller {
+    color: #000;
+    text-align:center;
+    cursor:pointer;
+    display:none;
+    padding:7px;
+    padding-top:11px;
+    white-space:no-wrap;
+    vertical-align:middle;
+    background-color:#fff;
+}
+.infinite-tabs .scroller-right{
+display: block!important;
+  float:right;
+}
+.infinite-tabs .scroller-left {
+  float:left;
+}

@@ -1,0 +1,1224 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+<!--<![endif]-->
+<head>
+	<meta charset="utf-8" />
+	<title>Documents | TB CRM</title>
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
+	<meta content="" name="description" />
+	<meta content="" name="author" />
+	
+	<!-- ================== BEGIN BASE CSS STYLE ================== -->
+	<link href="http://fonts.googleapis.com/css?family=Roboto:300,400,700|Material+Icons" rel="stylesheet" />
+	<link href="assets/plugins/jquery-ui/themes/base/minified/jquery-ui.min.css" rel="stylesheet" />
+	<link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+	<link href="assets/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+	<link href="assets/css/template.css" rel="stylesheet" />
+	<link href="assets/css/template-responsive.css" rel="stylesheet" />
+	<link href="assets/css/infinite.tabs.css" rel="stylesheet" />
+    <link href="assets/plugins/switchery/switchery.min.css" rel="stylesheet" />
+	<link href="assets/css/dropzone.css" rel="stylesheet" />
+	<link href="assets/css/custom.css" rel="stylesheet" />
+	<!-- ================== END BASE CSS STYLE ================== -->
+	
+	<!-- ================== BEGIN PAGE LEVEL STYLE ================== -->
+	<link href="assets/plugins/jquery-jvectormap/jquery-jvectormap-1.2.2.css" rel="stylesheet" />
+	<link href="assets/plugins/bootstrap-datepicker/css/datepicker.css" rel="stylesheet" />
+	<link href="assets/plugins/bootstrap-datepicker/css/datepicker3.css" rel="stylesheet" />
+	<link href="assets/plugins/DataTables/media/css/dataTables.bootstrap.min.css" rel="stylesheet" />
+	<link href="assets/plugins/DataTables/extensions/Select/css/select.bootstrap.min.css" rel="stylesheet" />
+	<link href="assets/plugins/DataTables/extensions/Responsive/css/responsive.bootstrap.min.css" rel="stylesheet" />
+	<link href="assets/css/jquery.mCustomScrollbar.css" rel="stylesheet" />
+	<link href="assets/plugins/jstree/dist/themes/default/style.min.css" rel="stylesheet" />
+	<!-- ================== END PAGE LEVEL STYLE ================== -->
+</head>
+<body>
+	
+	<!-- begin #page-container -->
+	<div id="page-container" class="fade page-sidebar-fixed in">
+		
+		<!-- begin #sidebar -->
+		<div id="sidebar" class="sidebar">
+			<!-- begin sidebar scrollbar -->
+			<div data-scrollbar="true" data-height="100%">
+				<!-- begin sidebar user -->
+				<ul class="nav">
+					<li class="nav-profile">
+						<div class="info">
+							<a href="#"><img src="assets/img/logo.png" alt="logo"></a>
+						</div>
+					</li>
+				</ul>
+				<!-- end sidebar user -->
+				<!-- begin sidebar nav -->
+				<ul class="nav nav-main">
+					<li>
+						<a href="#">
+						    <i class="material-icons">dashboard</i>
+						    <span>Dashboard</span>
+					    </a>
+					</li>
+					<li class="active">
+						<a href="#">
+							<i class="material-icons">check_circle</i>
+							<span>Customer List</span>
+						</a>
+					</li>
+					<li class="has-sub">
+						<a href="javascript:;">
+						    <b class="caret pull-right"></b>
+						    <i class="material-icons">assessment</i>
+						    <span>Reports</span> 
+						</a>
+						<ul class="sub-menu">
+							<li><a href="#">Submenu 1</a></li>
+							<li><a href="#">Submenu 2</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">
+						    <i class="material-icons">people</i>
+						    <span>Users</span>
+						</a>
+					</li>
+			        <!-- begin sidebar minify button -->
+					<li><a href="javascript:;" class="sidebar-minify-btn" data-click="sidebar-minify"><i class="fa fa-angle-double-left"></i></a></li>
+			        <!-- end sidebar minify button -->
+				</ul>
+				<!-- end sidebar nav -->
+			</div>
+			<!-- end sidebar scrollbar -->
+		</div>
+		<div class="sidebar-bg"></div>
+		<!-- end #sidebar -->
+		
+		<!-- begin #content -->
+		<div id="content" class="content split single-col">
+			<!-- remove class 'split' to hide sidebar -->
+			<div class="split-left">
+				<p><a href="#" class="close">&times;</a></p>
+				<br><br>
+				<div class="newcase">
+					<a href="#" class="btn">+ New Case</a>
+					<a href="#" class="btn btn-find"><i class="material-icons">search</i> Find Case</a>
+				</div>
+				<h2>Worklist</h2>
+				<div class="accordion">
+					<div class="item top">
+						<div class="item-title">
+							<a href="#">Web Regs (105)</a>
+						</div>
+						<div class="item-body">
+							<div class="item sub">
+								<div class="item-title">
+									<a href="#">Smith, John R. <span>(3)</span></a>
+								</div>
+								<div class="item-body">
+									<ul>
+										<li>
+											<a href="#">
+												<span class="left">
+													<strong>IE, PAYE 2016</strong>
+													+62 (Australia)
+												</span>
+												<span class="right">
+													active
+												</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<span class="left">
+													<strong>IE, PAYE 2015</strong>
+													+353 (Ireland)
+												</span>
+												<span class="right">
+													pre-a
+												</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<span class="left">
+													<strong>IE, SA 2015</strong>
+													+353 (Ireland)
+												</span>
+												<span class="right">
+													tb
+												</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="item sub">
+								<div class="item-title">
+									<a href="#">Redding, Jason B. <span>(2)</span></a>
+								</div>
+								<div class="item-body">
+									<ul>
+										<li>
+											<a href="#">
+												<span class="left">
+													<strong>IE, PAYE 2016</strong>
+													+62 (Australia)
+												</span>
+												<span class="right">
+													active
+												</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<span class="left">
+													<strong>IE, PAYE 2015</strong>
+													+353 (Ireland)
+												</span>
+												<span class="right">
+													pre-a
+												</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<span class="left">
+													<strong>IE, SA 2015</strong>
+													+353 (Ireland)
+												</span>
+												<span class="right">
+													tb
+												</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="item">
+						<div class="item-title">
+							<a href="#">Revertions (5)</a>
+						</div>
+						<div class="item-body">
+							<div class="item sub">
+								<div class="item-title">
+									<a href="#">Smith, John R. <span>(3)</span></a>
+								</div>
+								<div class="item-body">
+									<ul>
+										<li>
+											<a href="#">
+												<span class="left">
+													<strong>IE, PAYE 2016</strong>
+													+62 (Australia)
+												</span>
+												<span class="right">
+													active
+												</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<span class="left">
+													<strong>IE, PAYE 2015</strong>
+													+353 (Ireland)
+												</span>
+												<span class="right">
+													pre-a
+												</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<span class="left">
+													<strong>IE, SA 2015</strong>
+													+353 (Ireland)
+												</span>
+												<span class="right">
+													tb
+												</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="item sub">
+								<div class="item-title">
+									<a href="#">Redding, Jason B. <span>(2)</span></a>
+								</div>
+								<div class="item-body">
+									<ul>
+										<li>
+											<a href="#">
+												<span class="left">
+													<strong>IE, PAYE 2016</strong>
+													+62 (Australia)
+												</span>
+												<span class="right">
+													active
+												</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<span class="left">
+													<strong>IE, PAYE 2015</strong>
+													+353 (Ireland)
+												</span>
+												<span class="right">
+													pre-a
+												</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<span class="left">
+													<strong>IE, SA 2015</strong>
+													+353 (Ireland)
+												</span>
+												<span class="right">
+													tb
+												</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="item">
+						<div class="item-title">
+							<a href="#">Follow Up (5)</a>
+							<select>
+								<option>by Name</option>
+								<option>Option 2</option>
+								<option>Option 3</option>
+							</select>
+						</div>
+						<div class="item-body">
+							<div class="item sub">
+								<div class="item-title">
+									<a href="#">Smith, John R. <span>(3)</span></a>
+								</div>
+								<div class="item-body">
+									<ul>
+										<li>
+											<a href="#">
+												<span class="left">
+													<strong>IE, PAYE 2016</strong>
+													+62 (Australia)
+												</span>
+												<span class="right">
+													active
+												</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<span class="left">
+													<strong>IE, PAYE 2015</strong>
+													+353 (Ireland)
+												</span>
+												<span class="right">
+													pre-a
+												</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<span class="left">
+													<strong>IE, SA 2015</strong>
+													+353 (Ireland)
+												</span>
+												<span class="right">
+													tb
+												</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="item sub">
+								<div class="item-title">
+									<a href="#">Redding, Jason B. <span>(2)</span></a>
+								</div>
+								<div class="item-body">
+									<ul>
+										<li>
+											<a href="#">
+												<span class="left">
+													<strong>IE, PAYE 2016</strong>
+													+62 (Australia)
+												</span>
+												<span class="right">
+													active
+												</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<span class="left">
+													<strong>IE, PAYE 2015</strong>
+													+353 (Ireland)
+												</span>
+												<span class="right">
+													pre-a
+												</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<span class="left">
+													<strong>IE, SA 2015</strong>
+													+353 (Ireland)
+												</span>
+												<span class="right">
+													tb
+												</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="item">
+						<div class="item-title">
+							<a href="#">OTS Update (5)</a>
+						</div>
+						<div class="item-body">
+							<div class="item sub">
+								<div class="item-title">
+									<a href="#">Smith, John R. <span>(3)</span></a>
+								</div>
+								<div class="item-body">
+									<ul>
+										<li>
+											<a href="#">
+												<span class="left">
+													<strong>IE, PAYE 2016</strong>
+													+62 (Australia)
+												</span>
+												<span class="right">
+													active
+												</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<span class="left">
+													<strong>IE, PAYE 2015</strong>
+													+353 (Ireland)
+												</span>
+												<span class="right">
+													pre-a
+												</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<span class="left">
+													<strong>IE, SA 2015</strong>
+													+353 (Ireland)
+												</span>
+												<span class="right">
+													tb
+												</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="item sub">
+								<div class="item-title">
+									<a href="#">Redding, Jason B. <span>(2)</span></a>
+								</div>
+								<div class="item-body">
+									<ul>
+										<li>
+											<a href="#">
+												<span class="left">
+													<strong>IE, PAYE 2016</strong>
+													+62 (Australia)
+												</span>
+												<span class="right">
+													active
+												</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<span class="left">
+													<strong>IE, PAYE 2015</strong>
+													+353 (Ireland)
+												</span>
+												<span class="right">
+													pre-a
+												</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<span class="left">
+													<strong>IE, SA 2015</strong>
+													+353 (Ireland)
+												</span>
+												<span class="right">
+													tb
+												</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="item">
+						<div class="item-title">
+							<a href="#">Outstanding Fees (9)</a>
+						</div>
+						<div class="item-body">
+							<div class="item sub">
+								<div class="item-title">
+									<a href="#">Smith, John R. <span>(3)</span></a>
+								</div>
+								<div class="item-body">
+									<ul>
+										<li>
+											<a href="#">
+												<span class="left">
+													<strong>IE, PAYE 2016</strong>
+													+62 (Australia)
+												</span>
+												<span class="right">
+													active
+												</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<span class="left">
+													<strong>IE, PAYE 2015</strong>
+													+353 (Ireland)
+												</span>
+												<span class="right">
+													pre-a
+												</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<span class="left">
+													<strong>IE, SA 2015</strong>
+													+353 (Ireland)
+												</span>
+												<span class="right">
+													tb
+												</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="item sub">
+								<div class="item-title">
+									<a href="#">Redding, Jason B. <span>(2)</span></a>
+								</div>
+								<div class="item-body">
+									<ul>
+										<li>
+											<a href="#">
+												<span class="left">
+													<strong>IE, PAYE 2016</strong>
+													+62 (Australia)
+												</span>
+												<span class="right">
+													active
+												</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<span class="left">
+													<strong>IE, PAYE 2015</strong>
+													+353 (Ireland)
+												</span>
+												<span class="right">
+													pre-a
+												</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<span class="left">
+													<strong>IE, SA 2015</strong>
+													+353 (Ireland)
+												</span>
+												<span class="right">
+													tb
+												</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="item">
+						<div class="item-title">
+							<a href="#">Search Results (9)</a>
+						</div>
+						<div class="item-body">
+							<div class="item sub">
+								<div class="item-title">
+									<a href="#">Smith, John R. <span>(3)</span></a>
+								</div>
+								<div class="item-body">
+									<ul>
+										<li>
+											<a href="#">
+												<span class="left">
+													<strong>IE, PAYE 2016</strong>
+													+62 (Australia)
+												</span>
+												<span class="right">
+													active
+												</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<span class="left">
+													<strong>IE, PAYE 2015</strong>
+													+353 (Ireland)
+												</span>
+												<span class="right">
+													pre-a
+												</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<span class="left">
+													<strong>IE, SA 2015</strong>
+													+353 (Ireland)
+												</span>
+												<span class="right">
+													tb
+												</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="item sub">
+								<div class="item-title">
+									<a href="#">Redding, Jason B. <span>(2)</span></a>
+								</div>
+								<div class="item-body">
+									<ul>
+										<li>
+											<a href="#">
+												<span class="left">
+													<strong>IE, PAYE 2016</strong>
+													+62 (Australia)
+												</span>
+												<span class="right">
+													active
+												</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<span class="left">
+													<strong>IE, PAYE 2015</strong>
+													+353 (Ireland)
+												</span>
+												<span class="right">
+													pre-a
+												</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<span class="left">
+													<strong>IE, SA 2015</strong>
+													+353 (Ireland)
+												</span>
+												<span class="right">
+													tb
+												</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="split-right">
+			
+				<div class="top-applications">
+					<ul>
+						<li><a href="#">Overview</a></li>
+						<li class="active"><a href="#">IE'15-17 PAYE</a></li>
+						<li><a href="#">IE 14-16 Self Assessed</a></li>
+						<li><a href="#">OZ'17 Income</a></li>
+						<li class="add"><a href="#"  data-toggle="modal" data-target="#addApplication">+ Add Application</a></li>
+					</ul>
+				</div>
+				
+				<div class="newcase">
+					<a href="#" class="btn-options"><i class="material-icons">settings</i></a>
+				</div>
+
+				<!-- begin row -->
+				<div class="row">
+					<div class="col-xs-12 customer-details">
+						<div class="caption">
+							<div class="tabs">
+								<a href="#" class="tab1">Customer Details</a>
+								<a href="#" class="tab2">Customer Documents</a>
+								<a href="#" class="tab3 active">Documents</a>
+							</div>
+						</div>
+						<div class="caption-expand active">
+							<div class="tabs-body">
+								<div class="tab tab3 active">
+									<div class="endless">
+										 <div class="doc-search">
+											<input type="text" class="form-control" placeholder="Search in document types...">
+										</div>
+										 <div class="infinite-tabs">
+											<div class="scroller scroller-left"><i class="glyphicon glyphicon-chevron-left"></i></div>
+											<div class="scroller scroller-right"><i class="glyphicon glyphicon-chevron-right"></i></div>
+											<div class="wrapper">
+												<ul class="nav nav-tabs list" id="myTab">
+													<li class="active"><a href="#one"><strong>Upload Documents</strong></a></li>
+													<li><a href="#two"><strong>Non-Processed</strong><sup>4</sup></a></li>
+													<li><a href="#three">Tax Returns</a></li>
+													<li><a href="#four" class="check blue">Follow-Up Claim<sup class="green">1</sup><sup class="red">2</sup></a></li>
+													<li><a href="#five" class="check blue">Irish Pack</a></li>
+													<li><a href="#six" class="check blue">PRSI Tax Claim</a></li>
+													<li><a href="#seven" class="check blue">TO Letters</a></li>
+													<li><a href="#eight" class="check">RF</a></li>
+													<li><a href="#nine" class="check">P50</a></li>
+													<li><a href="#ten" class="check">RR1</a></li>
+													<li><a href="#eleven" class="check">Med 1</a></li>
+													<li><a href="#twelve" class="check">PoA</a></li>
+													<li><a href="#thirteen" class="check">Form X</a></li>
+													<li><a href="#fourteen" class="check">Form Y</a></li>
+													<li><a href="#fifteen" class="check">All Documents</a></li>
+												</ul>
+											</div>
+										</div>			
+									</div>
+									<div class="tab-content">
+										<div class="tab one active">
+											<div class="leftside">
+												<div class="top">
+													<select>
+														<option>All Years</option>
+														<option>2015</option>
+														<option>2016</option>
+														<option>2017</option>
+													</select>
+												</div>
+												<div class="customscroll">
+													<form action="/upload" class="dropzone needsclick dz-clickable" id="demo-upload">
+														<div class="dz-message needsclick">
+															<strong>Drag &amp; Drop a file here to upload it</strong><br>
+															or click to browse
+														</div>
+													</form><br><br>
+													<h5>Uploaded by customer</h5>
+													<div class="doc-list">
+														<div class="item">
+															<a href="#" class="zoom"  data-toggle="modal" data-target="#docZoom">Zoom</a>
+															<div class="left">
+																<ul class="status">
+																	<li><a href="#" class="approve selected">Approve</a></li>
+																	<li><a href="#" class="discard">Discard</a></li>
+																</ul>
+																<p>10.01.2018</p>
+															</div>
+															<div class="right">
+																<div><span class="editable text">scanned and packed docs-1.pdf</span><input type="text" class="editable-text"></div>
+																<select>
+																	<option>Follow-up claim</option>
+																	<option>Option 2</option>
+																	<option>Option 3</option>
+																</select>
+																<select>
+																	<option>Tax Year</option>
+																	<option>2015</option>
+																	<option>2016</option>
+																	<option>2017</option>
+																</select>
+															</div>
+														</div>
+													</div>
+													<h5>Uploaded by docs team</h5>
+													<div class="doc-list">
+														<div class="item">
+																<a href="#" class="zoom"  data-toggle="modal" data-target="#docZoom">Zoom</a>
+															<div class="left">
+																<ul class="status">
+																	<li><a href="#" class="approve">Approve</a></li>
+																	<li><a href="#" class="discard">Discard</a></li>
+																</ul>
+																<p>10.01.2018</p>
+															</div>
+															<div class="right">
+																<div><span class="editable text">scanned and packed docs-1.pdf</span><input type="text" class="editable-text"></div>
+																<select>
+																	<option>Follow-up claim</option>
+																	<option>Option 2</option>
+																	<option>Option 3</option>
+																</select>
+																<select>
+																	<option>Tax Year</option>
+																	<option>2015</option>
+																	<option>2016</option>
+																	<option>2017</option>
+																</select>
+															</div>
+														</div>
+														<div class="item">
+																<a href="#" class="zoom"  data-toggle="modal" data-target="#docZoom">Zoom</a>
+															<div class="left">
+																<ul class="status">
+																		<li><a href="#" class="approve">Approve</a></li>
+																		<li><a href="#" class="discard">Discard</a></li>
+																</ul>
+																<p>10.01.2018</p>
+															</div>
+															<div class="right">
+																<div><span class="editable text">scanned and packed docs-1.pdf</span><input type="text" class="editable-text"></div>
+																<select>
+																	<option>Follow-up claim</option>
+																	<option>Option 2</option>
+																	<option>Option 3</option>
+																</select>
+																<select>
+																	<option>Tax Year</option>
+																	<option>2015</option>
+																	<option>2016</option>
+																	<option>2017</option>
+																</select>
+															</div>
+														</div>
+														<div class="item">
+																<a href="#" class="zoom"  data-toggle="modal" data-target="#docZoom">Zoom</a>
+															<div class="left">
+																<ul class="status">
+																		<li><a href="#" class="approve">Approve</a></li>
+																		<li><a href="#" class="discard">Discard</a></li>
+																</ul>
+																<p>10.01.2018</p>
+															</div>
+															<div class="right">
+																<div><span class="editable text">scanned and packed docs-1.pdf</span><input type="text" class="editable-text"></div>
+																<select>
+																	<option>Follow-up claim</option>
+																	<option>Option 2</option>
+																	<option>Option 3</option>
+																</select>
+																<select>
+																	<option>Tax Year</option>
+																	<option>2015</option>
+																	<option>2016</option>
+																	<option>2017</option>
+																</select>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="rightside">
+												<div class="top">
+													 <div class="form-holder">
+														 <div class="form-field">
+															 <input type="text" placeholder="Form Name">
+														 </div>
+														 <div class="form-field">
+															 <select>
+																 <option>Select Form Type</option>
+																 <option>Type 1</option>
+																 <option>Type 2</option>
+																 <option>Type 3</option>
+															 </select>
+														 </div>
+														 <div class="form-field">
+															 <button>Add Form Type</button>
+														 </div>
+													 </div>
+													 <div class="form-options">
+														 <ul>
+															<li><a href="#" class="print">Print</a></li>
+															<li><a href="#" class="download">Download</a></li>
+															<li><a href="#" class="email">Email</a></li>
+															<li><a href="#" class="delete">Delete</a></li>
+														 </ul>
+													 </div>
+												</div>
+												<div class="paper-holder">
+													<img src="assets/img/form-p60.jpg" alt="form">
+												</div>
+											</div>
+										</div>
+										<div class="tab two">
+											<div class="leftside">
+												<div class="top">
+													<select>
+														<option>All Years</option>
+														<option>2015</option>
+														<option>2016</option>
+														<option>2017</option>
+													</select>
+												</div>
+												<div class="customscroll">
+													<div class="doc-list">
+														<div class="item">
+																<a href="#" class="zoom"  data-toggle="modal" data-target="#docZoom">Zoom</a>
+																<div class="left">
+																<ul class="type">
+																	<li><a href="#" class="good">Good</a></li>
+																	<li><a href="#" class="bad">Bad</a></li>
+																</ul>
+																<p>10.01.2018</p>
+															</div>
+															<div class="right">
+																<div><span class="editable text">scanned and packed docs-1.pdf</span><input type="text" class="editable-text"></div>
+																<select>
+																	<option>Follow-up claim</option>
+																	<option>Option 2</option>
+																	<option>Option 3</option>
+																</select>
+																<select>
+																	<option>Tax Year</option>
+																	<option>2015</option>
+																	<option>2016</option>
+																	<option>2017</option>
+																</select>
+																<div class="checkbox">
+																	<label>
+																		<input type="checkbox"> Use this document
+																	</label>
+																</div>
+															</div>
+														</div>
+														<div class="item">
+																<a href="#" class="zoom"  data-toggle="modal" data-target="#docZoom">Zoom</a>
+															<div class="left">
+																<ul class="type">
+																	<li><a href="#" class="good active">Good</a></li>
+																	<li><a href="#" class="bad">Bad</a></li>
+																</ul>
+																<p>10.01.2018</p>
+															</div>
+															<div class="right">
+																<div><span class="editable text">scanned and packed docs-1.pdf</span><input type="text" class="editable-text"></div>
+																<select>
+																	<option>Follow-up claim</option>
+																	<option>Option 2</option>
+																	<option>Option 3</option>
+																</select>
+																<select>
+																	<option>Tax Year</option>
+																	<option>2015</option>
+																	<option>2016</option>
+																	<option>2017</option>
+																</select>
+																<div class="checkbox">
+																	<label>
+																		<input type="checkbox"> Use this document
+																	</label>
+																</div>
+															</div>
+														</div>
+														<div class="item">
+																<a href="#" class="zoom"  data-toggle="modal" data-target="#docZoom">Zoom</a>
+																<div class="left">
+																<ul class="type">
+																	<li><a href="#" class="good">Good</a></li>
+																	<li><a href="#" class="bad active">Bad</a></li>
+																</ul>
+																<p>10.01.2018</p>
+															</div>
+															<div class="right">
+																<div><span class="editable text">scanned and packed docs-1.pdf</span><input type="text" class="editable-text"></div>
+																<select>
+																	<option>Follow-up claim</option>
+																	<option>Option 2</option>
+																	<option>Option 3</option>
+																</select>
+																<select>
+																	<option>Tax Year</option>
+																	<option>2015</option>
+																	<option>2016</option>
+																	<option>2017</option>
+																</select>
+																<div class="checkbox">
+																	<label>
+																		<input type="checkbox"> Use this document
+																	</label>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="rightside">
+												<div class="top">
+													 <div class="form-holder">
+														 <div class="form-field">
+															 <input type="text" placeholder="Form Name">
+														 </div>
+														 <div class="form-field">
+															 <select>
+																 <option>Select Form Type</option>
+																 <option>Type 1</option>
+																 <option>Type 2</option>
+																 <option>Type 3</option>
+															 </select>
+														 </div>
+														 <div class="form-field">
+															 <button>Add Form Type</button>
+														 </div>
+													 </div>
+													 <div class="form-options">
+														 <ul>
+															<li><a href="#" class="print">Print</a></li>
+															<li><a href="#" class="download">Download</a></li>
+															<li><a href="#" class="email">Email</a></li>
+															<li><a href="#" class="delete">Delete</a></li>
+														 </ul>
+													 </div>
+												</div>
+												<div class="paper-holder">
+													<img src="assets/img/form-p60.jpg" alt="form">
+												</div>
+											</div>
+										</div>
+										<div class="tab three">tab three</div>
+										<div class="tab four">tab four</div>
+										<div class="tab five">tab five</div>
+										<div class="tab six">tab six</div>
+										<div class="tab seven">tab seven</div>
+										<div class="tab eight">tab eight</div>
+										<div class="tab nine">tab nine</div>
+										<div class="tab ten">tab ten</div>
+										<div class="tab eleven">tab eleven</div>
+										<div class="tab twelve">tab twelve</div>
+										<div class="tab thirteen">tab thirteen</div>
+										<div class="tab fourteen">tab fourteen</div>
+										<div class="tab fifteen">tab fifteen</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+			<!-- end #content -->
+			
+			<div class="footer-tabs">
+				<!-- Nav tabs -->
+				<ul class="nav nav-tabs" role="tablist">
+					<li role="presentation" class="active"><a href="#2015" aria-controls="2015" role="tab" data-toggle="tab">2015<span>taxback</span></a></li>
+					<li role="presentation"><a href="#2016" aria-controls="2016" role="tab" data-toggle="tab">2016<span>active</span></a></li>
+					<li role="presentation"><a href="#2017" aria-controls="2017" role="tab" data-toggle="tab">2017<span>active</span></a></li>
+					<li><a href="#" class="add">+ Add TY</a></li>
+					<li class="show">
+						<div class="switch"><input type="checkbox" class="js-switch-blue small" checked /></div>  Show All Years
+					</li>
+				</ul>
+				
+				<!-- Tab panes -->
+				<div class="tab-content">
+					<div role="tabpanel" class="tab-pane active" id="2015">
+						<div class="top">
+							<div class="row">
+								<div class="col-xs-12 col-lg-8 left">
+									<span class="title">ST Owner</span>
+									<span class="field"><span>Preslava Dushkova</span><a href="#" class="remove">×</a></span>
+									<span class="title">Pre CSR</span>
+									<span class="field">
+										<select>
+											<option>Please select</option>
+											<option>Option 1</option>
+											<option>Option 2</option>
+											<option>Option 3</option>
+										</select>
+									</span>
+									<span class="title">TOC Owner</span>
+									<span class="field">
+										<select>
+											<option>Please select</option>
+											<option>Option 1</option>
+											<option>Option 2</option>
+											<option>Option 3</option>
+										</select>
+									</span>
+								</div>
+								<div class="col-xs-12 col-lg-4 right">
+									<ul>
+										<li><a href="#">Post</a></li>
+										<li><a href="#">Reversions</a></li>
+										<li><a href="#">User Account Updates</a></li>
+										<li><a href="#">Web Reg</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="inside">
+							<div class="row">
+								<div class="col-xs-12 col-lg-6">
+									<a class="expand" role="button" data-toggle="collapse" href="#collapse1" aria-expanded="false" aria-controls="collapse1">
+										<span>Marketing Information</span>
+									</a>
+									<div class="collapse in" id="collapse1" aria-expanded="true">
+										Tax Year ID: <strong>123456789 - 1;</strong> Registration Date: <strong>12.10.2015;</strong> Registration Type: <strong>Reg Type 1;</strong> Referral 1: <strong>John Smith;</strong> Referral 2: <strong>John Smith;</strong> Campaign: <strong>Campaign Name</strong>
+									</div>
+								</div>
+								<div class="col-xs-12 col-lg-6">
+									<a class="expand" role="button" data-toggle="collapse" href="#collapse2" aria-expanded="false" aria-controls="collapse2">
+										<span>Spouse Information</span>
+									</a>
+									<div class="collapse in" id="collapse2" aria-expanded="true">
+										Medical Card No: <strong>1234556677;</strong> Validity Period: <strong>DD/MM/YYYY - DD/MM/YYYY;</strong> Industry: <strong>Banking, Financial;</strong> Occupation: <strong>Banking, Financial;</strong> Flat Rate Expenses: <strong>1235465;</strong> Flat Rate ROS: <strong>1234.25;</strong> Entry Date: <strong>DD/MM/YYYY;</strong> Exit Date: <strong>DD/MM/YYYY;</strong> Days: <strong>15;</strong>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-xs-12">
+									<a class="expand" role="button" data-toggle="collapse" href="#collapse3" aria-expanded="false" aria-controls="collapse3">
+										<span>Tax credit &amp; expenses</span>
+									</a>
+									<div class="collapse in" id="collapse3" aria-expanded="true">
+										Marital Status: <strong>Single;</strong> Basis of Assessment: <strong>Singly;</strong> Change of Marital Status: <strong>DD/MM/YYYY;</strong> Medical Card No: <strong>1234556677;</strong> Validity Period: <strong>DD/MM/YYYY - DD/MM/YYYY;</strong> Industry: <strong>Banking, Financial;</strong> Occupation: <strong>Banking, Financial;</strong> Flat Rate Expenses: <strong>1235465;</strong> Flat Rate ROS: <strong>1234.25;</strong> Entry Date: <strong>DD/MM/YYYY;</strong> Exit Date: <strong>DD/MM/YYYY;</strong> Days: <strong>15</strong>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div role="tabpanel" class="tab-pane" id="2016">...</div>
+					<div role="tabpanel" class="tab-pane" id="2017">...</div>
+					<div role="tabpanel" class="tab-pane" id="settings">...</div>
+				</div>
+			</div>
+			
+			<!-- begin scroll to top btn -->
+			<a href="javascript:;" class="btn btn-icon btn-circle btn-success btn-scroll-to-top fade" data-click="scroll-top"><i class="fa fa-angle-up"></i></a>
+			<!-- end scroll to top btn -->
+		</div>
+	</div>
+	<!-- end page container -->
+
+	<!-- Modal -->
+	<div class="modal fade doc-zoom" id="docZoom" tabindex="-1" role="dialog" aria-labelledby="docZoomLabel">
+		<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<h4 class="modal-title" id="docZoomLabel">Document name</h4>
+			</div>
+			<div class="modal-body">
+				<img src="assets/img/form-p60.jpg" alt="form">
+			</div>
+			<div class="modal-footer">
+				<ul>
+					<li><a href="#" class="print">Print</a></li>
+					<li><a href="#" class="download">Download</a></li>
+					<li><a href="#" class="email">Email</a></li>
+					<li><a href="#" class="delete">Delete</a></li>
+				</ul>
+				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			</div>
+		</div>
+		</div>
+	</div>
+	
+	<!-- ================== BEGIN BASE JS ================== -->
+	<script src="assets/plugins/jquery/jquery-1.9.1.min.js"></script>
+	<script src="assets/plugins/jquery/jquery-migrate-1.1.0.min.js"></script>
+	<script src="assets/plugins/jquery-ui/ui/minified/jquery-ui.min.js"></script>
+	<script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+	<!--[if lt IE 9]>
+		<script src="assets/crossbrowserjs/html5shiv.js"></script>
+		<script src="assets/crossbrowserjs/respond.min.js"></script>
+		<script src="assets/crossbrowserjs/excanvas.min.js"></script>
+	<![endif]-->
+	<!-- ================== END BASE JS ================== -->
+	
+	<!-- ================== BEGIN PAGE LEVEL JS ================== -->
+	<script src="assets/plugins/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
+	<script src="assets/plugins/DataTables/media/js/jquery.dataTables.js"></script>
+	<script src="assets/plugins/DataTables/media/js/dataTables.bootstrap.min.js"></script>
+	<script src="assets/plugins/DataTables/extensions/Select/js/dataTables.select.min.js"></script>
+	<script src="assets/plugins/DataTables/extensions/Responsive/js/dataTables.responsive.min.js"></script>
+	<script src="assets/plugins/jstree/dist/jstree.min.js"></script> 
+	<script src="assets/plugins/sparkline/jquery.sparkline.min.js"></script> 
+	<script src="assets/plugins/slimscroll/jquery.slimscroll.min.js"></script> 
+	<script src="assets/plugins/gritter/js/jquery.gritter.min.js"></script> 
+	<script src="assets/js/dashboard.min.js"></script>
+	<script src="assets/js/ui-tree.demo.min.js"></script>
+	<script src="assets/js/jquery.mousewheel.min.js"></script>
+	<script src="assets/js/infinite-tabs.js"></script>
+	<script src="assets/js/dropzone.js"></script>
+	<script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+	<script src="assets/js/scripts.js"></script>
+	<script src="assets/js/apps.min.js"></script>
+	<!-- ================== END PAGE LEVEL JS ================== -->
+	
+	<script>
+	$(document).ready(function() {
+		TableManageTableSelect.init();
+		TreeView.init();
+		App.init();
+	});
+	</script>
+    <script src="assets/plugins/switchery/switchery.min.js"></script>
+    <script>
+    // Default
+      // if-else statement used only for fixing <IE9 issues
+      if (Array.prototype.forEach) {
+        var elems = Array.prototype.slice.call(document.querySelectorAll('.js-switch'));
+
+        elems.forEach(function(html) {
+          var switchery = new Switchery(html);
+        });
+      } else {
+        var elems = document.querySelectorAll('.js-switch');
+
+        for (var i = 0; i < elems.length; i++) {
+          var switchery = new Switchery(elems[i]);
+        }
+      }
+
+      // Colored switches
+      var blue = document.querySelector('.js-switch-blue');
+      var switchery = new Switchery(blue, { color: '#03aad6', jackColor: '#ffffff' });
+
+      
+      // CSS3 Pie for <IE9
+      if (window.PIE) {
+        var wrapper = document.querySelectorAll('.switchery')
+          , handle = document.querySelectorAll('.switchery > small');
+
+        if (wrapper.length == handle.length) {
+          for (var i = 0; i < wrapper.length; i++) {
+            PIE.attach(wrapper[i]);
+            PIE.attach(handle[i]);
+          }
+        }
+      }
+    </script>
+</body>
+</html>
