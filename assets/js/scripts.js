@@ -263,6 +263,11 @@ $(document).ready(function(){
         }
     });
 
+    // form toggler
+    $('.toggler').on('click', function(){
+        $(this).toggleClass('active');
+    });
+
     // expandable box
     $('.section.expandable .title a').on('click',function(){
         $(this).parent().parent().next('.box').slideToggle();
