@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+<!--<![endif]-->
+<head>
+	<meta charset="utf-8" />
+	<title>Search | TB CRM</title>
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
+	<meta content="" name="description" />
+	<meta content="" name="author" />
+	
+	<!-- ================== BEGIN BASE CSS STYLE ================== -->
+	<link href="//fonts.googleapis.com/css?family=Roboto:300,400,700|Material+Icons" rel="stylesheet" />
+	<link href="assets/plugins/jquery-ui/themes/base/minified/jquery-ui.min.css" rel="stylesheet" />
+	<link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+	<link href="assets/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+	<link href="assets/css/template.css" rel="stylesheet" />
+	<link href="assets/css/template-responsive.css" rel="stylesheet" />
+	<link href="assets/css/custom.css" rel="stylesheet" />
+	<!-- ================== END BASE CSS STYLE ================== -->
+	
+	<!-- ================== BEGIN PAGE LEVEL STYLE ================== -->
+	<link href="assets/plugins/jquery-jvectormap/jquery-jvectormap-1.2.2.css" rel="stylesheet" />
+	<link href="assets/plugins/bootstrap-datepicker/css/datepicker.css" rel="stylesheet" />
+	<link href="assets/plugins/bootstrap-datepicker/css/datepicker3.css" rel="stylesheet" />
+	<link href="assets/plugins/DataTables/media/css/dataTables.bootstrap.min.css" rel="stylesheet" />
+	<link href="assets/plugins/DataTables/extensions/Select/css/select.bootstrap.min.css" rel="stylesheet" />
+	<link href="assets/plugins/DataTables/extensions/Responsive/css/responsive.bootstrap.min.css" rel="stylesheet" />
+	<link href="assets/plugins/jstree/dist/themes/default/style.min.css" rel="stylesheet" />
+	<!-- ================== END PAGE LEVEL STYLE ================== -->
+</head>
+<body>
+	
+	<!-- begin #page-container -->
+	<div id="page-container" class="fade page-sidebar-fixed in">
+		
+		<!-- begin #sidebar -->
+		<div id="sidebar" class="sidebar">
+			<!-- begin sidebar scrollbar -->
+			<div data-scrollbar="true" data-height="100%">
+				<!-- begin sidebar user -->
+				<ul class="nav">
+					<li class="nav-profile">
+						<div class="info">
+							<a href="#"><img src="assets/img/logo.png" alt="logo"></a>
+						</div>
+					</li>
+				</ul>
+				<!-- end sidebar user -->
+				<!-- begin sidebar nav -->
+				<ul class="nav nav-main">
+					<li>
+						<a href="#">
+						    <i class="material-icons">dashboard</i>
+						    <span>Dashboard</span>
+					    </a>
+					</li>
+					<li class="active">
+						<a href="#">
+							<i class="material-icons">check_circle</i>
+							<span>Customer List</span>
+						</a>
+					</li>
+					<li class="has-sub">
+						<a href="javascript:;">
+						    <b class="caret pull-right"></b>
+						    <i class="material-icons">assessment</i>
+						    <span>Reports</span> 
+						</a>
+						<ul class="sub-menu">
+							<li><a href="#">Submenu 1</a></li>
+							<li><a href="#">Submenu 2</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">
+						    <i class="material-icons">people</i>
+						    <span>Users</span>
+						</a>
+					</li>
+			        <!-- begin sidebar minify button -->
+					<li><a href="javascript:;" class="sidebar-minify-btn" data-click="sidebar-minify"><i class="fa fa-angle-double-left"></i></a></li>
+			        <!-- end sidebar minify button -->
+				</ul>
+				<!-- end sidebar nav -->
+			</div>
+			<!-- end sidebar scrollbar -->
+		</div>
+		<div class="sidebar-bg"></div>
+		<!-- end #sidebar -->
+		
+		<!-- begin #content -->
+		<div id="content" class="content split">
+			<!-- remove class 'split' to hide sidebar -->
+			<div class="split-left">
+				<p><a href="#" class="close">&times;</a></p>
+				<br><br>
+				<div class="title">
+					<input type="text" value="Unnamed Filter - 1">
+					<a href="#"><i class="material-icons">save</i></a>
+				</div>
+				<div class="filter-options">
+					<ul class="nav nav-pills">
+						<li class="active"><a href="#nav-pills-tab-1" data-toggle="tab">Search</a></li>
+						<li><a href="#nav-pills-tab-2" data-toggle="tab">Saved Filters (3)</a></li>
+						<li class="right"><a href="#" class="btn btn-outline">Clear Details</a></li>
+						<li class="right"><a href="#" class="btn btn-info">Search</a></li>
+					</ul>
+					<div class="tab-content">
+						<div class="tab-pane fade active in" id="nav-pills-tab-1">
+							<form action="/" method="POST">
+								<div class="row">
+									<div class="col-xs-12">
+										<!-- remove class 'active' to close title -->
+										<h3 class="accordion active">Client Details</h3>
+									</div>
+								</div>
+								<div class="collapsible open">
+									<fieldset>
+										<div class="row">
+											<div class="form-group col-md-6">
+												<label>First name</label>
+												<input type="text" class="form-control" value="John">
+											</div>
+											<div class="form-group col-md-6">
+												<label>Last name</label>
+												<input type="text" class="form-control" value="Smith">
+											</div>
+										</div>
+										<div class="row">
+											<div class="form-group col-md-6">
+												<label>DOB</label>
+												<input type="text" class="form-control datepicker" value="12/10/1988">
+											</div>
+											<div class="form-group col-md-6">
+												<label>Nationality</label>
+												<input type="text" class="form-control" value="irish">
+											</div>
+										</div>
+										<div class="row">
+											<div class="form-group col-md-6">
+												<label>Email</label>
+												<div class="toggler"><span></span> Exact matches only</div>
+												<input type="text" class="form-control" value="explodingcarrots@yahoo.com">
+											</div>
+											<div class="form-group col-md-6">
+												<label>Telephone</label>
+												<input type="text" class="form-control" value="0628785556666">
+											</div>
+										</div>
+										<div class="row">
+											<div class="form-group col-md-6">
+												<label>Address</label>
+												<input type="text" class="form-control" value="Test Address">
+											</div>
+											<div class="form-group col-md-6">
+												<label>Company name</label>
+												<input type="text" class="form-control" value="Test Company Name">
+											</div>
+										</div>
+										<div class="row">
+											<div class="form-group">
+												<div class="col-xs-12">
+													<div class="checkbox">
+														<label>
+															<input type="checkbox" value="">
+															Search in spouse records
+														</label>
+													</div>
+												</div>
+											</div>
+										</div>
+									</fieldset>
+								</div>
+								<div class="row">
+									<div class="col-xs-12">
+										<!-- remove class 'active' to close title -->
+										<h3 class="accordion active">Application Details</h3>
+									</div>
+								</div>
+								<div class="collapsible open">
+									<fieldset>
+										<div class="row">
+											<div class="form-group col-md-6">
+												<label>Status</label><br>
+												<div class="checkbox-dropdown">
+													<a href="#" class="drop">Please select</a>
+													<p class="chosen">
+													</p>
+													<div class="list">
+														<ul>
+															<li>
+																<label><input type="checkbox" value="status1"> <span>Pre-Active</span></label>
+															</li>
+															<li>
+																<label><input type="checkbox" value="status2"> <span>Active</span></label>
+															</li>
+															<li>
+																<label><input type="checkbox" value="status3"> <span>Option 3</span></label>
+															</li>
+															<li>
+																<label><input type="checkbox" value="status4"> <span>Option 4</span></label>
+															</li>
+															<li>
+																<label><input type="checkbox" value="status5"> <span>Option 5</span></label>
+															</li>
+															<li>
+																<button class="btn btn-info">Done</button>
+															</li>
+														</ul>
+													</div>
+												</div>
+											</div>
+											<div class="form-group col-md-6">
+												<label>Application type</label><br>
+												<div class="checkbox-dropdown">
+													<a href="#" class="drop">Please select</a>
+													<p class="chosen">
+													</p>
+													<div class="list">
+														<ul>
+															<li>
+																<label><input type="checkbox" value="type1"> <span>PAYE</span></label>
+															</li>
+															<li>
+																<label><input type="checkbox" value="type2"> <span>Option 2</span></label>
+															</li>
+															<li>
+																<label><input type="checkbox" value="type3"> <span>Option 3</span></label>
+															</li>
+															<li>
+																<label><input type="checkbox" value="type4"> <span>Option 4</span></label>
+															</li>
+															<li>
+																<label><input type="checkbox" value="type5"> <span>Option 5</span></label>
+															</li>
+															<li>
+																<button class="btn btn-info">Done</button>
+															</li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="row">
+											<div class="form-group col-md-6">
+												<label>Tax Country</label>
+												<select class="form-control">
+													<option>Australia</option>
+													<option>Option 2</option>
+													<option>Option 3</option>
+												</select>
+											</div>
+											<div class="form-group col-md-6">
+												<label>State/City</label>
+												<select class="form-control">
+													<option>Option 1</option>
+													<option>Option 2</option>
+													<option>Option 3</option>
+												</select>
+											</div>
+										</div>
+										<div class="row">
+											<div class="form-group col-md-6">
+												<label>Year</label>
+												<select class="form-control">
+													<option>2015</option>
+													<option>Option 2</option>
+													<option>Option 3</option>
+												</select>
+											</div>
+											<div class="form-group col-md-6">
+												<label>Stage</label>
+												<select class="form-control">
+													<option>Sample stage title</option>
+													<option>Option 2</option>
+													<option>Option 3</option>
+												</select>
+											</div>
+										</div>
+										<div class="row">
+											<div class="form-group col-md-6">
+												<label>Application ID</label>
+												<input type="text" class="form-control" value="123456789">
+											</div>
+											<div class="form-group col-md-6">
+												<label>Customer ID</label>
+												<input type="text" class="form-control" value="123456789">
+											</div>
+										</div>
+										<div class="row">
+											<div class="form-group col-md-6">
+												<label>Tax Number</label>
+												<input type="text" class="form-control" value="123456789">
+											</div>
+										</div>
+										<div class="row">
+											<div class="form-group">
+												<div class="col-xs-12">
+													<div class="checkbox">
+														<label>
+															<input type="checkbox" value="">
+															Search in spouse records
+														</label>
+													</div>
+												</div>
+											</div>
+										</div>
+									</fieldset>
+								</div>
+								<div class="row">
+									<div class="col-xs-12">
+										<!-- remove class 'active' to close title -->
+										<h3 class="accordion active">Additional Details</h3>
+									</div>
+								</div>
+								<div class="collapsible open">
+									<fieldset>
+										<div class="row">
+											<div class="form-group col-md-4 m-b-0">
+												<div class="checkbox">
+													<label>
+														<input type="checkbox" value="">
+														Account Manager
+													</label>
+												</div>
+											</div>
+											<div class="form-group col-md-4 m-b-0">
+												<div class="checkbox">
+													<label>
+														<input type="checkbox" value="">
+														ST Owner
+													</label>
+												</div>
+											</div>
+											<div class="form-group col-md-4 m-b-0">
+												<div class="checkbox">
+													<label>
+														<input type="checkbox" value="">
+														Unprocessed docs
+													</label>
+												</div>
+											</div>
+										</div>
+										<div class="row">
+											<div class="form-group col-md-4">
+												<div class="checkbox">
+													<label>
+														<input type="checkbox" value="">
+														Current Owner
+													</label>
+												</div>
+											</div>
+											<div class="form-group col-md-4">
+												<div class="checkbox">
+													<label>
+														<input type="checkbox" value="">
+														DT Owner
+													</label>
+												</div>
+											</div>
+											<div class="form-group col-md-4">
+												<div class="checkbox">
+													<label>
+														<input type="checkbox" value="">
+														Search in DWT files
+													</label>
+												</div>
+											</div>
+										</div>
+										<div class="row">
+											<div class="form-group col-md-6">
+												<label>Sprintax application ID</label>
+												<input type="text" class="form-control" value="123456789">
+											</div>
+											<div class="form-group col-md-6">
+												<label>Bank Account No.</label>
+												<input type="text" class="form-control" value="123456789">
+											</div>
+										</div>
+										<div class="row">
+											<div class="form-group col-md-6">
+												<label>Beneficiary</label>
+												<input type="text" class="form-control" value="123456789">
+											</div>
+											<div class="form-group col-md-6">
+												<label>Master card number</label>
+												<input type="text" class="form-control" value="123456789">
+											</div>
+										</div>
+										<div class="row">
+											<div class="form-group col-md-6">
+												<label>Voucher</label>
+												<input type="text" class="form-control" value="123456789">
+											</div>
+											<div class="form-group col-md-6">
+												<label>TO ID</label>
+												<input type="text" class="form-control" value="123456789">
+											</div>
+										</div>
+										<div class="row">
+											<div class="form-group col-md-6">
+												<label>UID</label>
+												<input type="text" class="form-control" value="123456789">
+											</div>
+											<div class="form-group col-md-6">
+												<label>Member No</label>
+												<input type="text" class="form-control" value="123456789">
+											</div>
+										</div>
+									</fieldset>
+								</div>
+							</form>
+						</div>
+						<div class="tab-pane fade" id="nav-pills-tab-2">
+							<ul class="saved-filters">
+								<li><a href="#">Saved Filter - 1</a><a href="#" class="del">delete</a></li>
+								<li><a href="#">Uk Nationals 2014, 2015, 2016</a><a href="#" class="del">delete</a></li>
+								<li><a href="#">Saved Filter - 3</a><a href="#" class="del">delete</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="split-right">
+			
+				<!-- begin page-header -->
+				<h1 class="page-header">Search for Client Cases</h1>
+				<!-- end page-header -->
+				
+				<div class="newcase">
+					<a href="#" class="btn-options"><i class="material-icons">settings</i></a>
+				</div>
+
+				<!-- begin row -->
+				<div class="row">
+					<div class="col-xs-12 web-details">
+						<div class="caption">
+							<h2><a href="#">Web registration details <i class="material-icons">swap_vert</i></a></h2>
+							<p class="status">
+								<a href="#" class="btn btn-primary">Add Case</a> 
+								<a href="#" class="btn btn-secondary">Set as Filter</a>
+							</p>
+						</div>
+						<!-- remove class 'active' to close section -->
+						<div class="caption-expand active">
+							<div class="row">
+								<div class="col-lg-4">
+									<p>
+										<strong class="title2">Tax Details</strong>
+										Country I want a tax refund from: <strong>Ireland</strong><br>
+										Tax Year: <strong>2017</strong>
+									</p>
+									<p>
+										<strong class="title2">Customer contact details</strong>
+										First Name: <strong>John</strong><br>
+										Surname: <strong>Smith</strong><br>
+										Email address: <strong>johnsmith@gmail.com</strong><br>
+										Line Type: <strong>Mobile/Cell</strong><br>
+										Country Code: <strong>Ireland (+353)</strong><br>
+										Area Code: <strong>"empty"</strong><br>
+										Phone number: <strong>851073519</strong>
+									</p>
+									<p>
+										<strong class="title2">Marketing Info</strong>
+										LinkID: <strong>"empty"</strong><br>
+										RefferalID: <strong>same as above</strong><br>
+										DB Referral ID: <strong>125426</strong><br>
+										DB Referral: <strong>125426</strong>
+									</p>
+								</div>
+								<div class="col-lg-4">
+									<p>
+										<strong class="title2">Other</strong>
+										Country I want a tax refund from: {"cookie_id": "20170813200942.1502644182505.f518d9cd3e52e0852238eff62fb1d8d1"}
+										{"link_slug":"Direct","partner_id":"125260","date":"2017-08-13"}
+										{"link_slug":"Direct","partner_id":"125260","date":"2017-08-22"}utm_taf – tell a friend
+										UID: 70822123456.1503394496514.938e9cdea349b40791a4
+										reff_uri_url - https://chatserver.comm100.com/chatwindowmobile.aspx?siteId=180590&planId=91&visitType=1&byHref=1&partnerId=-1
+									</p>
+								</div>
+								<div class="col-lg-4">
+									<p>
+										page_id – 136
+										search_keywords – intended for search terms that lead customer to the page, but not sure it’s working after all the changes.
+										initial_referral - 
+										reff_uri
+										full_uri – URL of the page where the form is 
+										Country – IE
+										Registration type – REGCB
+										timezone_customer – UTC+1
+										Language used – en
+										Domain used – www.taxback.com
+										IP – 51.37.55.158
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- end row -->
+				<!-- begin row -->
+				<div class="row search-results">
+					<div class="col-xs-12">
+						<div class="caption">
+							<h2><a href="#">3 exact matches found <i class="material-icons">swap_vert</i></a></h2>
+						</div>
+						<!-- remove class 'active' to close section -->
+						<div class="caption-expand active">
+							<table border="0" cellpadding="0" cellspacing="0" width="100%" class="table data-table">
+								<thead>
+									<tr>
+										<th>Customer Name</th>
+										<th>Spouse Name</th>
+										<th>DOB</th>
+										<th>Nationality</th>
+										<th>Email</th>
+										<th>For Merge</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr class="data-table-row">
+										<td>John R. Smith</td>
+										<td>Barbara R. Smith</td>
+										<td>08-JUN-1997</td>
+										<td>Ireland</td>
+										<td>jsmith@themail.com</td>
+										<td><a href="#">MERGE</a></td>
+									</tr>
+									<tr class="data-table-row">
+										<td>Barbara R. Smith</td>
+										<td>John R. Smith</td>
+										<td>18-JUN-1997</td>
+										<td>Ireland</td>
+										<td>bsmith@themail.com</td>
+										<td><a href="#">MERGE</a></td>
+									</tr>
+									<tr class="data-table-row">
+										<td>Barbara R. Smith</td>
+										<td>John R. Smith</td>
+										<td>08-JUN-1997</td>
+										<td>Canada</td>
+										<td>bsmith@themail.com</td>
+										<td><a href="#">MERGE</a></td>
+									</tr>
+								</tbody>
+							</table>
+							<div id="jstree-default">
+								<ul>
+									<li data-jstree='{"opened":true}' >
+										Income Tax <strong>(8)</strong>
+										<ul>
+											<li data-jstree='{"opened":true}' >
+												Australia <strong>(5)</strong>
+												<ul>
+													<li data-jstree='{ "icon" : "fa fa-file-text fa-lg text-primary" }'>SA, Binned, 02 Sales Team, Contract, MAB</li>
+													<li data-jstree='{ "icon" : "fa fa-file-text fa-lg text-primary" }'>Tax Number, Binned</li>
+													<li data-jstree='{ "icon" : "fa fa-file-text fa-lg text-primary" }'>SA, Binned, 02 Sales Team, MAB</li>
+													<li data-jstree='{ "icon" : "fa fa-file-text fa-lg text-primary" }'>2009, Binned, 01 Document Team, Additional Info, NPV</li>
+													<li data-jstree='{ "icon" : "fa fa-file-text fa-lg text-primary" }'>2011, Binned, 02 Sales Team, Contract in Process</li>
+												</ul>
+											</li>
+											<li>Ireland <strong>(3)</strong>
+												<ul>
+													<li data-jstree='{ "icon" : "fa fa-file-text fa-lg text-primary" }'>SA, Binned, 02 Sales Team, Contract, MAB</li>
+													<li data-jstree='{ "icon" : "fa fa-file-text fa-lg text-primary" }'>Tax Number, Binned</li>
+													<li data-jstree='{ "icon" : "fa fa-file-text fa-lg text-primary" }'>SA, Binned, 02 Sales Team, MAB</li>
+												</ul>
+											</li>
+										</ul>
+									</li>
+									<li>DWT, Ireland <strong>(1)</strong>
+										<ul>
+											<li data-jstree='{ "icon" : "fa fa-file-text fa-lg text-primary" }'>SA, Binned, 02 Sales Team, Contract, MAB</li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- end row -->
+				
+			</div>
+			<!-- end #content -->
+			
+			<!-- begin scroll to top btn -->
+			<a href="javascript:;" class="btn btn-icon btn-circle btn-success btn-scroll-to-top fade" data-click="scroll-top"><i class="fa fa-angle-up"></i></a>
+			<!-- end scroll to top btn -->
+		</div>
+	</div>
+	<!-- end page container -->
+	
+	<!-- ================== BEGIN BASE JS ================== -->
+	<script src="assets/plugins/jquery/jquery-1.9.1.min.js"></script>
+	<script src="assets/plugins/jquery/jquery-migrate-1.1.0.min.js"></script>
+	<script src="assets/plugins/jquery-ui/ui/minified/jquery-ui.min.js"></script>
+	<script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+	<!--[if lt IE 9]>
+		<script src="assets/crossbrowserjs/html5shiv.js"></script>
+		<script src="assets/crossbrowserjs/respond.min.js"></script>
+		<script src="assets/crossbrowserjs/excanvas.min.js"></script>
+	<![endif]-->
+	<!-- ================== END BASE JS ================== -->
+	
+	<!-- ================== BEGIN PAGE LEVEL JS ================== -->
+	<script src="assets/plugins/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
+	<script src="assets/plugins/DataTables/media/js/jquery.dataTables.js"></script>
+	<script src="assets/plugins/DataTables/media/js/dataTables.bootstrap.min.js"></script>
+	<script src="assets/plugins/DataTables/extensions/Select/js/dataTables.select.min.js"></script>
+	<script src="assets/plugins/DataTables/extensions/Responsive/js/dataTables.responsive.min.js"></script>
+	<script src="assets/plugins/jstree/dist/jstree.min.js"></script> 
+	<script src="assets/plugins/sparkline/jquery.sparkline.min.js"></script> 
+	<script src="assets/plugins/slimscroll/jquery.slimscroll.min.js"></script> 
+	<script src="assets/plugins/gritter/js/jquery.gritter.min.js"></script> 
+	<script src="assets/js/ui-tree.demo.min.js"></script>    
+	<script src="assets/js/dashboard.min.js"></script>
+	<script src="assets/js/scripts.js"></script>
+	<script src="assets/js/apps.min.js"></script>
+	<!-- ================== END PAGE LEVEL JS ================== -->
+	
+	<script>
+		$(document).ready(function() {
+			TableManageTableSelect.init();
+			TreeView.init();
+			App.init();
+		});
+	</script>
+</body>
+</html>

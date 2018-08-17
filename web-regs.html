@@ -5,7 +5,7 @@
 <!--<![endif]-->
 <head>
 	<meta charset="utf-8" />
-	<title>My Cases | TB CRM</title>
+	<title>Web Regs | TB CRM</title>
 	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
 	<meta content="" name="description" />
 	<meta content="" name="author" />
@@ -28,13 +28,14 @@
 	<link href="assets/plugins/DataTables/media/css/dataTables.bootstrap.min.css" rel="stylesheet" />
 	<link href="assets/plugins/DataTables/extensions/Select/css/select.bootstrap.min.css" rel="stylesheet" />
 	<link href="assets/plugins/DataTables/extensions/Responsive/css/responsive.bootstrap.min.css" rel="stylesheet" />
+    
     <link href="assets/plugins/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet" />
 	<!-- ================== END PAGE LEVEL STYLE ================== -->
 </head>
 <body>
 	
 	<!-- begin #page-container -->
-	<div id="page-container" class="fade page-sidebar-fixed in">
+	<div id="page-container" class="fade in page-sidebar-fixed">
 		
 		<!-- begin #sidebar -->
 		<div id="sidebar" class="sidebar">
@@ -97,146 +98,64 @@
 			<!-- begin page-header -->
 			<h1 class="page-header">Work List</h1>
 			<!-- end page-header -->
-
-			<div class="row">
-				<div class="col-xs-12">
-					<ul class="category-list">
-						<li><a href="web-regs.html"><b>Web Regs</b> (105)</a></li>
-						<li><a href="common-worklist-tasks.html"><b>Common Worklist Tasks</b> (5)</a></li>
-						<li class="active"><a href="cases.html"><b>My Cases</b> (5)</a></li>
-					</ul>
+			
+			<div class="newcase">
+				<div class="group-by">
+					<strong>Group by:</strong>
+					<select>
+						<option>Main Category</option>
+						<option>Option 2</option>
+						<option>Option 3</option>
+					</select>
 				</div>
+				<a href="#" class="btn">+ New Case</a>
 			</div>
 
 			<div class="row">
 				<div class="col-xs-12">
-					<div class="cases-filters">
-						<div class="line">
-							<div class="col time">
-								<div class="top">
-									<h6>Time Period</h6>
-								</div>
-								<select>
-									<option>Registration Date</option>
-									<option>Option 2</option>
-									<option>Option 3</option>
-								</select>
-								<input type="text" value="01/12/2017" class="datepicker">
-								<input type="text" value="01/12/2017" class="datepicker">
-							</div>
-							<div class="col appl">
-								<div class="top">
-									<h6>Tax Application</h6>
-								</div>
-								<select>
-									<option>TC</option>
-									<option>Option 2</option>
-									<option>Option 3</option>
-								</select>
-								<select>
-									<option>TY</option>
-									<option>Option 2</option>
-									<option>Option 3</option>
-								</select>
-								<select>
-									<option>TS</option>
-									<option>Option 2</option>
-									<option>Option 3</option>
-								</select>
-								<input type="button" value="Add" class="btn btn-add"><br>
-								<ul class="names">
-									<li><strong>Australia:</strong></li>
-									<li>Income, Super;  <a href="#" class="remove">&times;</a></li>
-									<li>2016, 2017; <a href="#" class="remove">&times;</a></li>
-								</ul>
-							</div>
-							<div class="col statuses">
-								<div class="top">
-									<h6>Statuses</h6>
-								</div>
-								<select>
-									<option>APPL</option>
-									<option>Option 2</option>
-									<option>Option 3</option>
-								</select>
-								<select>
-									<option>RTA</option>
-									<option>Option 2</option>
-									<option>Option 3</option>
-								</select>
-								<select class="w50">
-									<option>Stage</option>
-									<option>Option 2</option>
-									<option>Option 3</option>
-								</select>
-								<select class="w50">
-									<option>Sub-stage</option>
-									<option>Option 2</option>
-									<option>Option 3</option>
-								</select>
-							</div>
-							<div class="col residency">
-								<div class="top">
-									<h6>Residency</h6>
-								</div>
-								<div>
-									<select class="w50">
-										<option>Nationality</option>
-										<option>Option 2</option>
-										<option>Option 3</option>
-									</select>
-									<select class="w50">
-										<option>Visa Type</option>
-										<option>Option 2</option>
-										<option>Option 3</option>
-									</select>
-								</div>
-								<select>
-									<option>Visa Programme</option>
-									<option>Option 2</option>
-									<option>Option 3</option>
-								</select>
-							</div>
-							<div class="col sales">
-								<div class="top">
-									<h6>Marketing &amp; Sales</h6>
-								</div>
-								<div>
-									<select>
-										<option>Referral</option>
-										<option>Option 2</option>
-										<option>Option 3</option>
-									</select>
-									<select>
-										<option>Region</option>
-										<option>Option 2</option>
-										<option>Option 3</option>
-									</select>
-								</div>
-								<div>
-									<select>
-										<option>Sales Unit</option>
-										<option>Option 2</option>
-										<option>Option 3</option>
-									</select>
-									<select>
-										<option>ST Owner</option>
-										<option>Option 2</option>
-										<option>Option 3</option>
-									</select>
-								</div>
-							</div>
-							<div class="col refresh">
-								<input type="submit" value="Refresh / Search" class="btn btn-change">
-							</div>
-						</div>
-					</div>
+					<ul class="category-list">
+						<li class="active"><a href="web-regs.html"><b>Web Regs</b> (105)</a></li>
+						<li><a href="common-worklist-tasks.html"><b>Common Worklist Tasks</b> (5)</a></li>
+						<li><a href="cases.html"><b>My Cases</b> (5)</a></li>
+						<li><a href="#" class="all">All</a></li>
+						<li><a href="#" class="btn">+ Add Category</a></li>
+					</ul>
 				</div>
 			</div>
 
 			<!-- begin row -->
 			<div class="row">
 				<div class="col-xs-12">
+					<div class="caption">
+						<h2><a href="#">Web Regs Default <i class="material-icons">swap_vert</i></a></h2>
+						<p class="status-changed">
+							customized preset 
+							<a href="#"><i class="material-icons">done</i></a> 
+							<a href="#"><i class="material-icons">replay</i></a>
+						</p>
+					</div>
+					<div class="caption-expand">
+						<ul>
+							<li>
+								<a href="#" class="title">Web Regs Preset - 1</a>
+								<span class="options">
+									<a href="#">delete</a> | <a href="#">set as default</a>
+								</span>
+							</li>
+							<li>
+								<a href="#" class="title">Web Regs Preset - 2</a>
+								<span class="options">
+									<a href="#">delete</a> | <a href="#">set as default</a>
+								</span>
+							</li>
+							<li>
+								<a href="#" class="title">Web Regs Preset - 3</a>
+								<span class="options">
+									<a href="#">delete</a> | <a href="#">set as default</a>
+								</span>
+							</li>
+						</ul>
+					</div>
 					<div class="group-sort">
 						<div class="group-by">
 							<strong>Group by:</strong>
@@ -257,10 +176,110 @@
                             
                         </div></div>
 						<div class="filters">
-							<a href="#">2 filters <i class="material-icons">settings</i></a>
+							<a href="#">11 columns; 2 filters <i class="material-icons">settings</i></a>
 						</div>
 					</div>
 					<div class="group-sort-expand">
+						<div class="columns">
+							<table border="0" cellpadding="0" cellspacing="0" width="100%">
+								<tr>
+									<td class="title">
+										<strong>11 columns</strong>
+										<a href="#">Reset to default</a>
+									</td>
+									<td>
+										<div class="sort-list">
+											<ul class="sortable">	
+												<li>
+													Reg Type
+													<a href="#" class="close">&times;</a>
+												</li>
+												<li>
+													Web Reg Date
+													<a href="#" class="close">&times;</a>
+												</li>
+												<li>
+													TC
+													<a href="#" class="close">&times;</a>
+												</li>
+												<li>
+													TS
+													<a href="#" class="close">&times;</a>
+												</li>
+												<li>
+													Customer Name
+													<a href="#" class="close">&times;</a>
+												</li>
+												<li>
+													Phone Code
+													<a href="#" class="close">&times;</a>
+												</li>
+												<li>
+													Nationality
+													<a href="#" class="close">&times;</a>
+												</li>
+												<li>
+													App ID
+													<a href="#" class="close">&times;</a>
+												</li>
+												<li>
+													Status
+													<a href="#" class="close">&times;</a>
+												</li>
+												<li>
+													Assigned to
+													<a href="#" class="close">&times;</a>
+												</li>
+												<li>
+													Assigned by
+													<a href="#" class="close">&times;</a>
+												</li>
+											</ul>
+											<ul>
+												<li class="add">
+													<a href="#">+ Add Column</a>
+												</li>
+											</ul>
+										</div>
+										<div class="sort-add">
+											<form class="form-inline" action="/" method="POST">
+												<div class="form-group m-r-10">
+													<input type="text" class="form-control" placeholder="Client Names">
+												</div>
+												<div class="form-group m-r-10">
+													<select class="form-control">
+														<option>Last Name</option>
+														<option>Option 2</option>
+														<option>Option 3</option>
+													</select>
+												</div>
+												<div class="form-group m-r-10">
+													<select class="form-control">
+														<option>Separate by Comma</option>
+														<option>Option 2</option>
+														<option>Option 3</option>
+													</select>
+												</div>
+												<div class="form-group m-r-10">
+													<select class="form-control">
+														<option>First Name</option>
+														<option>Option 2</option>
+														<option>Option 3</option>
+													</select>
+												</div>
+												<ul class="m-r-30">
+													<li class="add">
+														<a href="#">+ Attach Another</a>
+													</li>
+												</ul>
+												<button type="submit" class="btn btn-apply m-r-30">Apply</button>
+												<a href="#" class="cancel">Cancel</button>
+											</form>
+										</div>
+									</td>
+								</tr>
+							</table>
+						</div>
 						<div class="filters">
 							<table border="0" cellpadding="0" cellspacing="0" width="100%">
 								<tr>
@@ -315,104 +334,100 @@
 							</table>
 						</div>
 					</div>
-					<div class="row">
-						<div class="col-xs-12">
-							<img src="assets/img/table.jpg" alt="placeholder">
-						</div>
-					</div>
 					<div class="table-caption webRegsActBtns">
 						<h3>Common Group</h3>
 						<div class="options">
 							<span class="selected"><span class="count">0</span> of <span class="all">0</span> records selected</span>
+							<button name="checkCase" class="btn btn-default rounded" onclick="openNav('case')">Check Case</button>
 							<button name="assignTo" class="btn btn-default rounded" onclick="openNav('assign')">Assign To</button>
 						</div>
 					</div>
                     <div class="row">
-						<div class="col-xs-12 table-responsive">
-						<table border="0" cellpadding="0" cellspacing="0" class="table data-table">
-							<thead>
-								<tr>
-									<th>Client Names</th>
-									<th>Appl. ID</th>
-									<th>TC</th>
-									<th>TS</th>
-									<th>TY</th>
-									<th>Phone Code</th>
-									<th>Lead Score</th>
-									<th>Stage</th>
-									<th>Sub Stage</th>
-									<th>Phone Succ.</th>
-									<th>Last Call</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td>John Doe</td>
-									<td>12345678</td>
-									<td>Ireland</td>
-									<td>PAYE</td>
-									<td>2014-2016</td>
-									<td>IE (+353)</td>
-									<td>Low</td>
-									<td>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</td>
-									<td>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</td>
-									<td>Yes (2/4)</td>
-									<td>08-JUN-2016</td>
-								</tr>
-								<tr>
-									<td>John Doe</td>
-									<td>12345678</td>
-									<td>Ireland</td>
-									<td>PAYE</td>
-									<td>2017</td>
-									<td>IE (+353)</td>
-									<td>Medium</td>
-									<td>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</td>
-									<td>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</td>
-									<td>Yes (2/4)</td>
-									<td>08-JUN-2016</td>
-								</tr>
-								<tr>
-									<td>Smith Johnson</td>
-									<td>12345678</td>
-									<td>Ireland</td>
-									<td>SA</td>
-									<td>2013-2014</td>
-									<td>NZ (+64)</td>
-									<td>High</td>
-									<td>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</td>
-									<td>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</td>
-									<td>VM (3/3)</td>
-									<td>08-JUN-2016</td>
-								</tr>
-								<tr>
-									<td>Rudiard Kippling</td>
-									<td>12345678</td>
-									<td>Ireland</td>
-									<td>PAYE</td>
-									<td>2017</td>
-									<td>FI (+358)</td>
-									<td>Medium</td>
-									<td>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</td>
-									<td>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</td>
-									<td>Yes (5/7)</td>
-									<td>08-JUN-2016</td>
-								</tr>
-								<tr>
-									<td>Earnest Hemingway</td>
-									<td>12345678</td>
-									<td>Ireland</td>
-									<td>PAYE</td>
-									<td>2013, 2015, 2017</td>
-									<td>BG (+359)</td>
-									<td>High</td>
-									<td>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</td>
-									<td>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</td>
-									<td>Yes (4/5)</td>
-									<td>08-JUN-2016</td>
-								</tr>
-							</tbody>
-						</table>
+                    <div class="col-xs-12 table-responsive">
+					<table border="0" cellpadding="0" cellspacing="0" class="table data-table">
+						<thead>
+							<tr>
+								<th>Reg Type</th>
+								<th>Web Reg Date</th>
+								<th>TC</th>
+								<th>TS</th>
+								<th>Customer Name</th>
+								<th>Phone Code</th>
+								<th>Nationality</th>
+								<th>App ID</th>
+								<th>Status</th>
+								<th>Assigned to</th>
+								<th>Assigned by</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Call Back</td>
+								<td>22/08 10:34</td>
+								<td>Ireland</td>
+								<td>PAYE</td>
+								<td>John R. Smith</td>
+								<td>Ireland (+353)</td>
+								<td>Ireland</td>
+								<td>12345678</td>
+								<td>Assigned (Processed)</td>
+								<td>ALB<br>Alina Sabadus</td>
+								<td>System</td>
+							</tr>
+							<tr>
+								<td>Auto Estimator</td>
+								<td>22/08 08:20</td>
+								<td>Ireland</td>
+								<td>PAYE</td>
+								<td>John R. Smith</td>
+								<td>Ireland (+353)</td>
+								<td>Ireland</td>
+								<td>-</td>
+								<td>Assigned (Not Processed)</td>
+								<td>EKGN<br>Elvira King</td>
+								<td>TL<br>Katalin Gergery</td>
+							</tr>
+							<tr>
+								<td>Download Tax Pack</td>
+								<td>22/08 12:35</td>
+								<td>Ireland</td>
+								<td>SA</td>
+								<td>Peter K. Freeman</td>
+								<td>New Zealand (+64)</td>
+								<td>Canada</td>
+								<td>-</td>
+								<td>Not assigned</td>
+								<td>MRDM<br>Mairead Morgan</td>
+								<td>System</td>
+							</tr>
+							<tr>
+								<td>Long Reg</td>
+								<td>22/08 15:35</td>
+								<td>Ireland</td>
+								<td>PAYE</td>
+								<td>Jason B. Redding</td>
+								<td>Finland (+358)</td>
+								<td>Poland</td>
+								<td>12345678</td>
+								<td>Binned</td>
+								<td>LBDN<br>Lorena Beldean</td>
+								<td>EKGN<br>Elvira King</td>
+							</tr>
+							<tr>
+								<td>Blog Subscription</td>
+								<td>22/08 16:55</td>
+								<td>Ireland</td>
+								<td>PAYE</td>
+								<td>Joe H. Clark</td>
+								<td>Bulgaria (+359)</td>
+								<td>Ireland</td>
+								<td>12345678</td>
+								<td>Assigned (Processed)</td>
+								<td>SNF<br>Shane Finn</td>
+								<td>System</td>
+							</tr>
+						</tbody>
+					</table>
                     </div></div>
 				</div>
 			</div>
@@ -437,7 +452,7 @@
                     </ul>
                     <div class="controls">
                         <button class="btn btn-primary">Add a Case</button>
-                        <button class="btn btn-default">Manual Check</button>
+                        <button class="btn btn-default" onclick="location.href='search.html'">Manual Check</button>
                     </div>
                 </div>
                 <div class="webregDetails">
@@ -507,11 +522,12 @@
                         </div>
                         <div class="col-sm-9 personDetails">
                             <div class="row">
-                                <div class="col-xs-12 name">
+                                <div class="col-xs-10 name">
                                     <span><strong>ALB</strong> (86)</span>
-									Alina Sabadus<br>
-                                    <button class="assignBtn" data-toggle="tooltip" data-placement="top" title="Assign">+</button>
-									<button class="transferBtn" data-toggle="tooltip" data-placement="top" title="Assign and transfer ownership"></button>
+                                    Alina Sabadus
+                                </div>
+                                <div class="col-xs-2">
+                                    <button class="assignBtn">+</button>
                                 </div>
                             </div>
                         </div>
@@ -525,11 +541,12 @@
                         </div>
                         <div class="col-sm-9 personDetails">
                             <div class="row">
-                                <div class="col-xs-12 name">
+                                <div class="col-xs-10 name">
                                     <span><strong>EKGN</strong></span>
-									Elvira King<br>
-                                    <button class="assignBtn" data-toggle="tooltip" data-placement="top" title="Assign">+</button>
-									<button class="transferBtn" data-toggle="tooltip" data-placement="top" title="Assign and transfer ownership"></button>
+                                    Elvira King
+                                </div>
+                                <div class="col-xs-2">
+                                    <button class="assignBtn">+</button>
                                 </div>
                             </div>
                         </div>
@@ -543,11 +560,12 @@
                         </div>
                         <div class="col-sm-9 personDetails">
                             <div class="row">
-                                <div class="col-xs-12 name">
+                                <div class="col-xs-10 name">
                                     <span><strong>MRDM</strong></span>
-									Mairead Morgan<br>
-                                    <button class="assignBtn" data-toggle="tooltip" data-placement="top" title="Assign">+</button>
-									<button class="transferBtn" data-toggle="tooltip" data-placement="top" title="Assign and transfer ownership"></button>
+                                    Mairead Morgan
+                                </div>
+                                <div class="col-xs-2">
+                                    <button class="assignBtn">+</button>
                                 </div>
                             </div>
                         </div>
@@ -561,11 +579,12 @@
                         </div>
                         <div class="col-sm-9 personDetails">
                             <div class="row">
-                                <div class="col-xs-12 name">
+                                <div class="col-xs-10 name">
                                     <span><strong>LBDN</strong></span>
-									Lorena Beldean<br>
-                                    <button class="assignBtn" data-toggle="tooltip" data-placement="top" title="Assign">+</button>
-									<button class="transferBtn" data-toggle="tooltip" data-placement="top" title="Assign and transfer ownership"></button>
+                                    Lorena Beldean
+                                </div>
+                                <div class="col-xs-2">
+                                    <button class="assignBtn">+</button>
                                 </div>
                             </div>
                         </div>
@@ -579,11 +598,12 @@
                         </div>
                         <div class="col-sm-9 personDetails">
                             <div class="row">
-                                <div class="col-xs-12 name">
+                                <div class="col-xs-10 name">
                                     <span><strong>SNF</strong></span>
-                                    Shane Finn<br>
-                                    <button class="assignBtn" data-toggle="tooltip" data-placement="top" title="Assign">+</button>
-									<button class="transferBtn" data-toggle="tooltip" data-placement="top" title="Assign and transfer ownership"></button>
+                                    Shane Finn
+                                </div>
+                                <div class="col-xs-2">
+                                    <button class="assignBtn">+</button>
                                 </div>
                             </div>
                         </div>

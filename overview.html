@@ -1,0 +1,3025 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+<!--<![endif]-->
+<head>
+	<meta charset="utf-8" />
+	<title>Overview | TB CRM</title>
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
+	<meta content="" name="description" />
+	<meta content="" name="author" />
+	
+	<!-- ================== BEGIN BASE CSS STYLE ================== -->
+	<link href="//fonts.googleapis.com/css?family=Roboto:300,400,700|Material+Icons" rel="stylesheet" />
+	<link href="assets/plugins/jquery-ui/themes/base/minified/jquery-ui.min.css" rel="stylesheet" />
+	<link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+	<link href="assets/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+	<link href="assets/css/template.css" rel="stylesheet" />
+	<link href="assets/css/template-responsive.css" rel="stylesheet" />
+	<link href="assets/css/custom.css" rel="stylesheet" />
+	<!-- ================== END BASE CSS STYLE ================== -->
+	
+	<!-- ================== BEGIN PAGE LEVEL STYLE ================== -->
+	<link href="assets/plugins/jquery-jvectormap/jquery-jvectormap-1.2.2.css" rel="stylesheet" />
+	<link href="assets/plugins/bootstrap-datepicker/css/datepicker.css" rel="stylesheet" />
+	<link href="assets/plugins/bootstrap-datepicker/css/datepicker3.css" rel="stylesheet" />
+	<link href="assets/plugins/DataTables/media/css/dataTables.bootstrap.min.css" rel="stylesheet" />
+	<link href="assets/plugins/DataTables/extensions/Select/css/select.bootstrap.min.css" rel="stylesheet" />
+	<link href="assets/plugins/DataTables/extensions/Responsive/css/responsive.bootstrap.min.css" rel="stylesheet" />
+	<link href="assets/css/jquery.mCustomScrollbar.css" rel="stylesheet" />
+	<link href="assets/plugins/jstree/dist/themes/default/style.min.css" rel="stylesheet" />
+	<!-- ================== END PAGE LEVEL STYLE ================== -->
+</head>
+<body>
+	
+	<!-- begin #page-container -->
+	<div id="page-container" class="fade page-sidebar-fixed in">
+		
+		<!-- begin #sidebar -->
+		<div id="sidebar" class="sidebar">
+			<!-- begin sidebar scrollbar -->
+			<div data-scrollbar="true" data-height="100%">
+				<!-- begin sidebar user -->
+				<ul class="nav">
+					<li class="nav-profile">
+						<div class="info">
+							<a href="#"><img src="assets/img/logo.png" alt="logo"></a>
+						</div>
+					</li>
+				</ul>
+				<!-- end sidebar user -->
+				<!-- begin sidebar nav -->
+				<ul class="nav nav-main">
+					<li>
+						<a href="#">
+						    <i class="material-icons">dashboard</i>
+						    <span>Dashboard</span>
+					    </a>
+					</li>
+					<li class="active">
+						<a href="#">
+							<i class="material-icons">check_circle</i>
+							<span>Customer List</span>
+						</a>
+					</li>
+					<li class="has-sub">
+						<a href="javascript:;">
+						    <b class="caret pull-right"></b>
+						    <i class="material-icons">assessment</i>
+						    <span>Reports</span> 
+						</a>
+						<ul class="sub-menu">
+							<li><a href="#">Submenu 1</a></li>
+							<li><a href="#">Submenu 2</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">
+						    <i class="material-icons">people</i>
+						    <span>Users</span>
+						</a>
+					</li>
+			        <!-- begin sidebar minify button -->
+					<li><a href="javascript:;" class="sidebar-minify-btn" data-click="sidebar-minify"><i class="fa fa-angle-double-left"></i></a></li>
+			        <!-- end sidebar minify button -->
+				</ul>
+				<!-- end sidebar nav -->
+			</div>
+			<!-- end sidebar scrollbar -->
+		</div>
+		<div class="sidebar-bg"></div>
+		<!-- end #sidebar -->
+		
+		<!-- begin #content -->
+		<div id="content" class="content split single-col">
+			<!-- remove class 'split' to hide sidebar -->
+			<div class="split-left">
+				<p><a href="#" class="close">&times;</a></p>
+				<br><br>
+				<div class="newcase">
+					<a href="#" class="btn">+ New Case</a>
+					<a href="#" class="btn btn-find"><i class="material-icons">search</i> Find Case</a>
+				</div>
+				<h2>Worklist</h2>
+				<div class="accordion">
+					<div class="item top">
+						<div class="item-title">
+							<a href="#">Web Regs (105)</a>
+						</div>
+						<div class="item-body">
+							<div class="item sub">
+								<div class="item-title">
+									<a href="#">Smith, John R. <span>(3)</span></a>
+								</div>
+								<div class="item-body">
+									<ul>
+										<li>
+											<a href="#">
+												<span class="left">
+													<strong>IE, PAYE 2016</strong>
+													+62 (Australia)
+												</span>
+												<span class="right">
+													active
+												</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<span class="left">
+													<strong>IE, PAYE 2015</strong>
+													+353 (Ireland)
+												</span>
+												<span class="right">
+													pre-a
+												</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<span class="left">
+													<strong>IE, SA 2015</strong>
+													+353 (Ireland)
+												</span>
+												<span class="right">
+													tb
+												</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="item sub">
+								<div class="item-title">
+									<a href="#">Redding, Jason B. <span>(2)</span></a>
+								</div>
+								<div class="item-body">
+									<ul>
+										<li>
+											<a href="#">
+												<span class="left">
+													<strong>IE, PAYE 2016</strong>
+													+62 (Australia)
+												</span>
+												<span class="right">
+													active
+												</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<span class="left">
+													<strong>IE, PAYE 2015</strong>
+													+353 (Ireland)
+												</span>
+												<span class="right">
+													pre-a
+												</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<span class="left">
+													<strong>IE, SA 2015</strong>
+													+353 (Ireland)
+												</span>
+												<span class="right">
+													tb
+												</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="item">
+						<div class="item-title">
+							<a href="#">Revertions (5)</a>
+						</div>
+						<div class="item-body">
+							<div class="item sub">
+								<div class="item-title">
+									<a href="#">Smith, John R. <span>(3)</span></a>
+								</div>
+								<div class="item-body">
+									<ul>
+										<li>
+											<a href="#">
+												<span class="left">
+													<strong>IE, PAYE 2016</strong>
+													+62 (Australia)
+												</span>
+												<span class="right">
+													active
+												</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<span class="left">
+													<strong>IE, PAYE 2015</strong>
+													+353 (Ireland)
+												</span>
+												<span class="right">
+													pre-a
+												</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<span class="left">
+													<strong>IE, SA 2015</strong>
+													+353 (Ireland)
+												</span>
+												<span class="right">
+													tb
+												</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="item sub">
+								<div class="item-title">
+									<a href="#">Redding, Jason B. <span>(2)</span></a>
+								</div>
+								<div class="item-body">
+									<ul>
+										<li>
+											<a href="#">
+												<span class="left">
+													<strong>IE, PAYE 2016</strong>
+													+62 (Australia)
+												</span>
+												<span class="right">
+													active
+												</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<span class="left">
+													<strong>IE, PAYE 2015</strong>
+													+353 (Ireland)
+												</span>
+												<span class="right">
+													pre-a
+												</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<span class="left">
+													<strong>IE, SA 2015</strong>
+													+353 (Ireland)
+												</span>
+												<span class="right">
+													tb
+												</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="item">
+						<div class="item-title">
+							<a href="#">Follow Up (5)</a>
+							<select>
+								<option>by Name</option>
+								<option>Option 2</option>
+								<option>Option 3</option>
+							</select>
+						</div>
+						<div class="item-body">
+							<div class="item sub">
+								<div class="item-title">
+									<a href="#">Smith, John R. <span>(3)</span></a>
+								</div>
+								<div class="item-body">
+									<ul>
+										<li>
+											<a href="#">
+												<span class="left">
+													<strong>IE, PAYE 2016</strong>
+													+62 (Australia)
+												</span>
+												<span class="right">
+													active
+												</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<span class="left">
+													<strong>IE, PAYE 2015</strong>
+													+353 (Ireland)
+												</span>
+												<span class="right">
+													pre-a
+												</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<span class="left">
+													<strong>IE, SA 2015</strong>
+													+353 (Ireland)
+												</span>
+												<span class="right">
+													tb
+												</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="item sub">
+								<div class="item-title">
+									<a href="#">Redding, Jason B. <span>(2)</span></a>
+								</div>
+								<div class="item-body">
+									<ul>
+										<li>
+											<a href="#">
+												<span class="left">
+													<strong>IE, PAYE 2016</strong>
+													+62 (Australia)
+												</span>
+												<span class="right">
+													active
+												</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<span class="left">
+													<strong>IE, PAYE 2015</strong>
+													+353 (Ireland)
+												</span>
+												<span class="right">
+													pre-a
+												</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<span class="left">
+													<strong>IE, SA 2015</strong>
+													+353 (Ireland)
+												</span>
+												<span class="right">
+													tb
+												</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="item">
+						<div class="item-title">
+							<a href="#">OTS Update (5)</a>
+						</div>
+						<div class="item-body">
+							<div class="item sub">
+								<div class="item-title">
+									<a href="#">Smith, John R. <span>(3)</span></a>
+								</div>
+								<div class="item-body">
+									<ul>
+										<li>
+											<a href="#">
+												<span class="left">
+													<strong>IE, PAYE 2016</strong>
+													+62 (Australia)
+												</span>
+												<span class="right">
+													active
+												</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<span class="left">
+													<strong>IE, PAYE 2015</strong>
+													+353 (Ireland)
+												</span>
+												<span class="right">
+													pre-a
+												</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<span class="left">
+													<strong>IE, SA 2015</strong>
+													+353 (Ireland)
+												</span>
+												<span class="right">
+													tb
+												</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="item sub">
+								<div class="item-title">
+									<a href="#">Redding, Jason B. <span>(2)</span></a>
+								</div>
+								<div class="item-body">
+									<ul>
+										<li>
+											<a href="#">
+												<span class="left">
+													<strong>IE, PAYE 2016</strong>
+													+62 (Australia)
+												</span>
+												<span class="right">
+													active
+												</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<span class="left">
+													<strong>IE, PAYE 2015</strong>
+													+353 (Ireland)
+												</span>
+												<span class="right">
+													pre-a
+												</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<span class="left">
+													<strong>IE, SA 2015</strong>
+													+353 (Ireland)
+												</span>
+												<span class="right">
+													tb
+												</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="item">
+						<div class="item-title">
+							<a href="#">Outstanding Fees (9)</a>
+						</div>
+						<div class="item-body">
+							<div class="item sub">
+								<div class="item-title">
+									<a href="#">Smith, John R. <span>(3)</span></a>
+								</div>
+								<div class="item-body">
+									<ul>
+										<li>
+											<a href="#">
+												<span class="left">
+													<strong>IE, PAYE 2016</strong>
+													+62 (Australia)
+												</span>
+												<span class="right">
+													active
+												</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<span class="left">
+													<strong>IE, PAYE 2015</strong>
+													+353 (Ireland)
+												</span>
+												<span class="right">
+													pre-a
+												</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<span class="left">
+													<strong>IE, SA 2015</strong>
+													+353 (Ireland)
+												</span>
+												<span class="right">
+													tb
+												</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="item sub">
+								<div class="item-title">
+									<a href="#">Redding, Jason B. <span>(2)</span></a>
+								</div>
+								<div class="item-body">
+									<ul>
+										<li>
+											<a href="#">
+												<span class="left">
+													<strong>IE, PAYE 2016</strong>
+													+62 (Australia)
+												</span>
+												<span class="right">
+													active
+												</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<span class="left">
+													<strong>IE, PAYE 2015</strong>
+													+353 (Ireland)
+												</span>
+												<span class="right">
+													pre-a
+												</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<span class="left">
+													<strong>IE, SA 2015</strong>
+													+353 (Ireland)
+												</span>
+												<span class="right">
+													tb
+												</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="item">
+						<div class="item-title">
+							<a href="#">Search Results (9)</a>
+						</div>
+						<div class="item-body">
+							<div class="item sub">
+								<div class="item-title">
+									<a href="#">Smith, John R. <span>(3)</span></a>
+								</div>
+								<div class="item-body">
+									<ul>
+										<li>
+											<a href="#">
+												<span class="left">
+													<strong>IE, PAYE 2016</strong>
+													+62 (Australia)
+												</span>
+												<span class="right">
+													active
+												</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<span class="left">
+													<strong>IE, PAYE 2015</strong>
+													+353 (Ireland)
+												</span>
+												<span class="right">
+													pre-a
+												</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<span class="left">
+													<strong>IE, SA 2015</strong>
+													+353 (Ireland)
+												</span>
+												<span class="right">
+													tb
+												</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="item sub">
+								<div class="item-title">
+									<a href="#">Redding, Jason B. <span>(2)</span></a>
+								</div>
+								<div class="item-body">
+									<ul>
+										<li>
+											<a href="#">
+												<span class="left">
+													<strong>IE, PAYE 2016</strong>
+													+62 (Australia)
+												</span>
+												<span class="right">
+													active
+												</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<span class="left">
+													<strong>IE, PAYE 2015</strong>
+													+353 (Ireland)
+												</span>
+												<span class="right">
+													pre-a
+												</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<span class="left">
+													<strong>IE, SA 2015</strong>
+													+353 (Ireland)
+												</span>
+												<span class="right">
+													tb
+												</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="split-right">
+			
+				<div class="top-applications">
+					<ul>
+						<li class="active"><a href="#">Overview</a></li>
+						<li><a href="#">OZ'16 Income</a></li>
+						<li><a href="#">OZ'15 Income</a></li>
+						<li><a href="#">OZ Super</a></li>
+						<li class="add"><a href="#"  data-toggle="modal" data-target="#addApplication">+ Add Application</a></li>
+					</ul>
+				</div>
+				
+				<div class="newcase">
+					<a href="#" class="btn-options"><i class="material-icons">settings</i></a>
+				</div>
+
+				<!-- begin row -->
+				<div class="row">
+					<div class="col-xs-12 customer-details">
+						<div class="caption">
+							<div class="tabs">
+								<a href="overview.html" class="tab1 active">Customer Details</a>
+								<a href="#" class="tab2">Additional Details</a>
+								<a href="documents.html" class="tab3">Documents</a>
+							</div>
+							<p class="status">
+								<a href="#" class="btn btn-primary">Save Changes</a> 
+								<a href="#" class="btn btn-secondary">Discard Changes</a>
+								<a href="#" class="btn btn-secondary" data-toggle="modal" data-target="#changeLog">Change Log</a>
+							</p>
+						</div>
+						<div class="caption-expand active">
+							<div class="tabs-body">
+								<div class="tab tab1 active">
+									<div class="customer-details-cols">
+										<div class="col naming">
+											<p class="title">
+												<span class="editable select name-title">Mr</span>
+												<select class="editable-select">
+													<option selected="selected">Mr</option>
+													<option>Mrs</option>
+													<option>Ms</option>
+												</select>
+											</p>
+											<p class="fullname">
+												<span class="editable text name">Johnathan</span>
+												<input type="text" class="editable-text name">
+												<span class="editable text name">Radisson</span>
+												<input type="text" class="editable-text name">
+												<span class="editable text name">Smith</span>
+												<input type="text" class="editable-text name">
+												<!-- <textarea class="editable-textarea name"></textarea> -->
+											</p>
+											<p class="date">07 Sept 2016, 16:32 GMT</p>
+											<a class="application-type-toggle individual">
+												<span class="individual"><i class="material-icons">import_export</i>Individual</span>
+												<span class="corporate"><i class="material-icons">import_export</i>Corporate</span>
+											</a>
+											<ul class="contact-type">
+												<li class="allowed"><a href="#" class="call"><i class="material-icons">phone_android</i></a></li> 
+												<li class="allowed"><a href="#" class="message"><i class="material-icons">sms</i></a></li> 
+												<li class="allowed"><a href="#" class="email"><i class="material-icons">email</i></a></li> 
+											</ul>
+										</div>
+										<div class="col personal">
+											<p>Nationality: 
+												<span class="editable select name-title">Ireland</span>
+												<select class="editable-select">
+													<option selected="selected">Ireland</option>
+													<option>Option 1</option>
+													<option>OPtion 2</option>
+												</select>
+											</p>
+											<p>DOB: <span class="editable text date">01/06/1983</span>
+											<input type="text" class="editable-text date datepicker"></p>
+											<p>CID: <span class="editable text">6254589763</span>
+												<input type="text" class="editable-text"></p>
+											<p>Passport: <span class="editable text">2354865476</span>
+												<input type="text" class="editable-text"></p>
+											<p>
+												Tax Numbers: 
+												<span class="editable text">2</span>
+												<input type="text" class="editable-text"> 
+												<a href="#" data-toggle="modal" data-target="#tax-numbers"><i class="material-icons">tab</i></a>
+											</p>
+											<p>
+												TO Registrations: 
+												<span class="editable text">2</span>
+												<input type="text" class="editable-text">
+												<a href="#" data-toggle="modal" data-target="#tax-office-registrations"><i class="material-icons">tab</i></a>
+											</p>
+											<p>Language: <span class="editable text">English</span>
+												<input type="text" class="editable-text"> </p>
+											<p>Marital Status: <span class="editable text">Married</span>
+												<input type="text" class="editable-text"> </p>
+											<p>
+												Dependants: 
+												<span class="editable text">2</span>
+												<input type="text" class="editable-text">  
+												<a href="#" data-toggle="modal" data-target="#dependants"><i class="material-icons">tab</i></a>
+											</p>
+										</div>
+										<div class="col contact contact1 customscroll">
+											<div class="title">
+												<a href="#" class="showall">Phones</a>
+												<a href="#" class="addnew" data-toggle="modal" data-target="#addNewPhones">+ add new</a>
+											</div>
+											<div class="list collapsed">
+												<div class="list-item main">
+													<div class="left">
+														<div class="toggler active"><span></span></div>
+														<span class="countrycode editable select">+62</span>
+														<select class="editable-select">
+															<option selected="selected">+62</option>
+															<option>+359</option>
+															<option>+1</option>
+														</select> 
+														<span class="editable text">365 489 7542</span>
+														<input type="text" class="editable-text">  
+													</div>
+													<div class="right">
+														<ul class="options">
+															<li class="main"><a href="#"><i class="material-icons">star</i></a></li>
+															<li><a href="#"><i class="material-icons">phone_android</i></a></li>
+															<li ><a href="#"><i class="material-icons">sms</i></a></li>
+															<li class="forbidden"><a href="#"><i class="material-icons">people</i></a></li>
+															<li class="forbidden"><a href="#"><i class="material-icons">home</i></a></li>
+														</ul>
+													</div>
+												</div>
+												<div class="list-item">
+													<div class="left">
+														<div class="toggler active"><span></span></div>
+														<span class="countrycode editable select">+62</span>
+														<select class="editable-select">
+															<option selected="selected">+62</option>
+															<option>+359</option>
+															<option>+1</option>
+														</select>  
+														<span class="editable text">365 489 7542</span>
+														<input type="text" class="editable-text">
+													</div>
+													<div class="right">
+														<ul class="options">
+															<li class="main"><a href="#"><i class="material-icons">star</i></a></li>
+															<li><a href="#"><i class="material-icons">phone_android</i></a></li>
+															<li><a href="#"><i class="material-icons">sms</i></a></li>
+															<li class="forbidden"><a href="#"><i class="material-icons">people</i></a></li>
+															<li class="forbidden"><a href="#"><i class="material-icons">home</i></a></li>
+														</ul>
+													</div>
+												</div>
+												<div class="list-item">
+													<div class="left">
+														<div class="toggler active"><span></span></div>
+														<span class="countrycode editable select">+62</span>
+														<select class="editable-select">
+															<option selected="selected">+62</option>
+															<option>+359</option>
+															<option>+1</option>
+														</select>  
+														<span class="editable text">365 489 7542</span>
+														<input type="text" class="editable-text">
+													</div>
+													<div class="right">
+														<ul class="options">
+															<li class="main"><a href="#"><i class="material-icons">star</i></a></li>
+															<li class="forbidden"><a href="#"><i class="material-icons">phone_android</i></a></li>
+															<li class="forbidden"><a href="#"><i class="material-icons">sms</i></a></li>
+															<li><a href="#"><i class="material-icons">people</i></a></li>
+															<li><a href="#"><i class="material-icons">home</i></a></li>
+														</ul>
+													</div>
+												</div>
+												<div class="list-item">
+													<div class="left">
+														<div class="toggler active"><span></span></div>
+														<span class="countrycode editable select">+62</span>
+														<select class="editable-select">
+															<option selected="selected">+62</option>
+															<option>+359</option>
+															<option>+1</option>
+														</select>  
+														<span class="editable text">365 489 7542</span>
+														<input type="text" class="editable-text">
+													</div>
+													<div class="right">
+														<ul class="options">
+															<li class="main"><a href="#"><i class="material-icons">star</i></a></li>
+															<li><a href="#"><i class="material-icons">phone_android</i></a></li>
+															<li><a href="#"><i class="material-icons">sms</i></a></li>
+															<li><a href="#"><i class="material-icons">people</i></a></li>
+															<li><a href="#"><i class="material-icons">home</i></a></li>
+														</ul>
+													</div>
+												</div>
+											</div>
+											<div class="title">
+												<a href="#" class="showall">Emails</a>
+												<a href="#" class="addnew" data-toggle="modal" data-target="#addNewEmails">+ add new</a>
+											</div>
+											<div class="list collapsed">
+												<div class="list-item main">
+													<div class="left">
+														<div class="toggler active"><span></span></div>
+														<span class="editable text">john.smith_1992@hotmail.com</span>
+														<input type="text" class="editable-text">
+													</div>
+													<div class="right">
+														<ul class="options">
+															<li class="main"><a href="#"><i class="material-icons">star</i></a></li>
+															<li><a href="#"><i class="material-icons">email</i></a></li>
+														</ul>
+													</div>
+												</div>
+												<div class="list-item">
+													<div class="left">
+														<div class="toggler active"><span></span></div>
+														<span class="editable text">john.smith_1992@hotmail.com</span>
+														<input type="text" class="editable-text">
+													</div>
+													<div class="right">
+														<ul class="options">
+															<li class="main"><a href="#"><i class="material-icons">star</i></a></li>
+															<li><a href="#"><i class="material-icons">email</i></a></li>
+														</ul>
+													</div>
+												</div>
+												<div class="list-item">
+													<div class="left">
+														<div class="toggler active"><span></span></div>
+														<span class="editable text">john.smith_1992@hotmail.com</span>
+														<input type="text" class="editable-text">
+													</div>
+													<div class="right">
+														<ul class="options">
+															<li class="main"><a href="#"><i class="material-icons">star</i></a></li>
+															<li><a href="#"><i class="material-icons">email</i></a></li>
+														</ul>
+													</div>
+												</div>
+												<div class="list-item">
+													<div class="left">
+														<div class="toggler active"><span></span></div>
+														<span class="editable text">john.smith_1992@hotmail.com</span>
+														<input type="text" class="editable-text">
+													</div>
+													<div class="right">
+														<ul class="options">
+															<li class="main"><a href="#"><i class="material-icons">star</i></a></li>
+															<li><a href="#"><i class="material-icons">email</i></a></li>
+														</ul>
+													</div>
+												</div>
+												<div class="list-item">
+													<div class="left">
+														<div class="toggler active"><span></span></div>
+														<span class="editable text">john.smith_1992@hotmail.com</span>
+														<input type="text" class="editable-text">
+													</div>
+													<div class="right">
+														<ul class="options">
+															<li class="main"><a href="#"><i class="material-icons">star</i></a></li>
+															<li><a href="#"><i class="material-icons">email</i></a></li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col contact contact2 customscroll">
+											<div class="title">
+												<a href="#" class="showall">Address</a>
+												<a href="#" class="addnew" data-toggle="modal" data-target="#addNewAddress">+ add new</a>
+											</div>
+											<div class="list collapsed">
+												<div class="list-item">
+													<input type="radio" name="optionsRadios" value="option1" checked="checked">
+													<strong>Australia</strong><br>
+													<span class="editable textarea">Tram Stop, 125 Normanby Str, Melbourne, RT4 56W</span>
+													<textarea class="editable-textarea"></textarea>
+												</div>
+												<div class="list-item">
+													<input type="radio" name="optionsRadios" value="option2">
+													<strong>Ireland</strong><br>
+													<span class="editable textarea">125 Str. Green Park, Kilkenny, RT4 56W, Carlow</span>
+													<textarea class="editable-textarea"></textarea>
+												</div>
+												<div class="list-item">
+													<input type="radio" name="optionsRadios" value="option3">
+													<strong>UK</strong><br>
+													<span class="editable textarea">Tram Stop, 125 Normanby Str, Melbourne, RT4 56W</span>
+													<textarea class="editable-textarea"></textarea>
+												</div>
+												<div class="list-item">
+													<input type="radio" name="optionsRadios" value="option4">
+													<strong>US</strong><br>
+													<span class="editable textarea">125 Str. Green Park, Kilkenny, RT4 56W, Carlow</span>
+													<textarea class="editable-textarea"></textarea>
+												</div>
+											</div>
+										</div>
+										<div class="col options customscroll">
+											<div class="title">
+												<a href="#" class="showall">Restrictions</a>
+											</div>
+											<div class="list collapsed">
+												<div class="list-item">
+													<div class="toggler active"><span></span></div> <span><strong>Contact Allowed</strong></span>
+												</div>
+												<div class="list-item">
+													<div class="toggler active"><span></span></div> <span>SMS</span>
+												</div>
+												<div class="list-item">
+													<div class="toggler active"><span></span></div> <span>OTS email</span>
+												</div>
+												<div class="list-item">
+													<div class="toggler red"><span></span></div> <span>AUTO email</span>
+												</div>
+												<div class="list-item">
+													<div class="toggler yellow"><span></span></div> <span>Mass Mail</span>
+												</div>
+												<div class="list-item">
+													<div class="toggler yellow"><span></span></div> <span>LNG Problem</span>
+												</div>
+												<div class="list-item">
+													OTS email:
+													<span class="editable select name-title">Every 7 days</span>
+													<select class="editable-select">
+														<option selected="selected">Every 7 days</option>
+														<option>Every 14 days</option>
+														<option>Every 20 days</option>
+													</select>
+												</div>
+												<div class="list-item">
+													Secret Q/A: <strong>Yes</strong>
+													<a href="#" data-toggle="modal" data-target="#secretQuestion"><i class="material-icons">tab</i></a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="tab tab2">
+									<div class="customer-details-cols">
+										<div class="col doclist customscroll">
+											<div class="title">
+												<select>
+													<option>All Tax Countries</option>
+													<option>Option 2</option>
+													<option>Option 3</option>
+												</select>
+												<select>
+													<option>All Tax Services</option>
+													<option>Option 2</option>
+													<option>Option 3</option>
+												</select>
+												<select>
+													<option>All Years</option>
+													<option>Option 2</option>
+													<option>Option 3</option>
+												</select>
+											</div>
+											<div class="list">
+												<div class="list-item">
+													<i class="material-icons">insert_drive_file</i>
+													<strong>scanned and packed docs-1.pdf</strong><br>
+													<b>OZ, Income'16:</b> PoA; RQ. F PsP
+												</div>
+												<div class="list-item">
+													<i class="material-icons">insert_drive_file</i>
+													<strong>John Smith packed documents-2.pdf</strong><br>
+													<b>OZ, Income'16:</b> PoA; RQ. F PsP, Right Singature, Copy ID, Form 34567, Form 12
+												</div>
+												<div class="list-item">
+													<i class="material-icons">insert_drive_file</i>
+													<strong>John Smith packed documents-2.pdf</strong><br>
+													<b>OZ, Income'16:</b> PoA; RQ. F PsP, Right Singature, Copy ID, Form 34567, Form 12
+												</div>
+												<div class="list-item">
+													<i class="material-icons">insert_drive_file</i>
+													<strong>John Smith packed documents-2.pdf</strong><br>
+													<b>OZ, Income'16:</b> PoA; RQ. F PsP, Right Singature, Copy ID, Form 34567, Form 12
+												</div>
+												<div class="list-item">
+													<i class="material-icons">insert_drive_file</i>
+													<strong>John Smith packed documents-2.pdf</strong><br>
+													<b>OZ, Income'16:</b> PoA; RQ. F PsP, Right Singature, Copy ID, Form 34567, Form 12
+												</div>
+											</div>
+										</div>
+										<div class="col docdetails customscroll">
+											<div class="title">
+												<strong>John Smith packed documents-2.pdf</strong>
+												<ul>
+													<li><a href="#" class="preview"><i class="material-icons">search</i></a></li>
+													<li><a href="#"><i class="material-icons">print</i></a></li>
+													<li><a href="#"><i class="material-icons">cloud_download</i></a></li>
+													<li><a href="#"><i class="material-icons">email</i></a></li>
+													<li><a href="#"><i class="material-icons">delete</i></a></li>
+												</ul>
+											</div>
+											<div class="col">
+												<p>Application: <span class="editable text">OZ'16 Income</span>
+													<input type="text" class="editable-text"></p>
+												<p>Receive date: <span class="editable text date">12/12/2017</span>
+													<input type="text" class="editable-text date datepicker"></p>
+												<p>
+													Uploader:
+													<span class="editable text">Preslava Dushkova</span>
+													<input type="text" class="editable-text">
+												</p>
+												<p>Doc type: <span class="editable text">Pack</span>
+													<input type="text" class="editable-text"> </p>
+												<p>
+													File format: 
+													<span class="editable text">PDF</span>
+													<input type="text" class="editable-text"> 
+												</p>
+												<p>
+													DT member: 
+													<span class="editable text">Preslava Dushkova</span>
+													<input type="text" class="editable-text"> 
+												</p>
+											</div>
+											<div class="col">
+												<p>Correction since (PRSD): <span class="editable text date">12/12/2017</span>
+												<input type="text" class="editable-text date datepicker"></p>
+												<p>Exp. date (PRSD): <span class="editable text date">12/12/2017</span>
+													<input type="text" class="editable-text date datepicker"> </p>
+												</p>
+												<p>Comment (PRSD): <span class="editable textarea">Called OZ number - Dialer VM; Called IE Number - Success; Sent Preactive Mail to john.smith@yahoo.com - Success; Sent Preactive SMS to OZ Number - Success;</span>
+													<textarea class="editable-textarea"></textarea></p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- begin row -->
+				<div class="row">
+					<div class="col-xs-12">
+						<div class="contact-box">
+							<div class="contact-comments">
+								<div class="user">PRSD</div>
+								<div class="meta">
+									<date>12/12/2017, 12:05</date>
+									<strong>Commencing contact</strong>
+								</div>
+								<div class="apps">
+									Applications:<br>
+									<div class="checkbox-dropdown">
+										<a href="#" class="drop">Please select</a>
+										<p class="chosen">
+										</p>
+										<div class="list">
+											<ul>
+												<li>
+													<label><input type="checkbox" value="type1"> <span>OZ'16 Income</span></label>
+												</li>
+												<li>
+													<label><input type="checkbox" value="type2"> <span>OZ'15 Income</span></label>
+												</li>
+												<li>
+													<label><input type="checkbox" value="type3"> <span>OZ Super</span></label>
+												</li>
+												<li>
+													<button class="btn btn-info">Done</button>
+												</li>
+											</ul>
+										</div>
+									</div>
+									
+								</div>
+								<div class="comment">
+									<p>System will auto-generate comments in this field but you can modify those to your liking ...</p>
+									<a href="#" class="add" data-toggle="collapse" data-target="#tpl-list__comments">+</a>									
+									<a href="#" class="save"><i class="material-icons">save</i></a> 
+									<div class="save-field">
+										<input type="text" placeholder="comment name...">
+										<a href="#" class="save"><i class="material-icons">save</i></a>
+									</div> 								
+									
+									<div id="tpl-list__comments" class="tpl-list collapse">
+										<div class="accordion">
+											<div class="item top">
+												<div class="item-title">
+													<a href="#">My Comments (25)</a>
+												</div>
+												<div class="item-body">
+													<div class="item sub">
+														<div class="item-title">
+															<span>Comment template going here; these should not be too long as normally the CSRs  leave abbreviated snippets of information</span>
+														</div>
+														<div class="item-title">
+															<span>Comment template going here; these should not be too long as normally the CSRs  leave abbreviated snippets of information</span>
+														</div>
+													</div>
+													<div class="item sub">
+														<div class="item-title">
+															<span>Comment template going here; these should not be too long as normally the CSRs  leave abbreviated snippets of information</span>
+														</div>
+														<div class="item-title">
+															<span>Comment template going here; these should not be too long as normally the CSRs  leave abbreviated snippets of information</span>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="item">
+												<div class="item-title">
+													<a href="#">ST Comment Presetss (105)</a>
+												</div>
+												<div class="item-body">
+													<div class="item sub">
+														<div class="item-title">
+															<span>Comment template going here; these should not be too long as normally the CSRs  leave abbreviated snippets of information</span>
+														</div>
+														<div class="item-title">
+															<span>Comment template going here; these should not be too long as normally the CSRs  leave abbreviated snippets of information</span>
+														</div>
+													</div>
+													<div class="item sub">
+														<div class="item-title">
+															<span>Comment template going here; these should not be too long as normally the CSRs  leave abbreviated snippets of information</span>
+														</div>
+														<div class="item-title">
+															<span>Comment template going here; these should not be too long as normally the CSRs  leave abbreviated snippets of information</span>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="item">
+												<div class="item-title">
+													<a href="#">My Comments (105)</a>
+												</div>
+												<div class="item-body">
+													<div class="item sub">
+														<div class="item-title">
+															<span>Comment template going here; these should not be too long as normally the CSRs  leave abbreviated snippets of information</span>
+														</div>
+														<div class="item-title">
+															<span>Comment template going here; these should not be too long as normally the CSRs  leave abbreviated snippets of information</span>
+														</div>
+													</div>
+													<div class="item sub">
+														<div class="item-title">
+															<span>Comment template going here; these should not be too long as normally the CSRs  leave abbreviated snippets of information</span>
+														</div>
+														<div class="item-title">
+															<span>Comment template going here; these should not be too long as normally the CSRs  leave abbreviated snippets of information</span>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										
+									</div>
+								</div>
+							</div>
+							<div class="contact-template">
+								<div class="toolbar">
+									<p class="name" data-toggle="collapse" data-target="#tpl-list__emails">
+										Script: 
+										<span>Pre-active Script 003</span>
+									</p>
+									<p class="country">
+										<select>
+											<option>IE</option>
+											<option>O1</option>
+											<option>O2</option>
+											<option>O3</option>
+										</select>
+									</p>
+									<p class="lang">
+										<select>
+											<option>English (GB)</option>
+											<option>Option 1</option>
+											<option>Option 2</option>
+											<option>Option 3</option>
+										</select>
+									</p>
+									<div class="buttons">
+										<a href="#" class="save"><i class="material-icons">save</i></a> 
+										<div class="save-field">
+											<input type="text" placeholder="template name...">
+											<a href="#" class="save"><i class="material-icons">save</i></a>
+										</div> 
+										<a href="#" class="exit"><i class="material-icons">close</i></a>
+									</div>
+								</div>
+								<div id="tpl-list__emails" class="tpl-list collapse">
+									<div class="accordion">
+										<div class="item top">
+											<div class="item-title">
+												<a href="#">My Comments (25)</a>
+											</div>
+											<div class="item-body">
+												<div class="item sub">
+													<div class="item-title">
+														<span>Comment template going here; these should not be too long as normally the CSRs  leave abbreviated snippets of information</span>
+													</div>
+													<div class="item-title">
+														<span>Comment template going here; these should not be too long as normally the CSRs  leave abbreviated snippets of information</span>
+													</div>
+												</div>
+												<div class="item sub">
+													<div class="item-title">
+														<span>Comment template going here; these should not be too long as normally the CSRs  leave abbreviated snippets of information</span>
+													</div>
+													<div class="item-title">
+														<span>Comment template going here; these should not be too long as normally the CSRs  leave abbreviated snippets of information</span>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="item">
+											<div class="item-title">
+												<a href="#">ST Comment Presetss (105)</a>
+											</div>
+											<div class="item-body">
+												<div class="item sub">
+													<div class="item-title">
+														<span>Comment template going here; these should not be too long as normally the CSRs  leave abbreviated snippets of information</span>
+													</div>
+													<div class="item-title">
+														<span>Comment template going here; these should not be too long as normally the CSRs  leave abbreviated snippets of information</span>
+													</div>
+												</div>
+												<div class="item sub">
+													<div class="item-title">
+														<span>Comment template going here; these should not be too long as normally the CSRs  leave abbreviated snippets of information</span>
+													</div>
+													<div class="item-title">
+														<span>Comment template going here; these should not be too long as normally the CSRs  leave abbreviated snippets of information</span>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="item">
+											<div class="item-title">
+												<a href="#">My Comments (105)</a>
+											</div>
+											<div class="item-body">
+												<div class="item sub">
+													<div class="item-title">
+														<span>Comment template going here; these should not be too long as normally the CSRs  leave abbreviated snippets of information</span>
+													</div>
+													<div class="item-title">
+														<span>Comment template going here; these should not be too long as normally the CSRs  leave abbreviated snippets of information</span>
+													</div>
+												</div>
+												<div class="item sub">
+													<div class="item-title">
+														<span>Comment template going here; these should not be too long as normally the CSRs  leave abbreviated snippets of information</span>
+													</div>
+													<div class="item-title">
+														<span>Comment template going here; these should not be too long as normally the CSRs  leave abbreviated snippets of information</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									
+								</div>
+								<div class="text customscroll">
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+									<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+									<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+								</div>
+							</div>
+							<!-- call stage 1 -->
+							<div class="contact-active contact-call contact-call-1">
+								<div class="icon">
+									<i class="material-icons">wifi</i>
+								</div>
+								<div class="type">
+									Phone:<br>
+									<select>
+										<option>+62 365 489 7542</option>
+									</select>
+								</div><div class="status icons">
+									<a href="#" class="btn end send">Call</a>
+								</div>
+							</div>
+							<!-- call stage 2 -->
+							<div class="contact-active contact-call contact-call-2">
+								<div class="icon">
+									<i class="material-icons">wifi</i>
+								</div>
+								<div class="type">
+									Phone:<br>
+									<select>
+										<option>+62 365 489 7542</option>
+									</select>
+								</div>
+								<div class="result">
+									Result:<br>
+									<select class="selectContactResult call">
+										<option value="none">Please select</option>
+										<option value="success">Success</option>
+										<option value="dialerVm">Dialer VM</option>
+									</select>
+								</div>
+								<div class="status">
+									<div class="contact-inprogress">... call in progress</div>
+									<div class="contact-actions">
+										<ul class="contact-type">
+											<li><a href="#" class="call"><i class="material-icons">phone_android</i></a></li> 
+											<li><a href="#" class="message"><i class="material-icons">sms</i></a></li> 
+											<li><a href="#" class="email"><i class="material-icons">email</i></a></li> 
+										</ul>
+										OR 
+										<a href="#" class="btn end contact">End Contact</a>
+									</div>
+								</div>
+							</div>
+							<!-- sms stage 1 -->
+							<div class="contact-active contact-sms contact-sms-1">
+								<div class="icon">
+									<i class="material-icons">sms</i>
+								</div>
+								<div class="type">
+									To:<br>
+									<select>
+										<option>+62 356 489 7542</option>
+									</select>
+								</div>
+								<div class="status icons">
+									<a href="#" class="btn end send">Send</a>
+								</div>
+							</div>
+							<!-- sms stage 2 -->
+							<div class="contact-active contact-sms contact-sms-2">
+								<div class="icon">
+									<i class="material-icons">sms</i>
+								</div>
+								<div class="type">
+									To:<br>
+									<select>
+										<option>+62 356 489 7542</option>
+									</select>
+								</div>
+								<div class="result">
+									Result:<br>
+									<select class="selectContactResult sms">
+										<option value="none">Please select</option>
+										<option value="success">Success</option>
+										<option value="dialerVm">Dialer VM</option>
+									</select>
+								</div>
+								<div class="status">
+									<div class="contact-inprogress">... sending sms</div>
+									<div class="contact-actions">
+										<ul class="contact-type">
+											<li><a href="#" class="call"><i class="material-icons">phone_android</i></a></li> 
+											<li><a href="#" class="message"><i class="material-icons">sms</i></a></li> 
+											<li><a href="#" class="email"><i class="material-icons">email</i></a></li> 
+										</ul>
+										OR 
+										<a href="#" class="btn end contact">End Contact</a>
+									</div>
+								</div>
+							</div>
+							<!-- mail stage 1 -->
+							<div class="contact-active contact-mail contact-mail-1">
+								<div class="icon">
+									<i class="material-icons">mail</i>
+								</div>
+								<div class="type">
+									To:<br>
+									<select>
+										<option>john.smith@yahoo.com</option>
+									</select>
+								</div>
+								<div class="status icons">
+									<a href="#" class="btn end send">Send</a>
+								</div>
+							</div>
+							<!-- mail stage 2 -->
+							<div class="contact-active contact-mail contact-mail-2">
+								<div class="icon">
+									<i class="material-icons">mail</i>
+								</div>
+								<div class="type">
+									To:<br>
+									<select>
+										<option>john.smith@yahoo.com</option>
+									</select>
+								</div>
+								<div class="result">
+									Result:<br>
+									<select class="selectContactResult mail">
+										<option value="none">Please select</option>
+										<option value="success">Success</option>
+										<option value="dialerVm">Dialer VM</option>
+									</select>
+								</div>
+								<div class="status icons">
+									<ul class="contact-type">
+										<li><a href="#" class="call"><i class="material-icons">phone_android</i></a></li> 
+										<li><a href="#" class="message"><i class="material-icons">sms</i></a></li> 
+										<li><a href="#" class="email"><i class="material-icons">email</i></a></li> 
+									</ul>
+									OR 
+									<a href="#" class="btn end contact">End Contact</a>
+								</div>
+							</div>
+							<!-- call results -->
+							<div class="contact-history contact-call">
+								<div class="icon">
+									<i class="material-icons">wifi</i>
+								</div>
+								<div class="type">
+									Phone: <span>+62 365 489 7542</span>
+								</div>
+								<div class="result">
+									Script: <span>Pre-active Script 003</span>
+								</div>
+								<div class="status">
+									Result: <span>Dialer VM</span>
+								</div>
+							</div>
+							<!-- sms results -->
+							<div class="contact-history contact-sms">
+								<div class="icon">
+									<i class="material-icons">sms</i>
+								</div>
+								<div class="type">
+									Phone: <span>+62 365 489 7542</span>
+								</div>
+								<div class="result">
+									Script: <span>Pre-active Script 003</span>
+								</div>
+								<div class="status">
+									Result: <span>Dialer VM</span>
+								</div>
+							</div>
+							<!-- mail results -->
+							<div class="contact-history contact-mail">
+								<div class="icon">
+									<i class="material-icons">mail</i>
+								</div>
+								<div class="type">
+									To: <span>john.smith@yahoo.com</span>
+								</div>
+								<div class="result">
+									Script: <span>Pre-active Script 003</span>
+								</div>
+								<div class="status">
+									Result: <span class="success">Success</span>
+								</div>
+							</div>
+							<!-- contact end -->
+							<div class="contact-conclusion">
+								<div class="line">
+									<div class="col docs">
+										<div class="top">
+											<h6>Docs</h6>
+										</div>
+										<input type="text" value="01/12/2017" class="datepicker2">
+									</div>
+									<div class="col score">
+										<div class="top">
+											<h6>Lead score</h6>
+										</div>
+										<select>
+											<option>Low</option>
+											<option>Option 2</option>
+											<option>Option 3</option>
+										</select>
+									</div>
+									<div class="col reminder">
+										<div class="top">
+											<h6>Reminder</h6>
+											<ul class="level">
+												<li><a href="#" class="low"><i class="material-icons">notifications</i></a></li>
+												<li><a href="#" class="medium"><i class="material-icons">notifications</i></a></li>
+												<li><a href="#" class="high"><i class="material-icons">notifications</i></a></li>
+											</ul>
+										</div>
+										<select>
+											<option>7 Days</option>
+											<option>Option 2</option>
+											<option>Option 3</option>
+										</select>
+										<input type="text" value="01/12/2017" class="datepicker2">
+										<input type="text" value="12:00" class="timepicker">
+									</div>
+									<div class="col followup">
+										<div class="top">
+											<h6>Follow up:</h6>
+											<ul class="names">
+												<li>(DT) Preslava Dushkova <a href="#" class="remove">&times;</a></li>
+												<li>(ST) Preslava Dushkova <a href="#" class="remove">&times;</a></li>
+											</ul>
+										</div>
+										<select class="team">
+											<option>Team</option>
+											<option>Option 2</option>
+											<option>Option 3</option>
+										</select>
+										<select class="team">
+											<option>TC</option>
+											<option>Option 2</option>
+											<option>Option 3</option>
+										</select>
+										<select class="empl">
+											<option>Select Employee</option>
+											<option>Option 2</option>
+											<option>Option 3</option>
+										</select>
+										<input type="button" value="Add">
+									</div>
+								</div>
+								<div class="line">
+									<div class="col save">
+										<input type="submit" value="Save changes">
+									</div>
+									<div class="col copy">
+										<a href="#">+ Copy over</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- begin row -->
+				<div class="row all-applications">
+					<div class="col-xs-12">
+						<div class="caption">
+							<h3>All Customer Applications (3)</h3>
+							<div class="buttons">
+								<a href="#" class="btn btn-secondary" data-toggle="modal" data-target="#otsUpdate">OTS Updates</a>
+								<!-- <a href="#" class="btn btn-secondary">Docs</a> -->
+								<a href="#" class="btn btn-secondary" data-toggle="modal" data-target="#webRegistrations">Web Regs</a>
+							</div>
+						</div>
+						<table border="0" cellpadding="0" cellspacing="0" width="100%" class="table data-table">
+							<thead>
+								<tr>
+									<th>ID</th>
+									<th>TC &amp; Service</th>
+									<th>Tax Year</th>
+									<th>State/City</th>
+									<th>Status</th>
+									<th>RTA</th>
+									<th>Stage</th>
+									<th>Substatus</th>
+									<th>Referral</th>
+									<th>Partner Info</th>
+									<th>Reg Type</th>
+									<th>Reg Date</th>
+									<th>Merge ID</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr class="data-table-row">
+									<td>12345678</td>
+									<td>Australia, Income</td>
+									<td>2016</td>
+									<td>NSW/Melbourne</td>
+									<td class="linked tdStatus">Active</td>
+									<td><i class="material-icons">check_circle</i></td>
+									<td>ST</td>
+									<td>Contact in Progress</td>
+									<td><i class="fa fa-file-text"></i> Name of the referral</td>
+									<td>-</td>
+									<td>WEB</td>
+									<td>08-JUN-2016</td>
+									<td class="linked tdMergeId">12345678</td>
+								</tr>
+								<tr class="data-table-row">
+									<td>12345677</td>
+									<td>Australia, Income</td>
+									<td>2016</td>
+									<td>NSW/Melbourne</td>
+									<td class="linked tdStatus">Active</td>
+									<td><i class="material-icons">check_circle</i></td>
+									<td>ST</td>
+									<td>Contact in Progress</td>
+									<td><i class="fa fa-file-text"></i> Name of the referral</td>
+									<td>-</td>
+									<td>WEB</td>
+									<td>08-JUN-2016</td>
+									<td class="linked tdMergeId">12345678</td>
+								</tr>
+								<tr class="data-table-row">
+									<td>12345676</td>
+									<td>Australia, Income</td>
+									<td>2016</td>
+									<td>NSW/Melbourne</td>
+									<td class="linked tdStatus">Active</td>
+									<td><i class="material-icons">check_circle</i></td>
+									<td>ST</td>
+									<td>Contact in Progress</td>
+									<td><i class="fa fa-file-text"></i> Name of the referral</td>
+									<td>-</td>
+									<td>WEB</td>
+									<td>08-JUN-2016</td>
+									<td class="linked tdMergeId">12345678</td>
+								</tr>
+								<tr class="data-table-row">
+									<td>12345676</td>
+									<td>Australia, Income</td>
+									<td>2016</td>
+									<td>NSW/Melbourne</td>
+									<td class="linked tdStatus">Binned</td>
+									<td><i class="material-icons">check_circle</i></td>
+									<td>ST</td>
+									<td>Contact in Progress</td>
+									<td><i class="fa fa-file-text"></i> Name of the referral</td>
+									<td>-</td>
+									<td>WEB</td>
+									<td>08-JUN-2016</td>
+									<td class="linked tdMergeId">12345678</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<!-- end row -->
+				<!-- begin row -->
+				<div class="row client-notes">
+					<div class="col-xs-12">
+						<div class="title">
+							<h3>Client Notes</h3>
+							<a href="#" class="addnew">+ add new</a>
+						</div>
+						<ul class="chats">
+							<li class="left">
+								<a href="javascript:;" class="image">ST</a>
+								<div class="message">
+									12/12/2018 <strong>[ABBR]:</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamtco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit 
+								</div>
+							</li>
+							<li class="right">
+								<a href="javascript:;" class="image">DRT</a>
+								<div class="message">
+									12/12/2018 <strong>[ABBR]:</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamtco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit 
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+				
+			</div>
+			<!-- end #content -->
+			
+			<!-- begin scroll to top btn -->
+			<a href="javascript:;" class="btn btn-icon btn-circle btn-success btn-scroll-to-top fade" data-click="scroll-top"><i class="fa fa-angle-up"></i></a>
+			<!-- end scroll to top btn -->
+		</div>
+	</div>
+	<!-- end page container -->
+
+	<!-- Web registrations Modal -->
+	<div class="modal fade" id="webRegistrations" tabindex="-1" role="dialog" aria-labelledby="webregistRetionsLabel">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title" id="changeLogLabel">Web Registrations</h4>
+				</div>
+				<div class="modal-body">
+					<div class="h300 customscroll">
+						<table class="table table-hover">
+							<tr>
+								<th>Reg Type</th>
+								<th>Date</th>
+								<th>TC</th>
+								<th>TS</th>
+								<th>TC</th>
+								<th>Processed by</th>
+							</tr>
+							<tr>
+								<td>Call Back</td>
+								<td>12/12/2017</td>
+								<td>IE</td>
+								<td>PAYE</td>
+								<td>2016</td>
+								<td>ST, Preslava Dushkova (PRSD)</td>
+							</tr>
+							<tr>
+								<td>AE</td>
+								<td>12/12/2017</td>
+								<td>IE</td>
+								<td>PAYE</td>
+								<td>2016</td>
+								<td>ST, Preslava Dushkova (PRSD)</td>
+							</tr>
+							<tr>
+								<td>Long Form</td>
+								<td>12/12/2017</td>
+								<td>IE</td>
+								<td>PAYE</td>
+								<td>2016</td>
+								<td>ST, Preslava Dushkova (PRSD)</td>
+							</tr>
+							
+						</table>
+					</div>
+				</div>
+				<div class="modal-body secondary">
+					<div class="h300 customscroll">
+						<div class="col-md-6">
+							<h4>Tax Details</h4>
+							<p>Country I want a tax refund from: <strong>Ireland</strong></p>
+							<p>Tax Year: <strong>2017</strong></p>
+
+							<h4>Customer contact details</h4>
+							<p>First Name: <strong> John  </strong></p>
+							<p>Surname: <strong> Smith </strong></p>
+							<p>Email address: <strong> johnsmith@gmail.com </strong></p>
+							<p>Line Type: <strong> Mobile/Cell</strong></p>
+							<p>Country Code: <strong> Ireland (+353) </strong></p>
+							<p>Area Code: <strong> "empty"</strong></p>
+							<p>Phone number: <strong> 851073519 </strong></p>
+
+							<h4>Marketing Info</h4>
+							<p>LinkID: <strong> "empty"</strong></p>
+							<p>RefferalID: <strong> same as above</strong></p>
+							<p>DB Referral ID: <strong> 125426</strong></p>
+							<p>DB Referral: <strong> 125426</strong></p>
+						</div>
+						<div class="col-md-6">
+							<h4>Other</h4>
+							<p>{"cookie_id": "20170813200942.1502644182505.f518d9cd3e52e0852238eff62fb1d8d1"}</p>
+							<p>{"link_slug":"Direct","partner_id":"125260","date":"2017-08-13"}</p>
+							<p>{"link_slug":"Direct","partner_id":"125260","date":"2017-08-22"}utm_taf – tell a friend</p>
+							<p>UID: 70822123456.1503394496514.938e9cdea349b40791a4</p>
+							<p>reff_uri_url - https://chatserver.comm100.com/chatwindowmobile.aspx?siteId=180590&planId=91&visitType=1&byHref=1&partnerId=-1</p>
+							<p>page_id – 136</p>
+							<p>search_keywords – intended for search terms that lead customer to the page, but not sure it’s working after all the changes.</p>
+							<p>initial_referral - </p>
+							<p>reff_uri</p>
+							<p>full_uri – URL of the page where the form is </p>
+							<p>Country – IE</p>
+							<p>Registration type – REGCB</p>
+							<p>timezone_customer – UTC+1</p>
+							<p>Language used – en</p>
+							<p>Domain used – www.taxback.com</p>
+							<p>IP – 51.37.55.158</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- OTS Update Modal -->
+	<div class="modal fade" id="otsUpdate" tabindex="-1" role="dialog" aria-labelledby="otsUpdateLabel">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title" id="changeLogLabel">OTS Update</h4>
+				</div>
+				<div class="modal-body">
+					<div class="h300 customscroll">
+						<table class="table table-hover">
+							<tr>
+								<th>Application</th>
+								<th>Field</th>
+								<th>Old value</th>
+								<th>New value</th>
+								<th>Processor</th>
+								<th>Received</th>
+								<th>Processed</th>
+							</tr>
+							<tr>
+								<td>IE PAYE, 2016</td>
+								<td>Phone Type</td>
+								<td>Fixed</td>
+								<td>Mobile</td>
+								<td>ST, Preslava Dushkova (PRSD)</td>
+								<td>12/12/2017</td>
+								<td>12/12/2017</td>
+							</tr>
+							<tr>
+								<td>IE PAYE, 2016</td>
+								<td>Phone Code</td>
+								<td>Ireland (+353)</td>
+								<td>Ireland (+353)</td>
+								<td>ST, Preslava Dushkova (PRSD)</td>
+								<td>12/12/2017</td>
+								<td>12/12/2017</td>
+							</tr>
+							<tr>
+								<td>IE PAYE, 2016</td>
+								<td>Phone Number</td>
+								<td>3413411</td>
+								<td>8888888</td>
+								<td>ST, Preslava Dushkova (PRSD)</td>
+								<td>12/12/2017</td>
+								<td>12/12/2017</td>
+							</tr>
+							<tr>
+								<td>IE PAYE, 2016</td>
+								<td><i class="fa fa-file-text"></i> POA</td>
+								<td>-</td>
+								<td><a href="#">Download</a> </td>
+								<td>-</td>
+								<td>-</td>
+								<td>-</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn export">Export</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Change Log Modal -->
+	<div class="modal fade" id="changeLog" tabindex="-1" role="dialog" aria-labelledby="changeLogLabel">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title" id="changeLogLabel">Change Log</h4>
+				</div>
+				<div class="modal-body">
+					<div class="h300 customscroll">
+						<table class="table table-hover">
+							<tr>
+								<th>Date</th>
+								<th>Employee</th>
+								<th>Field</th>
+								<th>Old value</th>
+								<th>New value</th>
+							</tr>
+							<tr>
+								<td>12/12/2017</td>
+								<td>Preslava Dushkova</td>
+								<td><i class="fa fa-file-text"></i> Marital Status</td>
+								<td>Single</td>
+								<td>Married</td>
+							</tr>
+							<tr>
+								<td>12/12/2017</td>
+								<td>Preslava Dushkova</td>
+								<td><i class="fa fa-file-text"></i> Marital Status</td>
+								<td>Single</td>
+								<td>Married</td>
+							</tr>
+							<tr>
+								<td>12/12/2017</td>
+								<td>Preslava Dushkova</td>
+								<td><i class="fa fa-file-text"></i> Marital Status</td>
+								<td>Single</td>
+								<td>Married</td>
+							</tr>
+							<tr>
+								<td>12/12/2017</td>
+								<td>Preslava Dushkova</td>
+								<td><i class="fa fa-file-text"></i> Marital Status</td>
+								<td>Single</td>
+								<td>Married</td>
+							</tr>
+							<tr>
+								<td>12/12/2017</td>
+								<td>Preslava Dushkova</td>
+								<td><i class="fa fa-file-text"></i> Marital Status</td>
+								<td>Single</td>
+								<td>Married</td>
+							</tr>
+							<tr>
+								<td>12/12/2017</td>
+								<td>Preslava Dushkova</td>
+								<td><i class="fa fa-file-text"></i> Marital Status</td>
+								<td>Single</td>
+								<td>Married</td>
+							</tr>
+							<tr>
+								<td>12/12/2017</td>
+								<td>Preslava Dushkova</td>
+								<td><i class="fa fa-file-text"></i> Marital Status</td>
+								<td>Single</td>
+								<td>Married</td>
+							</tr>
+							<tr>
+								<td>12/12/2017</td>
+								<td>Preslava Dushkova</td>
+								<td><i class="fa fa-file-text"></i> Marital Status</td>
+								<td>Single</td>
+								<td>Married</td>
+							</tr>
+							<tr>
+								<td>12/12/2017</td>
+								<td>Preslava Dushkova</td>
+								<td><i class="fa fa-file-text"></i> Marital Status</td>
+								<td>Single</td>
+								<td>Married</td>
+							</tr>
+							<tr>
+								<td>12/12/2017</td>
+								<td>Preslava Dushkova</td>
+								<td><i class="fa fa-file-text"></i> Marital Status</td>
+								<td>Single</td>
+								<td>Married</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn export">Export</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Secret Question Modal -->
+	<div class="modal fade" id="secretQuestion" tabindex="-1" role="dialog" aria-labelledby="secretQuestionLabel">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title" id="secretQuestionLabel">Secret Question/Answer</h4>
+				</div>
+				
+				<div class="modal-body secretQ">
+					<div>
+						<select>
+							<option>What is your Mother's maiden name?</option>
+							<option>Option 2</option>
+							<option>Option 3</option>
+						</select>
+					</div>
+					<div>
+						<textarea>Smith</textarea>
+					</div>
+				</div>
+
+				<div class="modal-footer">
+					<button type="button" class="btn btn-primary">Save</button>
+					<button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+				</div>
+
+				
+			</div>
+		</div>
+	</div>
+
+	<!-- Add New Address Modal -->
+	<div class="modal fade" id="addNewAddress" tabindex="-1" role="dialog" aria-labelledby="addNewAddressLabel">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title" id="addNewAddressLabel">Addresses on Record (2)</h4>
+				</div>
+				<div class="modal-body">
+					<form class="form-inline">
+						<div class="row">
+							<div class="col-lg-6">
+								<div class="form-group">
+									<label for="">Country:</label>
+									<select class="form-control" id="">
+										<option></option>
+										<option>Option 1</option>
+										<option>Option 2</option>
+										<option>Option 3</option>
+									</select>
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="form-group">
+									<label for="">State/Country:</label>
+									<input type="text" class="form-control" id="">
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-lg-6">
+								<div class="form-group">
+									<label for="">Address 1:</label>
+									<input type="text" class="form-control" id="">
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="form-group">
+									<label for="">City/Town:</label>
+									<input type="text" class="form-control" id="">
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-lg-6">
+								<div class="form-group">
+									<label for="">Address 2:</label>
+									<input type="text" class="form-control" id="">
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="form-group">
+									<label for="">Post Code:</label>
+									<input type="text" class="form-control" id="">
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-primary">+ Add Address</button>
+					<button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+				</div>
+				<div class="modal-body secondary">
+					<div class="h150 customscroll">
+						<div class="list">
+							<div class="list-item">
+								<div class="toggler active"><span></span></div>
+								<input type="radio" name="optionsRadios" value="option1" checked="checked">
+								<strong>Australia</strong><br>
+								<span class="editable textarea">Tram Stop, 125 Normanby Str, Melbourne, RT4 56W</span>
+								<textarea class="editable-textarea"></textarea>
+							</div>
+							<div class="list-item">
+								<div class="toggler active"><span></span></div>
+								<input type="radio" name="optionsRadios" value="option2">
+								<strong>Ireland</strong><br>
+								<span class="editable textarea">Tram Stop, 125 Normanby Str, Melbourne, RT4 56W</span>
+								<textarea class="editable-textarea"></textarea>
+							</div>
+							<div class="list-item">
+								<div class="toggler"><span></span></div>
+								<input type="radio" name="optionsRadios" value="option3">
+								<strong>UK</strong><br>
+								<span class="editable textarea">Tram Stop, 125 Normanby Str, Melbourne, RT4 56W</span>
+								<textarea class="editable-textarea"></textarea>
+							</div>
+							<div class="list-item">
+								<div class="toggler"><span></span></div>
+								<input type="radio" name="optionsRadios" value="option4">
+								<strong>US</strong><br>
+								<span class="editable textarea">Tram Stop, 125 Normanby Str, Melbourne, RT4 56W</span>
+								<textarea class="editable-textarea"></textarea>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Add New Emails Modal -->
+	<div class="modal fade" id="addNewEmails" tabindex="-1" role="dialog" aria-labelledby="addNewEmailsLabel">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title" id="addNewEmailsLabel">Email addresses on record (5)</h4>
+				</div>
+				<div class="modal-body form-2col">
+					<div class="row">
+						<div class="col-lg-6">
+							Email:
+						</div>
+					</div>
+					<div class="row edit-mail">
+						<div class="col-lg-6">
+							<span class="editable text">john.smith@yahoo.com</span>
+							<input type="text" class="editable-text">
+						</div>
+						<div class="col-lg-6">
+							<a href="#"><i class="material-icons">email</i></a>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-primary">+ Add Email</button>
+					<button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+				</div>
+				<div class="modal-body secondary">
+					<div class="h300 customscroll">
+						<div class="row edit-mail">
+							<div class="col-lg-6">
+								<span class="editable text">john.smith@yahoo.com</span>
+								<input type="text" class="editable-text">
+							</div>
+							<div class="col-lg-4">
+								<a href="#" class="main"><i class="material-icons">email</i></a>
+							</div>
+							<div class="col-lg-2 toggle">
+								<div class="toggler active"><span></span></div>
+							</div>
+						</div>
+						<div class="row edit-mail">
+							<div class="col-lg-6">
+								<span class="editable text">john.smith@yahoo.com</span>
+								<input type="text" class="editable-text">
+							</div>
+							<div class="col-lg-4">
+								<a href="#" class="main"><i class="material-icons">email</i></a>
+							</div>
+							<div class="col-lg-2 toggle">
+								<div class="toggler active"><span></span></div>
+							</div>
+						</div>
+						<div class="row edit-mail">
+							<div class="col-lg-6">
+								<span class="editable text">john.smith@yahoo.com</span>
+								<input type="text" class="editable-text">
+							</div>
+							<div class="col-lg-4">
+								<a href="#" class="main"><i class="material-icons">email</i></a>
+							</div>
+							<div class="col-lg-2 toggle">
+								<div class="toggler"><span></span></div>
+							</div>
+						</div>
+						<div class="row edit-mail">
+							<div class="col-lg-6">
+								<span class="editable text">john.smith@yahoo.com</span>
+								<input type="text" class="editable-text">
+							</div>
+							<div class="col-lg-4">
+								<a href="#" class="main"><i class="material-icons">email</i></a>
+							</div>
+							<div class="col-lg-2 toggle">
+								<div class="toggler"><span></span></div>
+							</div>
+						</div>
+						<div class="row edit-mail">
+							<div class="col-lg-6">
+								<span class="editable text">john.smith@yahoo.com</span>
+								<input type="text" class="editable-text">
+							</div>
+							<div class="col-lg-4">
+								<a href="#" class="main"><i class="material-icons">email</i></a>
+							</div>
+							<div class="col-lg-2 toggle">
+								<div class="toggler"><span></span></div>
+							</div>
+						</div>
+						<div class="row edit-mail">
+							<div class="col-lg-6">
+								<span class="editable text">john.smith@yahoo.com</span>
+								<input type="text" class="editable-text">
+							</div>
+							<div class="col-lg-4">
+								<a href="#" class="main"><i class="material-icons">email</i></a>
+							</div>
+							<div class="col-lg-2 toggle">
+								<div class="toggler"><span></span></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Add New Phones Modal -->
+	<div class="modal fade" id="addNewPhones" tabindex="-1" role="dialog" aria-labelledby="addNewPhonesLabel">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title" id="addNewPhonesLabel">Phone numbers on record (5)</h4>
+				</div>
+				<div class="modal-body">
+					<div class="row">
+						<form class="form-inline edit-phones">
+							<div class="col-lg-4">
+								<div class="form-group">
+									<label for="">Country:</label>
+									<select class="form-control" id="">
+										<option>Australia (+62)</option>
+										<option>Option 2</option>
+										<option>Option 3</option>
+									</select>
+								</div>
+							</div>
+							<div class="col-lg-4">
+								<div class="form-group">
+									<label for="">Area:</label>
+									<input type="text" class="form-control" id="">
+								</div>
+							</div>
+							<div class="col-lg-4">
+								<div class="form-group">
+									<label for="">Number:</label>
+									<input type="text" class="form-control" id="">
+								</div>
+							</div>
+						</form>
+					</div>
+					<div class="row edit-phones">
+						<div class="col-lg-4 phone-number">
+							<span class="editable text">+62 555 240 6035</span>
+							<input type="text" class="editable-text">
+						</div>
+						<div class="col-lg-4 phone-features">
+							<a href="#"><i class="material-icons">star</i></a> 
+							<a href="#"><i class="material-icons">home</i></a> 
+							<a href="#"><i class="material-icons">rss_feed</i></a> 
+							<a href="#"><i class="material-icons">sms</i></a> 
+							<a href="#"><i class="material-icons">people</i></a> 
+						</div>
+						<div class="col-lg-4 phone-line-type">
+							<a href="#" class="mobile"><i class="material-icons">import_export</i> <span>Mobile</span></a>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-primary">+ Add Phone</button>
+					<button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+				</div>
+				<div class="modal-body secondary">
+					<div class="h300 customscroll">
+						<div class="row edit-phones">
+							<div class="col-lg-4">
+								<span class="editable text">+62 555 240 6035</span>
+								<input type="text" class="editable-text">
+							</div>
+							<div class="col-lg-4">
+								<a href="#" class="main"><i class="material-icons">star</i></a> 
+								<a href="#"><i class="material-icons">home</i></a> 
+								<a href="#"><i class="material-icons">rss_feed</i></a> 
+								<a href="#"><i class="material-icons">sms</i></a> 
+								<a href="#"><i class="material-icons">people</i></a> 
+							</div>
+							<div class="col-lg-2 phone-line-type">
+								<a href="#" class="mobile"><i class="material-icons">import_export</i> <span>Mobile</span></a>
+							</div>
+							<div class="col-lg-2 toggle">
+								<div class="toggler active"><span></span></div>
+							</div>
+						</div>
+						<div class="row edit-phones">
+							<div class="col-lg-4">
+								<span class="editable text">+62 555 240 6035</span>
+								<input type="text" class="editable-text">
+							</div>
+							<div class="col-lg-4">
+								<a href="#" class="main"><i class="material-icons">star</i></a> 
+								<a href="#"><i class="material-icons">home</i></a> 
+								<a href="#"><i class="material-icons">rss_feed</i></a> 
+								<a href="#"><i class="material-icons">sms</i></a> 
+								<a href="#"><i class="material-icons">people</i></a> 
+							</div>
+							<div class="col-lg-2 phone-line-type">
+								<a href="#" class="mobile"><i class="material-icons">import_export</i> <span>Mobile</span></a>
+							</div>
+							<div class="col-lg-2 toggle">
+								<div class="toggler active"><span></span></div>
+							</div>
+						</div>
+						<div class="row edit-phones">
+							<div class="col-lg-4">
+								<span class="editable text">+62 555 240 6035</span>
+								<input type="text" class="editable-text">
+							</div>
+							<div class="col-lg-4">
+								<a href="#" class="main"><i class="material-icons">star</i></a> 
+								<a href="#"><i class="material-icons">home</i></a> 
+								<a href="#"><i class="material-icons">rss_feed</i></a> 
+								<a href="#"><i class="material-icons">sms</i></a> 
+								<a href="#"><i class="material-icons">people</i></a> 
+							</div>
+							<div class="col-lg-2 phone-line-type">
+								<a href="#" class="mobile"><i class="material-icons">import_export</i> <span>Mobile</span></a>
+							</div>
+							<div class="col-lg-2 toggle">
+								<div class="toggler active"><span></span></div>
+							</div>
+						</div>
+						<div class="row edit-phones">
+							<div class="col-lg-4">
+								<span class="editable text">+62 555 240 6035</span>
+								<input type="text" class="editable-text">
+							</div>
+							<div class="col-lg-4">
+								<a href="#" class="main"><i class="material-icons">star</i></a> 
+								<a href="#"><i class="material-icons">home</i></a> 
+								<a href="#"><i class="material-icons">rss_feed</i></a> 
+								<a href="#"><i class="material-icons">sms</i></a> 
+								<a href="#"><i class="material-icons">people</i></a> 
+							</div>
+							<div class="col-lg-2 phone-line-type">
+								<a href="#" class="mobile"><i class="material-icons">import_export</i> <span>Mobile</span></a>
+							</div>
+							<div class="col-lg-2 toggle">
+								<div class="toggler active"><span></span></div>
+							</div>
+						</div>
+						<div class="row edit-phones">
+							<div class="col-lg-4">
+								<span class="editable text">+62 555 240 6035</span>
+								<input type="text" class="editable-text">
+							</div>
+							<div class="col-lg-4">
+								<a href="#" class="main"><i class="material-icons">star</i></a> 
+								<a href="#"><i class="material-icons">home</i></a> 
+								<a href="#"><i class="material-icons">rss_feed</i></a> 
+								<a href="#"><i class="material-icons">sms</i></a> 
+								<a href="#"><i class="material-icons">people</i></a> 
+							</div>
+							<div class="col-lg-2 phone-line-type">
+								<a href="#" class="mobile"><i class="material-icons">import_export</i> <span>Mobile</span></a>
+							</div>
+							<div class="col-lg-2 toggle">
+								<div class="toggler active"><span></span></div>
+							</div>
+						</div>
+						<div class="row edit-phones">
+							<div class="col-lg-4">
+								<span class="editable text">+62 555 240 6035</span>
+								<input type="text" class="editable-text">
+							</div>
+							<div class="col-lg-4">
+								<a href="#" class="main"><i class="material-icons">star</i></a> 
+								<a href="#"><i class="material-icons">home</i></a> 
+								<a href="#"><i class="material-icons">rss_feed</i></a> 
+								<a href="#"><i class="material-icons">sms</i></a> 
+								<a href="#"><i class="material-icons">people</i></a> 
+							</div>
+							<div class="col-lg-2 phone-line-type">
+								<a href="#" class="mobile"><i class="material-icons">import_export</i> <span>Mobile</span></a>
+							</div>
+							<div class="col-lg-2 toggle">
+								<div class="toggler active"><span></span></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Dependants Modal -->
+	<div class="modal fade" id="dependants" tabindex="-1" role="dialog" aria-labelledby="dependantsLabel">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title" id="dependantsLabel">Dependants (2)</h4>
+				</div>
+				<div class="modal-body">
+					<form class="form-inline">
+						<div class="row">
+							<div class="col-lg-4">
+								<div class="form-group">
+									<label for="">Relationship:</label>
+									<select class="form-control" id="">
+										<option></option>
+										<option>Option 1</option>
+										<option>Option 2</option>
+										<option>Option 3</option>
+									</select>
+								</div>
+								<div class="form-group">
+									<label for="">First Name:</label>
+									<input type="text" class="form-control" id="">
+								</div>
+								<div class="form-group">
+									<label for="">Middle Name:</label>
+									<input type="text" class="form-control" id="">
+								</div>
+								<div class="form-group">
+									<label for="">Last Name:</label>
+									<input type="text" class="form-control" id="">
+								</div>
+								<div class="form-group">
+									<label for="">DOB:</label>
+									<input type="text" class="form-control datepicker" id="">
+								</div>
+								<div class="form-group">
+									<label for="">Birth Name:</label>
+									<input type="text" class="form-control" id=""> 
+								</div>
+							</div>
+							<div class="col-lg-4">
+								<div class="form-group">
+									<label for="">Born in US:</label>
+									<div class="toggler active"><span></span></div> Yes
+								</div>
+								<div class="form-group">
+									<label for="">Nationality:</label>
+									<select class="form-control" id="">
+										<option></option>
+										<option>Option 1</option>
+										<option>Option 2</option>
+										<option>Option 3</option>
+									</select> 
+								</div>
+								<div class="form-group">
+									<label for="">POB:</label>
+									<input type="text" class="form-control" id=""> 
+								</div>
+								<div class="form-group">
+									<label for="">Marriage Date:</label>
+									<input type="text" class="form-control datepicker">
+								</div>
+								<div class="form-group">
+									<label for="">SSN:</label>
+									<select class="form-control" id="">
+										<option></option>
+										<option>Option 1</option>
+										<option>Option 2</option>
+										<option>Option 3</option>
+									</select> 
+								</div>
+								<div class="form-group">
+									<label for="">School:</label>
+									<select class="form-control" id="">
+										<option></option>
+										<option>Option 1</option>
+										<option>Option 2</option>
+										<option>Option 3</option>
+									</select> 
+								</div>
+							</div>
+							<div class="col-lg-4">
+								<div class="form-group">
+									<label class="fullwidth">Tax Numbers:</label>
+								</div>
+								<div class="form-group split-3">
+									<select class="form-control" id="">
+										<option>Tax Country</option>
+										<option>Option 1</option>
+										<option>Option 2</option>
+										<option>Option 3</option>
+									</select> 
+									<input type="text" class="form-control" id="" placeholder="123456789"> 
+									<button class="btn">Add</button>
+								</div>
+								<div class="form-group tax-numbers">
+									<span class="item">(ITIN) 123456789 <a href="#" class="remove">&times;</a></span> 
+									<span class="item">(ITIN) 123456789 <a href="#" class="remove">&times;</a></span> 
+								</div>
+
+								<div class="form-group">
+									<label class="fullwidth">Phone Numbers:</label>
+								</div>
+								<div class="form-group split-3">
+									<select class="form-control" id="">
+										<option>Country</option>
+										<option>Option 1</option>
+										<option>Option 2</option>
+										<option>Option 3</option>
+									</select> 
+									<input type="text" class="form-control" id="" placeholder="123456789"> 
+									<button class="btn">Add</button>
+								</div>
+								<div class="form-group tax-numbers">
+									<span class="item">(+62) 123456789 <a href="#" class="remove">&times;</a></span> 
+								</div>
+								
+							</div>
+						</div>				
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-primary">+ Add Dependant</button>
+					<button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+				</div>
+				<div class="modal-body secondary">
+					<div class="h300 customscroll">
+						<div class="list">
+							<div class="list-item dependants-box">
+								<div class="col-lg-3 name">
+									<p class="relation">
+										<span class="editable select relation">Child</span>
+										<select class="editable-select">
+											<option selected="selected">Child</option>
+											<option>Wife</option>
+											<option>Mother</option>
+											<option>Father</option>
+										</select>
+									</p>
+									<p class="fullname">
+										<span class="editable text name">Marian</span>
+										<input type="text" class="editable-text name">
+										<span class="editable text name">Johnathan</span>
+										<input type="text" class="editable-text name">
+										<span class="editable text name">Smith</span>
+										<input type="text" class="editable-text name">
+									</p>
+								</div>
+								<div class="col-lg-3">
+									<p>POB: <span class="editable text">Dublin</span><input type="text" class="editable-text"></p>
+									<p>DOB: <span class="editable text date">06/11/2016</span> <input type="text" class="editable-text date datepicker"></p>
+									<p>Nationality: <span class="editable text">Ireland</span> <input type="text" class="editable-text"></p>
+									<div>Born in US: <div class="toggler active"><span></span></div> Yes</div>
+								</div>
+								<div class="col-lg-3">
+									<p>Birth Name: <span class="editable text">Armstrong</span> <input type="text" class="editable-text"></p>
+									<p>Marriage Date: <span class="editable text date">06/11/2016</span> <input type="text" class="editable-text date datepicker"></p>
+									<p>SSN: <span class="editable select">Yes</span>
+										<select class="editable-select">
+											<option selected="selected">Yes</option>
+											<option>No</option>
+											<option>N/A</option>
+										</select>
+									</p>
+									<p>School: <span class="editable text">Armstrong</span> <input type="text" class="editable-text"></p>
+								</div>
+								<div class="col-lg-3">
+									<p>ITIN: <span class="editable text">12314567</span> <input type="text" class="editable-text"></p>
+									<p>SSN: <span class="editable text">12314567</span> <input type="text" class="editable-text"></p>
+									<p>Phone: <span class="editable text">12314567</span> <input type="text" class="editable-text"></p>
+								</div>
+							</div>
+							<div class="list-item dependants-box">
+								<div class="col-lg-3 name">
+									<p class="relation">
+										<span class="editable select relation">Child</span>
+										<select class="editable-select">
+											<option selected="selected">Child</option>
+											<option>Wife</option>
+											<option>Mother</option>
+											<option>Father</option>
+										</select>
+									</p>
+									<p class="fullname">
+										<span class="editable text name">Marian</span>
+										<input type="text" class="editable-text name">
+										<span class="editable text name">Johnathan</span>
+										<input type="text" class="editable-text name">
+										<span class="editable text name">Smith</span>
+										<input type="text" class="editable-text name">
+									</p>
+								</div>
+								<div class="col-lg-3">
+									<p>POB: <span class="editable text">Dublin</span><input type="text" class="editable-text"></p>
+									<p>DOB: <span class="editable text date">06/11/2016</span> <input type="text" class="editable-text date datepicker"></p>
+									<p>Nationality: <span class="editable text">Ireland</span> <input type="text" class="editable-text"></p>
+									<div>Born in US: <div class="toggler active"><span></span></div> Yes</div>
+								</div>
+								<div class="col-lg-3">
+									<p>Birth Name: <span class="editable text">Armstrong</span> <input type="text" class="editable-text"></p>
+									<p>Marriage Date: <span class="editable text date">06/11/2016</span> <input type="text" class="editable-text date datepicker"></p>
+									<p>SSN: <span class="editable select">Yes</span>
+										<select class="editable-select">
+											<option selected="selected">Yes</option>
+											<option>No</option>
+											<option>N/A</option>
+										</select>
+									</p>
+									<p>School: <span class="editable text">Armstrong</span> <input type="text" class="editable-text"></p>
+								</div>
+								<div class="col-lg-3">
+									<p>ITIN: <span class="editable text">12314567</span> <input type="text" class="editable-text"></p>
+									<p>SSN: <span class="editable text">12314567</span> <input type="text" class="editable-text"></p>
+									
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Add Application Modal -->
+	<div class="modal fade" id="addApplication" tabindex="-1" role="dialog" aria-labelledby="addApplicationLabel">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title" id="addApplicationLabel">Add Application</h4>
+				</div>
+				<div class="modal-body">
+					<form class="form-inline">
+						<div class="row">
+							<div class="col-lg-6">
+								<div class="form-group">
+									<label for=""><strong>DWT:</strong></label>
+									<div class="toggler"><span></span></div>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-lg-6">
+								<div class="form-group">
+									<label for="">Tax Country:</label>
+									<select class="form-control" id="">
+										<option></option>
+										<option>Option 1</option>
+										<option>Option 2</option>
+										<option>Option 3</option>
+									</select>
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="form-group">
+									<label for="">Pretravel:</label>
+									<div class="toggler active"><span></span></div>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-lg-6">
+								<div class="form-group">
+									<label for="">Tax Service:</label>
+									<select class="form-control" id="">
+										<option></option>
+										<option>Option 1</option>
+										<option>Option 2</option>
+										<option>Option 3</option>
+									</select>
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="form-group">
+									<label for="">Referral:</label>
+									<select class="form-control" id="">
+										<option></option>
+										<option>Option 1</option>
+										<option>Option 2</option>
+										<option>Option 3</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-lg-6">
+								<div class="form-group">
+									<label for="">Tax Year:</label>
+									<select class="form-control" id="">
+										<option></option>
+										<option>Option 1</option>
+										<option>Option 2</option>
+										<option>Option 3</option>
+									</select>
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="form-group">
+									<label for="">Reg Type:</label>
+									<select class="form-control" id="">
+										<option></option>
+										<option>Option 1</option>
+										<option>Option 2</option>
+										<option>Option 3</option>
+									</select>
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-primary">+ Add Application</button>
+					<button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Tax Numbers Modal -->
+	<div class="modal fade" id="tax-numbers" tabindex="-1" role="dialog" aria-labelledby="addNewAddressLabel">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title" id="addNewAddressLabel">Tax Numbers (2)</h4>
+				</div>
+				<div class="modal-body">
+					<form class="form-inline">
+						<div class="row">
+							<div class="col-lg-6">
+								<div class="form-group">
+									<label for="">Tax Country:</label>
+									<select class="form-control" id="">
+										<option></option>
+										<option>Option 1</option>
+										<option>Option 2</option>
+										<option>Option 3</option>
+									</select>
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="form-group">
+									<label for="">Tax Number:</label>
+									<input type="text" class="form-control" id="">
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-primary">+ Add Tax Number</button>
+					<button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+				</div>
+				<div class="modal-body secondary">
+					<div class="h150 customscroll">
+						<div class="list">
+							<div class="list-item ">
+								<div class="col-md-6">
+									<p><strong>Australian Tax Number</strong></p>
+									<span class="editable text">123456789</span>
+									<input type="text" class="editable-text d-h1">
+								</div>
+								<div class="col-md-6">
+									<p><strong>UK Tax Number</strong></p>
+									<span class="editable text">123456789</span>
+									<input type="text" class="editable-text d-h1">
+								</div>									
+							</div>
+
+															
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Tax Office Registrations Modal -->
+	<div class="modal fade" id="tax-office-registrations" tabindex="-1" role="dialog" aria-labelledby="addNewAddressLabel">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title" id="addNewAddressLabel">Tax Office Registrations (2)</h4>
+				</div>
+				<div class="modal-body">
+					<form class="form-inline">
+						<div class="row">
+							<div class="col-lg-6">
+								<div class="form-group">
+									<label for="">Tax Country:</label>
+									<select class="form-control" id="">
+										<option></option>
+										<option>Option 1</option>
+										<option>Option 2</option>
+										<option>Option 3</option>
+									</select>
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="form-group">
+									<label for="">Tax Office:</label>
+									<input type="text" class="form-control" id="">
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-primary">+ Add Tax Office</button>
+					<button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+				</div>
+				<div class="modal-body secondary">
+					<div class="h200 customscroll">
+						<div class="list">
+							<div class="list-item ">
+								<div class="col-md-6">
+									<p><strong>Australian Tax Office </strong> <a href="#" class="remove">×</a></p> 
+									<div class="tax-office-registration toggler active tax-office-registration"><span></span> <label for="">Registered</label></div>
+								</div>
+
+								<div class="col-md-6">
+									<p><strong>New Zealand Tax Office</strong>  <a href="#" class="remove">×</a></p>
+									<div class="tax-office-registration toggler active tax-office-registration"><span></span> <label for="">Registered</label></div>
+								</div>									
+							</div>
+							<div class="list-item ">
+								<div class="col-md-6">
+									<p><strong>UK Tax Office</strong> <a href="#" class="remove">×</a></p>
+									<div class="tax-office-registration toggler active tax-office-registration"><span></span> <label for="">Registered</label></div>
+								</div>								
+							</div>
+															
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Application Status Modal -->
+	<div class="modal fade" id="applicationStatus" tabindex="-1" role="dialog" aria-labelledby="applicationStatusLabel">
+		<div class="modal-dialog modal-sm" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title">Ireland PAYE 2014 <small>(ID: 12345674)</small></h4>
+				</div>
+				<div class="modal-body appStatus">
+					<h4>Application Status</h4>
+					<form class="form-horizontal">
+						<div class="row">
+							<fieldset class="col-xs-12">
+								<div class="form-group">
+									<select class="form-control" id="appStatusSelect">
+										<option value="preactive">Preactive</option>
+										<option value="active">Active</option>
+										<option value="binned">Binned</option>
+										<option value="archived">Archived</option>
+									</select>
+								</div>
+							</fieldset>
+							<fieldset class="col-xs-12 appStatusArchived">
+								<div class="form-group">
+									<select class="form-control" id="">
+										<option value="preactive">Reason for archiving</option>
+										<option value="01">Reason 01</option>
+										<option value="02">Reason 02</option>
+										<option value="03">Reason 03</option>
+									</select>
+								</div>
+								<div class="form-group">
+									<textarea rows="4" placeholder="Notes" class="form-control"></textarea>
+								</div>
+							</fieldset>
+						</div>
+					</form>
+					
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-primary">Save</button>
+					<button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Application Unmerge Modal -->
+	<div class="modal fade" id="applicationUnmerge" tabindex="-1" role="dialog" aria-labelledby="applicationUnmergeLabel">
+		<div class="modal-dialog modal-sm" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title">Australia TN 2016 <small>(ID: 12345676)</small></h4>
+				</div>
+				<div class="modal-body appStatus">
+					<h4>Unmerge Applications</h4>
+
+					<form class="form-horizontal">
+						<div class="row">
+							<fieldset class="col-xs-12">
+								<div class="form-group">
+									<input type="text" class="form-control" value="12345678">
+								</div>
+							</fieldset>
+						</div>
+					</form>
+					
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-primary">Save</button>
+					<button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="popup-overlay">
+		<div class="side-popup webregdetails">
+			<a href="#" class="exit">&times;</a>
+			<h2>Web Reg Details</h2>
+			<div class="customscroll">
+				<p>
+					<strong class="title2">Tax Details</strong>
+					Country I want a tax refund from: <strong>Ireland</strong><br>
+					Tax Year: <strong>2017</strong>
+				</p>
+				<p>
+					<strong class="title2">Customer contact details</strong>
+					First Name: <strong>John</strong><br>
+					Surname: <strong>Smith</strong><br>
+					Email address: <strong>johnsmith@gmail.com</strong><br>
+					Line Type: <strong>Mobile/Cell</strong><br>
+					Country Code: <strong>Ireland (+353)</strong><br>
+					Area Code: <strong>"empty"</strong><br>
+					Phone number: <strong>851073519</strong>
+				</p>
+				<p>
+					<strong class="title2">Marketing Info</strong>
+					LinkID: <strong>"empty"</strong><br>
+					RefferalID: <strong>same as above</strong><br>
+					DB Referral ID: <strong>125426</strong><br>
+					DB Referral: <strong>125426</strong>
+				</p>
+				<p>
+					<strong class="title2">Other</strong>
+					{"cookie_id": "20170813200942.1502644182505.f518d9cd3e52e0852238eff62fb1d8d1"}<br>
+					{"link_slug":"Direct","partner_id":"125260","date":"2017-08-13"}<br>
+					{"link_slug":"Direct","partner_id":"125260","date":"2017-08-22"}utm_taf – tell a friend<br>
+					UID: 70822123456.1503394496514.938e9cdea349b40791a4<br>
+					reff_uri_url - https://chatserver.comm100.com/chatwindowmobile.aspx?siteId=180590&amp;planId=91&amp;visitType=1&amp;byHref=1&amp;partnerId=-1
+				</p>
+				<p>
+					page_id – 136<br>
+					search_keywords – intended for search terms that lead customer to the page, but not sure it’s working after all the changes.<br>
+					initial_referral - <br>
+					reff_uri<br>
+					full_uri – URL of the page where the form is <br>
+					Country – IE<br>
+					Registration type – REGCB<br>
+					timezone_customer – UTC+1<br>
+					Language used – en<br>
+					Domain used – www.taxback.com<br>
+					IP – 51.37.55.158
+				</p>
+			</div>
+		</div>
+		<div class="docpreview">
+			<a href="#" class="exit">&times;</a>
+			<div class="top">
+				<div class="left">
+					<h5>OZ, Income'16</h5>
+					<h6>25.06.2017, Pack, PDF</h6>
+				</div>
+				<div class="right">
+					<ul>
+						<li><a href="#"><i class="material-icons">print</i></a></li>
+						<li><a href="#"><i class="material-icons">cloud_download</i></a></li>
+						<li><a href="#"><i class="material-icons">email</i></a></li>
+						<li><a href="#"><i class="material-icons">delete</i></a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="customscroll">
+				<div class="placeholder">
+					<img src="assets/img/pdf.jpg" alt="pdf placeholder">
+				</div>
+			</div>
+		</div>
+	</div>
+
+	
+	
+	<!-- ================== BEGIN BASE JS ================== -->
+	<script src="assets/plugins/jquery/jquery-1.9.1.min.js"></script>
+	<script src="assets/plugins/jquery/jquery-migrate-1.1.0.min.js"></script>
+	<script src="assets/plugins/jquery-ui/ui/minified/jquery-ui.min.js"></script>
+	<script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+	<!--[if lt IE 9]>
+		<script src="assets/crossbrowserjs/html5shiv.js"></script>
+		<script src="assets/crossbrowserjs/respond.min.js"></script>
+		<script src="assets/crossbrowserjs/excanvas.min.js"></script>
+	<![endif]-->
+	<!-- ================== END BASE JS ================== -->
+	
+	<!-- ================== BEGIN PAGE LEVEL JS ================== -->
+	<script src="assets/plugins/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
+	<script src="assets/plugins/DataTables/media/js/jquery.dataTables.js"></script>
+	<script src="assets/plugins/DataTables/media/js/dataTables.bootstrap.min.js"></script>
+	<script src="assets/plugins/DataTables/extensions/Select/js/dataTables.select.min.js"></script>
+	<script src="assets/plugins/DataTables/extensions/Responsive/js/dataTables.responsive.min.js"></script>
+	<script src="assets/plugins/jstree/dist/jstree.min.js"></script> 
+	<script src="assets/plugins/sparkline/jquery.sparkline.min.js"></script> 
+	<script src="assets/plugins/slimscroll/jquery.slimscroll.min.js"></script> 
+	<script src="assets/plugins/gritter/js/jquery.gritter.min.js"></script> 
+	<script src="assets/js/ui-tree.demo.min.js"></script>    
+	<script src="assets/js/dashboard.min.js"></script>
+	<script src="assets/js/jquery.mousewheel.min.js"></script>
+	<script src="assets/js/scripts.js"></script>
+	<script src="assets/js/apps.min.js"></script>
+	<!-- ================== END PAGE LEVEL JS ================== -->
+	
+	<script>
+		$(document).ready(function() {
+			TableManageTableSelect.init();
+			TreeView.init();
+			App.init();
+		});
+	</script>
+</body>
+</html>

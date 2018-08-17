@@ -5,7 +5,7 @@
 <!--<![endif]-->
 <head>
 	<meta charset="utf-8" />
-	<title>My Cases | TB CRM</title>
+	<title>Common Worklist Tasks | TB CRM</title>
 	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
 	<meta content="" name="description" />
 	<meta content="" name="author" />
@@ -102,135 +102,21 @@
 				<div class="col-xs-12">
 					<ul class="category-list">
 						<li><a href="web-regs.html"><b>Web Regs</b> (105)</a></li>
-						<li><a href="common-worklist-tasks.html"><b>Common Worklist Tasks</b> (5)</a></li>
-						<li class="active"><a href="cases.html"><b>My Cases</b> (5)</a></li>
+						<li class="active"><a href="common-worklist-tasks.html"><b>Common Worklist Tasks</b> (5)</a></li>
+						<li><a href="cases.html"><b>My Cases</b> (5)</a></li>
 					</ul>
 				</div>
 			</div>
 
 			<div class="row">
 				<div class="col-xs-12">
-					<div class="cases-filters">
-						<div class="line">
-							<div class="col time">
-								<div class="top">
-									<h6>Time Period</h6>
-								</div>
-								<select>
-									<option>Registration Date</option>
-									<option>Option 2</option>
-									<option>Option 3</option>
-								</select>
-								<input type="text" value="01/12/2017" class="datepicker">
-								<input type="text" value="01/12/2017" class="datepicker">
-							</div>
-							<div class="col appl">
-								<div class="top">
-									<h6>Tax Application</h6>
-								</div>
-								<select>
-									<option>TC</option>
-									<option>Option 2</option>
-									<option>Option 3</option>
-								</select>
-								<select>
-									<option>TY</option>
-									<option>Option 2</option>
-									<option>Option 3</option>
-								</select>
-								<select>
-									<option>TS</option>
-									<option>Option 2</option>
-									<option>Option 3</option>
-								</select>
-								<input type="button" value="Add" class="btn btn-add"><br>
-								<ul class="names">
-									<li><strong>Australia:</strong></li>
-									<li>Income, Super;  <a href="#" class="remove">&times;</a></li>
-									<li>2016, 2017; <a href="#" class="remove">&times;</a></li>
-								</ul>
-							</div>
-							<div class="col statuses">
-								<div class="top">
-									<h6>Statuses</h6>
-								</div>
-								<select>
-									<option>APPL</option>
-									<option>Option 2</option>
-									<option>Option 3</option>
-								</select>
-								<select>
-									<option>RTA</option>
-									<option>Option 2</option>
-									<option>Option 3</option>
-								</select>
-								<select class="w50">
-									<option>Stage</option>
-									<option>Option 2</option>
-									<option>Option 3</option>
-								</select>
-								<select class="w50">
-									<option>Sub-stage</option>
-									<option>Option 2</option>
-									<option>Option 3</option>
-								</select>
-							</div>
-							<div class="col residency">
-								<div class="top">
-									<h6>Residency</h6>
-								</div>
-								<div>
-									<select class="w50">
-										<option>Nationality</option>
-										<option>Option 2</option>
-										<option>Option 3</option>
-									</select>
-									<select class="w50">
-										<option>Visa Type</option>
-										<option>Option 2</option>
-										<option>Option 3</option>
-									</select>
-								</div>
-								<select>
-									<option>Visa Programme</option>
-									<option>Option 2</option>
-									<option>Option 3</option>
-								</select>
-							</div>
-							<div class="col sales">
-								<div class="top">
-									<h6>Marketing &amp; Sales</h6>
-								</div>
-								<div>
-									<select>
-										<option>Referral</option>
-										<option>Option 2</option>
-										<option>Option 3</option>
-									</select>
-									<select>
-										<option>Region</option>
-										<option>Option 2</option>
-										<option>Option 3</option>
-									</select>
-								</div>
-								<div>
-									<select>
-										<option>Sales Unit</option>
-										<option>Option 2</option>
-										<option>Option 3</option>
-									</select>
-									<select>
-										<option>ST Owner</option>
-										<option>Option 2</option>
-										<option>Option 3</option>
-									</select>
-								</div>
-							</div>
-							<div class="col refresh">
-								<input type="submit" value="Refresh / Search" class="btn btn-change">
-							</div>
-						</div>
-					</div>
+					<ul class="subcategory-list">
+						<li><input type="radio" name="subcategory" id="subcat1" checked> <label for="subcat1">All</label></li>
+						<li><input type="radio" name="subcategory" id="subcat2"> <label for="subcat2">Follow Ups</label></li>
+						<li><input type="radio" name="subcategory" id="subcat3"> <label for="subcat3">Reversions</label></li>
+						<li><input type="radio" name="subcategory" id="subcat4"> <label for="subcat4">OTS (UA) Updates</label></li>
+						<li><input type="radio" name="subcategory" id="subcat5"> <label for="subcat5">Outstanding Fees (Ofees)</label></li>
+					</ul>
 				</div>
 			</div>
 
@@ -315,11 +201,6 @@
 							</table>
 						</div>
 					</div>
-					<div class="row">
-						<div class="col-xs-12">
-							<img src="assets/img/table.jpg" alt="placeholder">
-						</div>
-					</div>
 					<div class="table-caption webRegsActBtns">
 						<h3>Common Group</h3>
 						<div class="options">
@@ -332,84 +213,126 @@
 						<table border="0" cellpadding="0" cellspacing="0" class="table data-table">
 							<thead>
 								<tr>
-									<th>Client Names</th>
+									<th>Business Team</th>
+									<th>Follow-Up Type</th>
 									<th>Appl. ID</th>
 									<th>TC</th>
 									<th>TS</th>
 									<th>TY</th>
+									<th>Over Due Days</th>
+									<th>Follow-Up Date</th>
+									<th>Time (for pop-up)</th>
+									<th>Reminder Importance</th>
+									<th>Status</th>
 									<th>Phone Code</th>
 									<th>Lead Score</th>
-									<th>Stage</th>
-									<th>Sub Stage</th>
-									<th>Phone Succ.</th>
-									<th>Last Call</th>
+									<th>Phone Success</th>
+									<th>Last Phone Call Attempt Date</th>
+									<th>Succ. Calls</th>
+									<th>Last Comment</th>
+									<th>Comment Date</th>
 								</tr>
 							</thead>
 							<tbody>
 								<tr>
-									<td>John Doe</td>
-									<td>12345678</td>
-									<td>Ireland</td>
+									<td>Sales Team</td>
+									<td>Reminder</td>
+									<td>123456789</td>
+									<td>IE</td>
 									<td>PAYE</td>
 									<td>2014-2016</td>
-									<td>IE (+353)</td>
+									<td>3</td>
+									<td>2017-12-20</td>
+									<td>10:30</td>
 									<td>Low</td>
-									<td>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</td>
-									<td>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</td>
-									<td>Yes (2/4)</td>
-									<td>08-JUN-2016</td>
+									<td>Assigned (Processed)</td>
+									<td>Ireland (+353)</td>
+									<td>Low</td>
+									<td>No</td>
+									<td>2017-12-23</td>
+									<td>2 (4)</td>
+									<td>Lorem ipsul dolor sit amet</td>
+									<td>2017-12-23</td>
 								</tr>
 								<tr>
-									<td>John Doe</td>
-									<td>12345678</td>
-									<td>Ireland</td>
-									<td>PAYE</td>
-									<td>2017</td>
-									<td>IE (+353)</td>
-									<td>Medium</td>
-									<td>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</td>
-									<td>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</td>
-									<td>Yes (2/4)</td>
-									<td>08-JUN-2016</td>
-								</tr>
-								<tr>
-									<td>Smith Johnson</td>
-									<td>12345678</td>
-									<td>Ireland</td>
+									<td>Docs Team</td>
+									<td>TL Task</td>
+									<td>123456789</td>
+									<td>IE</td>
 									<td>SA</td>
-									<td>2013-2014</td>
-									<td>NZ (+64)</td>
+									<td>2017</td>
+									<td>2</td>
+									<td>2017-12-20</td>
+									<td>15:30</td>
+									<td>Medium</td>
+									<td>Assigned (Not Processed)</td>
+									<td>Ireland (+353)</td>
 									<td>High</td>
-									<td>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</td>
-									<td>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</td>
-									<td>VM (3/3)</td>
-									<td>08-JUN-2016</td>
+									<td>Yes</td>
+									<td>2017-12-19</td>
+									<td>1 (2)</td>
+									<td>Lorem ipsul dolor sit amet</td>
+									<td>2017-12-20</td>
 								</tr>
 								<tr>
-									<td>Rudiard Kippling</td>
-									<td>12345678</td>
-									<td>Ireland</td>
+									<td>Sales Team</td>
+									<td>Docs Expected</td>
+									<td>123456789</td>
+									<td>IE</td>
+									<td>PAYE</td>
+									<td>2013-2017</td>
+									<td>2</td>
+									<td>2017-12-21</td>
+									<td>11:00</td>
+									<td>High</td>
+									<td>Assigned (Not Processed)</td>
+									<td>Finland (+358)</td>
+									<td>Medium</td>
+									<td>Voice Message (VM)</td>
+									<td>2017-12-20</td>
+									<td>3 (3)</td>
+									<td>Lorem ipsul dolor sit amet</td>
+									<td>2017-12-20</td>
+								</tr>
+								<tr>
+									<td>DRT Team</td>
+									<td>Communication Plan</td>
+									<td>123456789</td>
+									<td>IE</td>
 									<td>PAYE</td>
 									<td>2017</td>
-									<td>FI (+358)</td>
+									<td>1</td>
+									<td>2017-12-22</td>
+									<td>9:50</td>
 									<td>Medium</td>
-									<td>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</td>
-									<td>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</td>
-									<td>Yes (5/7)</td>
-									<td>08-JUN-2016</td>
+									<td>Assigned (Not Processed)</td>
+									<td>Ireland (+353)</td>
+									<td>High</td>
+									<td>Yes</td>
+									<td>2017-12-19</td>
+									<td>5 (7)</td>
+									<td>Lorem ipsul dolor sit amet</td>
+									<td>2017-12-20</td>
 								</tr>
 								<tr>
-									<td>Earnest Hemingway</td>
-									<td>12345678</td>
-									<td>Ireland</td>
+									<td>Sales Team</td>
+									<td>Reminder</td>
+									<td>123456789</td>
+									<td>IE</td>
 									<td>PAYE</td>
 									<td>2013, 2015, 2017</td>
-									<td>BG (+359)</td>
+									<td>0</td>
+									<td>2017-12-23</td>
+									<td>14:40</td>
 									<td>High</td>
-									<td>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</td>
-									<td>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</td>
-									<td>Yes (4/5)</td>
-									<td>08-JUN-2016</td>
+									<td>Assigned (Not Processed)</td>
+									<td>Bulgaria (+352)</td>
+									<td>Medium</td>
+									<td>Voice Message (VM)</td>
+									<td>2017-12-20</td>
+									<td>4 (5)</td>
+									<td>Lorem ipsul dolor sit amet</td>
+									<td>2017-12-20</td>
 								</tr>
 							</tbody>
 						</table>
@@ -620,8 +543,10 @@
 	<script src="assets/plugins/DataTables/extensions/Select/js/dataTables.select.min.js"></script>
     <script type="text/javascript" src="assets/plugins/bootstrap-daterangepicker/moment.min.js"></script>
     <script type="text/javascript" src="assets/plugins/bootstrap-daterangepicker/daterangepicker.js"></script>
+	<script src="assets/plugins/slimscroll/jquery.slimscroll.min.js"></script> 
 	<script src="assets/js/dashboard.min.js"></script>
 	<script src="assets/js/apps.min.js"></script>
+	<script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
 	<script src="assets/js/scripts.js"></script>
 	<!-- ================== END PAGE LEVEL JS ================== -->
     <script type="text/javascript">
@@ -672,6 +597,7 @@
 	</script>
     
     <script src="assets/plugins/switchery/switchery.min.js"></script>
+	<script src="https://kendo.cdn.telerik.com/2018.2.516/js/kendo.all.min.js"></script>
     <script>
     // Default
       // if-else statement used only for fixing <IE9 issues
