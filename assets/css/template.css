@@ -902,6 +902,7 @@ label {
     border: none;
     float: left;
     font-size: 48px;
+    font-weight: 300;
     margin: 0 0 20px;
     padding: 0;
 }
