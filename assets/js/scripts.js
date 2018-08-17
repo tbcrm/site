@@ -253,6 +253,16 @@ $(document).ready(function(){
         return false;
     });
 
+    // filter collapse/expand
+    $('h3.accordion').on('click', function(){
+        $(this).toggleClass('active');
+        if ( $(this).parent().parent().next('.collapsible').hasClass('open') ) {
+            $(this).parent().parent().next('.collapsible').removeClass('open').slideUp();
+        } else {
+            $(this).parent().parent().next('.collapsible').addClass('open').slideDown();
+        }
+    });
+
     // expandable box
     $('.section.expandable .title a').on('click',function(){
         $(this).parent().parent().next('.box').slideToggle();
