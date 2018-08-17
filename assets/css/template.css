@@ -1766,9 +1766,9 @@ legend {
 /* 3.14.8 Component - Button - Info */
 
 .btn.btn-info {
-    color: #fff;
-    background: #49b6d6;
-    border-color: #49b6d6;
+    background: #08aedd;
+    border-color: #08aedd;
+    color: #fff!important;
 }
 .btn-info:hover, 
 .btn-info:focus, 
@@ -1777,6 +1777,9 @@ legend {
 .open .dropdown-toggle.btn-info {
     background: #3a92ab;
     border-color: #3a92ab;
+}
+.btn-info:hover {
+    background: #08aedd!important;
 }
 .btn-group .btn.btn-info:not(.active) + .btn.btn-info,
 .input-group-btn .btn.btn-info:not(.active) + .btn.btn-info {

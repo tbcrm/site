@@ -271,6 +271,54 @@ $(document).ready(function(){
         return fase;
     });
 
+    // checkbox dropdown
+    $('.checkbox-dropdown .drop').on('click', function(){
+        $(this).next().next('.list').show();
+        return false;
+    });
+    // hide checkbox dropdown when done
+    $('.checkbox-dropdown button').on('click', function(){
+        $(this).parent().parent().parent().hide();
+        return false;
+    });
+    // selecting checkboxes
+    $('.checkbox-dropdown input').on('change', function(){
+        // checking a checkbox
+        if ( $(this).is(':checked') ) {
+            $(this).parent().addClass('active');
+            if ( $(this).parent().hasClass('active') ) {
+                var clickedValue = $(this).attr('value');
+                var appendixStart = '<span class="' + clickedValue + '">';
+                var clickedCheckbox = $(this).next('span').html();
+                var appendixEnd = '<a href="#" class="btn-close">&times;</a></span>';
+                var fullAppend = appendixStart + clickedCheckbox + appendixEnd;
+                $(this).parent().parent().parent().parent()
+                    .prev().prev('.drop').hide().next('.chosen').show().append(fullAppend);
+            }
+        // unchecking a checkbox
+        } else {
+            $(this).parent().removeClass('active');
+            var clickedValue = '.' + $(this).attr('value');
+            // remove checkbox item
+            if ( $(this).parent().parent().parent().parent()
+                    .prev('.chosen').find('span').length == 1 ) {
+                $(this).parent().parent().parent().parent()
+                    .prev('.chosen').hide().prev('.drop').show();
+            }
+            $('.checkbox-dropdown .chosen').find(clickedValue).remove();
+        };
+    });
+    // remove added checkbox
+    $('body').on('click', '.checkbox-dropdown .chosen span a', function(){
+        var removedCheckbox = 'input[value= ' + $(this).parent().attr('class') + ']';
+        $(this).parent().parent().next('.list').find('ul').find('li').find(removedCheckbox).click();
+        if ( $(this).parent().parent().find('span').length == 1 ) {
+            $(this).parent().parent().hide().prev('.drop').show();
+        }
+        $(this).parent().remove();
+        return false;
+    });
+
 });
 
     //drawer menu
