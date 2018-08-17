@@ -686,6 +686,14 @@ span.editable:hover { background-color: #f7f7f7; border: 1px solid #e8e8e8; }
 .mCSB_scrollTools .mCSB_draggerRail { background-color: #e8e8e8!important; width: 1px!important; }
 .mCSB_inside > .mCSB_container { margin-right: 15px!important; }
 
+.saved-filters { -webkit-padding-start: 0; }
+.saved-filters li { border-bottom: 1px solid #d8dfe3; overflow: hidden; padding: 10px; }
+.saved-filters li:hover { background-color: #d8dfe3; }
+.saved-filters a { color: #8b95a6; font-size: 16px; }
+.saved-filters .del { display: none; }
+.saved-filters li:hover a { color: #000; }
+.saved-filters li:hover .del { color: #c00; display: inline-block; float: right; }
+
 .section { padding: 0 0 30px 0; }
 .section:after { clear: both; content: ''; display: block; height: 1px; width: 1px; }
 .section .title { margin-bottom: 15px; }
