@@ -196,6 +196,7 @@ a:focus, button:focus, #reportrange input:focus { outline: none; }
 .caption-expand .options { float: right; }
 .caption-expand a { color: #6e6e6e; }
 .caption-expand .options a { color: #8b95a6; }
+.caption-expand table a { color: #08aedd; font-weight: bold; }
 .caption-expand a:hover { color: #000; text-decoration: none; }
 
 .tabs-body {}
