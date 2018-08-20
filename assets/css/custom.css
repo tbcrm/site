@@ -194,8 +194,8 @@ a:focus, button:focus, #reportrange input:focus { outline: none; }
 .caption-expand li { border-bottom: 1px solid #e8e8e8; overflow: hidden; padding: 10px 0; }
 .caption-expand .title { float: left; }
 .caption-expand .options { float: right; }
-.caption-expand a { color: #6e6e6e; }
-.caption-expand .options a { color: #8b95a6; }
+.caption-expand a { color: #acb2ba; }
+.caption-expand .options a { color: #6e6e6e; }
 .caption-expand a:hover { color: #000; text-decoration: none; }
 
 table a { color: #08aedd; font-weight: bold; }
