@@ -27,6 +27,74 @@ var TableManageTableSelect = function () {
 }();
 
 $(document).ready(function(){
+    // contact box progress - call
+    $('.customer-details-cols .contact-type a.call, .contact-box .contact-active .status .contact-type a.call').on('click', function(){
+        $('.contact-sms, .contact-mail').hide();
+        $('.contact-box .contact-active.contact-call-2').removeClass('active').hide();
+        $('.contact-box').show();
+        $('.contact-call-1').show();
+        return false;
+    });
+    // contact box progress - sms
+    $('.customer-details-cols .contact-type a.message, .contact-box .contact-active .status .contact-type a.message').on('click', function(){
+        $('.contact-call, .contact-mail').hide();
+        $('.contact-box .contact-active.contact-sms-2').removeClass('active').hide();
+        $('.contact-box').show();
+        $('.contact-sms-1').show();
+        return false;
+    });
+    // contact box progress - mail
+    $('.customer-details-cols .contact-type a.email, .contact-box .contact-active .status .contact-type a.email').on('click', function(){
+        $('.contact-call, .contact-sms').hide();
+        $('.contact-box .contact-active.contact-mail-2').removeClass('active').hide();
+        $('.contact-box').show();
+        $('.contact-mail-1').show();
+        return false;
+    });
+    // contact box results
+    $('.selectContactResult').on('change', function(){
+        if ($(this).val() === 'none') {
+            $(this).parent().next().find('.contact-inprogress').show()
+                .next().hide();
+        } else {
+            $(this).parent().next().find('.contact-inprogress').hide()
+                .next().show();
+                if ( $(this).hasClass('call') ) {
+                    $('.contact-box .contact-call').addClass('active');
+                } else if ( $(this).hasClass('sms') ) {
+                    $('.contact-box .contact-sms').addClass('active');
+                } else if ( $(this).hasClass('mail') ) {
+                    $('.contact-box .contact-mail').addClass('active');
+                }
+        }
+    });
+    // contact call, sms, mail
+    $('.contact-box .contact-active .status .btn.end.send').on('click', function(){
+        $(this).parent().parent().hide().next().show();
+        return false;
+    });
+    // contact end
+    $('.contact-box .contact-active .status .btn.end.contact').on('click', function(){
+        $('.contact-box > div').not('.contact-comments').hide();
+        $('.contact-box .contact-history').removeClass('active');
+        $('.contact-conclusion').show();
+        return false;
+    });
+    // remove employee
+    $('.contact-box .contact-conclusion .names a.remove').on('click', function(){
+        $(this).parent().fadeOut();
+        return false;
+    });
+    // overview save script template
+    $('.contact-box .contact-template .toolbar .buttons > a.save, .contact-box .contact-comments .comment > a.save ').on('click', function(){
+        $(this).hide().next('.save-field').css('display','inline-block');
+        return false;
+    });
+    $('.contact-box .contact-template .toolbar .buttons .save-field a.save, .contact-box .contact-comments .comment .save-field a.save ').on('click', function(){
+        $(this).parent().hide().prev('.save').show();
+        return false;
+    });
+
     // custom scrollbar
     $(window).on('load',function(){
         $('.customscroll').mCustomScrollbar({
