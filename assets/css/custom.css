@@ -9,7 +9,7 @@ a:focus, button:focus, #reportrange input:focus { outline: none; }
  border-radius: 3px; color: #515b61!important; margin-left: 5px;  margin-right: 5px; padding: 6px 15px; }
 
 .btn.btn-default { background: #fff; border-color: #dee0e1; color: #515b61; }
-.btn.btn-default.active { background: #08aedd; border-color: #08aedd; color: #fff;    box-shadow: none; }
+.btn.btn-default.active { background: #08aedd; border-color: #08aedd; color: #fff; box-shadow: none; }
 .btn.btn-default.active:hover { background: #0798c1; border-color: #0798c1; }
 
 .btn.btn-primary { background-color: #4caf50; border-color: #4caf50; border-radius: 25px; margin-left: 5px; margin-right: 5px; padding: 6px 15px; }
@@ -21,6 +21,7 @@ a:focus, button:focus, #reportrange input:focus { outline: none; }
 .btn-add { background-color: #6d7787; border: 0; border-radius: 15px; color: #fff; padding: 5px 10px; }
 
 .btn-create { background-color: #4caf50; border: 0; border-radius: 15px; color: #fff; padding: 5px 10px; }
+.btn-create:hover { color: #fff; }
 
 .btn-save { background-color: #4caf50; border: 0; border-radius: 3px; color: #fff; padding: 6px 12px; }
 
@@ -702,6 +703,7 @@ span.editable:hover { background-color: #f7f7f7; border: 1px solid #e8e8e8; }
 .section .title h3 a { color: #000; display: inline-block; text-decoration: none; position: relative; }
 .section .title h3 a:hover { text-decoration: underline; }
 .section.expandable .title h3 a:before { background: url(../img/arrow-up.png) center center no-repeat; content: ''; display: block; height: 8px; width: 15px; transform: rotate(180deg); position: absolute; top: 10px; left: -30px; }
+.section .title a,
 .section .title button { float: right; }
 .section .title .switch { cursor: pointer; float: right; }
 .section .title .switch .switchery { margin-left: 5px; }
@@ -1260,6 +1262,7 @@ div.infinite-tabs sup.red { background-color: #e64d4d; }
     .customer-details-cols.account .buttons { text-align: left; }
     .customer-details-cols.account .col { height: auto; }
     .section .title h3,
+    .section .title a,
     .section .title button { clear: both; float: none; margin: 5px 0; }
     .cases-filters .col.search { padding-top: 0; }
 }

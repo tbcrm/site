@@ -14,6 +14,12 @@ var handleDataTableSelect = function() {
             searching: false,
             paging: false
         });
+        $('.data-table3').DataTable({
+            select: false,
+            responsive: true,
+            searching: false,
+            paging: false
+        });
     }
 };
 var TableManageTableSelect = function () {
