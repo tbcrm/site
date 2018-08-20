@@ -1104,7 +1104,7 @@ div.infinite-tabs sup.red { background-color: #e64d4d; }
 .modal-body.secondary span.editable:hover { background-color: #fff; }
 .modal-body form { overflow: hidden; }
 .modal-body .form-group { margin: 0 0 10px 0; overflow: hidden; padding-right: 15px; width: 100%; }
-.modal-body .form-inline label { float: left; padding-top: 7px; width: 33%; }
+.modal-body .form-inline label { float: left; margin: 0; padding-top: 7px; width: 33%; }
 .modal-body .form-inline label.fullwidth { width: 100%; }
 .modal-body select,
 .modal-body input[type="text"], 
