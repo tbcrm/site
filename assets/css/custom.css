@@ -600,7 +600,7 @@ button.transferBtn:hover { background: transparent url('../img/transferBtnHov.pn
 .customer-details-cols .contact-type .forbidden a:hover,
 .customer-details-cols .contact-type .forbidden.selected a,
 .customer-details-cols .contact-type .forbidden.selected a:hover { color: #e64d4d; border-color: #e64d4d; cursor: not-allowed; }
-.customer-details-cols .col a i { color: #acb2ba; vertical-align: bottom; }
+.customer-details-cols .col a i { vertical-align: bottom; }
 .customer-details-cols .col a:hover i { color: #08aedd; }
 .customer-details-cols .col .title { float: none; margin: 0 0 10px 0; overflow: hidden; padding-right: 5px; }
 .customer-details-cols .col a.showall { color: #08aedd; display: inline-block; float: left; font-weight: bold; text-decoration: none; text-transform: uppercase; }
