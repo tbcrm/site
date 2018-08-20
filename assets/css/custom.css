@@ -575,10 +575,10 @@ button.transferBtn:hover { background: transparent url('../img/transferBtnHov.pn
 .customer-details-cols.account .avatar .btn { position: absolute; top: 130px; left: 50%; transform: translateX(-50%); }
 
 .customer-details-cols .col.customscroll { border-right: 0; overflow: none; padding: 10px 0 0 10px; }
-.customer-details-cols .col.naming { width: 15%; }
+.customer-details-cols .col.naming { width: 16%; }
 .customer-details-cols .col.personal { color: #5d676c; width: 17%; }
 .customer-details-cols .col.contact1 { width: 27%; }
-.customer-details-cols .col.contact2 { width: 21%; }
+.customer-details-cols .col.contact2 { width: 20%; }
 .customer-details-cols .col.options { border-right: 0; width: 20%;}
 .customer-details-cols .col.doclist { width: 35%; }
 .customer-details-cols .col.docdetails { border-right: 0; color: #5d676c; width: 65%; }
