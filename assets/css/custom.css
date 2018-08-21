@@ -704,7 +704,10 @@ span.editable:hover { background-color: #f7f7f7; border: 1px solid #e8e8e8; }
 .section .title h3 a:hover { text-decoration: underline; }
 .section.expandable .title h3 a:before { background: url(../img/arrow-up.png) center center no-repeat; content: ''; display: block; height: 8px; width: 15px; transform: rotate(180deg); position: absolute; top: 10px; left: -30px; }
 .section .title a,
-.section .title button { float: right; }
+.section .title button,
+.section .title .btn-group { float: right; }
+.section .title .btn-group button { border-radius: 20px!important; }
+.section .title .btn-group a { float: none; text-align: left; }
 .section .title .switch { cursor: pointer; float: right; }
 .section .title .switch .switchery { margin-left: 5px; }
 /* .section.expandable .box { display: none; border-bottom: 1px solid #eee; overflow: hidden; padding-bottom: 15px;  } */

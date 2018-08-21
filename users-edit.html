@@ -191,7 +191,13 @@
 			<div class="section expandable">
 				<div class="title">
 					<h3><a href="#">User Roles &amp; Modules</a></h3>
-					<button class="btn btn-change">Standard / Executive</button>
+					<div class="btn-group">
+						<button class="btn btn-change" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Standard / Executive <span class="caret"></span></button>
+						<ul class="dropdown-menu">
+							<li><a href="#">Standard / Executive</a></li>
+							<li><a href="#">TL / Manager</a></li>
+						</ul>
+					</div>
 				</div>
 				<div class="box">
 					<div class="col">
@@ -257,10 +263,6 @@
 										<li>Self assessed; <a href="#" class="remove">&times;</a></li>
 									</ul>
 								</div>
-							</div>
-							<div class="buttons">
-								<button class="btn btn-primary">Save Changes</button>
-								<button class="btn btn-secondary">Discard Changes</button>
 							</div>
 						</div>
 					</div>
