@@ -17,6 +17,8 @@ a:focus, button:focus, #reportrange input:focus { outline: none; }
 .btn.btn-secondary { background-color: none; border-color: #dee0e1; color: #515b61; border-radius: 25px; margin-left: 5px; margin-right: 5px; padding: 6px 15px; }
 
 .btn-change { background-color: #08aedd; border-radius: 20px; color: #fff; }
+.btn-change:focus,
+.btn-change:hover { color: #fff; }
 
 .btn-add { background-color: #6d7787; border: 0; border-radius: 15px; color: #fff; padding: 5px 10px; }
 
