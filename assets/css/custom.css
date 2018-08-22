@@ -104,6 +104,7 @@ a:focus, button:focus, #reportrange input:focus { outline: none; }
 .content.split.single-col .split-right { width: calc(100% - 310px); }
 
 .left-sidebar .content { margin-left: 565px; }
+.left-sidebar.page-sidebar-minified .content { margin-left: 410px; }
 
 .newcase { float: right; padding-top: 10px; }
 .split.single-col .newcase { padding-top: 5px; }
