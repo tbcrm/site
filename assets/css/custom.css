@@ -299,7 +299,7 @@ table.dataTable tbody > tr.selected + tr.child, table.dataTable tbody > tr.selec
     display: inline-block;
     font-size: 1em;
 }
-#reportrange input[type=text] { width: auto; min-width: auto; max-width : auto; }
+#reportrange input[type=text] { width: auto; min-width: 220px; max-width : auto; }
 #reportrange b.carret { margin-left: -0.5em; }
 
 
