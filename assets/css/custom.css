@@ -1,5 +1,5 @@
 img { max-width: 100%; }
-a:focus, button:focus, #reportrange input:focus { outline: none; }
+a:focus, button:focus, .reportrange input:focus { outline: none; }
 
 .btn { font-weight: 500; transition: opacity 0.3s; }
 .btn:hover { opacity: 0.75; }
@@ -293,14 +293,14 @@ table.dataTable tbody > tr.selected + tr.child, table.dataTable tbody > tr.selec
     display: inline; 
     padding-right: 0.35em; 
 }
-#reportrange, #reportrange input[type=text] {
+.reportrange, .reportrange input[type=text] {
     border: 0;
     background: transparent;
     display: inline-block;
     font-size: 1em;
 }
-#reportrange input[type=text] { width: auto; min-width: 220px; max-width : auto; }
-#reportrange b.carret { margin-left: -0.5em; }
+.reportrange input[type=text] { width: auto; min-width: 220px; }
+.reportrange b.carret { margin-left: -0.5em; }
 
 
 .table-caption.webRegsActBtns .selected { 
