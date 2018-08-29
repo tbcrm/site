@@ -27,8 +27,8 @@ a:focus, button:focus, #reportrange input:focus { outline: none; }
 
 .btn-save { background-color: #4caf50; border: 0; border-radius: 3px; color: #fff; padding: 6px 12px; }
 
-.content.top { box-shadow: 0 0 5px rgba(0,0,0,0.25); padding: 15px 50px; }
-.content.top h3 { margin-top: 0; }
+.content > .top { border-bottom: 1px solid #eee; margin: 0 0 50px 0; padding: 15px 0; }
+.content .top h3 { margin-top: 0; }
 
 #content.split { display: flex; overflow: hidden; padding: 0; flex-wrap: wrap; }
 .content .split-left { display: none; }
@@ -147,7 +147,7 @@ a:focus, button:focus, #reportrange input:focus { outline: none; }
 .web-details .caption-expand { border-top: 0; border-bottom: 1px solid #e8e8e8; color: #6d7787; font-size: 14px; padding: 15px 0; word-break: break-word; }
 .web-details .title2 { display: block; font-size: 16px; margin-bottom: 5px; text-transform: uppercase; }
 
-.category-list { border-top: 1px solid #e8e8e8; border-bottom: 1px solid #e8e8e8;min-height: 60px; margin-bottom: 15px; overflow: hidden; -webkit-padding-start: 0; }
+.category-list { border-top: 1px solid #e8e8e8; border-bottom: 1px solid #e8e8e8; margin-bottom: 15px; overflow: hidden; -webkit-padding-start: 0; }
 .category-list.notopborder { border-top: 0; }
 .category-list li { float: left; font-size: 15px; list-style: none; margin: 0 20px 0 0; }
 .category-list a { border-bottom: 3px solid transparent; color: #aaa; display: inline-block; font-weight: 300; padding: 18px 10px;  }
@@ -535,7 +535,7 @@ button.transferBtn:hover { background: transparent url('../img/transferBtnHov.pn
 .switchery>small { height: 20px; width: 20px; left: auto; right: 0; }
 
 .cases-filters { border-bottom: 1px solid #eee; margin: 0 0 30px 0; }
-.content.top .cases-filters { border-bottom: 0; margin: 0; }
+.content .top .cases-filters { border-bottom: 0; margin: 0; }
 .cases-filters h6 { color: #08aedd; font-size: 14px; font-weight: bold; margin: 0 0 5px 0; }
 .cases-filters .line { margin-bottom: 15px; overflow: hidden; }
 .cases-filters .col { display: inline-block; padding: 0 15px 15px 0; vertical-align: top; width: 300px; }
@@ -722,7 +722,8 @@ span.editable:hover { background-color: #f7f7f7; border: 1px solid #e8e8e8; }
 .section .col .cases-filters .col.appl select { width: 40%; }
 
 .section .auto-assign { margin: 0; padding: 0; }
-.section .auto-assign li { border-top: 1px solid #eee; list-style: none; overflow: hidden; padding: 10px 0; }
+.section .auto-assign li { border-top: 1px solid #eee; list-style: none; padding: 10px 0; }
+.section .auto-assign li:after { clear: both; content: ''; display: block; height: 1px; width: 1px; }
 .section .auto-assign span { float: left; padding: 0 15px 0 0; }
 .section .auto-assign .name { font-size: 16px; font-weight: bold; width: 190px; }
 .section .auto-assign .col { width: 400px; }
@@ -746,6 +747,20 @@ span.editable:hover { background-color: #f7f7f7; border: 1px solid #e8e8e8; }
 .section .auto-assign .k-multiselect-wrap li span.k-icon { float: none; padding: 0; }
 .k-multiselect>.k-multiselect-wrap>.k-i-close { top: 5px; }
 .k-list>.k-state-selected { font-weight: bold; }
+
+/* multipleSelect */
+.fstElement { border: 1px solid #eaeef0; display: block; }
+.fstResultItem { display: block; float: none!important; font-size: 12px; padding: 2px!important; }
+.col.blue .fstResultItem.fstSelected,
+.col.blue .fstResultItem.fstFocused { background-color: #08aedd; border-color: #08aedd; }
+.col.red .fstResultItem.fstSelected,
+.col.red .fstResultItem.fstFocused { background-color: #e44d4d; border-color: #e44d4d; }
+.fstMultipleMode .fstControls { background-color: #eaeef0; padding: 1px 1px 0 1px; width: auto; }
+.fstChoiceItem { font-size: 12px; margin: 0 2px 1px 0; padding: 1px 20px 1px 5px; }
+.col.blue .fstChoiceItem { background-color: #08aedd; }
+.col.red .fstChoiceItem { background-color: #e44d4d; border: 1px solid #e44d4d; }
+.fstMultipleMode .fstQueryInput { font-size: 12px; margin: 0; padding: 0; }
+.fstChoiceRemove { left: auto; right: 0; }
 
 h4.modal-title { font-size: 24px; }
 .modal label { margin: 7px 0; }

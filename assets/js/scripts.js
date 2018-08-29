@@ -348,8 +348,10 @@ $(document).ready(function(){
         return false;
     });
 
-    // create MultiSelect from select HTML element
-    $(".multiselect").kendoMultiSelect().data("kendoMultiSelect");
+    // new MultipleSelect
+    $('.multipleSelect').fastselect({
+        placeholder: 'Select one or more'
+    });
 
     // On/Off switch
     $('.section .title .switch').on('click',function(){

@@ -18,9 +18,7 @@
 	<link href="assets/css/template.css" rel="stylesheet" />
 	<link href="assets/css/template-responsive.css" rel="stylesheet" />
 	<link href="assets/plugins/switchery/switchery.min.css" rel="stylesheet" />
-	<link rel="stylesheet" href="https://kendo.cdn.telerik.com/2018.2.516/styles/kendo.common-material.min.css" />
-    <link rel="stylesheet" href="https://kendo.cdn.telerik.com/2018.2.516/styles/kendo.material.min.css" />
-    <link rel="stylesheet" href="https://kendo.cdn.telerik.com/2018.2.516/styles/kendo.material.mobile.min.css" />
+    <link rel="stylesheet" href="assets/css/fastselect.min.css" />
 	<link href="assets/css/custom.css" rel="stylesheet" />
 	<!-- ================== END BASE CSS STYLE ================== -->
 	
@@ -102,86 +100,88 @@
 		<!-- end #sidebar -->
 		
 		<!-- begin #content -->
-		<div class="content top">
-			<div class="row">
-				<div class="col-xs-12">
-					<ul class="category-list notopborder">
-						<li class="active"><a href="account.html"><b>General Settings</b></a></li>
-						<li><a href="#"><b>Menu</b></a></li>
-						<li><a href="#"><b>Menu</b></a></li>
-					</ul>
-				</div>
-			</div>
-
-			<div class="customer-details-cols account">
-				<div class="buttons">
-					<button class="btn btn-primary">Save Changes</button>
-					<button class="btn btn-secondary">Discard Changes</button>
-				</div>
-				<div class="col">
-					<div class="avatar">
-						<img src="assets/img/avatar.jpg" alt="">
-						<button class="btn btn-change">Change Image</button>
-					</div>
-					<p class="title">
-						<span class="editable select">Ms</span>
-						<select class="editable-select">
-							<option>Mr</option>
-							<option>Mrs</option>
-							<option selected>Ms</option>
-						</select>
-					</p>
-					<p class="fullname">
-						<span class="editable text name">Elvira</span>
-						<input type="text" class="editable-text name"><br>
-						<span class="editable text name">Radisson</span>
-						<input type="text" class="editable-text name"><br>
-						<span class="editable text name">King</span>
-						<input type="text" class="editable-text name">
-					</p>
-					<p>
-						<span class="select name-title">Sales team</span>
-					</p>
-				</div>
-				<div class="col">
-					<p>Extension: <span class="editable text">1424</span>
-					<input type="text" class="editable-text"></p>
-					<p>Mobile: <span class="editable text">(+359)882635458</span>
-					<input type="text" class="editable-text"></p>
-					<p>Email: <span class="editable text text">eking@taxback.com</span>
-					<input type="text" class="editable-text"></p>
-					<p>Location: 
-						<span class="editable select name-title">Varna BK</span>
-						<select class="editable-select">
-							<option selected="selected">Varna BK</option>
-							<option>Option 1</option>
-							<option>OPtion 2</option>
-						</select>
-					</p>
-					<p>DOB: <span class="editable text date">03-JAN-1986</span>
-						<input type="text" class="editable-text date datepicker"></p>
-				</div>
-				<div class="col">
-					<p>Registration date: <span class="editable text date">01-JAN-2016</span>
-					<input type="text" class="editable-text date datepicker"></p>
-					<p>Status: 
-						<span class="editable select name-title">Active</span>
-						<select class="editable-select">
-							<option selected="selected">Active</option>
-							<option>Option 1</option>
-							<option>OPtion 2</option>
-						</select>
-					</p>
-					<p>Username: <span class="editable text">eking</span>
-					<input type="text" class="editable-text"></p>
-					<p>User code: <span class="editable text">12345</span>
-					<input type="text" class="editable-text"></p>
-					<p>Password: <span class="editable text text">**********</span>
-					<input type="password" class="editable-text"> <a href="#" data-toggle="modal" data-target="#resetPassword"><i class="material-icons">loop</i></a></p>
-				</div>
-			</div>
-		</div>
+		
 		<div id="content" class="content">
+
+			<div class="top">
+				<div class="row">
+					<div class="col-xs-12">
+						<ul class="category-list notopborder">
+							<li class="active"><a href="account.html"><b>General Settings</b></a></li>
+							<li><a href="#"><b>Menu</b></a></li>
+							<li><a href="#"><b>Menu</b></a></li>
+						</ul>
+					</div>
+				</div>
+	
+				<div class="customer-details-cols account">
+					<div class="buttons">
+						<button class="btn btn-primary">Save Changes</button>
+						<button class="btn btn-secondary">Discard Changes</button>
+					</div>
+					<div class="col">
+						<div class="avatar">
+							<img src="assets/img/avatar.jpg" alt="">
+							<button class="btn btn-change">Change Image</button>
+						</div>
+						<p class="title">
+							<span class="editable select">Ms</span>
+							<select class="editable-select">
+								<option>Mr</option>
+								<option>Mrs</option>
+								<option selected>Ms</option>
+							</select>
+						</p>
+						<p class="fullname">
+							<span class="editable text name">Elvira</span>
+							<input type="text" class="editable-text name"><br>
+							<span class="editable text name">Radisson</span>
+							<input type="text" class="editable-text name"><br>
+							<span class="editable text name">King</span>
+							<input type="text" class="editable-text name">
+						</p>
+						<p>
+							<span class="select name-title">Sales team</span>
+						</p>
+					</div>
+					<div class="col">
+						<p>Extension: <span class="editable text">1424</span>
+						<input type="text" class="editable-text"></p>
+						<p>Mobile: <span class="editable text">(+359)882635458</span>
+						<input type="text" class="editable-text"></p>
+						<p>Email: <span class="editable text text">eking@taxback.com</span>
+						<input type="text" class="editable-text"></p>
+						<p>Location: 
+							<span class="editable select name-title">Varna BK</span>
+							<select class="editable-select">
+								<option selected="selected">Varna BK</option>
+								<option>Option 1</option>
+								<option>OPtion 2</option>
+							</select>
+						</p>
+						<p>DOB: <span class="editable text date">03-JAN-1986</span>
+							<input type="text" class="editable-text date datepicker"></p>
+					</div>
+					<div class="col">
+						<p>Registration date: <span class="editable text date">01-JAN-2016</span>
+						<input type="text" class="editable-text date datepicker"></p>
+						<p>Status: 
+							<span class="editable select name-title">Active</span>
+							<select class="editable-select">
+								<option selected="selected">Active</option>
+								<option>Option 1</option>
+								<option>OPtion 2</option>
+							</select>
+						</p>
+						<p>Username: <span class="editable text">eking</span>
+						<input type="text" class="editable-text"></p>
+						<p>User code: <span class="editable text">12345</span>
+						<input type="text" class="editable-text"></p>
+						<p>Password: <span class="editable text text">**********</span>
+						<input type="password" class="editable-text"> <a href="#" data-toggle="modal" data-target="#resetPassword"><i class="material-icons">loop</i></a></p>
+					</div>
+				</div>
+			</div>
 
 			<div class="section expandable">
 				<div class="title">
@@ -274,90 +274,90 @@
 						<li>
 							<span class="name">Countries:</span>
 							<span class="col blue">
-								<select class="multiselect" multiple="multiple" data-placeholder="Select one or more...">
-									<option selected>Brasil</option>
-									<option selected>Bulgaria</option>
-									<option selected>Canada</option>
-									<option>Germany</option>
-									<option>Greece</option>
+								<select class="multipleSelect" multiple name="countries1">
+									<option selected value="Brasil">Brasil</option>
+									<option selected value="Bulgaria">Bulgaria</option>
+									<option selected value="Canada">Canada</option>
+									<option value="Germany">Germany</option>
+									<option value="Greece">Greece</option>
 								</select>
 							</span>
 							<span class="col red">
-								<select class="multiselect" multiple="multiple" data-placeholder="Select one or more...">
-									<option selected>Ireland</option>
-									<option>UK</option>
-									<option>USA</option>
+								<select class="multipleSelect" multiple name="countries2">
+									<option selected value="Ireland">Ireland</option>
+									<option value="UK">UK</option>
+									<option value="USA">USA</option>
 								</select>
 							</span>
 						</li>
 						<li>
 							<span class="name">Language:</span>
 							<span class="col blue">
-								<select class="multiselect" multiple="multiple" data-placeholder="Select one or more...">
-									<option selected>Bulgarian</option>
-									<option selected>Russian</option>
-									<option selected>English</option>
-									<option>German</option>
-									<option>Greek</option>
+								<select class="multipleSelect" multiple name="language1">
+									<option selected value="Bulgarian">Bulgarian</option>
+									<option selected value="Russian">Russian</option>
+									<option selected value="English">English</option>
+									<option value="German">German</option>
+									<option value="Greek">Greek</option>
 								</select>
 							</span>
 							<span class="col red">
-								<select class="multiselect" multiple="multiple" data-placeholder="Select one or more...">
-									<option>Exp</option>
-									<option>Expatriate</option>
-									<option>Other</option>
+								<select class="multipleSelect" multiple name="language2">
+									<option value="Exp">Exp</option>
+									<option value="Expatriate">Expatriate</option>
+									<option value="Other">Other</option>
 								</select>
 							</span>
 						</li>
 						<li>
 							<span class="name">Web Reg Types</span>
 							<span class="col blue">
-								<select class="multiselect" multiple="multiple" data-placeholder="Select one or more...">
-									<option selected>Bulgarian</option>
-									<option selected>Russian</option>
-									<option selected>English</option>
-									<option>German</option>
-									<option>Greek</option>
+								<select class="multipleSelect" multiple name="types1">
+									<option selected value="Bulgarian">Bulgarian</option>
+									<option selected value="Russian">Russian</option>
+									<option selected value="English">English</option>
+									<option value="German">German</option>
+									<option value="Greek">Greek</option>
 								</select>
 							</span>
 							<span class="col red">
-								<select class="multiselect" multiple="multiple" data-placeholder="Select one or more...">
-									<option selected>Exp</option>
-									<option selected>Expatriate</option>
-									<option>Other</option>
+								<select class="multipleSelect" multiple name="types2">
+									<option selected value="Exp">Exp</option>
+									<option selected value="Expatriate">Expatriate</option>
+									<option value="Other">Other</option>
 								</select>
 							</span>
 						</li>
 						<li>
 							<span class="name">Referral IDs</span>
 							<span class="col blue">
-								<select class="multiselect" multiple="multiple" data-placeholder="Select one or more...">
-									<option>Steven White</option>
-									<option>Nancy King</option>
-									<option>Nancy Davolio</option>
-									<option>Robert Davolio</option>
-									<option>Michael Leverling</option>
-									<option>Andrew Callahan</option>
-									<option>Michael Suyama</option>
-									<option>Anne King</option>
-									<option>Laura Peacock</option>
-									<option>Robert Fuller</option>
-									<option>Janet White</option>
-									<option>Nancy Leverling</option>
-									<option>Robert Buchanan</option>
-									<option>Margaret Buchanan</option>
-									<option>Andrew Fuller</option>
-									<option>Anne Davolio</option>
-									<option>Andrew Suyama</option>
-									<option>Nige Buchanan</option>
-									<option>Laura Fuller</option>
+								<select class="multipleSelect" multiple name="ids1">
+									<option value="Steven White">Steven White</option>
+									<option value="Nancy King">Nancy King</option>
+									<option value="Nancy Davolio">Nancy Davolio</option>
+									<option value="Robert Davolio">Robert Davolio</option>
+									<option value="Michael Leverling">Michael Leverling</option>
+									<option value="Andrew Callahan">Andrew Callahan</option>
+									<option value="Michael Suyama">Michael Suyama</option>
+									<option value="Anne King">Anne King</option>
+									<option value="Laura Peacock">Laura Peacock</option>
+									<option value="Robert Fuller">Robert Fuller</option>
+									<option value="Janet White">Janet White</option>
+									<option value="Nancy Leverling">Nancy Leverling</option>
+									<option value="Robert Buchanan">Robert Buchanan</option>
+									<option value="Margaret Buchanan">Margaret Buchanan</option>
+									<option value="Andrew Fuller">Andrew Fuller</option>
+									<option value="Anne Davolio">Anne Davolio</option>
+									<option value="Andrew Suyama">Andrew Suyama</option>
+									<option value="Nige Buchanan">Nige Buchanan</option>
+									<option value="Laura Fuller">Laura Fuller</option>
 								</select>
 							</span>
 							<span class="col red">
-								<select class="multiselect" multiple="multiple" data-placeholder="Select one or more...">
-									<option selected>1234567</option>
-									<option>123</option>
-									<option>4321</option>
+								<select class="multipleSelect" multiple name="ids2">
+									<option selected value="1234567">1234567</option>
+									<option value="123">123</option>
+									<option value="4321">4321</option>
 								</select>
 							</span>
 						</li>
@@ -535,7 +535,7 @@
 	</script>
     
 	<script src="assets/plugins/switchery/switchery.min.js"></script>
-	<script src="https://kendo.cdn.telerik.com/2018.2.516/js/kendo.all.min.js"></script>
+	<script src="assets/js/fastselect.standalone.min.js"></script>
     <script>
     // Default
       // if-else statement used only for fixing <IE9 issues
