@@ -189,6 +189,7 @@ a:focus, button:focus, .reportrange input:focus { outline: none; }
 .caption .tabs a:hover { text-decoration: none; }
 .caption h2 a:hover i,
 .caption .tabs a:hover i { color: #000; }
+.caption .tabs a .badge { background-color: #e64d4d; font-size: 11px; font-weight: normal; padding: 2px 5px; position: relative; top: -10px; }
 .caption .status { color: #8b95a6; float: right; padding-top: 25px; }
 .caption .status-changed { display: none; color: #e64d4d; float: right; padding-top: 25px; }
 .caption .status-changed a { color: #e64d4d; display: inline-block; margin-left: 5px; transition: opacity 0.3s; }
@@ -1053,6 +1054,7 @@ div.infinite-tabs sup.red { background-color: #e64d4d; }
 .chats .left .message:after { border-right-color: #eef1f3; }
 
 .footer-tabs { width: 100%; }
+.footer-tabs.stuck { position: fixed; top: 0; }
 .footer-tabs .nav { background-color: #6d7787; border-radius: 0; }
 .footer-tabs .nav-tabs>li { position: relative; }
 .footer-tabs .nav-tabs>li>a { border-radius: 0; color: #fff; font-size: 30px; font-weight: 300; margin-right: 0; padding: 15px 30px; }
@@ -1073,7 +1075,7 @@ div.infinite-tabs sup.red { background-color: #e64d4d; }
 .footer-tabs .nav .switch { display: inline-block; position: relative; top: -1px; }
 .footer-tabs .nav .switchery { background-color: #bcc1c8!important; border-color: #bcc1c8!important; box-shadow: none!important; height: 15px; width: 30px; }
 .footer-tabs .nav .switchery>small { background-color: #6d7787!important; box-shadow: none; height: 15px; width: 15px; }
-.footer-tabs .tab-content { padding: 0; }
+.footer-tabs .tab-content { margin: 0; padding: 0; }
 .footer-tabs .tab-content .head { background-color: #dde1e2; color: #000; padding: 15px 30px; }
 .footer-tabs .tab-content .head .left { height: auto; margin: 10px 0 0 0; }
 .footer-tabs .tab-content .head .left .title { color: #000; display: inline-block; margin: 0 10px 0 0; font-weight: bold; }

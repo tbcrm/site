@@ -416,6 +416,24 @@ $(document).ready(function(){
         return false;
     });
 
+    // fixed floating element
+    var stickyEl = $('.footer-tabs.sticky');
+    // store the initial position of the element
+    var vTop = stickyEl.offset().top - parseFloat(stickyEl.css('margin-top').replace(/auto/, 0));
+    $(window).scroll(function (event) {
+        // what the y position of the scroll is
+        var y = $(this).scrollTop();
+
+        // whether that's below the form
+        if (y >= vTop) {
+        // if so, ad the fixed class
+        stickyEl.addClass('stuck');
+        } else {
+        // otherwise remove it
+        stickyEl.removeClass('stuck');
+        }
+    });
+
 });
 
     //drawer menu
