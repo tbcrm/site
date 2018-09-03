@@ -212,6 +212,12 @@ $(document).ready(function(){
         return false;
     });
 
+    // remove footer tab
+    $('.footer-tabs .nav-tabs>li .remove').on('click',function(e){
+        e.stopPropagation();
+        $(this).parent().fadeOut();
+    });
+
     // approve or discard buttons
     $('.tab-content .leftside .doc-list .item .left .status a').on('click',function(){
         $(this).parents('.item').fadeOut();

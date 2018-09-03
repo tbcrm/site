@@ -1037,19 +1037,44 @@
 			<div class="footer-tabs">
 				<!-- Nav tabs -->
 				<ul class="nav nav-tabs" role="tablist">
-					<li role="presentation" class="active"><a href="#2015" aria-controls="2015" role="tab" data-toggle="tab">2015<span>taxback</span></a></li>
-					<li role="presentation"><a href="#2016" aria-controls="2016" role="tab" data-toggle="tab">2016<span>active</span></a></li>
-					<li role="presentation"><a href="#2017" aria-controls="2017" role="tab" data-toggle="tab">2017<span>active</span></a></li>
-					<li><a href="#" class="add">+ Add TY</a></li>
+					<li role="presentation" class="active">
+						<a href="#2014" aria-controls="2014" role="tab" data-toggle="tab">
+							2014<span>paye</span>
+							<strong>taxback</strong>
+						</a>
+					</li>
+					<li role="presentation" class="activated">
+						<a href="#2015sa" aria-controls="2015sa" role="tab" data-toggle="tab">
+							2015<span>sa</span>
+							<strong>active</strong>
+						</a>
+					</li>
+					<li role="presentation">
+						<a href="#2015paye" aria-controls="2015paye" role="tab" data-toggle="tab">
+							2015<span>paye</span>
+							<strong>active</strong>
+						</a>
+					</li>
+					<li role="presentation">
+						<a href="#2016sa" aria-controls="2016sa" role="tab" data-toggle="tab">
+							2016<span>sa</span>
+							<strong>active</strong>
+						</a>
+					</li>
+					<li role="presentation">
+						<a href="#2017" aria-controls="2017" role="tab" data-toggle="tab">
+							2017<span>paye</span>
+							<strong>active</strong>
+						</a>
+					</li>
 					<li class="show">
 						<div class="switch"><input type="checkbox" class="js-switch-blue small" checked /></div>  Show All Years
 					</li>
 				</ul>
-				
 				<!-- Tab panes -->
 				<div class="tab-content">
 					<div role="tabpanel" class="tab-pane active" id="2015">
-						<div class="top">
+						<div class="head">
 							<div class="row">
 								<div class="col-xs-12 col-lg-8 left">
 									<span class="title">ST Owner</span>
@@ -1075,10 +1100,13 @@
 								</div>
 								<div class="col-xs-12 col-lg-4 right">
 									<ul>
-										<li><a href="#">Post</a></li>
-										<li><a href="#">Reversions</a></li>
-										<li><a href="#">User Account Updates</a></li>
-										<li><a href="#">Web Reg</a></li>
+										<li class="pass"><a href="#" data-toggle="tooltip" data-placement="top" title="Post">P</a></li>
+										<li class="pass"><a href="#" data-toggle="tooltip" data-placement="top" title="Reversions">R</a></li>
+										<li class="pass"><a href="#" data-toggle="tooltip" data-placement="top" title="User Updates">UU</a></li>
+										<li class="todo"><a href="#" data-toggle="tooltip" data-placement="top" title="Web Reg">WR<sup>3</sup></a></li>
+										<li class="pass"><a href="#" data-toggle="tooltip" data-placement="top" title="PN?">PN</a></li>
+										<li class="pass"><a href="#" data-toggle="tooltip" data-placement="top" title="CF?">CF</a></li>
+										<li class="todo"><a href="#" data-toggle="tooltip" data-placement="top" title="CN?">CN<sup>1</sup></a></li>
 									</ul>
 								</div>
 							</div>
