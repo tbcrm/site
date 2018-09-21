@@ -33,6 +33,17 @@ var TableManageTableSelect = function () {
 }();
 
 $(document).ready(function(){
+    // toggle team selector
+    $('.team-selector .item').on('click', function(){
+        $(this).toggleClass('active');
+    });
+
+    // collapse statuses
+    $('.footer-tabs .tab-content .head .right li.toggle a').on('click', function(){
+        $(this).parent().parent().toggleClass('collapsed');
+        return false;
+    });
+
     // contact box progress - call
     $('.customer-details-cols .contact-type a.call, .contact-box .contact-active .status .contact-type a.call').on('click', function(){
         $('.contact-sms, .contact-mail').hide();
@@ -418,6 +429,7 @@ $(document).ready(function(){
 
     // fixed floating element
     var stickyEl = $('.footer-tabs.sticky');
+    var stickyElWidth = stickyEl.width() + 'px';
     // store the initial position of the element
     var vTop = stickyEl.offset().top - parseFloat(stickyEl.css('margin-top').replace(/auto/, 0));
     $(window).scroll(function (event) {
@@ -427,7 +439,7 @@ $(document).ready(function(){
         // whether that's below the form
         if (y >= vTop) {
         // if so, ad the fixed class
-        stickyEl.addClass('stuck');
+        stickyEl.addClass('stuck').css('width',stickyElWidth);
         } else {
         // otherwise remove it
         stickyEl.removeClass('stuck');

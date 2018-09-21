@@ -1432,7 +1432,7 @@
 							</a>
 						</li>
 						<li class="select">
-							<a href="#" class="btn btn-select">Select TY</a>
+							<a href="#" class="btn btn-select" data-toggle="modal" data-target="#selectTY">Select TY</a>
 						</li>
 					</ul>
 					
@@ -1481,6 +1481,7 @@
 									</div>
 									<div class="col-xs-12 col-lg-5 right">
 										<ul>
+											<li class="toggle"><a href="#">Toggle</a></li>
 											<li class="pass"><a href="#" data-toggle="tooltip" data-placement="top" title="Post">P</a></li>
 											<li class="pass"><a href="#" data-toggle="tooltip" data-placement="top" title="Reversions">R</a></li>
 											<li class="pass"><a href="#" data-toggle="tooltip" data-placement="top" title="User Updates">UU</a></li>
@@ -1498,6 +1499,38 @@
 						<div role="tabpanel" class="tab-pane" id="2016">...</div>
 						<div role="tabpanel" class="tab-pane" id="2017">...</div>
 					</div>
+
+					<div class="team-selector">
+						<div class="item">
+							<div class="left">
+								<h4><span>3</span> Sales Team</h4>
+								<select class="form-control">
+									<option>Sub-stage</option>
+								</select>
+							</div>
+						</div>
+						<div class="item">
+							<div class="left">
+								<h4><span>3</span> Document Team <small>/ DRT</small></h4>
+								<select class="form-control">
+									<option>Sub-stage</option>
+								</select>
+							</div>
+							<div class="right">
+								<span>RTA</span><br>
+								DD/MM/YYYY
+							</div>
+						</div>
+						<div class="item">
+							<div class="left">
+								<h4><span>0</span> Filling Team</h4>
+								<select class="form-control">
+									<option>Sub-stage</option>
+								</select>
+							</div>
+						</div>
+					</div>
+
 				</div>
 
 				<br><br><br><br><br><br><br><br><br><br>
@@ -1784,7 +1817,6 @@
 					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 					<h4 class="modal-title" id="secretQuestionLabel">Secret Question/Answer</h4>
 				</div>
-				
 				<div class="modal-body secretQ">
 					<div>
 						<select>
@@ -1797,13 +1829,29 @@
 						<textarea>Smith</textarea>
 					</div>
 				</div>
-
 				<div class="modal-footer">
 					<button type="button" class="btn btn-primary">Save</button>
 					<button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
 				</div>
+			</div>
+		</div>
+	</div>
 
-				
+	<!-- Select TY Modal -->
+	<div class="modal fade" id="selectTY" tabindex="-1" role="dialog" aria-labelledby="selectTYLabel">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title" id="selectTYLabel">Select TY</h4>
+				</div>
+				<div class="modal-body">
+					[content]
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-primary">Select</button>
+					<button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+				</div>
 			</div>
 		</div>
 	</div>
