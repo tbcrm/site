@@ -62,8 +62,10 @@ $(document).ready(function(){
     });
 
     // toggle team selector
-    $('.team-selector .item').on('click', function(){
-        $(this).toggleClass('active');
+    $('.team-selector .item').on('click', function(e){
+        if ( !$(e.target).is("select") ) {
+            $(this).toggleClass('active');
+        }
     });
 
     // collapse statuses
