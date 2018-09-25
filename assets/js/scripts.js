@@ -33,6 +33,34 @@ var TableManageTableSelect = function () {
 }();
 
 $(document).ready(function(){
+    // google images grid
+    var $cell = $('.image__cell');
+    $cell.find('.image--basic').on('click', function() {
+        var $thisCell = $(this).closest('.image__cell');
+        if ($thisCell.hasClass('is-collapsed')) {
+            $cell.not($thisCell).removeClass('is-expanded').addClass('is-collapsed');
+            $thisCell.removeClass('is-collapsed').addClass('is-expanded');
+        } else {
+            $thisCell.removeClass('is-expanded').addClass('is-collapsed');
+        }
+        return false;
+    });
+    $cell.find('.expand__close').on('click', function() {
+        var $thisCell = $(this).closest('.image__cell');
+        $thisCell.removeClass('is-expanded').addClass('is-collapsed');
+    });
+
+    // contact box toggles
+    $('.contact-box .toggle').on('click', function(){
+        $(this).toggleClass('collapse');
+        $('.contact-box .expandable').slideToggle();
+        return false;
+    });
+    $('.toggles a').on('click', function(){
+        $(this).toggleClass('activated');
+        return false;
+    });
+
     // toggle team selector
     $('.team-selector .item').on('click', function(){
         $(this).toggleClass('active');
@@ -428,23 +456,23 @@ $(document).ready(function(){
     });
 
     // fixed floating element
-    var stickyEl = $('.footer-tabs.sticky');
-    var stickyElWidth = stickyEl.width() + 'px';
-    // store the initial position of the element
-    var vTop = stickyEl.offset().top - parseFloat(stickyEl.css('margin-top').replace(/auto/, 0));
-    $(window).scroll(function (event) {
-        // what the y position of the scroll is
-        var y = $(this).scrollTop();
+    // var stickyEl = $('.footer-tabs.sticky');
+    // var stickyElWidth = stickyEl.width() + 'px';
+    // // store the initial position of the element
+    // var vTop = stickyEl.offset().top - parseFloat(stickyEl.css('margin-top').replace(/auto/, 0));
+    // $(window).scroll(function (event) {
+    //     // what the y position of the scroll is
+    //     var y = $(this).scrollTop();
 
-        // whether that's below the form
-        if (y >= vTop) {
-        // if so, ad the fixed class
-        stickyEl.addClass('stuck').css('width',stickyElWidth);
-        } else {
-        // otherwise remove it
-        stickyEl.removeClass('stuck');
-        }
-    });
+    //     // whether that's below the form
+    //     if (y >= vTop) {
+    //     // if so, ad the fixed class
+    //     stickyEl.addClass('stuck').css('width',stickyElWidth);
+    //     } else {
+    //     // otherwise remove it
+    //     stickyEl.removeClass('stuck');
+    //     }
+    // });
 
 });
 
