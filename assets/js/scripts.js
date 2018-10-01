@@ -20,6 +20,12 @@ var handleDataTableSelect = function() {
             searching: false,
             paging: false
         });
+        $('.data-table4').DataTable({
+            select: false,
+            responsive: false,
+            searching: false,
+            paging: false
+        });
     }
 };
 var TableManageTableSelect = function () {
@@ -33,9 +39,26 @@ var TableManageTableSelect = function () {
 }();
 
 $(document).ready(function(){
+
+    // expand/collapse table row
+    $('.expenses-table .table-cell .toggle').on('click', function(){
+        $(this)
+            .text($(this).text() == "+" ? "-" : "+")
+            .parent().parent().toggleClass('expanded')
+            .toggleClass('collapsed');
+        return false;
+    });
+
+    // toggle between RTA and NRD
+    $('.evaluation-table .toggle button').on('click', function(){
+        $('.evaluation-table .toggle button.active').removeClass('active');
+        $(this).addClass('active');
+        return false;
+    });
+
     // google images grid
     var $cell = $('.image__cell');
-    $cell.find('.image--basic').on('click', function() {
+    $cell.find('.image--basic .info').on('click', function() {
         var $thisCell = $(this).closest('.image__cell');
         if ($thisCell.hasClass('is-collapsed')) {
             $cell.not($thisCell).removeClass('is-expanded').addClass('is-collapsed');
@@ -57,7 +80,12 @@ $(document).ready(function(){
         return false;
     });
     $('.toggles a').on('click', function(){
-        $(this).toggleClass('activated');
+        if ( $(this).hasClass('activated') ) {
+            $(this).removeClass('activated');
+        } else {
+            $('.toggles a').removeClass('activated');
+            $(this).addClass('activated');
+        }
         return false;
     });
 

@@ -11,7 +11,7 @@
 	<meta content="" name="author" />
 	
 	<!-- ================== BEGIN BASE CSS STYLE ================== -->
-	<link href="//fonts.googleapis.com/css?family=Roboto:300,400,700|Material+Icons" rel="stylesheet" />
+	<link href="http://fonts.googleapis.com/css?family=Roboto:300,400,700|Material+Icons" rel="stylesheet" />
 	<link href="assets/plugins/jquery-ui/themes/base/minified/jquery-ui.min.css" rel="stylesheet" />
 	<link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
 	<link href="assets/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
@@ -28,7 +28,9 @@
 	<link href="assets/plugins/DataTables/extensions/Select/css/select.bootstrap.min.css" rel="stylesheet" />
 	<link href="assets/plugins/DataTables/extensions/Responsive/css/responsive.bootstrap.min.css" rel="stylesheet" />
 	<link href="assets/css/jquery.mCustomScrollbar.css" rel="stylesheet" />
+    <link href="assets/css/fastselect.min.css" rel="stylesheet" />
 	<link href="assets/plugins/jstree/dist/themes/default/style.min.css" rel="stylesheet" />
+    <link href="assets/plugins/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet" />
 	<!-- ================== END PAGE LEVEL STYLE ================== -->
 </head>
 <body>
@@ -1396,39 +1398,70 @@
 				<div class="footer-tabs sticky">
 					<!-- Nav tabs -->
 					<ul class="nav nav-tabs" role="tablist">
-						<li role="presentation" class="active">
+						<li role="presentation" class="active activated">
 							<i class="remove">&times;</i>
 							<a href="#2014" aria-controls="2014" role="tab" data-toggle="tab">
-								2014<span>paye</span>
-								<strong>taxback</strong>
-							</a>
-						</li>
-						<li role="presentation" class="activated">
-							<i class="remove">&times;</i>
-							<a href="#2015sa" aria-controls="2015sa" role="tab" data-toggle="tab">
-								2015<span>sa</span>
-								<strong>active</strong>
+								2014
+								<select class="type">
+									<option selected>PAYE</option>
+									<option>SA</option>
+								</select>
+								<select class="status">
+									<option selected>taxback</option>
+									<option>active</option>
+									<option>archive</option>
+								</select>
 							</a>
 						</li>
 						<li role="presentation">
 							<i class="remove">&times;</i>
 							<a href="#2015paye" aria-controls="2015paye" role="tab" data-toggle="tab">
-								2015<span>paye</span>
-								<strong>active</strong>
+								2015
+								<select class="type">
+									<option selected>PAYE</option>
+									<option>SA</option>
+								</select>
+								<select class="status">
+									<option>taxback</option>
+									<option selected>active</option>
+									<option>archive</option>
+								</select>
 							</a>
 						</li>
 						<li role="presentation">
 							<i class="remove">&times;</i>
 							<a href="#2016sa" aria-controls="2016sa" role="tab" data-toggle="tab">
-								2016<span>sa</span>
-								<strong>active</strong>
+								2016
+								<select class="type">
+									<option>PAYE</option>
+									<option selected>SA</option>
+								</select>
+								<select class="status">
+									<option>taxback</option>
+									<option selected>active</option>
+									<option>archive</option>
+								</select>
 							</a>
 						</li>
-						<li role="presentation">
+						<li role="presentation" class="archived">
 							<i class="remove">&times;</i>
 							<a href="#2017" aria-controls="2017" role="tab" data-toggle="tab">
-								2017<span>paye</span>
-								<strong>active</strong>
+								2017
+								<select class="type">
+									<option selected>PAYE</option>
+									<option>SA</option>
+								</select>
+								<select class="status">
+									<option>taxback</option>
+									<option>active</option>
+									<option selected>archive</option>
+								</select>
+								<select class="status2">
+									<option selected disabled>Select reason</option>
+									<option>reason 1</option>
+									<option>reason 2</option>
+									<option>reason 3</option>
+								</select>
 							</a>
 						</li>
 						<li class="select">
@@ -1445,7 +1478,7 @@
 										<span class="title">Owners</span>
 										<span class="field">
 											<select>
-												<option>PRSD</option>
+												<option>ST Owner</option>
 												<option>Option 1</option>
 												<option>Option 2</option>
 												<option>Option 3</option>
@@ -1482,68 +1515,13 @@
 									<div class="col-xs-12 col-lg-5 right">
 										<ul>
 											<li class="toggle"><a href="#">Toggle</a></li>
-											<li class="pass"><a href="#" data-toggle="tooltip" data-placement="top" title="Post">P</a></li>
-											<li class="pass"><a href="#" data-toggle="tooltip" data-placement="top" title="Reversions">R</a></li>
-											<li class="pass"><a href="#" data-toggle="tooltip" data-placement="top" title="User Updates">UU</a></li>
-											<li class="todo"><a href="#" data-toggle="tooltip" data-placement="top" title="Web Reg">WR<sup>3</sup></a></li>
-											<li class="pass"><a href="#" data-toggle="tooltip" data-placement="top" title="PN?">PN</a></li>
-											<li class="pass"><a href="#" data-toggle="tooltip" data-placement="top" title="CF?">CF</a></li>
-											<li class="todo"><a href="#" data-toggle="tooltip" data-placement="top" title="CN?">CN<sup>1</sup></a></li>
-										</ul>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div role="tabpanel" class="tab-pane" id="2015sa">
-							<div class="head">
-								<div class="row">
-									<div class="col-xs-12 col-lg-7 left">
-										<span class="title">Owners</span>
-										<span class="field">
-											<select>
-												<option>PRSD</option>
-												<option>Option 1</option>
-												<option>Option 2</option>
-												<option>Option 3</option>
-											</select>
-										</span>
-										<span class="title">Pre CSR</span>
-										<span class="field">
-											<select>
-												<option>PRSD</option>
-												<option>Option 1</option>
-												<option>Option 2</option>
-												<option>Option 3</option>
-											</select>
-										</span>
-										<span class="title">TOC Owner</span>
-										<span class="field">
-											<select>
-												<option>PRSD</option>
-												<option>Option 1</option>
-												<option>Option 2</option>
-												<option>Option 3</option>
-											</select>
-										</span>
-										<span class="title">FO</span>
-										<span class="field">
-											<select>
-												<option>PRSD</option>
-												<option>Option 1</option>
-												<option>Option 2</option>
-												<option>Option 3</option>
-											</select>
-										</span>
-									</div>
-									<div class="col-xs-12 col-lg-5 right">
-										<ul>
-											<li class="toggle"><a href="#">Toggle</a></li>
-											<li class="pass"><a href="#" data-toggle="tooltip" data-placement="top" title="Post">P</a></li>
-											<li class="pass"><a href="#" data-toggle="tooltip" data-placement="top" title="Reversions">R</a></li>
-											<li class="pass"><a href="#" data-toggle="tooltip" data-placement="top" title="User Updates">UU</a></li>
-											<li class="todo"><a href="#" data-toggle="tooltip" data-placement="top" title="Web Reg">WR<sup>3</sup></a></li>
-											<li class="pass"><a href="#" data-toggle="tooltip" data-placement="top" title="PN?">PN</a></li>
-											<li class="pass"><a href="#" data-toggle="tooltip" data-placement="top" title="CF?">CF</a></li>
+											<li class="pass"><a href="#" data-toggle="modal" data-target="#emptyModal">P</a></li>
+											<li class="pass"><a href="#" data-toggle="modal" data-target="#emptyModal">R</a></li>
+											<li class="pass"><a href="#" data-toggle="modal" data-target="#otsUpdate">UU</a></li>
+											<li class="todo"><a href="#" data-toggle="modal" data-target="#webRegistrations">WR<sup>3</sup></a></li>
+											<li class="pass"><a href="#" data-toggle="modal" data-target="#emptyModal">PN</a></li>
+											<li class="pass"><a href="#" data-toggle="modal" data-target="#emptyModal">CF</a></li>
+											<li class="todo"><a href="#" data-toggle="modal" data-target="#clientNotes">CN<sup>1</sup></a></li>
 										</ul>
 									</div>
 								</div>
@@ -1556,7 +1534,7 @@
 										<span class="title">Owners</span>
 										<span class="field">
 											<select>
-												<option>PRSD</option>
+												<option>ST Owner</option>
 												<option>Option 1</option>
 												<option>Option 2</option>
 												<option>Option 3</option>
@@ -1593,13 +1571,13 @@
 									<div class="col-xs-12 col-lg-5 right">
 										<ul>
 											<li class="toggle"><a href="#">Toggle</a></li>
-											<li class="pass"><a href="#" data-toggle="tooltip" data-placement="top" title="Post">P</a></li>
-											<li class="pass"><a href="#" data-toggle="tooltip" data-placement="top" title="Reversions">R</a></li>
-											<li class="pass"><a href="#" data-toggle="tooltip" data-placement="top" title="User Updates">UU</a></li>
-											<li class="todo"><a href="#" data-toggle="tooltip" data-placement="top" title="Web Reg">WR<sup>3</sup></a></li>
-											<li class="pass"><a href="#" data-toggle="tooltip" data-placement="top" title="PN?">PN</a></li>
-											<li class="pass"><a href="#" data-toggle="tooltip" data-placement="top" title="CF?">CF</a></li>
-											<li class="todo"><a href="#" data-toggle="tooltip" data-placement="top" title="CN?">CN<sup>1</sup></a></li>
+											<li class="pass"><a href="#" data-toggle="modal" data-target="#emptyModal">P</a></li>
+											<li class="pass"><a href="#" data-toggle="modal" data-target="#emptyModal">R</a></li>
+											<li class="pass"><a href="#" data-toggle="modal" data-target="#otsUpdate">UU</a></li>
+											<li class="todo"><a href="#" data-toggle="modal" data-target="#webRegistrations">WR<sup>3</sup></a></li>
+											<li class="pass"><a href="#" data-toggle="modal" data-target="#emptyModal">PN</a></li>
+											<li class="pass"><a href="#" data-toggle="modal" data-target="#emptyModal">CF</a></li>
+											<li class="todo"><a href="#" data-toggle="modal" data-target="#clientNotes">CN<sup>1</sup></a></li>
 										</ul>
 									</div>
 								</div>
@@ -1612,7 +1590,7 @@
 										<span class="title">Owners</span>
 										<span class="field">
 											<select>
-												<option>PRSD</option>
+												<option>ST Owner</option>
 												<option>Option 1</option>
 												<option>Option 2</option>
 												<option>Option 3</option>
@@ -1649,12 +1627,13 @@
 									<div class="col-xs-12 col-lg-5 right">
 										<ul>
 											<li class="toggle"><a href="#">Toggle</a></li>
-											<li class="pass"><a href="#" data-toggle="tooltip" data-placement="top" title="Post">P</a></li>
-											<li class="pass"><a href="#" data-toggle="tooltip" data-placement="top" title="Reversions">R</a></li>
-											<li class="pass"><a href="#" data-toggle="tooltip" data-placement="top" title="User Updates">UU</a></li>
-											<li class="todo"><a href="#" data-toggle="tooltip" data-placement="top" title="Web Reg">WR<sup>3</sup></a></li>
-											<li class="pass"><a href="#" data-toggle="tooltip" data-placement="top" title="PN?">PN</a></li>
-											<li class="pass"><a href="#" data-toggle="tooltip" data-placement="top" title="CF?">CF</a></li>
+											<li class="pass"><a href="#" data-toggle="modal" data-target="#emptyModal">P</a></li>
+											<li class="pass"><a href="#" data-toggle="modal" data-target="#emptyModal">R</a></li>
+											<li class="pass"><a href="#" data-toggle="modal" data-target="#otsUpdate">UU</a></li>
+											<li class="todo"><a href="#" data-toggle="modal" data-target="#webRegistrations">WR<sup>3</sup></a></li>
+											<li class="pass"><a href="#" data-toggle="modal" data-target="#emptyModal">PN</a></li>
+											<li class="pass"><a href="#" data-toggle="modal" data-target="#emptyModal">CF</a></li>
+											<li class="todo"><a href="#" data-toggle="modal" data-target="#clientNotes">CN<sup>1</sup></a></li>
 										</ul>
 									</div>
 								</div>
@@ -1667,7 +1646,7 @@
 										<span class="title">Owners</span>
 										<span class="field">
 											<select>
-												<option>PRSD</option>
+												<option>ST Owner</option>
 												<option>Option 1</option>
 												<option>Option 2</option>
 												<option>Option 3</option>
@@ -1704,13 +1683,13 @@
 									<div class="col-xs-12 col-lg-5 right">
 										<ul>
 											<li class="toggle"><a href="#">Toggle</a></li>
-											<li class="pass"><a href="#" data-toggle="tooltip" data-placement="top" title="Post">P</a></li>
-											<li class="pass"><a href="#" data-toggle="tooltip" data-placement="top" title="Reversions">R</a></li>
-											<li class="pass"><a href="#" data-toggle="tooltip" data-placement="top" title="User Updates">UU</a></li>
-											<li class="todo"><a href="#" data-toggle="tooltip" data-placement="top" title="Web Reg">WR<sup>3</sup></a></li>
-											<li class="pass"><a href="#" data-toggle="tooltip" data-placement="top" title="PN?">PN</a></li>
-											<li class="pass"><a href="#" data-toggle="tooltip" data-placement="top" title="CF?">CF</a></li>
-											<li class="todo"><a href="#" data-toggle="tooltip" data-placement="top" title="CN?">CN<sup>1</sup></a></li>
+											<li class="pass"><a href="#" data-toggle="modal" data-target="#emptyModal">P</a></li>
+											<li class="pass"><a href="#" data-toggle="modal" data-target="#emptyModal">R</a></li>
+											<li class="pass"><a href="#" data-toggle="modal" data-target="#otsUpdate">UU</a></li>
+											<li class="todo"><a href="#" data-toggle="modal" data-target="#webRegistrations">WR<sup>3</sup></a></li>
+											<li class="pass"><a href="#" data-toggle="modal" data-target="#emptyModal">PN</a></li>
+											<li class="pass"><a href="#" data-toggle="modal" data-target="#emptyModal">CF</a></li>
+											<li class="todo"><a href="#" data-toggle="modal" data-target="#clientNotes">CN<sup>1</sup></a></li>
 										</ul>
 									</div>
 								</div>
@@ -1783,19 +1762,22 @@
 									<section class="image-grid">
 										<div class="image__cell is-collapsed">
 											<div class="image--basic">
-												<a href="#expand-jump-1">
-													<span class="box">
-														<span class="top">Spouse</span>
-														<p class="w25">FN
-														<strong>Juliana</strong></p>
-														<p class="w25">LN
-														<strong>Skywalker</strong></p>
-														<p class="w25">DOB
-														<strong>18-Dec-1995</strong></p>
-														<p class="w25">PPS
-														<strong>1234567899</strong></p>
-													</span>
-												</a>
+												<div class="box">
+													<div class="top">
+														<span class="title">Spouse</span>
+														<span class="options">
+															<a href="#" class="open spouse">Open section</a>
+														</span>
+													</div>
+													<p class="w25">FN
+													<strong>Juliana</strong></p>
+													<p class="w25">LN
+													<strong>Skywalker</strong></p>
+													<p class="w25">DOB
+													<strong>18-Dec-1995</strong></p>
+													<p class="w25">PPS
+													<strong>1234567899</strong></p>
+												</div>
 												<div class="arrow--up"></div>
 											</div>
 											<div class="image--expand">
@@ -1837,15 +1819,18 @@
 										</div>
 										<div class="image__cell is-collapsed">
 											<div class="image--basic">
-												<a href="#expand-jump-2">
-													<span class="box">
-														<span class="top">marketing</span>
-														<p class="w50">Referral
-														<strong>Nestle Bulgaria Ltd</strong></p>
-														<p>Reg. date
-														<strong>12-Feb-2017</strong></p>
-													</span>
-												</a>
+												<div class="box">
+													<div class="top">
+														<span class="title">Marketing</span>
+														<span class="options">
+															<a href="#" class="open">Open section</a>
+														</span>
+													</div>
+													<p class="w50">Referral
+													<strong>Nestle Bulgaria Ltd</strong></p>
+													<p>Reg. date
+													<strong>12-Feb-2017</strong></p>
+												</div>
 												<div class="arrow--up"></div>
 											</div>
 											<div class="image--expand">
@@ -1887,15 +1872,19 @@
 										</div>
 										<div class="image__cell is-collapsed">
 											<div class="image--basic">
-												<a href="#expand-jump-3">
-													<span class="box">
-														<span class="top">TC &amp; Expenses</span>
-														<p class="w50">TC
-														<strong>$200</strong></p>
-														<p class="w50">CoP
-														<strong>$8000</strong></p>
-													</span>
-												</a>
+												<div class="box">
+													<div class="top">
+														<span class="title">TC & Expenses</span>
+														<span class="options">
+															<a href="#" class="info">Details</a>
+															<a href="#" class="open">Open section</a>
+														</span>
+													</div>
+													<p class="w50">TC
+													<strong>$200</strong></p>
+													<p class="w50">CoP
+													<strong>$8000</strong></p>
+												</div>
 												<div class="arrow--up"></div>
 											</div>
 											<div class="image--expand">
@@ -1937,17 +1926,20 @@
 										</div>
 										<div class="image__cell is-collapsed">
 											<div class="image--basic">
-												<a href="#expand-jump-4">
-													<span class="box">
-														<span class="top">Employment (self)</span>
-														<p class="w33">#
-														<strong>99</strong></p>
-														<p class="w33">T. Income
-														<strong>$20,000</strong></p>
-														<p class="w33">T. Tax
-														<strong>$20,000</strong></p>
-													</span>
-												</a>
+												<div class="box">
+													<div class="top">
+														<span class="title">Employment (self)</span>
+														<span class="options">
+															<a href="#" class="open">Open section</a>
+														</span>
+													</div>
+													<p class="w33">#
+													<strong>99</strong></p>
+													<p class="w33">T. Income
+													<strong>$20,000</strong></p>
+													<p class="w33">T. Tax
+													<strong>$20,000</strong></p>
+												</div>
 												<div class="arrow--up"></div>
 											</div>
 											<div class="image--expand">
@@ -1957,17 +1949,20 @@
 										</div>
 										<div class="image__cell is-collapsed">
 											<div class="image--basic">
-												<a href="#expand-jump-5">
-													<span class="box">
-														<span class="top">Employment</span>
-														<p class="w33">#
-														<strong>99</strong></p>
-														<p class="w33">T. Income
-														<strong>$20,000</strong></p>
-														<p class="w33">T. Tax
-														<strong>$20,000</strong></p>
-													</span>
-												</a>
+												<div class="box">
+													<div class="top">
+														<span class="title">Employment</span>
+														<span class="options">
+															<a href="#" class="open">Open section</a>
+														</span>
+													</div>
+													<p class="w33">#
+													<strong>99</strong></p>
+													<p class="w33">T. Income
+													<strong>$20,000</strong></p>
+													<p class="w33">T. Tax
+													<strong>$20,000</strong></p>
+												</div>
 												<div class="arrow--up"></div>
 											</div>
 											<div class="image--expand">
@@ -1977,19 +1972,22 @@
 										</div>
 										<div class="image__cell is-collapsed">
 											<div class="image--basic">
-												<a href="#expand-jump-5">
-													<span class="box">
-														<span class="top">Evaluation</span>
-														<p class="w25">Est. Ref.
-														<strong>$20,000</strong></p>
-														<p class="w25">Cust. Ref.
-														<strong>$20,000</strong></p>
-														<p class="w25">ESS Fee
-														<strong>$20,000</strong></p>
-														<p class="w25">Discount
-														<strong>$20,000</strong></p>
-													</span>
-												</a>
+												<div class="box">
+													<div class="top">
+														<span class="title">Evaluation</span>
+														<span class="options">
+															<a href="#" class="open">Open section</a>
+														</span>
+													</div>
+													<p class="w25">Est. Ref.
+													<strong>$20,000</strong></p>
+													<p class="w25">Cust. Ref.
+													<strong>$20,000</strong></p>
+													<p class="w25">ESS Fee
+													<strong>$20,000</strong></p>
+													<p class="w25">Discount
+													<strong>$20,000</strong></p>
+												</div>
 												<div class="arrow--up"></div>
 											</div>
 											<div class="image--expand">
@@ -1999,17 +1997,20 @@
 										</div>
 										<div class="image__cell is-collapsed">
 											<div class="image--basic">
-												<a href="#expand-jump-5">
-													<span class="box">
-														<span class="top">Tax office line</span>
-														<p class="w33">Name
-														<strong>ROS TO Line</strong></p>
-														<p class="w33">Status
-														<strong>Sent</strong></p>
-														<p class="w33">Sub-status
-														<strong>On Hold</strong></p>
-													</span>
-												</a>
+												<div class="box">
+													<div class="top">
+														<span class="title">Tax office line</span>
+														<span class="options">
+															<a href="#" class="open">Open section</a>
+														</span>
+													</div>
+													<p class="w33">Name
+													<strong>ROS TO Line</strong></p>
+													<p class="w33">Status
+													<strong>Sent</strong></p>
+													<p class="w33">Sub-status
+													<strong>On Hold</strong></p>
+												</div>
 												<div class="arrow--up"></div>
 											</div>
 											<div class="image--expand">
@@ -2019,15 +2020,18 @@
 										</div>
 										<div class="image__cell is-collapsed">
 											<div class="image--basic">
-												<a href="#expand-jump-5">
-													<span class="box">
-														<span class="top">Payments</span>
-														<p class="w50">PO
-														<strong>Bank Transfer</strong></p>
-														<p class="w33">BDF status
-														<strong>Received</strong></p>
-													</span>
-												</a>
+												<div class="box">
+													<div class="top">
+														<span class="title">Payments</span>
+														<span class="options">
+															<a href="#" class="open">Open section</a>
+														</span>
+													</div>
+													<p class="w50">PO
+													<strong>Bank Transfer</strong></p>
+													<p class="w33">BDF status
+													<strong>Received</strong></p>
+												</div>
 												<div class="arrow--up"></div>
 											</div>
 											<div class="image--expand">
@@ -2036,6 +2040,1037 @@
 											</div>
 										</div>
 									</section>
+								</div>
+							</div>
+						</div>
+						<div class="row app-overview spouse">
+							<div class="col-xs-12">
+								<a class="expand" role="button" data-toggle="collapse" href="#collapse2" aria-expanded="false" aria-controls="collapse2">
+									<span>Spouse Information</span>
+								</a>
+								<div class="collapse in" id="collapse2" aria-expanded="true">
+									<div class="row">
+										<div class="col-xs-12 col-lg-6 copy">
+											Copy for 
+											<select>
+												<option>2016</option>
+											</select>
+											<button class="btn btn-default">Copy</button>
+										</div>
+										<div class="col-xs-12 col-lg-6 buttons">
+											<a href="#" class="btn btn-primary">Save Changes</a> <a href="#" class="btn btn-secondary">Discard Changes</a>
+										</div>
+									</div>
+									<div class="row auto-assign">
+										<div class="col-xs-12 col-md-6 col-lg-4">
+											<p>Medical Card No: <span class="editable text">1234556677</span>
+											<input type="text" class="editable-text"></p>
+											<p>Validity Period: <span class="editable text date">DD/MM/YYYY - DD/MM/YYYY</span>
+											<input type="text" class="editable-text"  id="reportrange1"></p>
+											<p>		
+												<span class="name">Industry:</span>
+												<span class="col blue">
+													<select class="multipleSelect" multiple name="industry">
+														<option selected value="Banking">Banking</option>
+														<option selected value="Financial">Financial</option>
+														<option value="Other 1">Other 1</option>
+														<option value="Other 2">Other 2</option>
+														<option value="Other 3">Other 3</option>
+													</select>
+												</span>
+											</p>
+											<p>		
+												<span class="name">Occupation:</span>
+												<span class="col blue">
+													<select class="multipleSelect" multiple name="occupation">
+														<option selected value="Banking">Banking</option>
+														<option selected value="Financial">Financial</option>
+														<option value="Other 1">Other 1</option>
+														<option value="Other 2">Other 2</option>
+														<option value="Other 3">Other 3</option>
+													</select>
+												</span>
+											</p>
+										</div>
+										<div class="col-xs-12 col-md-6 col-lg-4">
+											<p>Flat Rate Expenses: <span class="editable text">1234565</span>
+											<input type="text" class="editable-text"></p>
+											<p>Flat Rate ROS: <span class="editable text">1234.25</span>
+											<input type="text" class="editable-text"></p>
+											<p>Entry Date: <span class="editable text date">DD/MM/YYYY</span>
+											<input type="text" class="editable-text date datepicker"></p>
+											<p>Exit Date: <span class="editable text date">DD/MM/YYYY</span>
+											<input type="text" class="editable-text date datepicker"></p>
+											<p>Days: <span class="editable text">15</span>
+											<input type="text" class="editable-text"></p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row app-overview marketing">
+							<div class="col-xs-12">
+								<a class="expand" role="button" data-toggle="collapse" href="#collapse2" aria-expanded="false" aria-controls="collapse2">
+										<span>Marketing Information</span>
+									</a>
+									<div class="collapse in" id="collapse2" aria-expanded="true">
+										<div class="row">
+											<div class="col-xs-12 col-lg-6 copy">
+												Copy for 
+												<select>
+													<option>2016</option>
+												</select>
+												<button class="btn btn-default">Copy</button>
+											</div>
+											<div class="col-xs-12 col-lg-6 buttons">
+												<a href="#" class="btn btn-primary">Save Changes</a> <a href="#" class="btn btn-secondary">Discard Changes</a>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-xs-12 col-md-6 col-lg-4">
+												<p>Tax Year ID: <span class="editable text">123456789 - 1</span>
+												<input type="text" class="editable-text"></p>
+												<p>Registration Date: <span class="editable text date">DD/MM/YYYY</span>
+												<input type="text" class="editable-text date datepicker"></p>
+												<p>Registration Type: 
+													<span class="editable select name-title" style="display: inline-block;">Reg Type 1</span>
+													<select class="editable-select" style="display: none;">
+														<option selected="selected">Reg Type 1</option>
+														<option>Option 1</option>
+														<option>OPtion 2</option>
+													</select>
+												</p>
+											</div>
+											<div class="col-xs-12 col-md-6 col-lg-4">
+												<p>Referral 1: 
+													<span class="editable select name-title" style="display: inline-block;">John Smith</span>
+													<select class="editable-select" style="display: none;">
+														<option selected="selected">John Smith</option>
+														<option>Option 1</option>
+														<option>OPtion 2</option>
+													</select>
+												</p>
+												<p>Referral 2: 
+													<span class="editable select name-title" style="display: inline-block;">John Smith</span>
+													<select class="editable-select" style="display: none;">
+														<option selected="selected">John Smith</option>
+														<option>Option 1</option>
+														<option>OPtion 2</option>
+													</select>
+												</p>
+												<p>Campaign: <strong>Campaign Name</strong></p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row app-overview taxcredit">
+								<div class="col-xs-12">
+									<a class="expand" role="button" data-toggle="collapse" href="#collapse3" aria-expanded="false" aria-controls="collapse3">
+										<span>Taxcredit & Expenses</span>
+									</a>
+									<div class="collapse in" id="collapse3" aria-expanded="true">
+										<div class="row">
+											<div class="col-xs-12 buttons">
+												<a href="#" class="btn btn-primary">Save Changes</a> <a href="#" class="btn btn-secondary">Discard Changes</a>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-xs-12 col-md-6 col-lg-4">
+												<p>Marital Status: 
+													<span class="editable select name-title" style="display: inline-block;">Married</span>
+													<select class="editable-select" style="display: none;">
+														<option selected="selected">Married</option>
+														<option>Option 1</option>
+														<option>OPtion 2</option>
+													</select>
+												</p>
+												<p>Basis of assessment: 
+													<span class="editable select name-title" style="display: inline-block;">Married</span>
+													<select class="editable-select" style="display: none;">
+														<option selected="selected">Married</option>
+														<option>Option 1</option>
+														<option>OPtion 2</option>
+													</select>
+												</p>
+												<p>Change of marital status: <span class="editable text date">DD/MM/YYYY</span>
+												<input type="text" class="editable-text date datepicker"></p>
+											</div>
+											<div class="col-xs-12 col-md-6 col-lg-4">
+												<p>Medical Card No: <span class="editable text">1234556677</span>
+												<input type="text" class="editable-text"></p>
+												<p>Validity Period: <span class="editable text date">DD/MM/YYYY - DD/MM/YYYY</span>
+												<input type="text" class="editable-text"  id="reportrange2"></p>
+												<p>Medical Card Holder Check: <span class="editable text date">DD/MM/YYYY</span>
+												<input type="text" class="editable-text date datepicker"></p>
+												<p>		
+													<span class="name">Industry:</span>
+													<span class="col blue">
+														<select class="multipleSelect" multiple name="industry">
+															<option selected value="Banking">Banking</option>
+															<option selected value="Financial">Financial</option>
+															<option value="Other 1">Other 1</option>
+															<option value="Other 2">Other 2</option>
+															<option value="Other 3">Other 3</option>
+														</select>
+													</span>
+												</p>
+												<p>		
+													<span class="name">Occupation:</span>
+													<span class="col blue">
+														<select class="multipleSelect" multiple name="occupation">
+															<option selected value="Banking">Banking</option>
+															<option selected value="Financial">Financial</option>
+															<option value="Other 1">Other 1</option>
+															<option value="Other 2">Other 2</option>
+															<option value="Other 3">Other 3</option>
+														</select>
+													</span>
+												</p>
+											</div>
+											<div class="col-xs-12 col-md-6 col-lg-4">
+												<p>Flat Rate Expenses: <span class="editable text">1234565</span>
+												<input type="text" class="editable-text"></p>
+												<p>Flat Rate ROS: <span class="editable text">1234.25</span>
+												<input type="text" class="editable-text"></p>
+												<p>Entry Date: <span class="editable text date">DD/MM/YYYY</span>
+												<input type="text" class="editable-text date datepicker"></p>
+												<p>Exit Date: <span class="editable text date">DD/MM/YYYY</span>
+												<input type="text" class="editable-text date datepicker"></p>
+												<p>Days: <span class="editable text">15</span>
+												<input type="text" class="editable-text"></p>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-xs-12">
+												<div class="expenses-table">
+													<div class="table-row head">
+														<div class="table-cell">
+															Expenses
+														</div>
+														<div class="table-cell">
+															Initial Info
+														</div>
+														<div class="table-cell">
+															Calculation
+														</div>
+														<div class="table-cell">
+															ROS Info
+														</div>
+													</div>
+													<div class="table-row">
+														<div class="table-cell">
+															Personal TC
+														</div>
+														<div class="table-cell">
+															<input type="text">
+														</div>
+														<div class="table-cell">
+															<input type="text">
+														</div>
+														<div class="table-cell">
+															<input type="text">
+														</div>
+													</div>
+													<div class="table-row">
+														<div class="table-cell">
+															Employee TC
+														</div>
+														<div class="table-cell">
+															<input type="text">
+														</div>
+														<div class="table-cell">
+															<input type="text">
+														</div>
+														<div class="table-cell">
+															<input type="text">
+														</div>
+													</div>
+													<div class="table-row parent collapsed">
+														<div class="table-cell">
+															<a href="#" class="toggle">+</a>
+															Qualifying Health Expenses
+														</div>
+														<div class="table-cell">
+															<input type="text">
+														</div>
+														<div class="table-cell">
+															<input type="text">
+														</div>
+														<div class="table-cell">
+															<input type="text">
+														</div>
+													</div>
+													<div class="table-row child">
+														<div class="table-cell">
+															<div class="heading">
+																<ul class="nav nav-tabs" role="tablist">
+																	<li role="presentation"><a href="#year2015" aria-controls="year2015" role="tab" data-toggle="tab">Year 2015</a></li>
+																	<li role="presentation"><a href="#year2016" aria-controls="year2016" role="tab" data-toggle="tab">Year 2016</a></li>
+																	<li role="presentation" class="active"><a href="#year2017" aria-controls="year2017" role="tab" data-toggle="tab">Year 2017</a></li>
+																</ul>
+																<ul class="links">
+																	<li><a href="#">Practicioner Check</a></li>
+																	<li><a href="#">Qualifying Health Expenses</a></li>
+																</ul>
+															</div>
+															<div class="tab-content">
+																<div role="tabpanel" class="tab-pane fade" id="year2015">...</div>
+																<div role="tabpanel" class="tab-pane fade" id="year2016">...</div>
+																<div role="tabpanel" class="tab-pane fade in active" id="year2017">
+																	<table class="table">
+																		<thead>
+																			<tr>
+																				<th width="25%">Expense</th>
+																				<th width="25%">Details</th>
+																				<th>Receipts</th>
+																				<th>Reference</th>
+																				<th>Carried out by a Practitioner</th>
+																			</tr>
+																		</thead>
+																		<tbody>
+																			<tr>
+																				<td>Doctors Fee</td>
+																				<td><input type="text"></td>
+																				<td><input type="checkbox"></td>
+																				<td><input type="checkbox"></td>
+																				<td><input type="checkbox" checked></td>
+																			</tr>
+																			<tr>
+																				<td>Diagnostic Procedures</td>
+																				<td><input type="text"></td>
+																				<td><input type="checkbox"></td>
+																				<td><input type="checkbox"></td>
+																				<td><input type="checkbox"></td>
+																			</tr>
+																			<tr>
+																				<td>Prescription & Medicines</td>
+																				<td><input type="text"></td>
+																				<td><input type="checkbox"></td>
+																				<td><input type="checkbox"></td>
+																				<td><input type="checkbox"></td>
+																			</tr>
+																			<tr>
+																				<td>Hospital Treatment</td>
+																				<td><input type="text"></td>
+																				<td><input type="checkbox"></td>
+																				<td><input type="checkbox"></td>
+																				<td><input type="checkbox"></td>
+																			</tr>
+																			<tr>
+																				<td>Medical & Surgical Appliance</td>
+																				<td><input type="text"></td>
+																				<td><input type="checkbox"></td>
+																				<td><input type="checkbox"></td>
+																				<td><input type="checkbox"></td>
+																			</tr>
+																			<tr>
+																				<td>Transport by Ambulance</td>
+																				<td><input type="text"></td>
+																				<td><input type="checkbox"></td>
+																				<td><input type="checkbox"></td>
+																				<td><input type="checkbox"></td>
+																			</tr>
+																			<tr>
+																				<td>Invitro Fertilization (IVF)</td>
+																				<td><input type="text"></td>
+																				<td><input type="checkbox"></td>
+																				<td><input type="checkbox"></td>
+																				<td><input type="checkbox"></td>
+																			</tr>
+																			<tr>
+																				<td>Orthoptic Treatment</td>
+																				<td><input type="text"></td>
+																				<td><input type="checkbox"></td>
+																				<td><input type="checkbox"></td>
+																				<td><input type="checkbox"></td>
+																			</tr>
+																			<tr>
+																				<td>Physiotherapy</td>
+																				<td><input type="text"></td>
+																				<td><input type="checkbox"></td>
+																				<td><input type="checkbox"></td>
+																				<td><input type="checkbox"></td>
+																			</tr>
+																			<tr>
+																				<td>Acupuncture</td>
+																				<td><input type="text"></td>
+																				<td><input type="checkbox"></td>
+																				<td><input type="checkbox"></td>
+																				<td><input type="checkbox"></td>
+																			</tr>
+																			<tr>
+																				<td>Psychologist or Psychotherapist</td>
+																				<td><input type="text"></td>
+																				<td><input type="checkbox"></td>
+																				<td><input type="checkbox"></td>
+																				<td><input type="checkbox"></td>
+																			</tr>
+																			<tr>
+																				<td>Dental Routine</td>
+																				<td><input type="text"></td>
+																				<td><input type="checkbox"></td>
+																				<td><input type="checkbox"></td>
+																				<td><input type="checkbox"></td>
+																			</tr>
+																			<tr>
+																				<td>Coeliacs & Diabeics</td>
+																				<td><input type="text"></td>
+																				<td><input type="checkbox"></td>
+																				<td><input type="checkbox"></td>
+																				<td><input type="checkbox"></td>
+																			</tr>
+																			<tr>
+																				<td>Total Expenses</td>
+																				<td><input type="text"></td>
+																				<td><input type="checkbox"></td>
+																				<td><input type="checkbox"></td>
+																				<td><input type="checkbox"></td>
+																			</tr>
+																		</tbody>
+																	</table>
+																	<div>
+																		<a href="#" class="btn btn-primary">Save Changes</a> <a href="#" class="btn btn-secondary">Discard Changes</a>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="table-row parent collapsed">
+														<div class="table-cell">
+															<a href="#" class="toggle">+</a>
+															Rent TC
+														</div>
+														<div class="table-cell">
+															<input type="text">
+														</div>
+														<div class="table-cell">
+															<input type="text">
+														</div>
+														<div class="table-cell">
+															<input type="text">
+														</div>
+													</div>
+													<div class="table-row child">
+														<div class="table-cell">
+															<div class="heading">
+																<ul class="nav nav-tabs" role="tablist">
+																	<li role="presentation"><a href="#rent-year2015" aria-controls="rent-year2015" role="tab" data-toggle="tab">Year 2015</a></li>
+																	<li role="presentation"><a href="#rent-year2016" aria-controls="rent-year2016" role="tab" data-toggle="tab">Year 2016</a></li>
+																	<li role="presentation" class="active"><a href="#rent-year2017" aria-controls="rent-year2017" role="tab" data-toggle="tab">Year 2017</a></li>
+																</ul>
+															</div>
+															<div class="tab-content">
+																<div role="tabpanel" class="tab-pane fade" id="rent-year2015">...</div>
+																<div role="tabpanel" class="tab-pane fade" id="rent-year2016">...</div>
+																<div role="tabpanel" class="tab-pane fade in active" id="rent-year2017">
+																	<table class="table">
+																		<tbody>
+																			<tr>
+																				<td>Type</td>
+																				<td>
+																					<select>
+																						<option>Monthly</option>
+																					</select>
+																				</td>
+																			</tr>
+																			<tr>
+																				<td>Landlord's name</td>
+																				<td><input type="text"></td>
+																			</tr>
+																			<tr>
+																				<td>Landlord's Address</td>
+																				<td><input type="text"></td>
+																			</tr>
+																			<tr>
+																				<td>PPS No Landlord</td>
+																				<td><input type="text"></td>
+																			</tr>
+																			<tr>
+																				<td>Address of Tenancy</td>
+																				<td><input type="text"></td>
+																			</tr>
+																			<tr>
+																				<td>Start Date</td>
+																				<td><input type="text" class="datepicker"></td>
+																			</tr>
+																			<tr>
+																				<td>Finish Date</td>
+																				<td><input type="text" class="datepicker"></td>
+																			</tr>
+																			<tr>
+																				<td>Rental Agreement:</td>
+																				<td><input type="checkbox"></td>
+																			</tr>
+																		</tbody>
+																	</table>
+																	<div>
+																		<a href="#" class="btn btn-primary">Save Changes</a> <a href="#" class="btn btn-secondary">Discard Changes</a>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="table-row">
+														<div class="table-cell">
+															SPCC
+														</div>
+														<div class="table-cell">
+															<input type="text">
+														</div>
+														<div class="table-cell">
+															<input type="text">
+														</div>
+														<div class="table-cell">
+															<input type="text">
+														</div>
+													</div>
+													<div class="table-row">
+														<div class="table-cell">
+															Home Carer's TC
+														</div>
+														<div class="table-cell">
+															<input type="text">
+														</div>
+														<div class="table-cell">
+															<input type="text">
+														</div>
+														<div class="table-cell">
+															<input type="text">
+														</div>
+													</div>
+													<div class="table-row parent collapsed">
+														<div class="table-cell">
+															<a href="#" class="toggle">+</a>
+															Medical Insurance Relief
+														</div>
+														<div class="table-cell">
+															<input type="text">
+														</div>
+														<div class="table-cell">
+															<input type="text">
+														</div>
+														<div class="table-cell">
+															<input type="text">
+														</div>
+													</div>
+													<div class="table-row child">
+														<div class="table-cell">
+															<div class="heading">
+																<ul class="nav nav-tabs" role="tablist">
+																	<li role="presentation"><a href="#medical-year2015" aria-controls="medical-year2015" role="tab" data-toggle="tab">Year 2015</a></li>
+																	<li role="presentation"><a href="#medical-year2016" aria-controls="medical-year2016" role="tab" data-toggle="tab">Year 2016</a></li>
+																	<li role="presentation" class="active"><a href="#medical-year2017" aria-controls="medical-year2017" role="tab" data-toggle="tab">Year 2017</a></li>
+																</ul>
+																<ul class="links">
+																	<li><a href="#">Add Individual</a></li>
+																	<li><a href="#">Medical Insurance Info</a></li>
+																</ul>
+															</div>
+															<div class="tab-content">
+																<div role="tabpanel" class="tab-pane fade" id="medical-year2015">...</div>
+																<div role="tabpanel" class="tab-pane fade" id="medical-year2016">...</div>
+																<div role="tabpanel" class="tab-pane fade in active" id="medical-year2017">
+																	<table class="table">
+																		<thead>
+																			<tr>
+																				<th>Relative Type</th>
+																				<th>Gross Amount</th>
+																				<th>Qualified Amount</th>
+																			</tr>
+																		</thead>
+																		<tbody>
+																			<tr>
+																				<td>
+																					<select>
+																						<option>Spouse</option>
+																					</select>
+																				</td>
+																				<td><input type="text"></td>
+																				<td><input type="text"></td>
+																			</tr>
+																			<tr>
+																				<td>
+																					<select>
+																						<option>Child</option>
+																					</select>
+																				</td>
+																				<td><input type="text"></td>
+																				<td><input type="text"></td>
+																			</tr>
+																		</tbody>
+																	</table>
+																	<div>
+																		<a href="#" class="btn btn-primary">Save Changes</a> <a href="#" class="btn btn-secondary">Discard Changes</a>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="table-row parent collapsed">
+														<div class="table-cell">
+															<a href="#" class="toggle">+</a>
+															Tuition
+														</div>
+														<div class="table-cell">
+															<input type="text">
+														</div>
+														<div class="table-cell">
+															<input type="text">
+														</div>
+														<div class="table-cell">
+															<input type="text">
+														</div>
+													</div>
+													<div class="table-row child">
+														<div class="table-cell">
+															<div class="heading">
+																<ul class="nav nav-tabs" role="tablist">
+																	<li role="presentation"><a href="#tuition-year2015" aria-controls="tuition-year2015" role="tab" data-toggle="tab">Year 2015</a></li>
+																	<li role="presentation"><a href="#tuition-year2016" aria-controls="tuition-year2016" role="tab" data-toggle="tab">Year 2016</a></li>
+																	<li role="presentation" class="active"><a href="#tuition-year2017" aria-controls="tuition-year2017" role="tab" data-toggle="tab">Year 2017</a></li>
+																</ul>
+																<ul class="links">
+																	<li><a href="#">Add Expense</a></li>
+																</ul>
+															</div>
+															<div class="tab-content">
+																<div role="tabpanel" class="tab-pane fade" id="tuition-year2015">...</div>
+																<div role="tabpanel" class="tab-pane fade" id="tuition-year2016">...</div>
+																<div role="tabpanel" class="tab-pane fade in active" id="tuition-year2017">
+																	<table class="table">
+																		<thead>
+																			<tr>
+																				<th>College / University</th>
+																				<th>Course Type</th>
+																				<th>Course Name</th>
+																				<th>Academy Year</th>
+																				<th>Year paid</th>
+																			</tr>
+																		</thead>
+																		<tbody>
+																			<tr>
+																				<td><input type="text"></td>
+																				<td><input type="text"></td>
+																				<td><input type="text"></td>
+																				<td><input type="text"></td>
+																				<td><input type="text"></td>
+																			</tr>
+																			<tr>
+																				<td><input type="text"></td>
+																				<td><input type="text"></td>
+																				<td><input type="text"></td>
+																				<td><input type="text"></td>
+																				<td><input type="text"></td>
+																			</tr>
+																			<tr>
+																				<td><input type="text"></td>
+																				<td><input type="text"></td>
+																				<td><input type="text"></td>
+																				<td><input type="text"></td>
+																				<td><input type="text"></td>
+																			</tr>
+																		</tbody>
+																	</table>
+																	<div>
+																		<a href="#" class="btn btn-primary">Save Changes</a> <a href="#" class="btn btn-secondary">Discard Changes</a>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row app-overview employment">
+								<div class="col-xs-12">
+									<a class="expand" role="button" data-toggle="collapse" href="#collapse5" aria-expanded="false" aria-controls="collapse5">
+										<span>Employment History</span>
+									</a>
+									<div class="collapse in" id="collapse5" aria-expanded="true">
+										<div class="row">
+											<div class="col-xs-12 drt">
+												<strong>DRT No:</strong> 
+												<input type="text"> 
+												<strong>DRT Fee: </strong> 134.56
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-xs-12">
+												<table class="table data-table4">
+													<thead>
+														<tr>
+															<th>Company</th>
+															<th>Start</th>
+															<th>Finish</th>
+															<th>DRT Status</th>
+															<th>Spouse</th>
+															<th>53 Rule</th>
+															<th>Income</th>
+															<th>Tax Paid</th>
+															<th>USC Income<span>Self</span></th>
+															<th>USC Paid<span>Self</span></th>
+															<th>USC Income<span>Spouse</span></th>
+															<th>USC Paid<span>Spouse</span></th>
+															<th>Merical Card</th>
+															<th>DRT Owner</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td>Nestle Ireland</td>
+															<td>08-JUN-2016</td>
+															<td>08-JUN-2016</td>
+															<td>Status name</td>
+															<td>Yes</td>
+															<td>No</td>
+															<td>25,000.00</td>
+															<td>25,000.00</td>
+															<td>0.00</td>
+															<td>0.00</td>
+															<td>0.00</td>
+															<td>0.00</td>
+															<td>-</td>
+															<td>-</td>
+														</tr>
+														<tr>
+															<td>Kentucky Fried Chicken LLC</td>
+															<td>-</td>
+															<td>-</td>
+															<td>-</td>
+															<td>-</td>
+															<td>-</td>
+															<td>-</td>
+															<td>-</td>
+															<td>-</td>
+															<td>-</td>
+															<td>-</td>
+															<td>-</td>
+															<td>-</td>
+															<td>-</td>
+														</tr>
+														<tr>
+															<td><input type="text"></td>
+															<td><input type="text"></td>
+															<td><input type="text"></td>
+															<td>
+																<select>
+																	<option>Status</option>
+																	<option>Option 2</option>
+																	<option>Option 3</option>
+																</select>
+															</td>
+															<td><span class="toggler active"><span></span></span> <strong>Yes</strong></td>
+															<td><span class="toggler"><span></span></span> <strong>No</strong></td>
+															<td><input type="text"></td>
+															<td><input type="text"></td>
+															<td><input type="text"></td>
+															<td><input type="text"></td>
+															<td><input type="text"></td>
+															<td><input type="text"></td>
+															<td><span class="toggler active"><span></span></span> <strong>Yes</strong></td>
+															<td>
+																<select>
+																	<option>Owner</option>
+																	<option>Option 2</option>
+																	<option>Option 3</option>
+																</select>
+															</td>
+														</tr>
+														<tr class="totals">
+															<td colspan="6">Totals</td>
+															<td>25,000.00</td>
+															<td>25,000.00</td>
+															<td>0.00</td>
+															<td>0.00</td>
+															<td>0.00</td>
+															<td>0.00</td>
+															<td>-</td>
+															<td>-</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row app-overview evaluation">
+								<div class="col-xs-12">
+									<a class="expand" role="button" data-toggle="collapse" href="#collapse6" aria-expanded="false" aria-controls="collapse6">
+										<span>Evaluation</span>
+									</a>
+									<div class="collapse in" id="collapse6" aria-expanded="true">
+										<div class="row">
+											<div class="col-xs-12">
+												<div class="evaluation-table">
+													<div class="table-row first">
+														<div class="table-cell">
+															<strong>Estimated Refund</strong>
+															<small>EUR</small> 8027.50
+														</div>
+														<div class="table-cell">
+															Estimated CR: 00.00
+														</div>
+														<div class="table-cell">
+															<strong>RDD:</strong> 18-Dec-2017
+														</div>
+														<div class="table-cell">
+															<strong>Free quote:</strong> requested
+														</div>
+														<div class="table-cell buttons toggle">
+															<button class="btn active">RTA</button> 
+															<button class="btn">NRD</button> 
+														</div>
+													</div>
+													<div class="table-row">
+														<div class="table-cell">
+															<strong>ESS Fee</strong>
+															<small>EUR</small> <span>87.00</span>
+														</div>
+														<div class="table-cell">
+															TB Fee: <span>00.00</span>
+														</div>
+														<div class="table-cell">
+															H Fee: <span>00.00</span>
+														</div>
+														<div class="table-cell">
+															Upfront Fee: <span>00.00</span>
+														</div>
+													</div>
+													<div class="table-row">
+														<div class="table-cell">
+															<strong>Discounts</strong>
+															<span class="toggler active"><span></span></span> Yes
+														</div>
+														<div class="table-cell">
+															Discount Applied: <span>Flat</span>
+														</div>
+														<div class="table-cell">
+															Discount Ref: <span>ASDFER</span>
+														</div>
+														<div class="table-cell">
+															Add. Discount:<span> 10.00 eur (PRSD)</span>
+														</div>
+														<div class="table-cell">
+															Approved: <span>Yes (PRSD)</span>
+														</div>
+													</div>
+												</div>
+												<a href="#" class="btn btn-change">TL Request</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row app-overview taxofficelines">
+								<div class="col-xs-12">
+									<a class="expand" role="button" data-toggle="collapse" href="#collapse7" aria-expanded="false" aria-controls="collapse7">
+										<span>Tax Office Lines</span>
+									</a>
+									<div class="collapse in" id="collapse7" aria-expanded="true">
+										<div class="row">
+											<div class="col-xs-12 table-responsive">
+												<table class="table data-table4">
+													<thead>
+														<tr>
+															<th>TO</th>
+															<th>Status</th>
+															<th>Sub Status</th>
+															<th>Refund Est</th>
+															<th>Refund App</th>
+															<th>Refund Rec</th>
+															<th>Refund Cust</th>
+															<th>TB Fee</th>
+															<th>Currency</th>
+															<th>Rate</th>
+															<th>PO</th>
+															<th>Bank</th>
+															<th>Cheque/ BT No</th>
+															<th>ISNTR</th>
+															<th>ID</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td>ATO</td>
+															<td>Status name</td>
+															<td>Status name</td>
+															<td>12345.66</td>
+															<td>12345.66</td>
+															<td>12345.66</td>
+															<td>12345.66</td>
+															<td>12345.66</td>
+															<td>EUR</td>
+															<td>12345.66</td>
+															<td>12345.66</td>
+															<td>-</td>
+															<td>-</td>
+															<td>-</td>
+															<td>-</td>
+														</tr>
+														<tr>
+															<td>IRS</td>
+															<td>Status name</td>
+															<td>Status name</td>
+															<td>12345.66</td>
+															<td>12345.66</td>
+															<td>12345.66</td>
+															<td>12345.66</td>
+															<td>12345.66</td>
+															<td>EUR</td>
+															<td>12345.66</td>
+															<td>12345.66</td>
+															<td>-</td>
+															<td>-</td>
+															<td>-</td>
+															<td>-</td>
+														</tr>
+														<tr>
+															<td>
+																<select>
+																	<option>TO</option>
+																	<option>Option 2</option>
+																	<option>Option 3</option>
+																</select>
+															</td>
+															<td>
+																<select>
+																	<option>Status</option>
+																	<option>Option 2</option>
+																	<option>Option 3</option>
+																</select>
+															</td>
+															<td>
+																<select>
+																	<option>Status</option>
+																	<option>Option 2</option>
+																	<option>Option 3</option>
+																</select>
+															</td>
+															<td><input type="text"></td>
+															<td><input type="text"></td>
+															<td><input type="text"></td>
+															<td><input type="text"></td>
+															<td><input type="text"></td>
+															<td>
+																<select>
+																	<option>EUR</option>
+																	<option>Option 2</option>
+																	<option>Option 3</option>
+																</select>
+															</td>
+															<td><input type="text"></td>
+															<td><input type="text"></td>
+															<td>
+																<select>
+																	<option>-</option>
+																	<option>Option 2</option>
+																	<option>Option 3</option>
+																</select>
+															</td>
+															<td><input type="text"></td>
+															<td>
+																<select>
+																	<option>Owner</option>
+																	<option>Option 2</option>
+																	<option>Option 3</option>
+																</select>
+															</td>
+															<td><input type="text"></td>
+														</tr>
+													</tbody>
+												</table>
+												<a href="#" class="btn btn-change">Add TO Line</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row app-overview payments">
+								<div class="col-xs-12">
+									<a class="expand" role="button" data-toggle="collapse" href="#collapse8" aria-expanded="false" aria-controls="collapse8">
+										<span>Payments</span>
+									</a>
+									<div class="collapse in" id="collapse8" aria-expanded="true">
+										<div class="row">
+											<div class="col-xs-12 buttons">
+												<a href="#" class="btn btn-primary">Save Changes</a> <a href="#" class="btn btn-secondary">Discard Changes</a>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-xs-12 col-md-6 col-lg-4">
+												<p>PO 1: <span class="editable text">Some PO Selected</span>
+												<input type="text" class="editable-text"></p>
+												<p>PO 2: <span class="editable text">Some PO Selected</span>
+												<input type="text" class="editable-text"></p>
+												<p>Amount: <span class="editable text">1234,45</span>
+												<input type="text" class="editable-text"></p>
+												<p>72 hrs: <span class="toggler active"><span></span></span> <strong>Yes</strong></p>
+												<p>BDF Status: <span class="editable text">Some Status</span>
+												<input type="text" class="editable-text"></p>
+												<p>Pay: <span class="editable text">One</span>
+												<input type="text" class="editable-text"></p>
+											</div>
+											<div class="col-xs-12 col-md-6 col-lg-4">
+												<p>Web: <span class="editable text">ashdH1237gfsda6781gh</span>
+												<input type="text" class="editable-text"></p>
+												<p>Previous UIDs: <span class="editable text">Some UID Selected</span>
+												<input type="text" class="editable-text"></p>
+												<p>CSR: <span class="editable text">PRSD</span>
+												<input type="text" class="editable-text"></p>
+												<p>Country
+													<span class="editable select name-title">Ireland</span>
+													<select class="editable-select">
+														<option selected="selected">Ireland</option>
+														<option>Option 1</option>
+														<option>OPtion 2</option>
+													</select>
+												</p>
+												<p>Bank Name: <span class="editable text">Bank of Ireland</span>
+												<input type="text" class="editable-text"></p>
+												<p>Bank Branch: <span class="editable text">UCC</span>
+												<input type="text" class="editable-text"></p>
+												<p>Bank Address: <span class="editable text">University College Cork T12 XR6F</span>
+												<input type="text" class="editable-text"></p>
+												<p>Account No: <span class="editable text">11223344</span>
+												<input type="text" class="editable-text"></p>
+												<p>Settlement Account No: <span class="editable text">11223344</span>
+												<input type="text" class="editable-text"></p>
+												<p>Corr / Rasch: <span class="editable text">-</span>
+												<input type="text" class="editable-text"></p>
+												<p>Branch 2: <span class="editable text">-</span>
+												<input type="text" class="editable-text"></p>
+												<p>Address 2: <span class="editable text">-</span>
+												<input type="text" class="editable-text"></p>
+											</div>
+											<div class="col-xs-12 col-md-6 col-lg-4">
+												<p>Beneficiary: <span class="editable text">Jane Smith</span>
+												<input type="text" class="editable-text"></p>
+												<p>Soft Code: <span class="editable text">3241</span>
+												<input type="text" class="editable-text"></p>
+												<p>SWIFT: <span class="editable text">-</span>
+												<input type="text" class="editable-text"></p>
+												<p>CSR: <span class="editable text">-</span>
+												<input type="text" class="editable-text"></p>
+												<p>JP: <span class="editable text">-</span>
+												<input type="text" class="editable-text"></p>
+												<p>Comment: <span class="editable text">Some Comment</span>
+												<input type="text" class="editable-text"></p>
+												<p>Comment for Bank: <span class="editable text">Some Comment</span>
+												<input type="text" class="editable-text"></p>
+												<p>Sort Code Appl: <span class="editable text">-</span>
+												<input type="text" class="editable-text"></p>
+												<p>Refund goes to: <span class="editable text">-</span>
+												<input type="text" class="editable-text"></p>
+												<p>Urgent: <span class="toggler active"><span></span></span> <strong>Yes</strong></p>
+												<p>Ben Rel Confirmed: <span class="toggler active"><span></span></span> <strong>Yes</strong></p>
+											</div>
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -2153,7 +3188,7 @@
 			<div class="modal-content">
 				<div class="modal-header">
 					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-					<h4 class="modal-title" id="changeLogLabel">OTS Update</h4>
+					<h4 class="modal-title" id="changeLogLabel">User Updates</h4>
 				</div>
 				<div class="modal-body">
 					<div class="h300 customscroll">
@@ -2212,6 +3247,57 @@
 			</div>
 		</div>
 	</div>
+
+	<!-- Client Notes Modal -->
+	<div class="modal fade" id="clientNotes" tabindex="-1" role="dialog" aria-labelledby="clientNotesLabel">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title" id="clientNotesLabel">Client Notes</h4>
+				</div>
+				<div class="modal-body">
+					<div class="client-notes">
+						<ul class="chats">
+							<li class="left">
+								<a href="javascript:;" class="image">ST</a>
+								<div class="message">
+									12/12/2018 <strong>[ABBR]:</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamtco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit 
+								</div>
+							</li>
+							<li class="right">
+								<a href="javascript:;" class="image">DRT</a>
+								<div class="message">
+									12/12/2018 <strong>[ABBR]:</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamtco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit 
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn export">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Empty  Modal -->
+	<div class="modal fade" id="emptyModal" tabindex="-1" role="dialog" aria-labelledby="emptyModalLabel">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title" id="emptyModalLabel">Title</h4>
+					</div>
+					<div class="modal-body">
+						[content]
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn export">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
 
 	<!-- Change Log Modal -->
 	<div class="modal fade" id="changeLog" tabindex="-1" role="dialog" aria-labelledby="changeLogLabel">
@@ -3365,9 +4451,48 @@
 	<script src="assets/js/ui-tree.demo.min.js"></script>    
 	<script src="assets/js/jquery.mousewheel.min.js"></script>
 	<script src="assets/js/apps.min.js"></script>
+    <script src="assets/plugins/bootstrap-daterangepicker/moment.min.js"></script>
+    <script src="assets/plugins/bootstrap-daterangepicker/daterangepicker.js"></script>
 	<script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
 	<script src="assets/js/scripts.js"></script>
 	<!-- ================== END PAGE LEVEL JS ================== -->
+    <script type="text/javascript">
+        $(function() {
+            $('#reportrange1,#reportrange2').daterangepicker({
+                "ranges": {
+                    "Today": [
+                        "2017-08-29T13:25:28.335Z",
+                        "2017-08-29T13:25:28.335Z"
+                    ],
+                    "Yesterday": [
+                        "2017-08-28T13:25:28.335Z",
+                        "2017-08-28T13:25:28.335Z"
+                    ],
+                    "Last 7 Days": [
+                        "2017-08-23T13:25:28.335Z",
+                        "2017-08-29T13:25:28.335Z"
+                    ],
+                    "Last 30 Days": [
+                        "2017-07-31T13:25:28.335Z",
+                        "2017-08-29T13:25:28.335Z"
+                    ],
+                    "This Month": [
+                        "2017-07-31T21:00:00.000Z",
+                        "2017-08-31T20:59:59.999Z"
+                    ],
+                    "Last Month": [
+                        "2017-06-30T21:00:00.000Z",
+                        "2017-07-31T20:59:59.999Z"
+                    ]
+                },
+                "alwaysShowCalendars": true,
+                "startDate": "08/23/2017",
+                "endDate": "08/29/2017"
+            }, function(start, end, label) {
+                console.log("New date range selected: ' + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD') + ' (predefined range: ' + label + ')");
+            });
+        });
+    </script>
 	
 	<script>
 		$(document).ready(function() {
