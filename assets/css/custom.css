@@ -1378,6 +1378,7 @@ div.infinite-tabs sup.red { background-color: #e64d4d; }
 .evaluation-table .table-cell span { color: #000; }
 .evaluation-table .table-cell.buttons { border-left: 0; text-align: right; }
 .evaluation-table .table-cell.buttons .active { background-color: #4caf50; color: #fff; }
+.evaluation-table select { border: 0; color: #000; }
 
 .expenses-table { color: #4c616b; margin: 0 0 15px 0; }
 .expenses-table .table-row { border-bottom: 1px solid #eee;  }
