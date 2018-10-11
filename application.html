@@ -3202,61 +3202,98 @@
 			<div class="modal-content">
 				<div class="modal-header">
 					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-					<h4 class="modal-title" id="changeLogLabel">User Updates</h4>
+					<h4 class="modal-title" id="changeLogLabel">User Update</h4>
 				</div>
 				<div class="modal-body">
-					<div class="h300 customscroll">
-						<table class="table table-hover">
-							<tr>
-								<th>Application</th>
-								<th>Field</th>
-								<th>Old value</th>
-								<th>New value</th>
-								<th>Processor</th>
-								<th>Received</th>
-								<th>Processed</th>
-							</tr>
-							<tr>
-								<td>IE PAYE, 2016</td>
-								<td>Phone Type</td>
-								<td>Fixed</td>
-								<td>Mobile</td>
-								<td>ST, Preslava Dushkova (PRSD)</td>
-								<td>12/12/2017</td>
-								<td>12/12/2017</td>
-							</tr>
-							<tr>
-								<td>IE PAYE, 2016</td>
-								<td>Phone Code</td>
-								<td>Ireland (+353)</td>
-								<td>Ireland (+353)</td>
-								<td>ST, Preslava Dushkova (PRSD)</td>
-								<td>12/12/2017</td>
-								<td>12/12/2017</td>
-							</tr>
-							<tr>
-								<td>IE PAYE, 2016</td>
-								<td>Phone Number</td>
-								<td>3413411</td>
-								<td>8888888</td>
-								<td>ST, Preslava Dushkova (PRSD)</td>
-								<td>12/12/2017</td>
-								<td>12/12/2017</td>
-							</tr>
-							<tr>
-								<td>IE PAYE, 2016</td>
-								<td><i class="fa fa-file-text"></i> POA</td>
-								<td>-</td>
-								<td><a href="#">Download</a> </td>
-								<td>-</td>
-								<td>-</td>
-								<td>-</td>
-							</tr>
-						</table>
+					<ul class="nav nav-tabs" role="tablist">
+						<li role="presentation"><a href="#uu-year2015" aria-controls="uu-year2015" role="tab" data-toggle="tab">Year 2015</a></li>
+						<li role="presentation"><a href="#uu-year2016" aria-controls="uu-year2016" role="tab" data-toggle="tab">Year 2016</a></li>
+						<li role="presentation" class="active"><a href="#uu-year2017" aria-controls="uu-year2017" role="tab" data-toggle="tab">Year 2017</a></li>
+					</ul>
+					<div class="tab-content">
+						<div role="tabpanel" class="tab-pane fade" id="uu-year2015">...</div>
+						<div role="tabpanel" class="tab-pane fade" id="uu-year2016">...</div>
+						<div role="tabpanel" class="tab-pane fade in active" id="uu-year2017">
+							<div class="h300 customscroll">
+								<table class="table table-hover">
+									<tr>
+										<th>Application</th>
+										<th>Field</th>
+										<th>Old value</th>
+										<th>New value</th>
+										<th>Status</th>
+										<th>Received</th>
+										<th>Processed</th>
+										<th>Processed by</th>
+									</tr>
+									<tr>
+										<td>IE PAYE, 2016</td>
+										<td>Phone Type</td>
+										<td>Fixed</td>
+										<td>Mobile</td>
+										<td>
+											<select class="status accepted">
+												<option disabled>Please Select</option>
+												<option value="accepted" selected>Accepted</option>
+												<option value="rejected">Rejected</option>
+											</select>
+										</td>
+										<td>12/12/2017</td>
+										<td>12/12/2017</td>
+										<td>ST, Preslava Dushkova (PRSD)</td>
+									</tr>
+									<tr>
+										<td>IE PAYE, 2016</td>
+										<td>Phone Code</td>
+										<td>Ireland (+353)</td>
+										<td>Ireland (+353)</td>
+										<td>
+											<select class="status rejected">
+												<option disabled>Please Select</option>
+												<option value="accepted">Accepted</option>
+												<option value="rejected" selected>Rejected</option>
+											</select>
+										</td>
+										<td>12/12/2017</td>
+										<td>12/12/2017</td>
+										<td>ST, Preslava Dushkova (PRSD)</td>
+									</tr>
+									<tr>
+										<td><a href="#">IE PAYE, 2016</a></td>
+										<td>Phone Number</td>
+										<td>3413411</td>
+										<td>8888888</td>
+										<td>
+											<select class="status accepted">
+												<option disabled>Please Select</option>
+												<option value="accepted" selected>Accepted</option>
+												<option value="rejected">Rejected</option>
+											</select>
+										</td>
+										<td>12/12/2017</td>
+										<td>12/12/2017</td>
+										<td>ST, Preslava Dushkova (PRSD)</td>
+									</tr>
+									<tr>
+										<td>IE PAYE, 2016</td>
+										<td>PoA</td>
+										<td>-</td>
+										<td><a href="#">Download</a> </td>
+										<td>
+											<select class="status">
+												<option selected disabled>Please Select</option>
+												<option value="accepted">Accepted</option>
+												<option value="rejected">Rejected</option>
+											</select>
+										</td>
+										<td>-</td>
+										<td>-</td>
+										<td>-</td>
+									</tr>
+								</table>
+							</div>
+						</div>
 					</div>
-				</div>
-				<div class="modal-footer">
-					<button type="button" class="btn export">Export</button>
 				</div>
 			</div>
 		</div>

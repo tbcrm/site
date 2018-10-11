@@ -1250,6 +1250,10 @@ div.infinite-tabs sup.red { background-color: #e64d4d; }
 .modal-body select,
 .modal-body input[type="text"], 
 .modal-body textarea { background-color: #f7f7f7; border: 1px solid #ddd; font-size: 14px; line-height: 1; padding: 5px; }
+.modal-body table select.status { background-color: transparent; border: 0;  padding: 0; }
+.modal-body table select.status.accepted { color: #15bb18; }
+.modal-body table select.status.rejected { color: #cc0c0c; }
+.modal-body table select.status option { color: #333; }
 .modal-body .form-inline select,
 .modal-body .form-inline input { float: left; min-width: 0!important; width: 67%; }
 .modal-body input.datepicker,
@@ -1276,6 +1280,11 @@ div.infinite-tabs sup.red { background-color: #e64d4d; }
 .modal-body .toggler.yellow.active + span { color: #f3c74c; }
 .modal-body .toggler span:before { background-color: #fff; border-radius: 50%; content: ''; display: block; height: 12px; width: 12px; position: absolute; top: 3px; left: 3px; transition: left 0.3s; }
 .modal-body .toggler.active span:before { left: 13px; }
+.modal-body .nav-tabs { background: transparent; border-bottom: 1px solid #eee!important; font-size: 16px; }
+.modal-body .nav-tabs>li.active>a, 
+.modal-body .nav-tabs>li.active>a:focus, 
+.modal-body .nav-tabs>li.active>a:hover { background-color: transparent; border-bottom: 2px solid #3ebce0!important; color: #3ebce0; }
+.modal-body .tab-content { padding: 15px 0; }
 .modal-footer { text-align: left; }
 .modal-footer .btn.export { background-color: #e0e6e9; border-radius: 3px; color: #515b61; font-weight: bold; }
 .modal-footer .btn.btn-primary { border-radius: 3px; }

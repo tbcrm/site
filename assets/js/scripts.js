@@ -40,6 +40,12 @@ var TableManageTableSelect = function () {
 
 $(document).ready(function(){
 
+    // user update status select
+    $('.modal-body table select.status').on('change', function(){
+        var selectedValue = $(this).val();
+        $(this).removeClass('accepted, rejected').addClass(selectedValue);
+    })
+
     // evalution table tl request
     $('.evaluation-table .tl-request + div').hide();
     $('.evaluation-table .tl-request').on('click', function(){

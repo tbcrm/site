@@ -2139,7 +2139,7 @@ legend {
 .table > tbody > tr > td, 
 .table > tfoot > tr > td {
     border-color: #e2e7eb;
-    padding: 10px 15px;
+    padding: 5px 15px;
 }
 .table-condensed > thead > tr > th, 
 .table-condensed > tbody > tr > th, 
