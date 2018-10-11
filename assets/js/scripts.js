@@ -40,6 +40,13 @@ var TableManageTableSelect = function () {
 
 $(document).ready(function(){
 
+    // evalution table tl request
+    $('.evaluation-table .tl-request + div').hide();
+    $('.evaluation-table .tl-request').on('click', function(){
+        $(this).hide().next().fadeIn();
+        return false;
+    });
+
     // expand/collapse table row
     $('.expenses-table .table-cell .toggle').on('click', function(){
         $(this)
