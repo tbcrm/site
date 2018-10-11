@@ -1052,14 +1052,25 @@ div.infinite-tabs sup.red { background-color: #e64d4d; }
 .client-notes .title a.addnew { color: #4caf50; float: right; font-weight: bold; margin-top: 25px; }
 
 .chats {}
-.chats .image { background-color: #f1f1f1; border-radius: 50%; color: #333; font-weight: bold; height: 60px; line-height: 60px; text-align: center; width: 60px; }
-.chats .message { background-color: #eef1f3; border: 0; font-size: 14px; }
+.chats .meta { font-size: 12px; text-align: center; width: 60px; }
+.chats .image { background-color: #f1f1f1; border-radius: 50%; color: #333; display: inline-block; float: none; font-size: 16px; font-weight: bold; height: 60px; line-height: 60px; margin: 0 0 5px 0; text-align: center; width: 60px; }
+.chats .message { background-color: #eef1f3; border: 0; font-size: 14px; width: calc(100% - 80px); }
+.chats .textarea { width: calc(100% - 80px); }
+.chats .textarea .box { border: 1px dashed #ccc; border-radius: 5px; margin-bottom: 10px; padding: 10px; }
+.chats .textarea textarea { background: transparent; border: 0; height: 40px; width: 100%; }
 .chats .image + .message,
 .chats .right .image + .message { margin: 0 75px; }
 .chats .message:before, .chats .message:after { border-right-color: transparent; border: 10px solid transparent; left: -20px; top: 50%; transform: translateY(-50%); }
 .chats .right .message:before, .chats .right .message:after { border-right-color: transparent; border: 10px solid transparent; right: -20px; }
+.chats .right .meta { float: right; }
+.chats .left .meta { float: left; }
+.chats .right .message,
+.chats .right .textarea { float: left; }
+.chats .left .message,
+.chats .left .textarea { float: right; }
 .chats .right .message:after { border-left-color: #eef1f3; }
 .chats .left .message:after { border-right-color: #eef1f3; }
+.chats .left .textarea .btn.btn-add { background-color: #f9fafb; border: 1px solid #515b61; color: #515b61; font-weight: bold; }
 
 .team-selector { display: flex; width: 100%; }
 .team-selector .item { background-color: #bdc8cc; cursor: pointer; display: flex; margin: 0 1px 0 0; overflow: hidden; flex-grow: 1; }
