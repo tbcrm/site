@@ -1108,8 +1108,8 @@ div.infinite-tabs sup.red { background-color: #e64d4d; }
 .footer-tabs .nav-tabs>li>a select.type option { color: #333; }
 .footer-tabs .nav-tabs>li>a select.status { background-color: #29a086; border: 0; border-radius: 15px; color: #fff; display: block; font-size: 11px; padding: 0; text-transform: uppercase; width: 100%; }
 .footer-tabs .nav-tabs>li>a select.status option { color: #333; }
-.footer-tabs .nav-tabs>li>a select.status2 { background-color: #888; border: 0; border-radius: 15px; color: #fff; display: block; font-size: 11px; margin-top: 2px; padding: 0; text-transform: uppercase; width: 100%; }
-.footer-tabs .nav-tabs>li>a select.status2 option { color: #333; }
+.footer-tabs .nav-tabs>li>a select.status2 { background-color: #888; border: 0; border-radius: 15px; color: #fff; display: block; font-size: 11px; margin: 2px 0; padding: 0; text-transform: uppercase; width: 100%; }
+.footer-tabs .nav-tabs>li>a select.status2 option { background-color: #fff; color: #333; }
 .footer-tabs .nav-tabs>li>a strong { border-radius: 15px; color: #fff; display: block; font-size: 10px; font-weight: normal; line-height: 1; margin: 3px 0 0 0; padding: 2px 5px; text-align: center; text-transform: uppercase; }
 .footer-tabs .nav-tabs>li .remove { background-color: #adb3bc; border-radius: 15px; color: #fff; cursor: pointer; display: block; font-size: 12px; font-style: normal; height: 13px; line-height: 11px; text-align: center; width: 13px; position: absolute; top: 10px; right: 10px; z-index: 3; }
 .footer-tabs .nav-tabs>li.active>a .remove { background-color: #566376; }

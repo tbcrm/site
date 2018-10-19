@@ -11,7 +11,7 @@
 	<meta content="" name="author" />
 	
 	<!-- ================== BEGIN BASE CSS STYLE ================== -->
-	<link href="//fonts.googleapis.com/css?family=Roboto:300,400,700|Material+Icons" rel="stylesheet" />
+	<link href="http://fonts.googleapis.com/css?family=Roboto:300,400,700|Material+Icons" rel="stylesheet" />
 	<link href="assets/plugins/jquery-ui/themes/base/minified/jquery-ui.min.css" rel="stylesheet" />
 	<link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
 	<link href="assets/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
@@ -1403,8 +1403,14 @@
 							<a href="#2014" aria-controls="2014" role="tab" data-toggle="tab">
 								2014
 								<select class="type">
-									<option selected>PAYE</option>
-									<option>SA</option>
+									<option value="paye" selected>PAYE</option>
+									<option value="sa">SA</option>
+								</select>
+								<select class="status2 hidden">
+									<option selected disabled>Select reason</option>
+									<option>reason 1</option>
+									<option>reason 2</option>
+									<option>reason 3</option>
 								</select>
 								<select class="status">
 									<option selected>taxback</option>

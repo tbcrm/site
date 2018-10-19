@@ -40,6 +40,15 @@ var TableManageTableSelect = function () {
 
 $(document).ready(function(){
 
+    // change status to SA - Reason select appears
+    $('.footer-tabs select.type').on('change', function(){
+        if ( $(this).find('option:selected').val() == 'sa' ) {
+            $(this).next('.status2').removeClass('hidden');
+        } else {
+            $(this).next('.status2').addClass('hidden');
+        }
+    });
+
     // user update status select
     $('.modal-body table select.status').on('change', function(){
         var selectedValue = $(this).val();
