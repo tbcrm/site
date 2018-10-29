@@ -1381,6 +1381,9 @@ div.infinite-tabs sup.red { background-color: #e64d4d; }
 .app-overview .fstMultipleMode .fstControls { background: transparent; display: inline-block; padding: 2px 0 0 2px; vertical-align: middle; }
 .app-overview table input,
 .app-overview table select { background-color: #eee; border: 1px solid #ddd; color: #666; padding: 2px; width: 70px; }
+.app-overview table.foot td { padding-right: 20px!important; }
+.app-overview table.foot input,
+.app-overview table.foot select { border: 0; width: 100%; }
 .app-overview .table > thead > tr > th { padding: 5px 20px 5px 5px; vertical-align: top; }
 .app-overview .table > thead > tr > th span { display: block; font-weight: normal; }
 .app-overview .table > tbody > tr > td { padding: 5px; }
@@ -1407,7 +1410,9 @@ div.infinite-tabs sup.red { background-color: #e64d4d; }
 .expenses-table .table-row { border-bottom: 1px solid #eee;  }
 .expenses-table .table-row.head { background-color: #6d7787; color: #fff; font-size: 16px; font-weight: bold; padding: 5px; }
 .expenses-table .table-cell { display: inline-block; padding: 5px; width: 24.5%; position: relative; }
+.expenses-table .table-cell.colspan2 { width: 49%; }
 .expenses-table .table-row:not(.head) .table-cell:first-child { padding-left: 40px; }
+.expenses-table.foot .table-row:not(.head) .table-cell:first-child { padding-left: 0; }
 .expenses-table input,
 .expenses-table select { background-color: #eee; border: 0; color: #666; padding: 2px; width: 100%; }
 .expenses-table .table-cell .toggle { border: 2px solid #6d7787; border-radius: 50%; color: #6d7787; display: inline-block; font-size: 18px; font-weight: bold; height: 20px; line-height: 16px; text-align: center; text-decoration: none; width: 20px; position: absolute; top: 5px; left: 5px; }
