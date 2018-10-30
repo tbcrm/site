@@ -690,6 +690,7 @@
 								<a href="overview.html" class="tab1">Customer Details</a>
 								<a href="#" class="tab2">Additional Details</a>
 								<a href="documents.html" class="tab3 active">Documents</a>
+								<a href="missing.html" class="tab4">Missing<span class="badge">3/20</span></a>
 							</div>
 						</div>
 						<div class="caption-expand active">
@@ -1037,38 +1038,80 @@
 			<div class="footer-tabs">
 				<!-- Nav tabs -->
 				<ul class="nav nav-tabs" role="tablist">
-					<li role="presentation" class="active">
+					<li role="presentation" class="active activated">
+						<i class="remove">&times;</i>
 						<a href="#2014" aria-controls="2014" role="tab" data-toggle="tab">
-							2014<span>paye</span>
-							<strong>taxback</strong>
-						</a>
-					</li>
-					<li role="presentation" class="activated">
-						<a href="#2015sa" aria-controls="2015sa" role="tab" data-toggle="tab">
-							2015<span>sa</span>
-							<strong>active</strong>
+							2014
+							<select class="type">
+								<option value="paye" selected>PAYE</option>
+								<option value="sa">SA</option>
+							</select>
+							<select class="status2 hidden">
+								<option selected disabled>Self-Assessed reason</option>
+								<option>reason 1</option>
+								<option>reason 2</option>
+								<option>reason 3</option>
+							</select>
+							<select class="status">
+								<option selected>taxback</option>
+								<option>active</option>
+								<option>archive</option>
+							</select>
 						</a>
 					</li>
 					<li role="presentation">
+						<i class="remove">&times;</i>
 						<a href="#2015paye" aria-controls="2015paye" role="tab" data-toggle="tab">
-							2015<span>paye</span>
-							<strong>active</strong>
+							2015
+							<select class="type">
+								<option selected>PAYE</option>
+								<option>SA</option>
+							</select>
+							<select class="status">
+								<option>taxback</option>
+								<option selected>active</option>
+								<option>archive</option>
+							</select>
 						</a>
 					</li>
 					<li role="presentation">
+						<i class="remove">&times;</i>
 						<a href="#2016sa" aria-controls="2016sa" role="tab" data-toggle="tab">
-							2016<span>sa</span>
-							<strong>active</strong>
+							2016
+							<select class="type">
+								<option>PAYE</option>
+								<option selected>SA</option>
+							</select>
+							<select class="status">
+								<option>taxback</option>
+								<option selected>active</option>
+								<option>archive</option>
+							</select>
 						</a>
 					</li>
-					<li role="presentation">
+					<li role="presentation" class="archived">
+						<i class="remove">&times;</i>
 						<a href="#2017" aria-controls="2017" role="tab" data-toggle="tab">
-							2017<span>paye</span>
-							<strong>active</strong>
+							2017
+							<select class="type">
+								<option selected>PAYE</option>
+								<option>SA</option>
+							</select>
+							<select class="status">
+								<option>taxback</option>
+								<option>active</option>
+								<option selected>archive</option>
+							</select>
+							<select class="status2">
+								<option selected disabled>Select reason</option>
+								<option>reason 1</option>
+								<option>reason 2</option>
+								<option>reason 3</option>
+							</select>
 						</a>
 					</li>
-					<li class="show">
-						<div class="switch"><input type="checkbox" class="js-switch-blue small" checked /></div>  Show All Years
+					<li class="select">
+						<a href="#" class="btn btn-select" data-toggle="modal" data-target="#selectTY">Select TY</a>
 					</li>
 				</ul>
 				<!-- Tab panes -->

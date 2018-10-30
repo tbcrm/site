@@ -1,32 +1,30 @@
 // data tables
 var handleDataTableSelect = function() {
     "use strict";
-    if ( $('.data-table').length !== 0 || $('.data-table2').length !== 0 ) {
-        $('.data-table').DataTable({
-            select: true,
-            responsive: true,
-            searching: true,
-            paging: false
-        });
-        $('.data-table2').DataTable({
-            select: true,
-            responsive: true,
-            searching: false,
-            paging: false
-        });
-        $('.data-table3').DataTable({
-            select: false,
-            responsive: true,
-            searching: false,
-            paging: false
-        });
-        $('.data-table4').DataTable({
-            select: false,
-            responsive: false,
-            searching: false,
-            paging: false
-        });
-    }
+    $('.data-table').DataTable({
+        select: true,
+        responsive: true,
+        searching: true,
+        paging: false
+    });
+    $('.data-table2').DataTable({
+        select: true,
+        responsive: true,
+        searching: false,
+        paging: false
+    });
+    $('.data-table3').DataTable({
+        select: false,
+        responsive: true,
+        searching: false,
+        paging: false
+    });
+    $('.data-table4').DataTable({
+        select: false,
+        responsive: false,
+        searching: false,
+        paging: false
+    });
 };
 var TableManageTableSelect = function () {
     "use strict";

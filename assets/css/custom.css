@@ -178,7 +178,7 @@ a:focus, button:focus, .reportrange input:focus { outline: none; }
 
 .caption { overflow: hidden; }
 .caption h2,
-.caption .tabs { float: left; font-size: 27px; font-weight: 300; margin: 15px 0; }
+.caption .tabs { float: left; font-size: 24px; font-weight: 300; margin: 15px 0; }
 .caption h2 a,
 .caption .tabs a { color: rgba(0,0,0,0.33); text-decoration: none; }
 .caption .tabs a { margin-right: 30px; }
@@ -186,16 +186,17 @@ a:focus, button:focus, .reportrange input:focus { outline: none; }
 .caption h2 a i,
 .caption .tabs a i { color: #c0c4c7; transition: color 0.3s; }
 .caption h2 a:hover,
-.caption .tabs a:hover { text-decoration: none; }
+.caption .tabs a:hover { color: #000; text-decoration: none; }
 .caption h2 a:hover i,
 .caption .tabs a:hover i { color: #000; }
-.caption .tabs a .badge { background-color: #e64d4d; font-size: 11px; font-weight: normal; padding: 2px 5px; position: relative; top: -10px; }
+.badge { background-color: #e64d4d; font-size: 11px; font-weight: normal; padding: 2px 5px; position: relative; top: -10px; }
 .caption .status { color: #8b95a6; float: right; padding-top: 25px; }
 .caption .status-changed { display: none; color: #e64d4d; float: right; padding-top: 25px; }
 .caption .status-changed a { color: #e64d4d; display: inline-block; margin-left: 5px; transition: opacity 0.3s; }
 .caption .status-changed a i { vertical-align: bottom; }
 .caption .status-changed a:hover { opacity: 0.75; }
 .caption-expand { display: none; border-top: 1px solid #e8e8e8; color: #ccc; font-size: 16px; }
+.caption-expand table { color: #000; }
 .caption-expand.active { display: block; }
 .caption-expand ul { -webkit-padding-start: 0; }
 .caption-expand li { border-bottom: 1px solid #e8e8e8; overflow: hidden; padding: 10px 0; }
@@ -283,13 +284,19 @@ table a:hover { text-decoration: none; }
 
 .data-table {}
 .data-table th, .table th { background-color: #6d7787; color: #fff!important; font-weight: bold; padding: 0.75em 0.5em; }
-table.dataTable thead .sorting:after, table.dataTable thead .sorting_asc:after, table.dataTable thead .sorting_desc:after, table.dataTable thead .sorting_asc_disabled:after, table.dataTable thead .sorting_desc_disabled:after { bottom: 11px!important; }
+table.dataTable thead .sorting:after, table.dataTable thead .sorting_asc:after, table.dataTable thead .sorting_desc:after, table.dataTable thead .sorting_asc_disabled:after, table.dataTable thead .sorting_desc_disabled:after { bottom: 5px!important; }
  .dataTables_info { display: none; } 
 table.dataTable tbody > tr.selected, table.dataTable tbody > tr.selected td, table.dataTable tbody > tr > .selected { background: #f4f4f4!important; color: #000; font-weight: bold; }
 table.dataTable tbody > tr.selected, table.dataTable tbody > tr.selected td,
 table.dataTable tbody > tr.selected + tr.child, table.dataTable tbody > tr.selected td + tr.child td { background: #f4f4f4!important; }
 .dataTables_wrapper table.dataTable.dtr-inline.collapsed > tbody > tr > td:first-child:before, .dataTables_wrapper table.dataTable.dtr-inline.collapsed > tbody > tr > th:first-child:before { background: #4caf50; }
 .dataTables_wrapper table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before, .dataTables_wrapper table.dataTable.dtr-inline.collapsed > tbody > tr.parent > th:first-child:before { background: #08aedd; }
+table.dataTable tr.green td,
+table.dataTable td.green { color: #4caf50; }
+table.dataTable tr.red td,
+table.dataTable tr td.red { color: #e64d4d; }
+table.dataTable label { color: inherit; font-weight: inherit; margin: 0; }
+table.dataTable select { border: 0; }
 
 .datehistory { float:left; }
 .datehistory .switch { 
@@ -310,6 +317,15 @@ table.dataTable tbody > tr.selected + tr.child, table.dataTable tbody > tr.selec
     border-right: 0;
     padding-right: 0;
 }
+
+.expandable-title { overflow: hidden; padding: 10px 0 0 0; }
+.expandable-title .expand { background: url(../img/accordion-close.png) left center no-repeat; color: #08aedd; float: left; font-weight: bold; padding-left: 15px; text-transform: uppercase; }
+.expandable-title .expand.collapsed { background: url(../img/accordion-open.png) left center no-repeat; }
+.expandable-title .right { float: right; }
+.expandable-title .right > div { color: #6d7787; display: inline-block; font-size: 14px; margin-left: 10px; }
+.expandable-title .right select { border: 0; color: #08aedd; }
+.expandable-title .refresh { background: url(../img/icon-refresh.png) center center no-repeat; display: inline-block; height: 16px; overflow: hidden; text-indent: 100%; white-space: nowrap; width: 16px; transition: opacity 0.3s; position: relative; top: 2px; }
+.expandable-title .refresh:hover { opacity: 0.5; }
 
 /* The side navigation menu */
 .sidenav {
