@@ -1,0 +1,1580 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+<!--<![endif]-->
+<head>
+	<meta charset="utf-8" />
+	<title>Companies - DRT Cases | TB CRM</title>
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
+	<meta content="" name="description" />
+	<meta content="" name="author" />
+	
+	<!-- ================== BEGIN BASE CSS STYLE ================== -->
+	<link href="//fonts.googleapis.com/css?family=Roboto:300,400,700|Material+Icons" rel="stylesheet" />
+	<link href="assets/plugins/jquery-ui/themes/base/minified/jquery-ui.min.css" rel="stylesheet" />
+	<link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+	<link href="assets/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+	<link href="assets/css/template.css" rel="stylesheet" />
+	<link href="assets/css/template-responsive.css" rel="stylesheet" />
+	<link href="assets/css/custom.css" rel="stylesheet" />
+	<!-- ================== END BASE CSS STYLE ================== -->
+	
+	<!-- ================== BEGIN PAGE LEVEL STYLE ================== -->
+	<link href="assets/plugins/jquery-jvectormap/jquery-jvectormap-1.2.2.css" rel="stylesheet" />
+	<link href="assets/plugins/bootstrap-datepicker/css/datepicker.css" rel="stylesheet" />
+	<link href="assets/plugins/bootstrap-datepicker/css/datepicker3.css" rel="stylesheet" />
+	<link href="assets/plugins/DataTables/media/css/dataTables.bootstrap.min.css" rel="stylesheet" />
+	<link href="assets/plugins/DataTables/extensions/Select/css/select.bootstrap.min.css" rel="stylesheet" />
+	<link href="assets/plugins/DataTables/extensions/Responsive/css/responsive.bootstrap.min.css" rel="stylesheet" />
+	<link href="assets/css/jquery.mCustomScrollbar.css" rel="stylesheet" />
+	<link href="assets/plugins/jstree/dist/themes/default/style.min.css" rel="stylesheet" />
+	<!-- ================== END PAGE LEVEL STYLE ================== -->
+</head>
+<body>
+	
+	<!-- begin #page-container -->
+	<div id="page-container" class="fade page-sidebar-fixed in page-sidebar-minified">
+		
+		<!-- begin #sidebar -->
+		<div id="sidebar" class="sidebar">
+			<!-- begin sidebar scrollbar -->
+			<div data-scrollbar="true" data-height="100%">
+				<!-- begin sidebar user -->
+				<ul class="nav">
+					<li class="nav-profile">
+						<div class="info">
+							<a href="#"><img src="assets/img/logo.png" alt="logo"></a>
+						</div>
+					</li>
+				</ul>
+				<!-- end sidebar user -->
+				<!-- begin sidebar nav -->
+				<ul class="nav nav-main">
+					<li>
+						<a href="#">
+						    <i class="material-icons">dashboard</i>
+						    <span>Dashboard</span>
+					    </a>
+					</li>
+					<li>
+						<a href="web-regs.html">
+							<i class="material-icons">check_circle</i>
+							<span>Customer List</span>
+						</a>
+					</li>
+					<li class="has-sub">
+						<a href="javascript:;">
+						    <b class="caret pull-right"></b>
+						    <i class="material-icons">assessment</i>
+						    <span>Reports</span> 
+						</a>
+						<ul class="sub-menu">
+							<li><a href="#">Submenu 1</a></li>
+							<li><a href="#">Submenu 2</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="users.html">
+						    <i class="material-icons">people</i>
+						    <span>Users</span>
+						</a>
+					</li>
+					<li>
+						<a href="users-view.html">
+						    <i class="material-icons">account_circle</i>
+						    <span>Account</span>
+						</a>
+					</li>
+					<li class="active">
+						<a href="companies.html">
+						    <i class="material-icons">domain</i>
+						    <span>Companies</span>
+						</a>
+					</li>
+			        <!-- begin sidebar minify button -->
+					<li><a href="javascript:;" class="sidebar-minify-btn" data-click="sidebar-minify"><i class="fa fa-angle-double-left"></i></a></li>
+			        <!-- end sidebar minify button -->
+				</ul>
+				<!-- end sidebar nav -->
+			</div>
+			<!-- end sidebar scrollbar -->
+		</div>
+		<div class="sidebar-bg"></div>
+		<!-- end #sidebar -->
+		
+		<!-- begin #content -->
+		<div id="content" class="content split single-col companies">
+			<!-- remove class 'split' to hide sidebar -->
+			<div class="split-left">
+				<p><a href="#" class="close">&times;</a></p>
+				<br><br>
+				<div class="newcase">
+					<a href="#" class="btn">+ Add Company</a>
+				</div>
+				<h4>Search in</h4>
+				<div class="search-in">
+					<select>
+						<option>IE</option>
+						<option>Option 1</option>
+						<option>Option 2</option>
+						<option>Option 3</option>
+					</select>
+					<select>
+						<option>Region</option>
+						<option>Option 1</option>
+						<option>Option 2</option>
+						<option>Option 3</option>
+					</select>
+					<select>
+						<option>City</option>
+						<option>Option 1</option>
+						<option>Option 2</option>
+						<option>Option 3</option>
+					</select>
+				</div>
+				<h4>Search by</h4>
+				<div class="search-by">
+					<div class="form-group">
+						<input type="text" placeholder="Company Name" class="form-control">
+					</div>
+					<div class="form-group">
+						<input type="number" placeholder="Company Reg Number" class="form-control">
+					</div>
+					<div class="form-group">
+						<input type="text" placeholder="Company Address" class="form-control">
+					</div>
+					<div class="form-group">
+						<input type="email" placeholder="Company Email" class="form-control">
+					</div>
+					<div class="form-group">
+						<input type="phone" placeholder="Company Phone" class="form-control">
+					</div>
+					<div class="form-group refresh">
+						<button class="btn btn-refresh"><i class="material-icons">refresh</i>Refresh Search</button>
+					</div>
+				</div>
+				<h2>
+					276 Companies 
+					<a href="#" class="toggle companies-view expanded"><i class="material-icons">view_stream</i></a>
+					<a href="#" class="toggle companies-view compact active"><i class="material-icons">view_headline</i></a>
+				</h2>
+				<div class="companies-list compact">
+					<ul>
+						<li>
+							<a href="#">
+								<span class="name"><i class="material-icons">domain</i> 30 Goodlife Healthclubs</span>
+								<span>email@company.com</span>
+								<span>123-456-7890</span>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="active">
+								<span class="name"><i class="material-icons">domain</i> Abramoff Holdings Pty Ltd / Allstates Fruit & Veg Merchants</span>
+								<span>email@company.com</span>
+								<span>123-456-7890</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="name"><i class="material-icons">domain</i> NESTLE Ireland</span>
+								<span>email@company.com</span>
+								<span>123-456-7890</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="name"><i class="material-icons">domain</i> NESTLE Poland</span>
+								<span>email@company.com</span>
+								<span>123-456-7890</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="split-right">
+
+				<div class="page-top">
+					<div class="top-applications">
+						<ul>
+							<li><a href="companies.html">Company Details</a></li>
+							<li class="active"><a href="companies-cases.html">DRT Cases</a></li>
+						</ul>
+					</div>
+					<div class="newcase">
+						<a href="#" class="btn-options"><i class="material-icons">settings</i></a>
+					</div>
+				</div>
+
+				<!-- begin row -->
+				<div class="row collapsibles mt-3">
+					<div class="col-xs-12">
+						<a class="expand" role="button" data-toggle="collapse" href="#collapse1" aria-expanded="false" aria-controls="collapse1">
+							<span>Abramoff Holdings Pty Ltd/ Allstates Fruit & Veg Merchants</span>
+						</a>
+						<div class="collapse in" id="collapse1" aria-expanded="true">
+							<div class="table-head">
+								Show: 
+								<select>
+									<option>Only active (4)</option>
+									<option>Option 2</option>
+									<option>Option 3</option>
+								</select>
+							</div>
+							<table class="table data-table2">
+								<thead>
+									<tr>
+										<th>Customer</th>
+										<th>Appl. ID</th>
+										<th>TS</th>
+										<th>TY</th>
+										<th>DRT Status</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>John Smith</td>
+										<td>12345678-1</td>
+										<td>PAYE</td>
+										<td>2016</td>
+										<td>DRT Requested</td>
+										<td>Active</td>
+									</tr>
+									<tr>
+										<td>John Smith</td>
+										<td>12345678-2</td>
+										<td>PAYE</td>
+										<td>2017</td>
+										<td>DRT Requested</td>
+										<td>Active</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+			<!-- end #content -->
+			
+			<!-- begin scroll to top btn -->
+			<a href="javascript:;" class="btn btn-icon btn-circle btn-success btn-scroll-to-top fade" data-click="scroll-top"><i class="fa fa-angle-up"></i></a>
+			<!-- end scroll to top btn -->
+		</div>
+	</div>
+	<!-- end page container -->
+
+	<!-- Web registrations Modal -->
+	<div class="modal fade" id="webRegistrations" tabindex="-1" role="dialog" aria-labelledby="webregistRetionsLabel">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title" id="changeLogLabel">Web Registrations</h4>
+				</div>
+				<div class="modal-body">
+					<div class="h300 customscroll">
+						<table class="table table-hover">
+							<tr>
+								<th>Reg Type</th>
+								<th>Date</th>
+								<th>TC</th>
+								<th>TS</th>
+								<th>TC</th>
+								<th>Processed by</th>
+							</tr>
+							<tr>
+								<td>Call Back</td>
+								<td>12/12/2017</td>
+								<td>IE</td>
+								<td>PAYE</td>
+								<td>2016</td>
+								<td>ST, Preslava Dushkova (PRSD)</td>
+							</tr>
+							<tr>
+								<td>AE</td>
+								<td>12/12/2017</td>
+								<td>IE</td>
+								<td>PAYE</td>
+								<td>2016</td>
+								<td>ST, Preslava Dushkova (PRSD)</td>
+							</tr>
+							<tr>
+								<td>Long Form</td>
+								<td>12/12/2017</td>
+								<td>IE</td>
+								<td>PAYE</td>
+								<td>2016</td>
+								<td>ST, Preslava Dushkova (PRSD)</td>
+							</tr>
+							
+						</table>
+					</div>
+				</div>
+				<div class="modal-body secondary">
+					<div class="h300 customscroll">
+						<div class="col-md-6">
+							<h4>Tax Details</h4>
+							<p>Country I want a tax refund from: <strong>Ireland</strong></p>
+							<p>Tax Year: <strong>2017</strong></p>
+
+							<h4>Customer contact details</h4>
+							<p>First Name: <strong> John  </strong></p>
+							<p>Surname: <strong> Smith </strong></p>
+							<p>Email address: <strong> johnsmith@gmail.com </strong></p>
+							<p>Line Type: <strong> Mobile/Cell</strong></p>
+							<p>Country Code: <strong> Ireland (+353) </strong></p>
+							<p>Area Code: <strong> "empty"</strong></p>
+							<p>Phone number: <strong> 851073519 </strong></p>
+
+							<h4>Marketing Info</h4>
+							<p>LinkID: <strong> "empty"</strong></p>
+							<p>RefferalID: <strong> same as above</strong></p>
+							<p>DB Referral ID: <strong> 125426</strong></p>
+							<p>DB Referral: <strong> 125426</strong></p>
+						</div>
+						<div class="col-md-6">
+							<h4>Other</h4>
+							<p>{"cookie_id": "20170813200942.1502644182505.f518d9cd3e52e0852238eff62fb1d8d1"}</p>
+							<p>{"link_slug":"Direct","partner_id":"125260","date":"2017-08-13"}</p>
+							<p>{"link_slug":"Direct","partner_id":"125260","date":"2017-08-22"}utm_taf – tell a friend</p>
+							<p>UID: 70822123456.1503394496514.938e9cdea349b40791a4</p>
+							<p>reff_uri_url - https://chatserver.comm100.com/chatwindowmobile.aspx?siteId=180590&planId=91&visitType=1&byHref=1&partnerId=-1</p>
+							<p>page_id – 136</p>
+							<p>search_keywords – intended for search terms that lead customer to the page, but not sure it’s working after all the changes.</p>
+							<p>initial_referral - </p>
+							<p>reff_uri</p>
+							<p>full_uri – URL of the page where the form is </p>
+							<p>Country – IE</p>
+							<p>Registration type – REGCB</p>
+							<p>timezone_customer – UTC+1</p>
+							<p>Language used – en</p>
+							<p>Domain used – www.taxback.com</p>
+							<p>IP – 51.37.55.158</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- OTS Update Modal -->
+	<div class="modal fade" id="otsUpdate" tabindex="-1" role="dialog" aria-labelledby="otsUpdateLabel">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title" id="changeLogLabel">OTS Update</h4>
+				</div>
+				<div class="modal-body">
+					<div class="h300 customscroll">
+						<table class="table table-hover">
+							<tr>
+								<th>Application</th>
+								<th>Field</th>
+								<th>Old value</th>
+								<th>New value</th>
+								<th>Processor</th>
+								<th>Received</th>
+								<th>Processed</th>
+							</tr>
+							<tr>
+								<td>IE PAYE, 2016</td>
+								<td>Phone Type</td>
+								<td>Fixed</td>
+								<td>Mobile</td>
+								<td>ST, Preslava Dushkova (PRSD)</td>
+								<td>12/12/2017</td>
+								<td>12/12/2017</td>
+							</tr>
+							<tr>
+								<td>IE PAYE, 2016</td>
+								<td>Phone Code</td>
+								<td>Ireland (+353)</td>
+								<td>Ireland (+353)</td>
+								<td>ST, Preslava Dushkova (PRSD)</td>
+								<td>12/12/2017</td>
+								<td>12/12/2017</td>
+							</tr>
+							<tr>
+								<td>IE PAYE, 2016</td>
+								<td>Phone Number</td>
+								<td>3413411</td>
+								<td>8888888</td>
+								<td>ST, Preslava Dushkova (PRSD)</td>
+								<td>12/12/2017</td>
+								<td>12/12/2017</td>
+							</tr>
+							<tr>
+								<td>IE PAYE, 2016</td>
+								<td><i class="fa fa-file-text"></i> POA</td>
+								<td>-</td>
+								<td><a href="#">Download</a> </td>
+								<td>-</td>
+								<td>-</td>
+								<td>-</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn export">Export</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Change Log Modal -->
+	<div class="modal fade" id="changeLog" tabindex="-1" role="dialog" aria-labelledby="changeLogLabel">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title" id="changeLogLabel">Change Log</h4>
+				</div>
+				<div class="modal-body">
+					<div class="h300 customscroll">
+						<table class="table table-hover">
+							<tr>
+								<th>Date</th>
+								<th>Employee</th>
+								<th>Field</th>
+								<th>Old value</th>
+								<th>New value</th>
+							</tr>
+							<tr>
+								<td>12/12/2017</td>
+								<td>Preslava Dushkova</td>
+								<td><i class="fa fa-file-text"></i> Marital Status</td>
+								<td>Single</td>
+								<td>Married</td>
+							</tr>
+							<tr>
+								<td>12/12/2017</td>
+								<td>Preslava Dushkova</td>
+								<td><i class="fa fa-file-text"></i> Marital Status</td>
+								<td>Single</td>
+								<td>Married</td>
+							</tr>
+							<tr>
+								<td>12/12/2017</td>
+								<td>Preslava Dushkova</td>
+								<td><i class="fa fa-file-text"></i> Marital Status</td>
+								<td>Single</td>
+								<td>Married</td>
+							</tr>
+							<tr>
+								<td>12/12/2017</td>
+								<td>Preslava Dushkova</td>
+								<td><i class="fa fa-file-text"></i> Marital Status</td>
+								<td>Single</td>
+								<td>Married</td>
+							</tr>
+							<tr>
+								<td>12/12/2017</td>
+								<td>Preslava Dushkova</td>
+								<td><i class="fa fa-file-text"></i> Marital Status</td>
+								<td>Single</td>
+								<td>Married</td>
+							</tr>
+							<tr>
+								<td>12/12/2017</td>
+								<td>Preslava Dushkova</td>
+								<td><i class="fa fa-file-text"></i> Marital Status</td>
+								<td>Single</td>
+								<td>Married</td>
+							</tr>
+							<tr>
+								<td>12/12/2017</td>
+								<td>Preslava Dushkova</td>
+								<td><i class="fa fa-file-text"></i> Marital Status</td>
+								<td>Single</td>
+								<td>Married</td>
+							</tr>
+							<tr>
+								<td>12/12/2017</td>
+								<td>Preslava Dushkova</td>
+								<td><i class="fa fa-file-text"></i> Marital Status</td>
+								<td>Single</td>
+								<td>Married</td>
+							</tr>
+							<tr>
+								<td>12/12/2017</td>
+								<td>Preslava Dushkova</td>
+								<td><i class="fa fa-file-text"></i> Marital Status</td>
+								<td>Single</td>
+								<td>Married</td>
+							</tr>
+							<tr>
+								<td>12/12/2017</td>
+								<td>Preslava Dushkova</td>
+								<td><i class="fa fa-file-text"></i> Marital Status</td>
+								<td>Single</td>
+								<td>Married</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn export">Export</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Secret Question Modal -->
+	<div class="modal fade" id="secretQuestion" tabindex="-1" role="dialog" aria-labelledby="secretQuestionLabel">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title" id="secretQuestionLabel">Secret Question/Answer</h4>
+				</div>
+				
+				<div class="modal-body secretQ">
+					<div>
+						<select>
+							<option>What is your Mother's maiden name?</option>
+							<option>Option 2</option>
+							<option>Option 3</option>
+						</select>
+					</div>
+					<div>
+						<textarea>Smith</textarea>
+					</div>
+				</div>
+
+				<div class="modal-footer">
+					<button type="button" class="btn btn-primary">Save</button>
+					<button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+				</div>
+
+				
+			</div>
+		</div>
+	</div>
+
+	<!-- Add New Address Modal -->
+	<div class="modal fade" id="addNewAddress" tabindex="-1" role="dialog" aria-labelledby="addNewAddressLabel">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title" id="addNewAddressLabel">Addresses on Record (2)</h4>
+				</div>
+				<div class="modal-body">
+					<form class="form-inline">
+						<div class="row">
+							<div class="col-lg-6">
+								<div class="form-group">
+									<label for="">Country:</label>
+									<select class="form-control" id="">
+										<option></option>
+										<option>Option 1</option>
+										<option>Option 2</option>
+										<option>Option 3</option>
+									</select>
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="form-group">
+									<label for="">State/Country:</label>
+									<input type="text" class="form-control" id="">
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-lg-6">
+								<div class="form-group">
+									<label for="">Address 1:</label>
+									<input type="text" class="form-control" id="">
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="form-group">
+									<label for="">City/Town:</label>
+									<input type="text" class="form-control" id="">
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-lg-6">
+								<div class="form-group">
+									<label for="">Address 2:</label>
+									<input type="text" class="form-control" id="">
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="form-group">
+									<label for="">Post Code:</label>
+									<input type="text" class="form-control" id="">
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-primary">+ Add Address</button>
+					<button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+				</div>
+				<div class="modal-body secondary">
+					<div class="h150 customscroll">
+						<div class="list">
+							<div class="list-item">
+								<div class="toggler active"><span></span></div>
+								<input type="radio" name="optionsRadios" value="option1" checked="checked">
+								<strong>Australia</strong><br>
+								<span class="editable textarea">Tram Stop, 125 Normanby Str, Melbourne, RT4 56W</span>
+								<textarea class="editable-textarea"></textarea>
+							</div>
+							<div class="list-item">
+								<div class="toggler active"><span></span></div>
+								<input type="radio" name="optionsRadios" value="option2">
+								<strong>Ireland</strong><br>
+								<span class="editable textarea">Tram Stop, 125 Normanby Str, Melbourne, RT4 56W</span>
+								<textarea class="editable-textarea"></textarea>
+							</div>
+							<div class="list-item">
+								<div class="toggler"><span></span></div>
+								<input type="radio" name="optionsRadios" value="option3">
+								<strong>UK</strong><br>
+								<span class="editable textarea">Tram Stop, 125 Normanby Str, Melbourne, RT4 56W</span>
+								<textarea class="editable-textarea"></textarea>
+							</div>
+							<div class="list-item">
+								<div class="toggler"><span></span></div>
+								<input type="radio" name="optionsRadios" value="option4">
+								<strong>US</strong><br>
+								<span class="editable textarea">Tram Stop, 125 Normanby Str, Melbourne, RT4 56W</span>
+								<textarea class="editable-textarea"></textarea>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Add New Emails Modal -->
+	<div class="modal fade" id="addNewEmails" tabindex="-1" role="dialog" aria-labelledby="addNewEmailsLabel">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title" id="addNewEmailsLabel">Email addresses on record (5)</h4>
+				</div>
+				<div class="modal-body form-2col">
+					<div class="row">
+						<div class="col-lg-6">
+							Email:
+						</div>
+					</div>
+					<div class="row edit-mail">
+						<div class="col-lg-6">
+							<span class="editable text">john.smith@yahoo.com</span>
+							<input type="text" class="editable-text">
+						</div>
+						<div class="col-lg-6">
+							<a href="#"><i class="material-icons">email</i></a>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-primary">+ Add Email</button>
+					<button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+				</div>
+				<div class="modal-body secondary">
+					<div class="h300 customscroll">
+						<div class="row edit-mail">
+							<div class="col-lg-6">
+								<span class="editable text">john.smith@yahoo.com</span>
+								<input type="text" class="editable-text">
+							</div>
+							<div class="col-lg-4">
+								<a href="#" class="main"><i class="material-icons">email</i></a>
+							</div>
+							<div class="col-lg-2 toggle">
+								<div class="toggler active"><span></span></div>
+							</div>
+						</div>
+						<div class="row edit-mail">
+							<div class="col-lg-6">
+								<span class="editable text">john.smith@yahoo.com</span>
+								<input type="text" class="editable-text">
+							</div>
+							<div class="col-lg-4">
+								<a href="#" class="main"><i class="material-icons">email</i></a>
+							</div>
+							<div class="col-lg-2 toggle">
+								<div class="toggler active"><span></span></div>
+							</div>
+						</div>
+						<div class="row edit-mail">
+							<div class="col-lg-6">
+								<span class="editable text">john.smith@yahoo.com</span>
+								<input type="text" class="editable-text">
+							</div>
+							<div class="col-lg-4">
+								<a href="#" class="main"><i class="material-icons">email</i></a>
+							</div>
+							<div class="col-lg-2 toggle">
+								<div class="toggler"><span></span></div>
+							</div>
+						</div>
+						<div class="row edit-mail">
+							<div class="col-lg-6">
+								<span class="editable text">john.smith@yahoo.com</span>
+								<input type="text" class="editable-text">
+							</div>
+							<div class="col-lg-4">
+								<a href="#" class="main"><i class="material-icons">email</i></a>
+							</div>
+							<div class="col-lg-2 toggle">
+								<div class="toggler"><span></span></div>
+							</div>
+						</div>
+						<div class="row edit-mail">
+							<div class="col-lg-6">
+								<span class="editable text">john.smith@yahoo.com</span>
+								<input type="text" class="editable-text">
+							</div>
+							<div class="col-lg-4">
+								<a href="#" class="main"><i class="material-icons">email</i></a>
+							</div>
+							<div class="col-lg-2 toggle">
+								<div class="toggler"><span></span></div>
+							</div>
+						</div>
+						<div class="row edit-mail">
+							<div class="col-lg-6">
+								<span class="editable text">john.smith@yahoo.com</span>
+								<input type="text" class="editable-text">
+							</div>
+							<div class="col-lg-4">
+								<a href="#" class="main"><i class="material-icons">email</i></a>
+							</div>
+							<div class="col-lg-2 toggle">
+								<div class="toggler"><span></span></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Add New Phones Modal -->
+	<div class="modal fade" id="addNewPhones" tabindex="-1" role="dialog" aria-labelledby="addNewPhonesLabel">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title" id="addNewPhonesLabel">Phone numbers on record (5)</h4>
+				</div>
+				<div class="modal-body">
+					<div class="row">
+						<form class="form-inline edit-phones">
+							<div class="col-lg-4">
+								<div class="form-group">
+									<label for="">Country:</label>
+									<select class="form-control" id="">
+										<option>Australia (+62)</option>
+										<option>Option 2</option>
+										<option>Option 3</option>
+									</select>
+								</div>
+							</div>
+							<div class="col-lg-4">
+								<div class="form-group">
+									<label for="">Area:</label>
+									<input type="text" class="form-control" id="">
+								</div>
+							</div>
+							<div class="col-lg-4">
+								<div class="form-group">
+									<label for="">Number:</label>
+									<input type="text" class="form-control" id="">
+								</div>
+							</div>
+						</form>
+					</div>
+					<div class="row edit-phones">
+						<div class="col-lg-4 phone-number">
+							<span class="editable text">+62 555 240 6035</span>
+							<input type="text" class="editable-text">
+						</div>
+						<div class="col-lg-4 phone-features">
+							<a href="#"><i class="material-icons">star</i></a> 
+							<a href="#"><i class="material-icons">home</i></a> 
+							<a href="#"><i class="material-icons">rss_feed</i></a> 
+							<a href="#"><i class="material-icons">sms</i></a> 
+							<a href="#"><i class="material-icons">people</i></a> 
+						</div>
+						<div class="col-lg-4 phone-line-type">
+							<a href="#" class="mobile"><i class="material-icons">import_export</i> <span>Mobile</span></a>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-primary">+ Add Phone</button>
+					<button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+				</div>
+				<div class="modal-body secondary">
+					<div class="h300 customscroll">
+						<div class="row edit-phones">
+							<div class="col-lg-4">
+								<span class="editable text">+62 555 240 6035</span>
+								<input type="text" class="editable-text">
+							</div>
+							<div class="col-lg-4">
+								<a href="#" class="main"><i class="material-icons">star</i></a> 
+								<a href="#"><i class="material-icons">home</i></a> 
+								<a href="#"><i class="material-icons">rss_feed</i></a> 
+								<a href="#"><i class="material-icons">sms</i></a> 
+								<a href="#"><i class="material-icons">people</i></a> 
+							</div>
+							<div class="col-lg-2 phone-line-type">
+								<a href="#" class="mobile"><i class="material-icons">import_export</i> <span>Mobile</span></a>
+							</div>
+							<div class="col-lg-2 toggle">
+								<div class="toggler active"><span></span></div>
+							</div>
+						</div>
+						<div class="row edit-phones">
+							<div class="col-lg-4">
+								<span class="editable text">+62 555 240 6035</span>
+								<input type="text" class="editable-text">
+							</div>
+							<div class="col-lg-4">
+								<a href="#" class="main"><i class="material-icons">star</i></a> 
+								<a href="#"><i class="material-icons">home</i></a> 
+								<a href="#"><i class="material-icons">rss_feed</i></a> 
+								<a href="#"><i class="material-icons">sms</i></a> 
+								<a href="#"><i class="material-icons">people</i></a> 
+							</div>
+							<div class="col-lg-2 phone-line-type">
+								<a href="#" class="mobile"><i class="material-icons">import_export</i> <span>Mobile</span></a>
+							</div>
+							<div class="col-lg-2 toggle">
+								<div class="toggler active"><span></span></div>
+							</div>
+						</div>
+						<div class="row edit-phones">
+							<div class="col-lg-4">
+								<span class="editable text">+62 555 240 6035</span>
+								<input type="text" class="editable-text">
+							</div>
+							<div class="col-lg-4">
+								<a href="#" class="main"><i class="material-icons">star</i></a> 
+								<a href="#"><i class="material-icons">home</i></a> 
+								<a href="#"><i class="material-icons">rss_feed</i></a> 
+								<a href="#"><i class="material-icons">sms</i></a> 
+								<a href="#"><i class="material-icons">people</i></a> 
+							</div>
+							<div class="col-lg-2 phone-line-type">
+								<a href="#" class="mobile"><i class="material-icons">import_export</i> <span>Mobile</span></a>
+							</div>
+							<div class="col-lg-2 toggle">
+								<div class="toggler active"><span></span></div>
+							</div>
+						</div>
+						<div class="row edit-phones">
+							<div class="col-lg-4">
+								<span class="editable text">+62 555 240 6035</span>
+								<input type="text" class="editable-text">
+							</div>
+							<div class="col-lg-4">
+								<a href="#" class="main"><i class="material-icons">star</i></a> 
+								<a href="#"><i class="material-icons">home</i></a> 
+								<a href="#"><i class="material-icons">rss_feed</i></a> 
+								<a href="#"><i class="material-icons">sms</i></a> 
+								<a href="#"><i class="material-icons">people</i></a> 
+							</div>
+							<div class="col-lg-2 phone-line-type">
+								<a href="#" class="mobile"><i class="material-icons">import_export</i> <span>Mobile</span></a>
+							</div>
+							<div class="col-lg-2 toggle">
+								<div class="toggler active"><span></span></div>
+							</div>
+						</div>
+						<div class="row edit-phones">
+							<div class="col-lg-4">
+								<span class="editable text">+62 555 240 6035</span>
+								<input type="text" class="editable-text">
+							</div>
+							<div class="col-lg-4">
+								<a href="#" class="main"><i class="material-icons">star</i></a> 
+								<a href="#"><i class="material-icons">home</i></a> 
+								<a href="#"><i class="material-icons">rss_feed</i></a> 
+								<a href="#"><i class="material-icons">sms</i></a> 
+								<a href="#"><i class="material-icons">people</i></a> 
+							</div>
+							<div class="col-lg-2 phone-line-type">
+								<a href="#" class="mobile"><i class="material-icons">import_export</i> <span>Mobile</span></a>
+							</div>
+							<div class="col-lg-2 toggle">
+								<div class="toggler active"><span></span></div>
+							</div>
+						</div>
+						<div class="row edit-phones">
+							<div class="col-lg-4">
+								<span class="editable text">+62 555 240 6035</span>
+								<input type="text" class="editable-text">
+							</div>
+							<div class="col-lg-4">
+								<a href="#" class="main"><i class="material-icons">star</i></a> 
+								<a href="#"><i class="material-icons">home</i></a> 
+								<a href="#"><i class="material-icons">rss_feed</i></a> 
+								<a href="#"><i class="material-icons">sms</i></a> 
+								<a href="#"><i class="material-icons">people</i></a> 
+							</div>
+							<div class="col-lg-2 phone-line-type">
+								<a href="#" class="mobile"><i class="material-icons">import_export</i> <span>Mobile</span></a>
+							</div>
+							<div class="col-lg-2 toggle">
+								<div class="toggler active"><span></span></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Dependants Modal -->
+	<div class="modal fade" id="dependants" tabindex="-1" role="dialog" aria-labelledby="dependantsLabel">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title" id="dependantsLabel">Dependants (2)</h4>
+				</div>
+				<div class="modal-body">
+					<form class="form-inline">
+						<div class="row">
+							<div class="col-lg-4">
+								<div class="form-group">
+									<label for="">Relationship:</label>
+									<select class="form-control" id="">
+										<option></option>
+										<option>Option 1</option>
+										<option>Option 2</option>
+										<option>Option 3</option>
+									</select>
+								</div>
+								<div class="form-group">
+									<label for="">First Name:</label>
+									<input type="text" class="form-control" id="">
+								</div>
+								<div class="form-group">
+									<label for="">Middle Name:</label>
+									<input type="text" class="form-control" id="">
+								</div>
+								<div class="form-group">
+									<label for="">Last Name:</label>
+									<input type="text" class="form-control" id="">
+								</div>
+								<div class="form-group">
+									<label for="">DOB:</label>
+									<input type="text" class="form-control datepicker" id="">
+								</div>
+								<div class="form-group">
+									<label for="">Birth Name:</label>
+									<input type="text" class="form-control" id=""> 
+								</div>
+							</div>
+							<div class="col-lg-4">
+								<div class="form-group">
+									<label for="">Born in US:</label>
+									<div class="toggler active"><span></span></div> Yes
+								</div>
+								<div class="form-group">
+									<label for="">Nationality:</label>
+									<select class="form-control" id="">
+										<option></option>
+										<option>Option 1</option>
+										<option>Option 2</option>
+										<option>Option 3</option>
+									</select> 
+								</div>
+								<div class="form-group">
+									<label for="">POB:</label>
+									<input type="text" class="form-control" id=""> 
+								</div>
+								<div class="form-group">
+									<label for="">Marriage Date:</label>
+									<input type="text" class="form-control datepicker">
+								</div>
+								<div class="form-group">
+									<label for="">SSN:</label>
+									<select class="form-control" id="">
+										<option></option>
+										<option>Option 1</option>
+										<option>Option 2</option>
+										<option>Option 3</option>
+									</select> 
+								</div>
+								<div class="form-group">
+									<label for="">School:</label>
+									<select class="form-control" id="">
+										<option></option>
+										<option>Option 1</option>
+										<option>Option 2</option>
+										<option>Option 3</option>
+									</select> 
+								</div>
+							</div>
+							<div class="col-lg-4">
+								<div class="form-group">
+									<label class="fullwidth">Tax Numbers:</label>
+								</div>
+								<div class="form-group split-3">
+									<select class="form-control" id="">
+										<option>Tax Country</option>
+										<option>Option 1</option>
+										<option>Option 2</option>
+										<option>Option 3</option>
+									</select> 
+									<input type="text" class="form-control" id="" placeholder="123456789"> 
+									<button class="btn">Add</button>
+								</div>
+								<div class="form-group tax-numbers">
+									<span class="item">(ITIN) 123456789 <a href="#" class="remove">&times;</a></span> 
+									<span class="item">(ITIN) 123456789 <a href="#" class="remove">&times;</a></span> 
+								</div>
+
+								<div class="form-group">
+									<label class="fullwidth">Phone Numbers:</label>
+								</div>
+								<div class="form-group split-3">
+									<select class="form-control" id="">
+										<option>Country</option>
+										<option>Option 1</option>
+										<option>Option 2</option>
+										<option>Option 3</option>
+									</select> 
+									<input type="text" class="form-control" id="" placeholder="123456789"> 
+									<button class="btn">Add</button>
+								</div>
+								<div class="form-group tax-numbers">
+									<span class="item">(+62) 123456789 <a href="#" class="remove">&times;</a></span> 
+								</div>
+								
+							</div>
+						</div>				
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-primary">+ Add Dependant</button>
+					<button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+				</div>
+				<div class="modal-body secondary">
+					<div class="h300 customscroll">
+						<div class="list">
+							<div class="list-item dependants-box">
+								<div class="col-lg-3 name">
+									<p class="relation">
+										<span class="editable select relation">Child</span>
+										<select class="editable-select">
+											<option selected="selected">Child</option>
+											<option>Wife</option>
+											<option>Mother</option>
+											<option>Father</option>
+										</select>
+									</p>
+									<p class="fullname">
+										<span class="editable text name">Marian</span>
+										<input type="text" class="editable-text name">
+										<span class="editable text name">Johnathan</span>
+										<input type="text" class="editable-text name">
+										<span class="editable text name">Smith</span>
+										<input type="text" class="editable-text name">
+									</p>
+								</div>
+								<div class="col-lg-3">
+									<p>POB: <span class="editable text">Dublin</span><input type="text" class="editable-text"></p>
+									<p>DOB: <span class="editable text date">06/11/2016</span> <input type="text" class="editable-text date datepicker"></p>
+									<p>Nationality: <span class="editable text">Ireland</span> <input type="text" class="editable-text"></p>
+									<div>Born in US: <div class="toggler active"><span></span></div> Yes</div>
+								</div>
+								<div class="col-lg-3">
+									<p>Birth Name: <span class="editable text">Armstrong</span> <input type="text" class="editable-text"></p>
+									<p>Marriage Date: <span class="editable text date">06/11/2016</span> <input type="text" class="editable-text date datepicker"></p>
+									<p>SSN: <span class="editable select">Yes</span>
+										<select class="editable-select">
+											<option selected="selected">Yes</option>
+											<option>No</option>
+											<option>N/A</option>
+										</select>
+									</p>
+									<p>School: <span class="editable text">Armstrong</span> <input type="text" class="editable-text"></p>
+								</div>
+								<div class="col-lg-3">
+									<p>ITIN: <span class="editable text">12314567</span> <input type="text" class="editable-text"></p>
+									<p>SSN: <span class="editable text">12314567</span> <input type="text" class="editable-text"></p>
+									<p>Phone: <span class="editable text">12314567</span> <input type="text" class="editable-text"></p>
+								</div>
+							</div>
+							<div class="list-item dependants-box">
+								<div class="col-lg-3 name">
+									<p class="relation">
+										<span class="editable select relation">Child</span>
+										<select class="editable-select">
+											<option selected="selected">Child</option>
+											<option>Wife</option>
+											<option>Mother</option>
+											<option>Father</option>
+										</select>
+									</p>
+									<p class="fullname">
+										<span class="editable text name">Marian</span>
+										<input type="text" class="editable-text name">
+										<span class="editable text name">Johnathan</span>
+										<input type="text" class="editable-text name">
+										<span class="editable text name">Smith</span>
+										<input type="text" class="editable-text name">
+									</p>
+								</div>
+								<div class="col-lg-3">
+									<p>POB: <span class="editable text">Dublin</span><input type="text" class="editable-text"></p>
+									<p>DOB: <span class="editable text date">06/11/2016</span> <input type="text" class="editable-text date datepicker"></p>
+									<p>Nationality: <span class="editable text">Ireland</span> <input type="text" class="editable-text"></p>
+									<div>Born in US: <div class="toggler active"><span></span></div> Yes</div>
+								</div>
+								<div class="col-lg-3">
+									<p>Birth Name: <span class="editable text">Armstrong</span> <input type="text" class="editable-text"></p>
+									<p>Marriage Date: <span class="editable text date">06/11/2016</span> <input type="text" class="editable-text date datepicker"></p>
+									<p>SSN: <span class="editable select">Yes</span>
+										<select class="editable-select">
+											<option selected="selected">Yes</option>
+											<option>No</option>
+											<option>N/A</option>
+										</select>
+									</p>
+									<p>School: <span class="editable text">Armstrong</span> <input type="text" class="editable-text"></p>
+								</div>
+								<div class="col-lg-3">
+									<p>ITIN: <span class="editable text">12314567</span> <input type="text" class="editable-text"></p>
+									<p>SSN: <span class="editable text">12314567</span> <input type="text" class="editable-text"></p>
+									
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Add Application Modal -->
+	<div class="modal fade" id="addApplication" tabindex="-1" role="dialog" aria-labelledby="addApplicationLabel">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title" id="addApplicationLabel">Add Application</h4>
+				</div>
+				<div class="modal-body">
+					<form class="form-inline">
+						<div class="row">
+							<div class="col-lg-6">
+								<div class="form-group">
+									<label for=""><strong>DWT:</strong></label>
+									<div class="toggler"><span></span></div>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-lg-6">
+								<div class="form-group">
+									<label for="">Tax Country:</label>
+									<select class="form-control" id="">
+										<option></option>
+										<option>Option 1</option>
+										<option>Option 2</option>
+										<option>Option 3</option>
+									</select>
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="form-group">
+									<label for="">Pretravel:</label>
+									<div class="toggler active"><span></span></div>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-lg-6">
+								<div class="form-group">
+									<label for="">Tax Service:</label>
+									<select class="form-control" id="">
+										<option></option>
+										<option>Option 1</option>
+										<option>Option 2</option>
+										<option>Option 3</option>
+									</select>
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="form-group">
+									<label for="">Referral:</label>
+									<select class="form-control" id="">
+										<option></option>
+										<option>Option 1</option>
+										<option>Option 2</option>
+										<option>Option 3</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-lg-6">
+								<div class="form-group">
+									<label for="">Tax Year:</label>
+									<select class="form-control" id="">
+										<option></option>
+										<option>Option 1</option>
+										<option>Option 2</option>
+										<option>Option 3</option>
+									</select>
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="form-group">
+									<label for="">Reg Type:</label>
+									<select class="form-control" id="">
+										<option></option>
+										<option>Option 1</option>
+										<option>Option 2</option>
+										<option>Option 3</option>
+									</select>
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-primary">+ Add Application</button>
+					<button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Tax Numbers Modal -->
+	<div class="modal fade" id="tax-numbers" tabindex="-1" role="dialog" aria-labelledby="addNewAddressLabel">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title" id="addNewAddressLabel">Tax Numbers (2)</h4>
+				</div>
+				<div class="modal-body">
+					<form class="form-inline">
+						<div class="row">
+							<div class="col-lg-6">
+								<div class="form-group">
+									<label for="">Tax Country:</label>
+									<select class="form-control" id="">
+										<option></option>
+										<option>Option 1</option>
+										<option>Option 2</option>
+										<option>Option 3</option>
+									</select>
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="form-group">
+									<label for="">Tax Number:</label>
+									<input type="text" class="form-control" id="">
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-primary">+ Add Tax Number</button>
+					<button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+				</div>
+				<div class="modal-body secondary">
+					<div class="h150 customscroll">
+						<div class="list">
+							<div class="list-item ">
+								<div class="col-md-6">
+									<p><strong>Australian Tax Number</strong></p>
+									<span class="editable text">123456789</span>
+									<input type="text" class="editable-text d-h1">
+								</div>
+								<div class="col-md-6">
+									<p><strong>UK Tax Number</strong></p>
+									<span class="editable text">123456789</span>
+									<input type="text" class="editable-text d-h1">
+								</div>									
+							</div>
+
+															
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Tax Office Registrations Modal -->
+	<div class="modal fade" id="tax-office-registrations" tabindex="-1" role="dialog" aria-labelledby="addNewAddressLabel">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title" id="addNewAddressLabel">Tax Office Registrations (2)</h4>
+				</div>
+				<div class="modal-body">
+					<form class="form-inline">
+						<div class="row">
+							<div class="col-lg-6">
+								<div class="form-group">
+									<label for="">Tax Country:</label>
+									<select class="form-control" id="">
+										<option></option>
+										<option>Option 1</option>
+										<option>Option 2</option>
+										<option>Option 3</option>
+									</select>
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="form-group">
+									<label for="">Tax Office:</label>
+									<input type="text" class="form-control" id="">
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-primary">+ Add Tax Office</button>
+					<button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+				</div>
+				<div class="modal-body secondary">
+					<div class="h200 customscroll">
+						<div class="list">
+							<div class="list-item ">
+								<div class="col-md-6">
+									<p><strong>Australian Tax Office </strong> <a href="#" class="remove">×</a></p> 
+									<div class="tax-office-registration toggler active tax-office-registration"><span></span> <label for="">Registered</label></div>
+								</div>
+
+								<div class="col-md-6">
+									<p><strong>New Zealand Tax Office</strong>  <a href="#" class="remove">×</a></p>
+									<div class="tax-office-registration toggler active tax-office-registration"><span></span> <label for="">Registered</label></div>
+								</div>									
+							</div>
+							<div class="list-item ">
+								<div class="col-md-6">
+									<p><strong>UK Tax Office</strong> <a href="#" class="remove">×</a></p>
+									<div class="tax-office-registration toggler active tax-office-registration"><span></span> <label for="">Registered</label></div>
+								</div>								
+							</div>
+															
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Application Status Modal -->
+	<div class="modal fade" id="applicationStatus" tabindex="-1" role="dialog" aria-labelledby="applicationStatusLabel">
+		<div class="modal-dialog modal-sm" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title">Ireland PAYE 2014 <small>(ID: 12345674)</small></h4>
+				</div>
+				<div class="modal-body appStatus">
+					<h4>Application Status</h4>
+					<form class="form-horizontal">
+						<div class="row">
+							<fieldset class="col-xs-12">
+								<div class="form-group">
+									<select class="form-control" id="appStatusSelect">
+										<option value="preactive">Preactive</option>
+										<option value="active">Active</option>
+										<option value="binned">Binned</option>
+										<option value="archived">Archived</option>
+									</select>
+								</div>
+							</fieldset>
+							<fieldset class="col-xs-12 appStatusArchived">
+								<div class="form-group">
+									<select class="form-control" id="">
+										<option value="preactive">Reason for archiving</option>
+										<option value="01">Reason 01</option>
+										<option value="02">Reason 02</option>
+										<option value="03">Reason 03</option>
+									</select>
+								</div>
+								<div class="form-group">
+									<textarea rows="4" placeholder="Notes" class="form-control"></textarea>
+								</div>
+							</fieldset>
+						</div>
+					</form>
+					
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-primary">Save</button>
+					<button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Application Unmerge Modal -->
+	<div class="modal fade" id="applicationUnmerge" tabindex="-1" role="dialog" aria-labelledby="applicationUnmergeLabel">
+		<div class="modal-dialog modal-sm" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title">Australia TN 2016 <small>(ID: 12345676)</small></h4>
+				</div>
+				<div class="modal-body appStatus">
+					<h4>Unmerge Applications</h4>
+
+					<form class="form-horizontal">
+						<div class="row">
+							<fieldset class="col-xs-12">
+								<div class="form-group">
+									<input type="text" class="form-control" value="12345678">
+								</div>
+							</fieldset>
+						</div>
+					</form>
+					
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-primary">Save</button>
+					<button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="popup-overlay">
+		<div class="side-popup webregdetails">
+			<a href="#" class="exit">&times;</a>
+			<h2>Web Reg Details</h2>
+			<div class="customscroll">
+				<p>
+					<strong class="title2">Tax Details</strong>
+					Country I want a tax refund from: <strong>Ireland</strong><br>
+					Tax Year: <strong>2017</strong>
+				</p>
+				<p>
+					<strong class="title2">Customer contact details</strong>
+					First Name: <strong>John</strong><br>
+					Surname: <strong>Smith</strong><br>
+					Email address: <strong>johnsmith@gmail.com</strong><br>
+					Line Type: <strong>Mobile/Cell</strong><br>
+					Country Code: <strong>Ireland (+353)</strong><br>
+					Area Code: <strong>"empty"</strong><br>
+					Phone number: <strong>851073519</strong>
+				</p>
+				<p>
+					<strong class="title2">Marketing Info</strong>
+					LinkID: <strong>"empty"</strong><br>
+					RefferalID: <strong>same as above</strong><br>
+					DB Referral ID: <strong>125426</strong><br>
+					DB Referral: <strong>125426</strong>
+				</p>
+				<p>
+					<strong class="title2">Other</strong>
+					{"cookie_id": "20170813200942.1502644182505.f518d9cd3e52e0852238eff62fb1d8d1"}<br>
+					{"link_slug":"Direct","partner_id":"125260","date":"2017-08-13"}<br>
+					{"link_slug":"Direct","partner_id":"125260","date":"2017-08-22"}utm_taf – tell a friend<br>
+					UID: 70822123456.1503394496514.938e9cdea349b40791a4<br>
+					reff_uri_url - https://chatserver.comm100.com/chatwindowmobile.aspx?siteId=180590&amp;planId=91&amp;visitType=1&amp;byHref=1&amp;partnerId=-1
+				</p>
+				<p>
+					page_id – 136<br>
+					search_keywords – intended for search terms that lead customer to the page, but not sure it’s working after all the changes.<br>
+					initial_referral - <br>
+					reff_uri<br>
+					full_uri – URL of the page where the form is <br>
+					Country – IE<br>
+					Registration type – REGCB<br>
+					timezone_customer – UTC+1<br>
+					Language used – en<br>
+					Domain used – www.taxback.com<br>
+					IP – 51.37.55.158
+				</p>
+			</div>
+		</div>
+		<div class="docpreview">
+			<a href="#" class="exit">&times;</a>
+			<div class="top">
+				<div class="left">
+					<h5>OZ, Income'16</h5>
+					<h6>25.06.2017, Pack, PDF</h6>
+				</div>
+				<div class="right">
+					<ul>
+						<li><a href="#"><i class="material-icons">print</i></a></li>
+						<li><a href="#"><i class="material-icons">cloud_download</i></a></li>
+						<li><a href="#"><i class="material-icons">email</i></a></li>
+						<li><a href="#"><i class="material-icons">delete</i></a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="customscroll">
+				<div class="placeholder">
+					<img src="assets/img/pdf.jpg" alt="pdf placeholder">
+				</div>
+			</div>
+		</div>
+	</div>
+
+	
+	
+	<!-- ================== BEGIN BASE JS ================== -->
+	<script src="assets/plugins/jquery/jquery-1.9.1.min.js"></script>
+	<script src="assets/plugins/jquery/jquery-migrate-1.1.0.min.js"></script>
+	<script src="assets/plugins/jquery-ui/ui/minified/jquery-ui.min.js"></script>
+	<script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+	<!--[if lt IE 9]>
+		<script src="assets/crossbrowserjs/html5shiv.js"></script>
+		<script src="assets/crossbrowserjs/respond.min.js"></script>
+		<script src="assets/crossbrowserjs/excanvas.min.js"></script>
+	<![endif]-->
+	<!-- ================== END BASE JS ================== -->
+	
+	<!-- ================== BEGIN PAGE LEVEL JS ================== -->
+	<script src="assets/plugins/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
+	<script src="assets/plugins/DataTables/media/js/jquery.dataTables.js"></script>
+	<script src="assets/plugins/DataTables/media/js/dataTables.bootstrap.min.js"></script>
+	<script src="assets/plugins/DataTables/extensions/Select/js/dataTables.select.min.js"></script>
+	<script src="assets/plugins/DataTables/extensions/Responsive/js/dataTables.responsive.min.js"></script>
+	<script src="assets/plugins/jstree/dist/jstree.min.js"></script> 
+	<script src="assets/plugins/sparkline/jquery.sparkline.min.js"></script> 
+	<script src="assets/plugins/slimscroll/jquery.slimscroll.min.js"></script> 
+	<script src="assets/plugins/gritter/js/jquery.gritter.min.js"></script> 
+	<script src="assets/js/ui-tree.demo.min.js"></script>    
+	<script src="assets/js/jquery.mousewheel.min.js"></script>
+	<script src="assets/js/apps.min.js"></script>
+	<script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+	<script src="assets/js/scripts.js"></script>
+	<!-- ================== END PAGE LEVEL JS ================== -->
+	
+	<script>
+		$(document).ready(function() {
+			TableManageTableSelect.init();
+			TreeView.init();
+			App.init();
+		});
+	</script>
+    <script src="assets/plugins/switchery/switchery.min.js"></script>
+	<script src="assets/js/fastselect.standalone.min.js"></script>
+</body>
+</html>

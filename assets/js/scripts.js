@@ -25,6 +25,18 @@ var handleDataTableSelect = function() {
         searching: false,
         paging: false
     });
+    $('.data-table5').DataTable({
+        select: true,
+        responsive: true,
+        searching: false,
+        paging: false,
+        ordering: true,
+        order: [[ 1, "desc" ]],
+        columnDefs: [{
+            orderable: false,
+            targets: "nosort"
+        }]
+    });
 };
 var TableManageTableSelect = function () {
     "use strict";
@@ -37,6 +49,17 @@ var TableManageTableSelect = function () {
 }();
 
 $(document).ready(function(){
+    // change companies list view
+    $('.content.companies .split-left h2 a.toggle').on('click', function(){
+        if ( $(this).hasClass('compact') ) {
+            $('.content.companies .split-left h2 a.expanded').removeClass('active').siblings('a').addClass('active');
+            $('.companies-list').removeClass('expanded').addClass('compact');
+        } else {
+            $('.content.companies .split-left h2 a.compact').removeClass('active').siblings('a').addClass('active');
+            $('.companies-list').removeClass('compact').addClass('expanded');
+        }
+        return false;
+    });
 
     // change status to SA - Reason select appears
     $('.footer-tabs select.type').on('change', function(){
@@ -287,6 +310,10 @@ $(document).ready(function(){
     $('.datepicker').datepicker({
         autoclose: true,
         format: "dd-M-yyyy"
+    });
+    $('.datepicker2').datepicker({
+        autoclose: true,
+        format: "dd/mm/yyyy"
     });
 
     // remove filter

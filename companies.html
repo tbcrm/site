@@ -5,13 +5,13 @@
 <!--<![endif]-->
 <head>
 	<meta charset="utf-8" />
-	<title>Overview | TB CRM</title>
+	<title>Companies | TB CRM</title>
 	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
 	<meta content="" name="description" />
 	<meta content="" name="author" />
 	
 	<!-- ================== BEGIN BASE CSS STYLE ================== -->
-	<link href="http://fonts.googleapis.com/css?family=Roboto:300,400,700|Material+Icons" rel="stylesheet" />
+	<link href="//fonts.googleapis.com/css?family=Roboto:300,400,700|Material+Icons" rel="stylesheet" />
 	<link href="assets/plugins/jquery-ui/themes/base/minified/jquery-ui.min.css" rel="stylesheet" />
 	<link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
 	<link href="assets/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
@@ -34,7 +34,7 @@
 <body>
 	
 	<!-- begin #page-container -->
-	<div id="page-container" class="fade page-sidebar-fixed in">
+	<div id="page-container" class="fade page-sidebar-fixed in page-sidebar-minified">
 		
 		<!-- begin #sidebar -->
 		<div id="sidebar" class="sidebar">
@@ -86,7 +86,7 @@
 						    <span>Account</span>
 						</a>
 					</li>
-					<li>
+					<li class="active">
 						<a href="companies.html">
 						    <i class="material-icons">domain</i>
 						    <span>Companies</span>
@@ -104,568 +104,92 @@
 		<!-- end #sidebar -->
 		
 		<!-- begin #content -->
-		<div id="content" class="content split single-col">
+		<div id="content" class="content split single-col companies">
 			<!-- remove class 'split' to hide sidebar -->
 			<div class="split-left">
 				<p><a href="#" class="close">&times;</a></p>
 				<br><br>
 				<div class="newcase">
-					<a href="#" class="btn">+ New Case</a>
-					<a href="#" class="btn btn-find"><i class="material-icons">search</i> Find Case</a>
+					<a href="#" class="btn">+ Add Company</a>
 				</div>
-				<h2>Worklist</h2>
-				<div class="accordion">
-					<div class="item top">
-						<div class="item-title">
-							<a href="#">Web Regs (105)</a>
-						</div>
-						<div class="item-body">
-							<div class="item sub">
-								<div class="item-title">
-									<a href="#">Smith, John R. <span>(3)</span></a>
-								</div>
-								<div class="item-body">
-									<ul>
-										<li>
-											<a href="#">
-												<span class="left">
-													<strong>IE, PAYE 2016</strong>
-													+62 (Australia)
-												</span>
-												<span class="right">
-													active
-												</span>
-											</a>
-										</li>
-										<li>
-											<a href="#">
-												<span class="left">
-													<strong>IE, PAYE 2015</strong>
-													+353 (Ireland)
-												</span>
-												<span class="right">
-													pre-a
-												</span>
-											</a>
-										</li>
-										<li>
-											<a href="#">
-												<span class="left">
-													<strong>IE, SA 2015</strong>
-													+353 (Ireland)
-												</span>
-												<span class="right">
-													tb
-												</span>
-											</a>
-										</li>
-									</ul>
-								</div>
-							</div>
-							<div class="item sub">
-								<div class="item-title">
-									<a href="#">Redding, Jason B. <span>(2)</span></a>
-								</div>
-								<div class="item-body">
-									<ul>
-										<li>
-											<a href="#">
-												<span class="left">
-													<strong>IE, PAYE 2016</strong>
-													+62 (Australia)
-												</span>
-												<span class="right">
-													active
-												</span>
-											</a>
-										</li>
-										<li>
-											<a href="#">
-												<span class="left">
-													<strong>IE, PAYE 2015</strong>
-													+353 (Ireland)
-												</span>
-												<span class="right">
-													pre-a
-												</span>
-											</a>
-										</li>
-										<li>
-											<a href="#">
-												<span class="left">
-													<strong>IE, SA 2015</strong>
-													+353 (Ireland)
-												</span>
-												<span class="right">
-													tb
-												</span>
-											</a>
-										</li>
-									</ul>
-								</div>
-							</div>
-						</div>
+				<h4>Search in</h4>
+				<div class="search-in">
+					<select>
+						<option>IE</option>
+						<option>Option 1</option>
+						<option>Option 2</option>
+						<option>Option 3</option>
+					</select>
+					<select>
+						<option>Region</option>
+						<option>Option 1</option>
+						<option>Option 2</option>
+						<option>Option 3</option>
+					</select>
+					<select>
+						<option>City</option>
+						<option>Option 1</option>
+						<option>Option 2</option>
+						<option>Option 3</option>
+					</select>
+				</div>
+				<h4>Search by</h4>
+				<div class="search-by">
+					<div class="form-group">
+						<input type="text" placeholder="Company Name" class="form-control">
 					</div>
-					<div class="item">
-						<div class="item-title">
-							<a href="#">Revertions (5)</a>
-						</div>
-						<div class="item-body">
-							<div class="item sub">
-								<div class="item-title">
-									<a href="#">Smith, John R. <span>(3)</span></a>
-								</div>
-								<div class="item-body">
-									<ul>
-										<li>
-											<a href="#">
-												<span class="left">
-													<strong>IE, PAYE 2016</strong>
-													+62 (Australia)
-												</span>
-												<span class="right">
-													active
-												</span>
-											</a>
-										</li>
-										<li>
-											<a href="#">
-												<span class="left">
-													<strong>IE, PAYE 2015</strong>
-													+353 (Ireland)
-												</span>
-												<span class="right">
-													pre-a
-												</span>
-											</a>
-										</li>
-										<li>
-											<a href="#">
-												<span class="left">
-													<strong>IE, SA 2015</strong>
-													+353 (Ireland)
-												</span>
-												<span class="right">
-													tb
-												</span>
-											</a>
-										</li>
-									</ul>
-								</div>
-							</div>
-							<div class="item sub">
-								<div class="item-title">
-									<a href="#">Redding, Jason B. <span>(2)</span></a>
-								</div>
-								<div class="item-body">
-									<ul>
-										<li>
-											<a href="#">
-												<span class="left">
-													<strong>IE, PAYE 2016</strong>
-													+62 (Australia)
-												</span>
-												<span class="right">
-													active
-												</span>
-											</a>
-										</li>
-										<li>
-											<a href="#">
-												<span class="left">
-													<strong>IE, PAYE 2015</strong>
-													+353 (Ireland)
-												</span>
-												<span class="right">
-													pre-a
-												</span>
-											</a>
-										</li>
-										<li>
-											<a href="#">
-												<span class="left">
-													<strong>IE, SA 2015</strong>
-													+353 (Ireland)
-												</span>
-												<span class="right">
-													tb
-												</span>
-											</a>
-										</li>
-									</ul>
-								</div>
-							</div>
-						</div>
+					<div class="form-group">
+						<input type="number" placeholder="Company Reg Number" class="form-control">
 					</div>
-					<div class="item">
-						<div class="item-title">
-							<a href="#">Follow Up (5)</a>
-							<select>
-								<option>by Name</option>
-								<option>Option 2</option>
-								<option>Option 3</option>
-							</select>
-						</div>
-						<div class="item-body">
-							<div class="item sub">
-								<div class="item-title">
-									<a href="#">Smith, John R. <span>(3)</span></a>
-								</div>
-								<div class="item-body">
-									<ul>
-										<li>
-											<a href="#">
-												<span class="left">
-													<strong>IE, PAYE 2016</strong>
-													+62 (Australia)
-												</span>
-												<span class="right">
-													active
-												</span>
-											</a>
-										</li>
-										<li>
-											<a href="#">
-												<span class="left">
-													<strong>IE, PAYE 2015</strong>
-													+353 (Ireland)
-												</span>
-												<span class="right">
-													pre-a
-												</span>
-											</a>
-										</li>
-										<li>
-											<a href="#">
-												<span class="left">
-													<strong>IE, SA 2015</strong>
-													+353 (Ireland)
-												</span>
-												<span class="right">
-													tb
-												</span>
-											</a>
-										</li>
-									</ul>
-								</div>
-							</div>
-							<div class="item sub">
-								<div class="item-title">
-									<a href="#">Redding, Jason B. <span>(2)</span></a>
-								</div>
-								<div class="item-body">
-									<ul>
-										<li>
-											<a href="#">
-												<span class="left">
-													<strong>IE, PAYE 2016</strong>
-													+62 (Australia)
-												</span>
-												<span class="right">
-													active
-												</span>
-											</a>
-										</li>
-										<li>
-											<a href="#">
-												<span class="left">
-													<strong>IE, PAYE 2015</strong>
-													+353 (Ireland)
-												</span>
-												<span class="right">
-													pre-a
-												</span>
-											</a>
-										</li>
-										<li>
-											<a href="#">
-												<span class="left">
-													<strong>IE, SA 2015</strong>
-													+353 (Ireland)
-												</span>
-												<span class="right">
-													tb
-												</span>
-											</a>
-										</li>
-									</ul>
-								</div>
-							</div>
-						</div>
+					<div class="form-group">
+						<input type="text" placeholder="Company Address" class="form-control">
 					</div>
-					<div class="item">
-						<div class="item-title">
-							<a href="#">OTS Update (5)</a>
-						</div>
-						<div class="item-body">
-							<div class="item sub">
-								<div class="item-title">
-									<a href="#">Smith, John R. <span>(3)</span></a>
-								</div>
-								<div class="item-body">
-									<ul>
-										<li>
-											<a href="#">
-												<span class="left">
-													<strong>IE, PAYE 2016</strong>
-													+62 (Australia)
-												</span>
-												<span class="right">
-													active
-												</span>
-											</a>
-										</li>
-										<li>
-											<a href="#">
-												<span class="left">
-													<strong>IE, PAYE 2015</strong>
-													+353 (Ireland)
-												</span>
-												<span class="right">
-													pre-a
-												</span>
-											</a>
-										</li>
-										<li>
-											<a href="#">
-												<span class="left">
-													<strong>IE, SA 2015</strong>
-													+353 (Ireland)
-												</span>
-												<span class="right">
-													tb
-												</span>
-											</a>
-										</li>
-									</ul>
-								</div>
-							</div>
-							<div class="item sub">
-								<div class="item-title">
-									<a href="#">Redding, Jason B. <span>(2)</span></a>
-								</div>
-								<div class="item-body">
-									<ul>
-										<li>
-											<a href="#">
-												<span class="left">
-													<strong>IE, PAYE 2016</strong>
-													+62 (Australia)
-												</span>
-												<span class="right">
-													active
-												</span>
-											</a>
-										</li>
-										<li>
-											<a href="#">
-												<span class="left">
-													<strong>IE, PAYE 2015</strong>
-													+353 (Ireland)
-												</span>
-												<span class="right">
-													pre-a
-												</span>
-											</a>
-										</li>
-										<li>
-											<a href="#">
-												<span class="left">
-													<strong>IE, SA 2015</strong>
-													+353 (Ireland)
-												</span>
-												<span class="right">
-													tb
-												</span>
-											</a>
-										</li>
-									</ul>
-								</div>
-							</div>
-						</div>
+					<div class="form-group">
+						<input type="email" placeholder="Company Email" class="form-control">
 					</div>
-					<div class="item">
-						<div class="item-title">
-							<a href="#">Outstanding Fees (9)</a>
-						</div>
-						<div class="item-body">
-							<div class="item sub">
-								<div class="item-title">
-									<a href="#">Smith, John R. <span>(3)</span></a>
-								</div>
-								<div class="item-body">
-									<ul>
-										<li>
-											<a href="#">
-												<span class="left">
-													<strong>IE, PAYE 2016</strong>
-													+62 (Australia)
-												</span>
-												<span class="right">
-													active
-												</span>
-											</a>
-										</li>
-										<li>
-											<a href="#">
-												<span class="left">
-													<strong>IE, PAYE 2015</strong>
-													+353 (Ireland)
-												</span>
-												<span class="right">
-													pre-a
-												</span>
-											</a>
-										</li>
-										<li>
-											<a href="#">
-												<span class="left">
-													<strong>IE, SA 2015</strong>
-													+353 (Ireland)
-												</span>
-												<span class="right">
-													tb
-												</span>
-											</a>
-										</li>
-									</ul>
-								</div>
-							</div>
-							<div class="item sub">
-								<div class="item-title">
-									<a href="#">Redding, Jason B. <span>(2)</span></a>
-								</div>
-								<div class="item-body">
-									<ul>
-										<li>
-											<a href="#">
-												<span class="left">
-													<strong>IE, PAYE 2016</strong>
-													+62 (Australia)
-												</span>
-												<span class="right">
-													active
-												</span>
-											</a>
-										</li>
-										<li>
-											<a href="#">
-												<span class="left">
-													<strong>IE, PAYE 2015</strong>
-													+353 (Ireland)
-												</span>
-												<span class="right">
-													pre-a
-												</span>
-											</a>
-										</li>
-										<li>
-											<a href="#">
-												<span class="left">
-													<strong>IE, SA 2015</strong>
-													+353 (Ireland)
-												</span>
-												<span class="right">
-													tb
-												</span>
-											</a>
-										</li>
-									</ul>
-								</div>
-							</div>
-						</div>
+					<div class="form-group">
+						<input type="phone" placeholder="Company Phone" class="form-control">
 					</div>
-					<div class="item">
-						<div class="item-title">
-							<a href="#">Search Results (9)</a>
-						</div>
-						<div class="item-body">
-							<div class="item sub">
-								<div class="item-title">
-									<a href="#">Smith, John R. <span>(3)</span></a>
-								</div>
-								<div class="item-body">
-									<ul>
-										<li>
-											<a href="#">
-												<span class="left">
-													<strong>IE, PAYE 2016</strong>
-													+62 (Australia)
-												</span>
-												<span class="right">
-													active
-												</span>
-											</a>
-										</li>
-										<li>
-											<a href="#">
-												<span class="left">
-													<strong>IE, PAYE 2015</strong>
-													+353 (Ireland)
-												</span>
-												<span class="right">
-													pre-a
-												</span>
-											</a>
-										</li>
-										<li>
-											<a href="#">
-												<span class="left">
-													<strong>IE, SA 2015</strong>
-													+353 (Ireland)
-												</span>
-												<span class="right">
-													tb
-												</span>
-											</a>
-										</li>
-									</ul>
-								</div>
-							</div>
-							<div class="item sub">
-								<div class="item-title">
-									<a href="#">Redding, Jason B. <span>(2)</span></a>
-								</div>
-								<div class="item-body">
-									<ul>
-										<li>
-											<a href="#">
-												<span class="left">
-													<strong>IE, PAYE 2016</strong>
-													+62 (Australia)
-												</span>
-												<span class="right">
-													active
-												</span>
-											</a>
-										</li>
-										<li>
-											<a href="#">
-												<span class="left">
-													<strong>IE, PAYE 2015</strong>
-													+353 (Ireland)
-												</span>
-												<span class="right">
-													pre-a
-												</span>
-											</a>
-										</li>
-										<li>
-											<a href="#">
-												<span class="left">
-													<strong>IE, SA 2015</strong>
-													+353 (Ireland)
-												</span>
-												<span class="right">
-													tb
-												</span>
-											</a>
-										</li>
-									</ul>
-								</div>
-							</div>
-						</div>
+					<div class="form-group refresh">
+						<button class="btn btn-refresh"><i class="material-icons">refresh</i>Refresh Search</button>
 					</div>
+				</div>
+				<h2>
+					276 Companies 
+					<a href="#" class="toggle companies-view expanded"><i class="material-icons">view_stream</i></a>
+					<a href="#" class="toggle companies-view compact active"><i class="material-icons">view_headline</i></a>
+				</h2>
+				<div class="companies-list compact">
+					<ul>
+						<li>
+							<a href="#">
+								<span class="name"><i class="material-icons">domain</i> 30 Goodlife Healthclubs</span>
+								<span>email@company.com</span>
+								<span>123-456-7890</span>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="active">
+								<span class="name"><i class="material-icons">domain</i> Abramoff Holdings Pty Ltd / Allstates Fruit & Veg Merchants</span>
+								<span>email@company.com</span>
+								<span>123-456-7890</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="name"><i class="material-icons">domain</i> NESTLE Ireland</span>
+								<span>email@company.com</span>
+								<span>123-456-7890</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="name"><i class="material-icons">domain</i> NESTLE Poland</span>
+								<span>email@company.com</span>
+								<span>123-456-7890</span>
+							</a>
+						</li>
+					</ul>
 				</div>
 			</div>
 
@@ -674,11 +198,8 @@
 				<div class="page-top">
 					<div class="top-applications">
 						<ul>
-							<li class="active"><a href="#">Overview</a></li>
-							<li><a href="#">OZ'16 Income</a></li>
-							<li><a href="#">OZ'15 Income</a></li>
-							<li><a href="#">OZ Super</a></li>
-							<li class="add"><a href="#"  data-toggle="modal" data-target="#addApplication">+ Add Application</a></li>
+							<li class="active"><a href="companies.html">Company Details</a></li>
+							<li><a href="companies-cases.html">DRT Cases</a></li>
 						</ul>
 					</div>
 					<div class="newcase">
@@ -690,15 +211,9 @@
 				<div class="row">
 					<div class="col-xs-12 customer-details">
 						<div class="caption">
-							<div class="tabs">
-								<a href="overview.html" class="tab1 active">Customer Details</a>
-								<a href="#" class="tab2">Additional Details</a>
-								<a href="documents.html" class="tab3">Documents</a>
-							</div>
 							<p class="status">
 								<a href="#" class="btn btn-primary">Save Changes</a> 
 								<a href="#" class="btn btn-secondary">Discard Changes</a>
-								<a href="#" class="btn btn-secondary" data-toggle="modal" data-target="#changeLog">Change Log</a>
 							</p>
 						</div>
 						<div class="caption-expand active">
@@ -706,28 +221,12 @@
 								<div class="tab tab1 active">
 									<div class="customer-details-cols">
 										<div class="col naming">
-											<p class="title">
-												<span class="editable select name-title">Mr</span>
-												<select class="editable-select">
-													<option selected="selected">Mr</option>
-													<option>Mrs</option>
-													<option>Ms</option>
-												</select>
-											</p>
 											<p class="fullname">
-												<span class="editable text name">Johnathan</span>
-												<input type="text" class="editable-text name">
-												<span class="editable text name">Radisson</span>
-												<input type="text" class="editable-text name">
-												<span class="editable text name">Smith</span>
-												<input type="text" class="editable-text name">
-												<!-- <textarea class="editable-textarea name"></textarea> -->
+												<span class="editable textarea name">Abramoff Holdings Pty Ltd/ Allstates Fruit & Veg Merchants</span>
+												<textarea class="editable-textarea name"></textarea>
 											</p>
+											<p>AKA: <strong>Abramoff Holdings LTD</p>
 											<p class="date">07 Sept 2016, 16:32 GMT</p>
-											<a class="application-type-toggle individual">
-												<span class="individual"><i class="material-icons">import_export</i>Individual</span>
-												<span class="corporate"><i class="material-icons">import_export</i>Corporate</span>
-											</a>
 											<ul class="contact-type">
 												<li class="allowed"><a href="#" class="call"><i class="material-icons">phone_android</i></a></li> 
 												<li class="allowed"><a href="#" class="message"><i class="material-icons">sms</i></a></li> 
@@ -735,42 +234,34 @@
 											</ul>
 										</div>
 										<div class="col personal">
-											<p>Nationality: 
-												<span class="editable select name-title">Ireland</span>
-												<select class="editable-select">
-													<option selected="selected">Ireland</option>
-													<option>Option 1</option>
-													<option>OPtion 2</option>
-												</select>
-											</p>
-											<p>DOB: <span class="editable text date">01/06/1983</span>
-											<input type="text" class="editable-text date datepicker"></p>
-											<p>CID: <span class="editable text">6254589763</span>
+											<p>Reg Number: <span class="editable text">20142751</span>
 												<input type="text" class="editable-text"></p>
-											<p>Passport: <span class="editable text">2354865476</span>
+											<p>ID: <span class="editable text">20142751</span>
 												<input type="text" class="editable-text"></p>
-											<p>
-												Tax Numbers: 
-												<span class="editable text">2</span>
-												<input type="text" class="editable-text"> 
-												<a href="#" data-toggle="modal" data-target="#tax-numbers"><i class="material-icons">tab</i></a>
-											</p>
-											<p>
-												TO Registrations: 
-												<span class="editable text">2</span>
-												<input type="text" class="editable-text">
-												<a href="#" data-toggle="modal" data-target="#tax-office-registrations"><i class="material-icons">tab</i></a>
-											</p>
-											<p>Language: <span class="editable text">English</span>
-												<input type="text" class="editable-text"> </p>
-											<p>Marital Status: <span class="editable text">Married</span>
-												<input type="text" class="editable-text"> </p>
-											<p>
-												Dependants: 
-												<span class="editable text">2</span>
-												<input type="text" class="editable-text">  
-												<a href="#" data-toggle="modal" data-target="#dependants"><i class="material-icons">tab</i></a>
-											</p>
+											<div>
+												Complete Address: 
+												<div class="toggler active"><span></span></div> <span>Yes</span>
+											</div>
+											<div>
+												Declaration: 
+												<div class="toggler active"><span></span></div> <span>Yes</span>
+											</div>
+											<div>
+												paid W2/GC/P60: 
+												<div class="toggler active"><span></span></div> <span>Yes</span>
+											</div>
+											<div>
+												Uncooperative: 
+												<div class="toggler active"><span></span></div> <span>Yes</span>
+											</div>
+											<div>
+												Don't refund FICA: 
+												<div class="toggler active"><span></span></div> <span>Yes</span>
+											</div>
+											<div>
+												Multiple Funds: 
+												<div class="toggler active"><span></span></div> <span>Yes</span>
+											</div>
 										</div>
 										<div class="col contact contact1 customscroll">
 											<div class="title">
@@ -792,55 +283,49 @@
 													</div>
 													<div class="right">
 														<ul class="options">
-															<li class="main"><a href="#"><i class="material-icons">star</i></a></li>
-															<li><a href="#"><i class="material-icons">phone_android</i></a></li>
-															<li ><a href="#"><i class="material-icons">sms</i></a></li>
-															<li class="forbidden"><a href="#"><i class="material-icons">people</i></a></li>
-															<li class="forbidden"><a href="#"><i class="material-icons">home</i></a></li>
-														</ul>
-													</div>
-												</div>
-												<div class="list-item">
-													<div class="left">
-														<div class="toggler active"><span></span></div>
-														<span class="countrycode editable select">+62</span>
-														<select class="editable-select">
-															<option selected="selected">+62</option>
-															<option>+359</option>
-															<option>+1</option>
-														</select>  
-														<span class="editable text">365 489 7542</span>
-														<input type="text" class="editable-text">
-													</div>
-													<div class="right">
-														<ul class="options">
-															<li class="main"><a href="#"><i class="material-icons">star</i></a></li>
-															<li><a href="#"><i class="material-icons">phone_android</i></a></li>
-															<li><a href="#"><i class="material-icons">sms</i></a></li>
-															<li class="forbidden"><a href="#"><i class="material-icons">people</i></a></li>
-															<li class="forbidden"><a href="#"><i class="material-icons">home</i></a></li>
-														</ul>
-													</div>
-												</div>
-												<div class="list-item">
-													<div class="left">
-														<div class="toggler active"><span></span></div>
-														<span class="countrycode editable select">+62</span>
-														<select class="editable-select">
-															<option selected="selected">+62</option>
-															<option>+359</option>
-															<option>+1</option>
-														</select>  
-														<span class="editable text">365 489 7542</span>
-														<input type="text" class="editable-text">
-													</div>
-													<div class="right">
-														<ul class="options">
-															<li class="main"><a href="#"><i class="material-icons">star</i></a></li>
-															<li class="forbidden"><a href="#"><i class="material-icons">phone_android</i></a></li>
+															<li><a href="#"><i class="material-icons">rss_feed</i></a></li>
 															<li class="forbidden"><a href="#"><i class="material-icons">sms</i></a></li>
-															<li><a href="#"><i class="material-icons">people</i></a></li>
-															<li><a href="#"><i class="material-icons">home</i></a></li>
+															<li><a href="#"><i class="material-icons">print</i></a></li>
+														</ul>
+													</div>
+												</div>
+												<div class="list-item main">
+													<div class="left">
+														<div class="toggler active"><span></span></div>
+														<span class="countrycode editable select">+62</span>
+														<select class="editable-select">
+															<option selected="selected">+62</option>
+															<option>+359</option>
+															<option>+1</option>
+														</select>  
+														<span class="editable text">365 489 7542</span>
+														<input type="text" class="editable-text">
+													</div>
+													<div class="right">
+														<ul class="options">
+															<li><a href="#"><i class="material-icons">rss_feed</i></a></li>
+															<li><a href="#"><i class="material-icons">sms</i></a></li>
+															<li class="forbidden"><a href="#"><i class="material-icons">print</i></a></li>
+														</ul>
+													</div>
+												</div>
+												<div class="list-item main">
+													<div class="left">
+														<div class="toggler active"><span></span></div>
+														<span class="countrycode editable select">+62</span>
+														<select class="editable-select">
+															<option selected="selected">+62</option>
+															<option>+359</option>
+															<option>+1</option>
+														</select>  
+														<span class="editable text">365 489 7542</span>
+														<input type="text" class="editable-text">
+													</div>
+													<div class="right">
+														<ul class="options">
+															<li><a href="#"><i class="material-icons">rss_feed</i></a></li>
+															<li><a href="#"><i class="material-icons">sms</i></a></li>
+															<li class="forbidden"><a href="#"><i class="material-icons">print</i></a></li>
 														</ul>
 													</div>
 												</div>
@@ -858,11 +343,9 @@
 													</div>
 													<div class="right">
 														<ul class="options">
-															<li class="main"><a href="#"><i class="material-icons">star</i></a></li>
-															<li><a href="#"><i class="material-icons">phone_android</i></a></li>
+															<li><a href="#"><i class="material-icons">rss_feed</i></a></li>
 															<li><a href="#"><i class="material-icons">sms</i></a></li>
-															<li><a href="#"><i class="material-icons">people</i></a></li>
-															<li><a href="#"><i class="material-icons">home</i></a></li>
+															<li class="forbidden"><a href="#"><i class="material-icons">print</i></a></li>
 														</ul>
 													</div>
 												</div>
@@ -880,7 +363,6 @@
 													</div>
 													<div class="right">
 														<ul class="options">
-															<li class="main"><a href="#"><i class="material-icons">star</i></a></li>
 															<li><a href="#"><i class="material-icons">email</i></a></li>
 														</ul>
 													</div>
@@ -888,7 +370,7 @@
 												<div class="list-item">
 													<div class="left">
 														<div class="toggler active"><span></span></div>
-														<span class="editable text">john.smith_1992@hotmail.com</span>
+														<span class="editable text">john.smith@yahoo.com</span>
 														<input type="text" class="editable-text">
 													</div>
 													<div class="right">
@@ -973,134 +455,16 @@
 										</div>
 										<div class="col options customscroll">
 											<div class="title">
-												<a href="#" class="showall">Restrictions</a>
+												<a href="#" class="showall">SA Funds</a>
+												<a href="#" class="addnew" data-toggle="modal" data-target="#addNewAddress">+ add new</a>
 											</div>
 											<div class="list collapsed">
 												<div class="list-item">
-													<div class="toggler active"><span></span></div> <span><strong>Contact Allowed</strong></span>
+													<div class="toggler active"><span></span></div> <span>Name of the SA Fund</span>
 												</div>
 												<div class="list-item">
-													<div class="toggler active"><span></span></div> <span>SMS</span>
+													<div class="toggler active"><span></span></div> <span>Name of the SA Fund</span>
 												</div>
-												<div class="list-item">
-													<div class="toggler active"><span></span></div> <span>OTS email</span>
-												</div>
-												<div class="list-item">
-													<div class="toggler red"><span></span></div> <span>AUTO email</span>
-												</div>
-												<div class="list-item">
-													<div class="toggler yellow"><span></span></div> <span>Mass Mail</span>
-												</div>
-												<div class="list-item">
-													<div class="toggler yellow"><span></span></div> <span>LNG Problem</span>
-												</div>
-												<div class="list-item">
-													OTS email:
-													<span class="editable select name-title">Every 7 days</span>
-													<select class="editable-select">
-														<option selected="selected">Every 7 days</option>
-														<option>Every 14 days</option>
-														<option>Every 20 days</option>
-													</select>
-												</div>
-												<div class="list-item">
-													Secret Q/A: <strong>Yes</strong>
-													<a href="#" data-toggle="modal" data-target="#secretQuestion"><i class="material-icons">tab</i></a>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="tab tab2">
-									<div class="customer-details-cols">
-										<div class="col doclist customscroll">
-											<div class="title">
-												<select>
-													<option>All Tax Countries</option>
-													<option>Option 2</option>
-													<option>Option 3</option>
-												</select>
-												<select>
-													<option>All Tax Services</option>
-													<option>Option 2</option>
-													<option>Option 3</option>
-												</select>
-												<select>
-													<option>All Years</option>
-													<option>Option 2</option>
-													<option>Option 3</option>
-												</select>
-											</div>
-											<div class="list">
-												<div class="list-item">
-													<i class="material-icons">insert_drive_file</i>
-													<strong>scanned and packed docs-1.pdf</strong><br>
-													<b>OZ, Income'16:</b> PoA; RQ. F PsP
-												</div>
-												<div class="list-item">
-													<i class="material-icons">insert_drive_file</i>
-													<strong>John Smith packed documents-2.pdf</strong><br>
-													<b>OZ, Income'16:</b> PoA; RQ. F PsP, Right Singature, Copy ID, Form 34567, Form 12
-												</div>
-												<div class="list-item">
-													<i class="material-icons">insert_drive_file</i>
-													<strong>John Smith packed documents-2.pdf</strong><br>
-													<b>OZ, Income'16:</b> PoA; RQ. F PsP, Right Singature, Copy ID, Form 34567, Form 12
-												</div>
-												<div class="list-item">
-													<i class="material-icons">insert_drive_file</i>
-													<strong>John Smith packed documents-2.pdf</strong><br>
-													<b>OZ, Income'16:</b> PoA; RQ. F PsP, Right Singature, Copy ID, Form 34567, Form 12
-												</div>
-												<div class="list-item">
-													<i class="material-icons">insert_drive_file</i>
-													<strong>John Smith packed documents-2.pdf</strong><br>
-													<b>OZ, Income'16:</b> PoA; RQ. F PsP, Right Singature, Copy ID, Form 34567, Form 12
-												</div>
-											</div>
-										</div>
-										<div class="col docdetails customscroll">
-											<div class="title">
-												<strong>John Smith packed documents-2.pdf</strong>
-												<ul>
-													<li><a href="#" class="preview"><i class="material-icons">search</i></a></li>
-													<li><a href="#"><i class="material-icons">print</i></a></li>
-													<li><a href="#"><i class="material-icons">cloud_download</i></a></li>
-													<li><a href="#"><i class="material-icons">email</i></a></li>
-													<li><a href="#"><i class="material-icons">delete</i></a></li>
-												</ul>
-											</div>
-											<div class="col">
-												<p>Application: <span class="editable text">OZ'16 Income</span>
-													<input type="text" class="editable-text"></p>
-												<p>Receive date: <span class="editable text date">12/12/2017</span>
-													<input type="text" class="editable-text date datepicker"></p>
-												<p>
-													Uploader:
-													<span class="editable text">Preslava Dushkova</span>
-													<input type="text" class="editable-text">
-												</p>
-												<p>Doc type: <span class="editable text">Pack</span>
-													<input type="text" class="editable-text"> </p>
-												<p>
-													File format: 
-													<span class="editable text">PDF</span>
-													<input type="text" class="editable-text"> 
-												</p>
-												<p>
-													DT member: 
-													<span class="editable text">Preslava Dushkova</span>
-													<input type="text" class="editable-text"> 
-												</p>
-											</div>
-											<div class="col">
-												<p>Correction since (PRSD): <span class="editable text date">12/12/2017</span>
-												<input type="text" class="editable-text date datepicker"></p>
-												<p>Exp. date (PRSD): <span class="editable text date">12/12/2017</span>
-													<input type="text" class="editable-text date datepicker"> </p>
-												</p>
-												<p>Comment (PRSD): <span class="editable textarea">Called OZ number - Dialer VM; Called IE Number - Success; Sent Preactive Mail to john.smith@yahoo.com - Success; Sent Preactive SMS to OZ Number - Success;</span>
-													<textarea class="editable-textarea"></textarea></p>
 											</div>
 										</div>
 									</div>
@@ -1598,121 +962,487 @@
 					</div>
 				</div>
 				<!-- begin row -->
-				<div class="row all-applications">
+				<div class="row collapsibles mt-3">
 					<div class="col-xs-12">
-						<div class="caption">
-							<h3>All Customer Applications (3)</h3>
-							<div class="buttons">
-								<a href="#" class="btn btn-secondary" data-toggle="modal" data-target="#otsUpdate">OTS Updates</a>
-								<!-- <a href="#" class="btn btn-secondary">Docs</a> -->
-								<a href="#" class="btn btn-secondary" data-toggle="modal" data-target="#webRegistrations">Web Regs</a>
+						<a class="expand" role="button" data-toggle="collapse" href="#collapse1" aria-expanded="false" aria-controls="collapse1">
+							<span>Employer comments</span>
+						</a>
+						<div class="collapse in" id="collapse1" aria-expanded="true">
+							<a href="#" class="addnew">+ add new</a> 
+							<ul class="chats">
+								<li class="left">
+									<a href="javascript:;" class="image">ST</a>
+									<div class="message">
+										12/12/2018 <strong>[ABBR]:</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamtco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit 
+									</div>
+								</li>
+								<li class="right">
+									<a href="javascript:;" class="image">DRT</a>
+									<div class="message">
+										12/12/2018 <strong>[ABBR]:</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamtco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit 
+									</div>
+								</li>
+							</ul>
+						</div>
+						<a class="expand" role="button" data-toggle="collapse" href="#collapse2" aria-expanded="false" aria-controls="collapse2">
+							<span>Application comments</span>
+						</a>
+						<div class="collapse in" id="collapse2" aria-expanded="true">
+							<div class="contact-box app">
+								<div class="contact-comments">
+									<div class="user">PRSD</div>
+									<div class="meta">
+										<time>12/12/2017, 12:05</time>
+										<strong>Commencing contact</strong>
+									</div>
+									<div class="apps">
+										Applications:<br>
+										<div class="checkbox-dropdown">
+											<a href="#" class="drop">Please select</a>
+											<p class="chosen">
+											</p>
+											<div class="list">
+												<ul>
+													<li>
+														<label><input type="checkbox" value="type1"> <span>OZ'16 Income</span></label>
+													</li>
+													<li>
+														<label><input type="checkbox" value="type2"> <span>OZ'15 Income</span></label>
+													</li>
+													<li>
+														<label><input type="checkbox" value="type3"> <span>OZ Super</span></label>
+													</li>
+													<li>
+														<button class="btn btn-info">Done</button>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<div class="comment">
+										<p>Called OZ number - Dialer VM; Called IE Number - Success; Sent Preactive Mail to john.smith@yahoo.com - Success; Sent Preactive SMS to OZ Number - Success;</p>
+										<a href="#" class="add" data-toggle="collapse" data-target="#tpl-list__comments">+</a>									
+										<a href="#" class="save"><i class="material-icons">save</i></a> 
+										<div class="save-field">
+											<input type="text" placeholder="comment name...">
+											<a href="#" class="save"><i class="material-icons">save</i></a>
+										</div> 								
+										
+										<div id="tpl-list__comments" class="tpl-list collapse">
+											<div class="accordion">
+												<div class="item top">
+													<div class="item-title">
+														<a href="#">My Comments (25)</a>
+													</div>
+													<div class="item-body">
+														<div class="item sub">
+															<div class="item-title">
+																<span>Comment template going here; these should not be too long as normally the CSRs  leave abbreviated snippets of information</span>
+															</div>
+															<div class="item-title">
+																<span>Comment template going here; these should not be too long as normally the CSRs  leave abbreviated snippets of information</span>
+															</div>
+														</div>
+														<div class="item sub">
+															<div class="item-title">
+																<span>Comment template going here; these should not be too long as normally the CSRs  leave abbreviated snippets of information</span>
+															</div>
+															<div class="item-title">
+																<span>Comment template going here; these should not be too long as normally the CSRs  leave abbreviated snippets of information</span>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="item">
+													<div class="item-title">
+														<a href="#">ST Comment Presetss (105)</a>
+													</div>
+													<div class="item-body">
+														<div class="item sub">
+															<div class="item-title">
+																<span>Comment template going here; these should not be too long as normally the CSRs  leave abbreviated snippets of information</span>
+															</div>
+															<div class="item-title">
+																<span>Comment template going here; these should not be too long as normally the CSRs  leave abbreviated snippets of information</span>
+															</div>
+														</div>
+														<div class="item sub">
+															<div class="item-title">
+																<span>Comment template going here; these should not be too long as normally the CSRs  leave abbreviated snippets of information</span>
+															</div>
+															<div class="item-title">
+																<span>Comment template going here; these should not be too long as normally the CSRs  leave abbreviated snippets of information</span>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="item">
+													<div class="item-title">
+														<a href="#">My Comments (105)</a>
+													</div>
+													<div class="item-body">
+														<div class="item sub">
+															<div class="item-title">
+																<span>Comment template going here; these should not be too long as normally the CSRs  leave abbreviated snippets of information</span>
+															</div>
+															<div class="item-title">
+																<span>Comment template going here; these should not be too long as normally the CSRs  leave abbreviated snippets of information</span>
+															</div>
+														</div>
+														<div class="item sub">
+															<div class="item-title">
+																<span>Comment template going here; these should not be too long as normally the CSRs  leave abbreviated snippets of information</span>
+															</div>
+															<div class="item-title">
+																<span>Comment template going here; these should not be too long as normally the CSRs  leave abbreviated snippets of information</span>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											
+										</div>
+									</div>
+								</div>
+								<!-- call stage 1 -->
+								<div class="contact-active contact-call contact-call-1">
+									<div class="icon">
+										<i class="material-icons">wifi</i>
+									</div>
+									<div class="type">
+										Phone:<br>
+										<select>
+											<option>+62 365 489 7542</option>
+										</select>
+									</div><div class="status icons">
+										<a href="#" class="btn end send">Call</a>
+									</div>
+								</div>
+								<!-- call stage 2 -->
+								<div class="contact-active contact-call contact-call-2">
+									<div class="icon">
+										<i class="material-icons">wifi</i>
+									</div>
+									<div class="type">
+										Phone:<br>
+										<select>
+											<option>+62 365 489 7542</option>
+										</select>
+									</div>
+									<div class="result">
+										Result:<br>
+										<select class="selectContactResult call">
+											<option value="none">Please select</option>
+											<option value="success">Success</option>
+											<option value="dialerVm">Dialer VM</option>
+										</select>
+									</div>
+									<div class="status">
+										<div class="contact-inprogress">... call in progress</div>
+										<div class="contact-actions">
+											<ul class="contact-type">
+												<li><a href="#" class="call"><i class="material-icons">phone_android</i></a></li> 
+												<li><a href="#" class="message"><i class="material-icons">sms</i></a></li> 
+												<li><a href="#" class="email"><i class="material-icons">email</i></a></li> 
+											</ul>
+											OR 
+											<a href="#" class="btn end contact">End Contact</a>
+										</div>
+									</div>
+								</div>
+								<!-- sms stage 1 -->
+								<div class="contact-active contact-sms contact-sms-1">
+									<div class="icon">
+										<i class="material-icons">sms</i>
+									</div>
+									<div class="type">
+										To:<br>
+										<select>
+											<option>+62 356 489 7542</option>
+										</select>
+									</div>
+									<div class="status icons">
+										<a href="#" class="btn end send">Send</a>
+									</div>
+								</div>
+								<!-- sms stage 2 -->
+								<div class="contact-active contact-sms contact-sms-2">
+									<div class="icon">
+										<i class="material-icons">sms</i>
+									</div>
+									<div class="type">
+										To:<br>
+										<select>
+											<option>+62 356 489 7542</option>
+										</select>
+									</div>
+									<div class="result">
+										Result:<br>
+										<select class="selectContactResult sms">
+											<option value="none">Please select</option>
+											<option value="success">Success</option>
+											<option value="dialerVm">Dialer VM</option>
+										</select>
+									</div>
+									<div class="status">
+										<div class="contact-inprogress">... sending sms</div>
+										<div class="contact-actions">
+											<ul class="contact-type">
+												<li><a href="#" class="call"><i class="material-icons">phone_android</i></a></li> 
+												<li><a href="#" class="message"><i class="material-icons">sms</i></a></li> 
+												<li><a href="#" class="email"><i class="material-icons">email</i></a></li> 
+											</ul>
+											OR 
+											<a href="#" class="btn end contact">End Contact</a>
+										</div>
+									</div>
+								</div>
+								<!-- mail stage 1 -->
+								<div class="contact-active contact-mail contact-mail-1">
+									<div class="icon">
+										<i class="material-icons">mail</i>
+									</div>
+									<div class="type">
+										To:<br>
+										<select>
+											<option>john.smith@yahoo.com</option>
+										</select>
+									</div>
+									<div class="status icons">
+										<a href="#" class="btn end send">Send</a>
+									</div>
+								</div>
+								<!-- mail stage 2 -->
+								<div class="contact-active contact-mail contact-mail-2">
+									<div class="icon">
+										<i class="material-icons">mail</i>
+									</div>
+									<div class="type">
+										To:<br>
+										<select>
+											<option>john.smith@yahoo.com</option>
+										</select>
+									</div>
+									<div class="result">
+										Result:<br>
+										<select class="selectContactResult mail">
+											<option value="none">Please select</option>
+											<option value="success">Success</option>
+											<option value="dialerVm">Dialer VM</option>
+										</select>
+									</div>
+									<div class="status icons">
+										<ul class="contact-type">
+											<li><a href="#" class="call"><i class="material-icons">phone_android</i></a></li> 
+											<li><a href="#" class="message"><i class="material-icons">sms</i></a></li> 
+											<li><a href="#" class="email"><i class="material-icons">email</i></a></li> 
+										</ul>
+										OR 
+										<a href="#" class="btn end contact">End Contact</a>
+									</div>
+								</div>
+								<!-- call results -->
+								<div class="contact-history contact-call">
+									<div class="icon">
+										<i class="material-icons">wifi</i>
+									</div>
+									<div class="type">
+										Phone: <span>+62 365 489 7542</span>
+									</div>
+									<div class="result">
+										Script: <span>Pre-active Script 003</span>
+									</div>
+									<div class="status">
+										Result: <span>Dialer VM</span>
+									</div>
+								</div>
+								<!-- sms results -->
+								<div class="contact-history contact-sms">
+									<div class="icon">
+										<i class="material-icons">sms</i>
+									</div>
+									<div class="type">
+										Phone: <span>+62 365 489 7542</span>
+									</div>
+									<div class="result">
+										Script: <span>Pre-active Script 003</span>
+									</div>
+									<div class="status">
+										Result: <span>Dialer VM</span>
+									</div>
+								</div>
+								<!-- mail results -->
+								<div class="contact-history contact-mail">
+									<div class="icon">
+										<i class="material-icons">mail</i>
+									</div>
+									<div class="type">
+										To: <span>john.smith@yahoo.com</span>
+									</div>
+									<div class="result">
+										Script: <span>Pre-active Script 003</span>
+									</div>
+									<div class="status">
+										Result: <span class="success">Success</span>
+									</div>
+								</div>
+								<!-- contact end -->
+								<div class="contact-conclusion app">
+									<div class="line">
+										<div class="col docs">
+											<div class="top">
+												<h6>Docs</h6>
+											</div>
+											<input type="text" value="01/12/2017" class="datepicker">
+										</div>
+										<div class="col score">
+											<div class="top">
+												<h6>Lead score</h6>
+											</div>
+											<select>
+												<option>Low</option>
+												<option>Option 2</option>
+												<option>Option 3</option>
+											</select>
+										</div>
+										<div class="col reminder">
+											<div class="top">
+												<h6>Reminder</h6>
+												<ul class="level">
+													<li><a href="#" class="low"><i class="material-icons">notifications</i></a></li>
+													<li><a href="#" class="medium"><i class="material-icons">notifications</i></a></li>
+													<li><a href="#" class="high"><i class="material-icons">notifications</i></a></li>
+												</ul>
+											</div>
+											<select>
+												<option>7 Days</option>
+												<option>Option 2</option>
+												<option>Option 3</option>
+											</select>
+											<input type="text" value="01/12/2017" class="datepicker2">
+											<input type="text" value="12:00" class="timepicker">
+										</div>
+										<div class="col followup">
+											<div class="top">
+												<h6>Follow up:</h6>
+												<ul class="names">
+													<li>(DT) Preslava Dushkova <a href="#" class="remove">&times;</a></li>
+													<li>(ST) Preslava Dushkova <a href="#" class="remove">&times;</a></li>
+												</ul>
+											</div>
+											<select class="team">
+												<option>Team</option>
+												<option>Option 2</option>
+												<option>Option 3</option>
+											</select>
+											<select class="team">
+												<option>TC</option>
+												<option>Option 2</option>
+												<option>Option 3</option>
+											</select>
+											<select class="empl">
+												<option>Select Employee</option>
+												<option>Option 2</option>
+												<option>Option 3</option>
+											</select>
+											<input type="button" value="Add">
+										</div>
+									</div>
+								</div>
 							</div>
-						</div>
-						<table cellpadding="0" cellspacing="0" width="100%" class="table data-table2">
-							<thead>
-								<tr>
-									<th>ID</th>
-									<th>TC &amp; Service</th>
-									<th>Tax Year</th>
-									<th>State/City</th>
-									<th>Status</th>
-									<th>RTA</th>
-									<th>Stage</th>
-									<th>Substatus</th>
-									<th>Referral</th>
-									<th>Partner Info</th>
-									<th>Reg Type</th>
-									<th>Reg Date</th>
-									<th>Merge ID</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr class="data-table-row">
-									<td>12345678</td>
-									<td>Australia, Income</td>
-									<td>2016</td>
-									<td>NSW/Melbourne</td>
-									<td class="linked tdStatus">Active</td>
-									<td><i class="material-icons">check_circle</i></td>
-									<td>ST</td>
-									<td>Contact in Progress</td>
-									<td><i class="fa fa-file-text"></i> Name of the referral</td>
-									<td>-</td>
-									<td>WEB</td>
-									<td>08-JUN-2016</td>
-									<td class="linked tdMergeId">12345678</td>
-								</tr>
-								<tr class="data-table-row">
-									<td>12345677</td>
-									<td>Australia, Income</td>
-									<td>2016</td>
-									<td>NSW/Melbourne</td>
-									<td class="linked tdStatus">Active</td>
-									<td><i class="material-icons">check_circle</i></td>
-									<td>ST</td>
-									<td>Contact in Progress</td>
-									<td><i class="fa fa-file-text"></i> Name of the referral</td>
-									<td>-</td>
-									<td>WEB</td>
-									<td>08-JUN-2016</td>
-									<td class="linked tdMergeId">12345678</td>
-								</tr>
-								<tr class="data-table-row">
-									<td>12345676</td>
-									<td>Australia, Income</td>
-									<td>2016</td>
-									<td>NSW/Melbourne</td>
-									<td class="linked tdStatus">Active</td>
-									<td><i class="material-icons">check_circle</i></td>
-									<td>ST</td>
-									<td>Contact in Progress</td>
-									<td><i class="fa fa-file-text"></i> Name of the referral</td>
-									<td>-</td>
-									<td>WEB</td>
-									<td>08-JUN-2016</td>
-									<td class="linked tdMergeId">12345678</td>
-								</tr>
-								<tr class="data-table-row">
-									<td>12345676</td>
-									<td>Australia, Income</td>
-									<td>2016</td>
-									<td>NSW/Melbourne</td>
-									<td class="linked tdStatus">Binned</td>
-									<td><i class="material-icons">check_circle</i></td>
-									<td>ST</td>
-									<td>Contact in Progress</td>
-									<td><i class="fa fa-file-text"></i> Name of the referral</td>
-									<td>-</td>
-									<td>WEB</td>
-									<td>08-JUN-2016</td>
-									<td class="linked tdMergeId">12345678</td>
-								</tr>
-							</tbody>
-						</table>
-					</div>
-				</div>
-				<!-- end row -->
-				<!-- begin row -->
-				<div class="row client-notes">
-					<div class="col-xs-12">
-						<div class="title">
-							<h3>Client Notes</h3>
-							<a href="#" class="addnew">+ add new</a>
-						</div>
-						<ul class="chats">
-							<li class="left">
-								<a href="javascript:;" class="image">ST</a>
-								<div class="message">
-									12/12/2018 <strong>[ABBR]:</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamtco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit 
+							<div class="attachments-box">
+								<div class="title">
+									<h4>Attachments</h4>
+									<button class="btn btn-add">+ New Attachment</button>
 								</div>
-							</li>
-							<li class="right">
-								<a href="javascript:;" class="image">DRT</a>
-								<div class="message">
-									12/12/2018 <strong>[ABBR]:</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamtco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit 
+								<div class="row">
+									<div class="col-xs-1 type">
+										<i class="material-icons">notes</i> Note
+									</div>
+									<div class="col-xs-10 desc">
+										User Leaves a NOTE that will be attached to Comment grid and accessible any time double-clicked
+									</div>
+									<div class="col-xs-1 del">
+										<a href="#">&times;</a>
+									</div>
 								</div>
-							</li>
-						</ul>
+								<div class="row">
+									<div class="col-xs-1 type">
+										<i class="material-icons">notes</i> Note
+									</div>
+									<div class="col-xs-10 desc">
+											Some other note left by the use that can not be contained on a Single Line and is therefore shortened  to the overflow  margin by the meaneans of an ellipsis ...
+									</div>
+									<div class="col-xs-1 del">
+										<a href="#">&times;</a>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-xs-1 type">
+										<i class="material-icons">play_arrow</i> Call
+									</div>
+									<div class="col-xs-10 desc">
+										21 AUG 2018, 14:53; PRSI
+									</div>
+									<div class="col-xs-1 del">
+										<a href="#">&times;</a>
+									</div>
+								</div>
+								<div class="row mb-3">
+									<div class="col-xs-1 type">
+										<i class="material-icons">message</i> Chat
+									</div>
+									<div class="col-xs-10 desc">
+										21 AUG 2018, 14:53; PRSI
+									</div>
+									<div class="col-xs-1 del">
+										<a href="#">&times;</a>
+									</div>
+								</div>
+								<a href="#" class="btn btn-primary">Save Changes</a>
+								<a href="#" class="btn btn-secondary">Discard Changes</a>
+							</div>
+							<table class="table data-table5">
+								<thead>
+									<tr>
+										<th class="nosort">&nbsp;</th>
+										<th width="80">Date & Time</th>
+										<th width="80">Reminder</th>
+										<th>User</th>
+										<th>Comment</th>
+										<th width="100" class="nosort">Attachments</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td><img src="assets/img/star-0.png" alt="star"></td>
+										<td>2018/12/20</td>
+										<td>2018/12/20</td>
+										<td>PRSD</td>
+										<td>Some other Comment lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </td>
+										<td class="icon-links">
+											<a href="#"><i class="material-icons">notes</i></a> 
+											<a href="#"><i class="material-icons">message</i></a> 
+											<a href="#"><i class="material-icons">play_arrow</i></a> 
+											<a href="#"><i class="material-icons">email</i></a>
+										</td>
+									</tr>
+									<tr>
+										<td><img src="assets/img/star-1.png" alt="star"></td>
+										<td>2018/12/20</td>
+										<td>2018/12/20</td>
+										<td>MRDM</td>
+										<td>Some other Comment lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </td>
+										<td class="icon-links">
+											<a href="#"><i class="material-icons">notes</i></a> 
+											<a href="#"><i class="material-icons">message</i></a> 
+											<a href="#"><i class="material-icons">play_arrow</i></a> 
+											<a href="#"><i class="material-icons">email</i></a>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
 					</div>
 				</div>
 				
