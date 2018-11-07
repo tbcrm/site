@@ -40,6 +40,9 @@ a:focus, button:focus, .reportrange input:focus { outline: none; }
 .btn-replace { background-color: #eeaf00; border: 0; border-radius: 15px; color: #fff; padding: 6px 10px; }
 .btn-replace:hover { color: #fff; }
 
+.btn-close { background-color: #f35945; border: 0; border-radius: 3px; color: #fff; padding: 6px 10px; }
+.btn-close:hover { color: #fff; }
+
 #page-container {}
 
 .content > .top { border-bottom: 1px solid #eee; margin: 0 0 50px 0; padding: 15px 0; }
@@ -1544,7 +1547,7 @@ div.infinite-tabs sup.red { background-color: #e64d4d; }
 .addemployer-box .head { background-color: #f1f1f1; border-bottom: 1px solid #c0c4c7; color: #000; padding: 15px; }
 .addemployer-box .head .title { border-bottom: 1px solid #dcdcdc; margin-bottom: 10px; overflow: hidden; padding-bottom: 10px; }
 .addemployer-box .head .title h3 { float: left; margin: 0; }
-.addemployer-box .head .title button { float: right; }
+.addemployer-box .head .title button { float: right; margin-left: 5px; }
 .addemployer-box .head .row:last-child { margin-bottom: 0; }
 .addemployer-box .head .row .rowname { display: inline-block; vertical-align: middle; width: 70px; }
 .addemployer-box .head .row .toggle-widget { display: inline-block; margin: 0 15px 0 0; vertical-align: middle; }

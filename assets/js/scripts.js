@@ -49,6 +49,12 @@ var TableManageTableSelect = function () {
 }();
 
 $(document).ready(function(){
+    // close add/replace employer box
+    $('.addemployer-box .btn-close').on('click', function(){
+        $(this).parents('.addemployer-box').slideUp();
+        return false;
+    });
+
     // change companies list view
     $('.content.companies .split-left h2 a.toggle').on('click', function(){
         if ( $(this).hasClass('compact') ) {
