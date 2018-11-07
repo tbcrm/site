@@ -60,6 +60,17 @@ $(document).ready(function(){
         }
         return false;
     });
+    // change companies list view - add employer
+    $('.addemployer-box .body h3 a.toggle').on('click', function(){
+        if ( $(this).hasClass('compact') ) {
+            $('.addemployer-box .body h3 a.expanded').removeClass('active').siblings('a').addClass('active');
+            $('.companies-list').removeClass('expanded').addClass('compact');
+        } else {
+            $('.addemployer-box .body h3 a.compact').removeClass('active').siblings('a').addClass('active');
+            $('.companies-list').removeClass('compact').addClass('expanded');
+        }
+        return false;
+    });
 
     // change status to SA - Reason select appears
     $('.footer-tabs select.type').on('change', function(){
@@ -428,6 +439,18 @@ $(document).ready(function(){
         } else {
             $(this).hide().prev().text(finalInputText).show();
         }
+    });
+    // editable toggler
+    $('.editable.toggler').on('dblclick', function(){
+        $(this).hide().next('.editable-toggler').show();
+    });
+    // toggler blur
+    $(document).click(function(event) { 
+        if(!$(event.target).closest('.editable-toggler').length) {
+            if($('.editable-toggler').is(":visible")) {
+                $('.editable-toggler').hide().prev('.editable.toggler').show();
+            }
+        }        
     });
 
     // accordion

@@ -1,8 +1,8 @@
 img { max-width: 100%; }
 a:focus, button:focus, .reportrange input:focus { outline: none; }
 
-.mt-3 { margin-top: 30px; }
-.mb-3 { margin-bottom: 30px; }
+.mt-3 { margin-top: 30px!important; }
+.mb-3 { margin-bottom: 30px!important; }
 
 .btn { font-weight: 500; transition: background-color 0.3s, color 0.3s, opacity 0.3s; }
 .btn:hover { opacity: 0.75; }
@@ -35,6 +35,10 @@ a:focus, button:focus, .reportrange input:focus { outline: none; }
 .btn-create:hover { color: #fff; }
 
 .btn-save { background-color: #4caf50; border: 0; border-radius: 3px; color: #fff; padding: 6px 12px; }
+.btn-save:hover { color: #fff; }
+
+.btn-replace { background-color: #eeaf00; border: 0; border-radius: 15px; color: #fff; padding: 6px 10px; }
+.btn-replace:hover { color: #fff; }
 
 #page-container {}
 
@@ -751,14 +755,17 @@ button.transferBtn:hover { background: transparent url('../img/transferBtnHov.pn
 .customer-details .btn-secondary:hover { border: 1px solid #acbbc3; color: #515b61; opacity: 0.75; }
 
 span.editable { border: 1px solid transparent; color: #000000;  display: inline-block; font-family: 'Roboto', "Helvetica Neue",Helvetica,Arial,sans-serif; font-size: 14px; font-weight: normal; margin-bottom: 1px; padding: 0 3px; }
+.app-overview table span.editable { font-weight: normal; }
 span.editable.name { color: #000; font-size: 26px; }
 span.editable.textarea { margin: 0 -3px 1px -3px; padding-right: 20px; }
 span.editable:hover { background-color: #f7f7f7; border: 1px solid #e8e8e8; }
+span.editable.toggler:hover { background-color: transparent; border: 1px solid #fff; }
 .editable-select { display: none; border: 0; color: #000000; font-family: 'Roboto', "Helvetica Neue",Helvetica,Arial,sans-serif; font-size: 14px; font-weight: bold; margin-top: -1px; outline: none; }
 .editable-textarea { display: none; border: 0; color: #000000; font-family: 'Roboto', "Helvetica Neue",Helvetica,Arial,sans-serif; font-size: 14px; font-weight: bold; margin: 0 -3px; padding: 0 4px; width: 100%; position: relative; top: 2px; outline: none; } 
 .editable-text { display: none; border: 0; color: #000000; font-family: 'Roboto', "Helvetica Neue",Helvetica,Arial,sans-serif; font-size: 14px; font-weight: bold; padding: 1px 0 2px 4px; outline: none; }
 .editable-text.name { font-size: 26px; }
 .editable-text.date { height: 18px; margin-bottom: 1px; min-width: 0!important; padding: 0 0 0 4px; text-transform: uppercase; }
+.editable-toggler { display: none; }
 .edited { color: #eeaf00!important; }
 
 .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar { background-color: #6d7787!important; width: 7px!important; }
@@ -1225,7 +1232,9 @@ div.infinite-tabs sup.red { background-color: #e64d4d; }
 .footer-tabs .tab-content .inside .collapsing strong { color: #566376; text-transform: none; }
 
 .collapsibles a { color: #9e9d9d; }
+.collapsibles .table a { color: #08aedd; }
 .collapsibles a:hover { text-decoration: none; }
+.collapsibles .table a:hover { color: #333; }
 .collapsibles .expand { border-bottom: 1px solid #eee; color: #000; display: block; font-size: 18px; font-weight: bold; line-height: 1; margin: 0 0 10px 0; position: relative; }
 .collapsibles .expand:before { background: url(../img/arrow-up.png) center center no-repeat; content: ''; display: inline-block; height: 8px; width: 15px; position: absolute; top: 15px; left: 0; z-index: 2; }
 .collapsibles .expand.collapsed:before { transform: rotate(180deg); }
@@ -1349,7 +1358,6 @@ div.infinite-tabs sup.red { background-color: #e64d4d; }
 .modal-body .list-item .remove { background-color: #000000; border-radius: 50%; color: #fff; display: none; opacity: 0; transition: opacity 1s;height: 15px; font-size: 12px; text-align: center; text-decoration: none; width: 15px; position: relative; top: -5px; transition: opacity 0.3s; transition: opacity 0.3s;} 
 .modal-body .list-item:hover .remove {display: inline-block; opacity: 1; }
 
-
 .modal-body .toggler.red.active span { background-color: #e64d4d; }
 .modal-body .toggler.red.active + span { color: #e64d4d; }
 .modal-body .toggler.yellow.active span { background-color: #f3c74c; }
@@ -1439,6 +1447,7 @@ div.infinite-tabs sup.red { background-color: #e64d4d; }
 .app-overview { padding-bottom: 50px; }
 .app-overview .editable { font-weight: bold; }
 .app-overview .btn.btn-default { border-radius: 25px; padding: 3px 15px; }
+.app-overview table .btn.btn-default { background: url(../img/dots.png) 3px center no-repeat; border: 0; border-radius: 0; padding: 3px 5px 3px 15px; }
 .app-overview .collapse .row { margin-bottom: 15px; }
 .app-overview .copy select { border: 1px solid #ddd; color: #000; margin: 0 15px 0 5px; padding: 3px; }
 .app-overview .buttons { text-align: right; }
@@ -1530,6 +1539,35 @@ div.infinite-tabs sup.red { background-color: #e64d4d; }
 .attachments-box .btn-secondary { background-color: #e0e6e9;  border: 1px solid #acbbc3; border-radius: 3px; color: #515b61; font-weight: bold; }
 .attachments-box .btn:hover { opacity: 0.75; }
 .attachments-box .btn-primary:hover { color: #fff; }
+
+.addemployer-box { border: 1px solid #c0c4c7; margin-bottom: 15px; }
+.addemployer-box .head { background-color: #f1f1f1; border-bottom: 1px solid #c0c4c7; color: #000; padding: 15px; }
+.addemployer-box .head .title { border-bottom: 1px solid #dcdcdc; margin-bottom: 10px; overflow: hidden; padding-bottom: 10px; }
+.addemployer-box .head .title h3 { float: left; margin: 0; }
+.addemployer-box .head .title button { float: right; }
+.addemployer-box .head .row:last-child { margin-bottom: 0; }
+.addemployer-box .head .row .rowname { display: inline-block; vertical-align: middle; width: 70px; }
+.addemployer-box .head .row .toggle-widget { display: inline-block; margin: 0 15px 0 0; vertical-align: middle; }
+.addemployer-box .head .row select { background: transparent; border: 0; }
+.addemployer-box .head .row .form-group { display: inline-block; margin: 0 15px 0 0; vertical-align: middle; }
+.addemployer-box .head .row input { font-size: 14px; height: auto; padding-top: 8px; padding-bottom: 8px; }
+.addemployer-box .body { padding: 15px; }
+.addemployer-box .body h3 { margin: 0 0 10px 0; }
+.addemployer-box .body h3 .buttons { display: inline-block; margin-left: 15px; vertical-align: text-bottom; }
+.addemployer-box .body h3 a { color: #c7cdd3;  }
+.addemployer-box .body h3 a.active { color: #566376; }
+.addemployer-box .body ul { color: #666; margin: 0; padding: 0; }
+.addemployer-box .body li { border-top: 1px solid #e8e8e8; list-style: none; overflow: hidden; padding: 10px 0; }
+.addemployer-box .body li .name { float: left; padding: 5px 0; }
+.addemployer-box .body .compact li .name span { display: none; }
+.addemployer-box .body .expanded li .name span { display: block; }
+.addemployer-box .body li .meta { float: right; }
+.addemployer-box .body li .meta a,
+.addemployer-box .body li .meta select,
+.addemployer-box .body li .meta .btn { display: inline-block; margin: 0 5px; vertical-align: middle; }
+.addemployer-box .body li .meta select { border: 0; }
+.addemployer-box .body li .meta a { color: #888; font-weight: bold; }
+.addemployer-box .body li .meta a:hover { color: #333; }
 
 @media (max-width: 1599px) {
     .content .split-left .filter-options .right { clear: left; float: none; }
