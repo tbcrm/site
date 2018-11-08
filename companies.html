@@ -28,6 +28,7 @@
 	<link href="assets/plugins/DataTables/extensions/Select/css/select.bootstrap.min.css" rel="stylesheet" />
 	<link href="assets/plugins/DataTables/extensions/Responsive/css/responsive.bootstrap.min.css" rel="stylesheet" />
 	<link href="assets/css/jquery.mCustomScrollbar.css" rel="stylesheet" />
+    <link href="assets/css/fastselect.min.css" rel="stylesheet" />
 	<link href="assets/plugins/jstree/dist/themes/default/style.min.css" rel="stylesheet" />
 	<!-- ================== END PAGE LEVEL STYLE ================== -->
 </head>
@@ -139,7 +140,7 @@
 						<input type="text" placeholder="Company Name" class="form-control">
 					</div>
 					<div class="form-group">
-						<input type="number" placeholder="Company Reg Number" class="form-control">
+						<input type="text" placeholder="Company Reg Number" class="form-control">
 					</div>
 					<div class="form-group">
 						<input type="text" placeholder="Company Address" class="form-control">
@@ -456,7 +457,7 @@
 										<div class="col options customscroll">
 											<div class="title">
 												<a href="#" class="showall">SA Funds</a>
-												<a href="#" class="addnew" data-toggle="modal" data-target="#addNewAddress">+ add new</a>
+												<a href="#" class="addnew" data-toggle="modal" data-target="#addNewSAFund">+ add new</a>
 											</div>
 											<div class="list collapsed">
 												<div class="list-item">
@@ -892,13 +893,13 @@
 								<div class="line">
 									<div class="col docs">
 										<div class="top">
-											<h6>Docs</h6>
+											<h6>Docs (E)</h6>
 										</div>
 										<input type="text" value="01/12/2017" class="datepicker2">
 									</div>
 									<div class="col score">
 										<div class="top">
-											<h6>Lead score</h6>
+											<h6>Employer score</h6>
 										</div>
 										<select>
 											<option>Low</option>
@@ -1847,6 +1848,71 @@
 		</div>
 	</div>
 
+	<!-- Add New SA Fund Modal -->
+	<div class="modal fade" id="addNewSAFund" tabindex="-1" role="dialog" aria-labelledby="addNewSAFundLabel">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title" id="addNewSAFundLabel">SA Funds</h4>
+				</div>
+				<div class="modal-body">
+					<form class="form-inline">
+						<div class="row">
+							<div class="col-xs-12">
+								<div class="form-group">
+									<label for="">SA Funds:</label>
+									<select class="form-control multipleSelect" multiple>
+										<option></option>
+										<option>Option 1</option>
+										<option>Option 2</option>
+										<option>Option 3</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-12">
+								<div class="form-group">
+									<label for="">Address 1</label>
+									<input type="text" class="form-control">
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-12">
+								<div class="form-group">
+									<label for="">Address 2</label>
+									<input type="text" class="form-control">
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-primary">+ Add SA Fund</button>
+					<button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+				</div>
+				<div class="modal-body secondary">
+					<div class="h150 customscroll">
+						<div class="list">
+							<div class="list-item">
+								<div class="toggler active"><span></span></div>
+								<input type="radio" name="optionsRadios" value="option1" checked="checked">
+								<strong>SA Fund 1</strong>
+							</div>
+							<div class="list-item">
+								<div class="toggler active"><span></span></div>
+								<input type="radio" name="optionsRadios" value="option2">
+								<strong>SA Fund 2</strong>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
 	<!-- Add New Emails Modal -->
 	<div class="modal fade" id="addNewEmails" tabindex="-1" role="dialog" aria-labelledby="addNewEmailsLabel">
 		<div class="modal-dialog" role="document">
@@ -1997,7 +2063,7 @@
 						</div>
 						<div class="col-lg-4 phone-features">
 							<a href="#"><i class="material-icons">star</i></a> 
-							<a href="#"><i class="material-icons">home</i></a> 
+							<a href="#"><i class="material-icons">print</i></a> 
 							<a href="#"><i class="material-icons">rss_feed</i></a> 
 							<a href="#"><i class="material-icons">sms</i></a> 
 							<a href="#"><i class="material-icons">people</i></a> 
@@ -2020,7 +2086,7 @@
 							</div>
 							<div class="col-lg-4">
 								<a href="#" class="main"><i class="material-icons">star</i></a> 
-								<a href="#"><i class="material-icons">home</i></a> 
+								<a href="#"><i class="material-icons">print</i></a> 
 								<a href="#"><i class="material-icons">rss_feed</i></a> 
 								<a href="#"><i class="material-icons">sms</i></a> 
 								<a href="#"><i class="material-icons">people</i></a> 
@@ -2039,7 +2105,7 @@
 							</div>
 							<div class="col-lg-4">
 								<a href="#" class="main"><i class="material-icons">star</i></a> 
-								<a href="#"><i class="material-icons">home</i></a> 
+								<a href="#"><i class="material-icons">print</i></a> 
 								<a href="#"><i class="material-icons">rss_feed</i></a> 
 								<a href="#"><i class="material-icons">sms</i></a> 
 								<a href="#"><i class="material-icons">people</i></a> 
@@ -2058,7 +2124,7 @@
 							</div>
 							<div class="col-lg-4">
 								<a href="#" class="main"><i class="material-icons">star</i></a> 
-								<a href="#"><i class="material-icons">home</i></a> 
+								<a href="#"><i class="material-icons">print</i></a> 
 								<a href="#"><i class="material-icons">rss_feed</i></a> 
 								<a href="#"><i class="material-icons">sms</i></a> 
 								<a href="#"><i class="material-icons">people</i></a> 
@@ -2077,7 +2143,7 @@
 							</div>
 							<div class="col-lg-4">
 								<a href="#" class="main"><i class="material-icons">star</i></a> 
-								<a href="#"><i class="material-icons">home</i></a> 
+								<a href="#"><i class="material-icons">print</i></a> 
 								<a href="#"><i class="material-icons">rss_feed</i></a> 
 								<a href="#"><i class="material-icons">sms</i></a> 
 								<a href="#"><i class="material-icons">people</i></a> 
@@ -2096,7 +2162,7 @@
 							</div>
 							<div class="col-lg-4">
 								<a href="#" class="main"><i class="material-icons">star</i></a> 
-								<a href="#"><i class="material-icons">home</i></a> 
+								<a href="#"><i class="material-icons">print</i></a> 
 								<a href="#"><i class="material-icons">rss_feed</i></a> 
 								<a href="#"><i class="material-icons">sms</i></a> 
 								<a href="#"><i class="material-icons">people</i></a> 
@@ -2115,7 +2181,7 @@
 							</div>
 							<div class="col-lg-4">
 								<a href="#" class="main"><i class="material-icons">star</i></a> 
-								<a href="#"><i class="material-icons">home</i></a> 
+								<a href="#"><i class="material-icons">print</i></a> 
 								<a href="#"><i class="material-icons">rss_feed</i></a> 
 								<a href="#"><i class="material-icons">sms</i></a> 
 								<a href="#"><i class="material-icons">people</i></a> 

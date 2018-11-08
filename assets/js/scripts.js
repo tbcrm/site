@@ -68,12 +68,11 @@ $(document).ready(function(){
     });
     // change companies list view - add employer
     $('.addemployer-box .body h3 a.toggle').on('click', function(){
+        $(this).addClass('active').siblings('a').removeClass('active');
         if ( $(this).hasClass('compact') ) {
-            $('.addemployer-box .body h3 a.expanded').removeClass('active').siblings('a').addClass('active');
-            $('.companies-list').removeClass('expanded').addClass('compact');
+            $(this).parent().parent().parent().next('.companies-list').removeClass('expanded').addClass('compact');
         } else {
-            $('.addemployer-box .body h3 a.compact').removeClass('active').siblings('a').addClass('active');
-            $('.companies-list').removeClass('compact').addClass('expanded');
+            $(this).parent().parent().parent().next('.companies-list').removeClass('compact').addClass('expanded');
         }
         return false;
     });
@@ -502,6 +501,9 @@ $(document).ready(function(){
     // new MultipleSelect
     $('.multipleSelect').fastselect({
         placeholder: 'Select one or more'
+    });
+    $('.multipleSelect2').fastselect({
+        placeholder: 'Add to Current App'
     });
 
     // On/Off switch

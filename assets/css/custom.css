@@ -1095,7 +1095,7 @@ div.infinite-tabs sup.red { background-color: #e64d4d; }
 .contact-box .contact-conclusion .col.docs,
 .contact-box .contact-conclusion .col.score,
 .contact-box .contact-conclusion .col.save,
-.contact-box .contact-conclusion .col.copy { padding-right: 15px; width: 10%; }
+.contact-box .contact-conclusion .col.copy { padding-right: 15px; width: 11%; }
 .contact-box .contact-conclusion .col.reminder { padding-right: 15px; width: 30%; }
 .contact-box .contact-conclusion .col.reminder input,
 .contact-box .contact-conclusion .col.reminder select { float: left; margin-right: 10px; width: calc(40% - 10px); }
@@ -1264,7 +1264,7 @@ div.infinite-tabs sup.red { background-color: #e64d4d; }
 .collapsibles .box p strong { color: #000; display: block; }
 
 /* google images grid */
-.image-grid { width: 100%; max-width: 1310px; margin: 0 auto; overflow: hidden; padding: 10px 5px 0; }
+.image-grid { width: 100%; margin: 0 auto; overflow: hidden; padding: 5px 0; }
 .image__cell { float: left; position: relative; width: 33.3%; }
 .image--basic { padding: 0 5px; }
 .basic__img { display: block; max-width: 100%; height: auto;margin: 0 auto; }
@@ -1330,7 +1330,13 @@ div.infinite-tabs sup.red { background-color: #e64d4d; }
 .modal-body.secondary { background-color: #f7f7f7; box-shadow: 0 0 10px rgba(0,0,0,0.25) inset; }
 .modal-body.secondary span.editable:hover { background-color: #fff; }
 .modal-body form { overflow: hidden; }
-.modal-body .form-group { margin: 0 0 10px 0; overflow: hidden; padding-right: 15px; width: 100%; }
+.modal-body .form-group { margin: 0 0 10px 0; padding-right: 15px; width: 100%; }
+.modal-body .form-group:after { clear: both; content: ''; display: block; height: 1px; width: 1px; }
+.modal-body .form-group .fstElement { width: 67%; }
+.modal-body .form-group .fstElement .fstControls { background-color: #f7f7f7; width: 100%; }
+.modal-body .form-group .fstElement .fstQueryInput { font-size: 16px; padding: 0; }
+.modal-body .form-group .fstElement .fstChoiceItem { font-size: 16px; }
+.modal-body .form-group .fstElement .fstResultItem { font-size: 16px; }
 .modal-body .form-inline label { float: left; margin: 0; padding-top: 7px; width: 33%; }
 .modal-body .form-inline label.fullwidth { width: 100%; }
 .modal-body select,
@@ -1560,7 +1566,8 @@ div.infinite-tabs sup.red { background-color: #e64d4d; }
 .addemployer-box .body h3 a { color: #c7cdd3;  }
 .addemployer-box .body h3 a.active { color: #566376; }
 .addemployer-box .body ul { color: #666; margin: 0; padding: 0; }
-.addemployer-box .body li { border-top: 1px solid #e8e8e8; list-style: none; overflow: hidden; padding: 10px 0; }
+.addemployer-box .body li { border-top: 1px solid #e8e8e8; list-style: none; padding: 10px 0; }
+.addemployer-box .body li:after { clear: both; content: ''; display: block; height: 1px; width: 1px; }
 .addemployer-box .body li .name { float: left; padding: 5px 0; }
 .addemployer-box .body .compact li .name span { display: none; }
 .addemployer-box .body .expanded li .name span { display: block; }
@@ -1568,7 +1575,8 @@ div.infinite-tabs sup.red { background-color: #e64d4d; }
 .addemployer-box .body li .meta a,
 .addemployer-box .body li .meta select,
 .addemployer-box .body li .meta .btn { display: inline-block; margin: 0 5px; vertical-align: middle; }
-.addemployer-box .body li .meta select { border: 0; }
+.addemployer-box .body li .meta .fstMultipleMode .fstControls { width: 200px; }
+.addemployer-box .body li .meta .fstQueryInput { border: 0; font-size: 14px; padding: 2px 5px; }
 .addemployer-box .body li .meta a { color: #888; font-weight: bold; }
 .addemployer-box .body li .meta a:hover { color: #333; }
 
