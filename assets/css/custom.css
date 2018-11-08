@@ -1163,6 +1163,7 @@ div.infinite-tabs sup.red { background-color: #e64d4d; }
 .chats .left .message:after { border-right-color: #eef1f3; }
 .chats .left .textarea .btn.btn-add { background-color: #f9fafb; border: 1px solid #515b61; color: #515b61; font-weight: bold; }
 .chats li.new { display: none; }
+.chats textarea { margin-bottom: 5px; }
 
 .team-selector { display: flex; width: 100%; }
 .team-selector .item { background-color: #bdc8cc; cursor: pointer; display: flex; margin: 0 1px 0 0; overflow: hidden; flex-grow: 1; }
