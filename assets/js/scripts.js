@@ -49,6 +49,12 @@ var TableManageTableSelect = function () {
 }();
 
 $(document).ready(function(){
+    // employer comments - add new
+    $('.employer-comments .addnew').on('click', function(){
+        $('.employer-comments li.new').fadeIn();
+        return false;
+    });
+
     // close add/replace employer box
     $('.addemployer-box .btn-close').on('click', function(){
         $(this).parents('.addemployer-box').slideUp();
