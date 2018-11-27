@@ -37,6 +37,12 @@ var handleDataTableSelect = function() {
             targets: "nosort"
         }]
     });
+    $('.data-table6').DataTable({
+        select: false,
+        responsive: false,
+        searching: true,
+        paging: false
+    });
 };
 var TableManageTableSelect = function () {
     "use strict";
@@ -49,6 +55,29 @@ var TableManageTableSelect = function () {
 }();
 
 $(document).ready(function(){
+    // toogle good and bad status
+    $('a.toggle-status').on('click', function(){
+        if ( $(this).hasClass('empty') ) {
+            $(this).removeClass('empty').addClass('bad').text('Missing');
+        } else if ( $(this).hasClass('bad') ) {
+            $(this).removeClass('bad').addClass('good').text('Received');
+        } else if ( $(this).hasClass('good') ) {
+            $(this).removeClass('good').addClass('bad').text('Missing');
+        }
+        return false;
+    });
+    
+    // good and bad select options
+    $('select').on('change', function(){
+        if ( $(this).find(':selected').hasClass('bad') ) {
+            $(this).removeClass('good').addClass('bad');
+        } else if ( $(this).find(':selected').hasClass('good') ) {
+            $(this).removeClass('bad').addClass('good');
+        } else {
+            $(this).removeClass('bad').removeClass('good');
+        }
+    });
+
     // employer comments - add new
     $('.employer-comments .addnew').on('click', function(){
         $('.employer-comments li.new').fadeIn();

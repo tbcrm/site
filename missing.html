@@ -696,7 +696,7 @@
 								<a href="overview.html" class="tab1">Customer Details</a>
 								<a href="#" class="tab2">Additional Details</a>
 								<a href="documents.html" class="tab3">Documents</a>
-								<a href="#" class="tab4 active">Missing<span class="badge">7/76</span></a>
+								<a href="#" class="tab4 active">Missing<span class="badge">10</span></a>
 							</div>
 						</div>
 						<div class="caption-expand active">
@@ -704,19 +704,27 @@
 								<div class="tab tab1 active">
 									<div class="expandable-title">
 										<a class="expand" role="button" data-toggle="collapse" href="#collapse99" aria-expanded="true" aria-controls="collapse1">
-											<span>Information Details<span class="badge">2/15</span></span>
+											<span>Information Details<span class="badge">5</span></span>
 										</a>
 										<div class="right">
 											<div>
 												<label>Tax Year:</label>
 												<select>
 													<option>All</option>
+													<option>2018</option>
+													<option>2017</option>
+													<option>2016</option>
+													<option>2015</option>
+													<option>2014</option>
+													<option>2013</option>
 												</select>
 											</div>
 											<div>
 												<label>Showing:</label>
 												<select>
 													<option>All</option>
+													<option>Received</option>
+													<option>Missing</option>
 												</select>
 											</div>
 											<div>
@@ -725,43 +733,119 @@
 										</div>
 									</div>
 									<div class="collapse in" id="collapse99" aria-expanded="true">
-										<table cellpadding="0" cellspacing="0" class="table data-table4">
-											<thead>
-												<tr>
-													<th>Tax Year</th>
-													<th>Details</th>
-													<th><input type="checkbox"> <label>Status</label></th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr class="green">
-													<td>All</td>
-													<td>DoB</td>
-													<td><input type="checkbox"> <label>Received</label></td>
-												</tr>
-												<tr class="red">
-													<td>2017</td>
-													<td>Employment History</td>
-													<td><input type="checkbox"> <label>Missing</label></td>
-												</tr>
-											</tbody>
-										</table>
+										<div class="customscroll h300">
+											<table cellpadding="0" cellspacing="0" class="table data-table6">
+												<thead>
+													<tr>
+														<th>Details</th>
+														<th>2013</th>
+														<th>2014</th>
+														<th>2015</th>
+														<th>2016</th>
+														<th>2017</th>
+														<th>2018</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>Dob</td>
+														<td><a href="#" class="toggle-status good">Received</a></td>
+														<td><a href="#" class="toggle-status  empty">---</a></td>
+														<td><a href="#" class="toggle-status bad">Missing</a></td>
+														<td><a href="#" class="toggle-status good">Received</a></td>
+														<td><a href="#" class="toggle-status empty">---</a></td>
+														<td><a href="#" class="toggle-status bad">Missing</a></td>
+													</tr>
+													<tr>
+														<td>Employment History</td>
+														<td><a href="#" class="toggle-status  empty">---</a></td>
+														<td><a href="#" class="toggle-status bad">Missing</a></td>
+														<td><a href="#" class="toggle-status good">Received</a></td>
+														<td><a href="#" class="toggle-status empty">---</a></td>
+														<td><a href="#" class="toggle-status bad">Missing</a></td>
+														<td><a href="#" class="toggle-status good">Received</a></td>
+													</tr>
+													<tr>
+														<td>Dob</td>
+														<td><a href="#" class="toggle-status bad">Missing</a></td>
+														<td><a href="#" class="toggle-status good">Received</a></td>
+														<td><a href="#" class="toggle-status empty">---</a></td>
+														<td><a href="#" class="toggle-status bad">Missing</a></td>
+														<td><a href="#" class="toggle-status good">Received</a></td>
+														<td><a href="#" class="toggle-status  empty">---</a></td>
+													</tr>
+													<tr>
+														<td>Employment History</td>
+														<td><a href="#" class="toggle-status good">Received</a></td>
+														<td><a href="#" class="toggle-status empty">---</a></td>
+														<td><a href="#" class="toggle-status bad">Missing</a></td>
+														<td><a href="#" class="toggle-status good">Received</a></td>
+														<td><a href="#" class="toggle-status  empty">---</a></td>
+														<td><a href="#" class="toggle-status bad">Missing</a></td>
+													</tr>
+													<tr>
+														<td>Dob</td>
+														<td><a href="#" class="toggle-status  empty">---</a></td>
+														<td><a href="#" class="toggle-status bad">Missing</a></td>
+														<td><a href="#" class="toggle-status good">Received</a></td>
+														<td><a href="#" class="toggle-status empty">---</a></td>
+														<td><a href="#" class="toggle-status bad">Missing</a></td>
+														<td><a href="#" class="toggle-status good">Received</a></td>
+													</tr>
+													<tr>
+														<td>Dob</td>
+														<td><a href="#" class="toggle-status bad">Missing</a></td>
+														<td><a href="#" class="toggle-status good">Received</a></td>
+														<td><a href="#" class="toggle-status empty">---</a></td>
+														<td><a href="#" class="toggle-status bad">Missing</a></td>
+														<td><a href="#" class="toggle-status good">Received</a></td>
+														<td><a href="#" class="toggle-status  empty">---</a></td>
+													</tr>
+													<tr>
+														<td>Employment History</td>
+														<td><a href="#" class="toggle-status good">Received</a></td>
+														<td><a href="#" class="toggle-status empty">---</a></td>
+														<td><a href="#" class="toggle-status bad">Missing</a></td>
+														<td><a href="#" class="toggle-status good">Received</a></td>
+														<td><a href="#" class="toggle-status  empty">---</a></td>
+														<td><a href="#" class="toggle-status bad">Missing</a></td>
+													</tr>
+													<tr>
+														<td>Dob</td>
+														<td><a href="#" class="toggle-status good">Received</a></td>
+														<td><a href="#" class="toggle-status  empty">---</a></td>
+														<td><a href="#" class="toggle-status bad">Missing</a></td>
+														<td><a href="#" class="toggle-status good">Received</a></td>
+														<td><a href="#" class="toggle-status empty">---</a></td>
+														<td><a href="#" class="toggle-status bad">Missing</a></td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
 									</div><br>
 									<div class="expandable-title">
 										<a class="expand" role="button" data-toggle="collapse" href="#collapse98" aria-expanded="true" aria-controls="collapse1">
-											<span>General documents<span class="badge">1/13</span></span>
+											<span>General documents<span class="badge">2</span></span>
 										</a>
 										<div class="right">
 											<div>
 												<label>Tax Year:</label>
 												<select>
 													<option>All</option>
+													<option>2018</option>
+													<option>2017</option>
+													<option>2016</option>
+													<option>2015</option>
+													<option>2014</option>
+													<option>2013</option>
 												</select>
 											</div>
 											<div>
 												<label>Showing:</label>
 												<select>
-													<option>Only Missing</option>
+													<option>All</option>
+													<option>Received</option>
+													<option>Missing</option>
 												</select>
 											</div>
 											<div>
@@ -770,38 +854,614 @@
 										</div>
 									</div>
 									<div class="collapse in" id="collapse98" aria-expanded="true">
-										<table cellpadding="0" cellspacing="0" class="table data-table4">
-											<thead>
-												<tr>
-													<th>Tax Year</th>
-													<th>Docs</th>
-													<th><input type="checkbox"> <label>Status</label></th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<td>2017</td>
-													<td>Reg Form</td>
-													<td class="red"><input type="checkbox"> <label>Missing</label></td>
-												</tr>
-											</tbody>
-										</table>
+										<div class="customscroll h300">
+											<table cellpadding="0" cellspacing="0" class="table data-table4">
+												<thead>
+													<tr>
+														<th>Details</th>
+														<th>2013</th>
+														<th>2014</th>
+														<th>2015</th>
+														<th>2016</th>
+														<th>2017</th>
+														<th>2018</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>Reg Form</td>
+														<td>
+															<select class="bad">
+																<option class="empty">---</option>
+																<option selected class="bad">Missing</option>
+																<option class="bad">Bad quality</option>
+																<option class="bad">Original needed</option>
+																<option class="bad">Option 4</option>
+																<option class="good">Received</option>
+															</select>
+														</td>
+														<td>
+															<select class="bad">
+																<option class="empty">---</option>
+																<option selected class="bad">Missing</option>
+																<option class="bad">Bad quality</option>
+																<option class="bad">Original needed</option>
+																<option class="bad">Option 4</option>
+																<option class="good">Received</option>
+															</select>
+														</td>
+														<td>
+															<select class="good">
+																<option class="empty">---</option>
+																<option class="bad">Missing</option>
+																<option class="bad">Bad quality</option>
+																<option class="bad">Original needed</option>
+																<option class="bad">Option 4</option>
+																<option class="good" selected>Received</option>
+															</select>
+														</td>
+														<td>
+															<select>
+																<option class="empty">---</option>
+																<option class="bad">Missing</option>
+																<option class="bad">Bad quality</option>
+																<option class="bad">Original needed</option>
+																<option class="bad">Option 4</option>
+																<option class="good">Received</option>
+															</select>
+														</td>
+														<td>
+															<select class="good">
+																<option class="empty">---</option>
+																<option class="bad">Missing</option>
+																<option class="bad">Bad quality</option>
+																<option class="bad">Original needed</option>
+																<option class="bad">Option 4</option>
+																<option class="good" selected>Received</option>
+															</select>
+														</td>
+														<td>
+															<select class="good">
+																<option class="empty">---</option>
+																<option class="bad">Missing</option>
+																<option class="bad">Bad quality</option>
+																<option class="bad">Original needed</option>
+																<option class="bad">Option 4</option>
+																<option class="good" selected>Received</option>
+															</select>
+														</td>
+													</tr>
+													<tr>
+														<td>Reg Form</td>
+														<td>
+															<select class="bad">
+																<option class="empty">---</option>
+																<option selected class="bad">Missing</option>
+																<option class="bad">Bad quality</option>
+																<option class="bad">Original needed</option>
+																<option class="bad">Option 4</option>
+																<option class="good">Received</option>
+															</select>
+														</td>
+														<td>
+															<select class="good">
+																<option class="empty">---</option>
+																<option class="bad">Missing</option>
+																<option class="bad">Bad quality</option>
+																<option class="bad">Original needed</option>
+																<option class="bad">Option 4</option>
+																<option class="good" selected>Received</option>
+															</select>
+														</td>
+														<td>
+															<select>
+																<option class="empty">---</option>
+																<option class="bad">Missing</option>
+																<option class="bad">Bad quality</option>
+																<option class="bad">Original needed</option>
+																<option class="bad">Option 4</option>
+																<option class="good">Received</option>
+															</select>
+														</td>
+														<td>
+															<select class="good">
+																<option class="empty">---</option>
+																<option class="bad">Missing</option>
+																<option class="bad">Bad quality</option>
+																<option class="bad">Original needed</option>
+																<option class="bad">Option 4</option>
+																<option class="good" selected>Received</option>
+															</select>
+														</td>
+														<td>
+															<select class="good">
+																<option class="empty">---</option>
+																<option class="bad">Missing</option>
+																<option class="bad">Bad quality</option>
+																<option class="bad">Original needed</option>
+																<option class="bad">Option 4</option>
+																<option class="good" selected>Received</option>
+															</select>
+														</td>
+														<td>
+															<select class="bad">
+																<option class="empty">---</option>
+																<option selected class="bad">Missing</option>
+																<option class="bad">Bad quality</option>
+																<option class="bad">Original needed</option>
+																<option class="bad">Option 4</option>
+																<option class="good">Received</option>
+															</select>
+														</td>
+													</tr>
+													<tr>
+														<td>Reg Form</td>
+														<td>
+															<select class="good">
+																<option class="empty">---</option>
+																<option class="bad">Missing</option>
+																<option class="bad">Bad quality</option>
+																<option class="bad">Original needed</option>
+																<option class="bad">Option 4</option>
+																<option class="good" selected>Received</option>
+															</select>
+														</td>
+														<td>
+															<select>
+																<option class="empty">---</option>
+																<option class="bad">Missing</option>
+																<option class="bad">Bad quality</option>
+																<option class="bad">Original needed</option>
+																<option class="bad">Option 4</option>
+																<option class="good">Received</option>
+															</select>
+														</td>
+														<td>
+															<select class="good">
+																<option class="empty">---</option>
+																<option class="bad">Missing</option>
+																<option class="bad">Bad quality</option>
+																<option class="bad">Original needed</option>
+																<option class="bad">Option 4</option>
+																<option class="good" selected>Received</option>
+															</select>
+														</td>
+														<td>
+															<select class="good">
+																<option class="empty">---</option>
+																<option class="bad">Missing</option>
+																<option class="bad">Bad quality</option>
+																<option class="bad">Original needed</option>
+																<option class="bad">Option 4</option>
+																<option class="good" selected>Received</option>
+															</select>
+														</td>
+														<td>
+															<select class="bad">
+																<option class="empty">---</option>
+																<option selected class="bad">Missing</option>
+																<option class="bad">Bad quality</option>
+																<option class="bad">Original needed</option>
+																<option class="bad">Option 4</option>
+																<option class="good">Received</option>
+															</select>
+														</td>
+														<td>
+															<select class="bad">
+																<option class="empty">---</option>
+																<option selected class="bad">Missing</option>
+																<option class="bad">Bad quality</option>
+																<option class="bad">Original needed</option>
+																<option class="bad">Option 4</option>
+																<option class="good">Received</option>
+															</select>
+														</td>
+													</tr>
+													<tr>
+														<td>Reg Form</td>
+														<td>
+															<select>
+																<option class="empty">---</option>
+																<option class="bad">Missing</option>
+																<option class="bad">Bad quality</option>
+																<option class="bad">Original needed</option>
+																<option class="bad">Option 4</option>
+																<option class="good">Received</option>
+															</select>
+														</td>
+														<td>
+															<select class="good">
+																<option class="empty">---</option>
+																<option class="bad">Missing</option>
+																<option class="bad">Bad quality</option>
+																<option class="bad">Original needed</option>
+																<option class="bad">Option 4</option>
+																<option class="good" selected>Received</option>
+															</select>
+														</td>
+														<td>
+															<select class="good">
+																<option class="empty">---</option>
+																<option class="bad">Missing</option>
+																<option class="bad">Bad quality</option>
+																<option class="bad">Original needed</option>
+																<option class="bad">Option 4</option>
+																<option class="good" selected>Received</option>
+															</select>
+														</td>
+														<td>
+															<select class="bad">
+																<option class="empty">---</option>
+																<option selected class="bad">Missing</option>
+																<option class="bad">Bad quality</option>
+																<option class="bad">Original needed</option>
+																<option class="bad">Option 4</option>
+																<option class="good">Received</option>
+															</select>
+														</td>
+														<td>
+															<select class="bad">
+																<option class="empty">---</option>
+																<option selected class="bad">Missing</option>
+																<option class="bad">Bad quality</option>
+																<option class="bad">Original needed</option>
+																<option class="bad">Option 4</option>
+																<option class="good">Received</option>
+															</select>
+														</td>
+														<td>
+															<select class="good">
+																<option class="empty">---</option>
+																<option class="bad">Missing</option>
+																<option class="bad">Bad quality</option>
+																<option class="bad">Original needed</option>
+																<option class="bad">Option 4</option>
+																<option class="good" selected>Received</option>
+															</select>
+														</td>
+													</tr>
+													<tr>
+														<td>Reg Form</td>
+														<td>
+															<select class="good">
+																<option class="empty">---</option>
+																<option class="bad">Missing</option>
+																<option class="bad">Bad quality</option>
+																<option class="bad">Original needed</option>
+																<option class="bad">Option 4</option>
+																<option class="good" selected>Received</option>
+															</select>
+														</td>
+														<td>
+															<select class="good">
+																<option class="empty">---</option>
+																<option class="bad">Missing</option>
+																<option class="bad">Bad quality</option>
+																<option class="bad">Original needed</option>
+																<option class="bad">Option 4</option>
+																<option class="good" selected>Received</option>
+															</select>
+														</td>
+														<td>
+															<select class="bad">
+																<option class="empty">---</option>
+																<option selected class="bad">Missing</option>
+																<option class="bad">Bad quality</option>
+																<option class="bad">Original needed</option>
+																<option class="bad">Option 4</option>
+																<option class="good">Received</option>
+															</select>
+														</td>
+														<td>
+															<select class="bad">
+																<option class="empty">---</option>
+																<option selected class="bad">Missing</option>
+																<option class="bad">Bad quality</option>
+																<option class="bad">Original needed</option>
+																<option class="bad">Option 4</option>
+																<option class="good">Received</option>
+															</select>
+														</td>
+														<td>
+															<select class="good">
+																<option class="empty">---</option>
+																<option class="bad">Missing</option>
+																<option class="bad">Bad quality</option>
+																<option class="bad">Original needed</option>
+																<option class="bad">Option 4</option>
+																<option class="good" selected>Received</option>
+															</select>
+														</td>
+														<td>
+															<select>
+																<option class="empty">---</option>
+																<option class="bad">Missing</option>
+																<option class="bad">Bad quality</option>
+																<option class="bad">Original needed</option>
+																<option class="bad">Option 4</option>
+																<option class="good">Received</option>
+															</select>
+														</td>
+													</tr>
+													<tr>
+														<td>Reg Form</td>
+														<td>
+															<select class="good">
+																<option class="empty">---</option>
+																<option class="bad">Missing</option>
+																<option class="bad">Bad quality</option>
+																<option class="bad">Original needed</option>
+																<option class="bad">Option 4</option>
+																<option class="good" selected>Received</option>
+															</select>
+														</td>
+														<td>
+															<select class="bad">
+																<option class="empty">---</option>
+																<option selected class="bad">Missing</option>
+																<option class="bad">Bad quality</option>
+																<option class="bad">Original needed</option>
+																<option class="bad">Option 4</option>
+																<option class="good">Received</option>
+															</select>
+														</td>
+														<td>
+															<select class="bad">
+																<option class="empty">---</option>
+																<option selected class="bad">Missing</option>
+																<option class="bad">Bad quality</option>
+																<option class="bad">Original needed</option>
+																<option class="bad">Option 4</option>
+																<option class="good">Received</option>
+															</select>
+														</td>
+														<td>
+															<select class="good">
+																<option class="empty">---</option>
+																<option class="bad">Missing</option>
+																<option class="bad">Bad quality</option>
+																<option class="bad">Original needed</option>
+																<option class="bad">Option 4</option>
+																<option class="good" selected>Received</option>
+															</select>
+														</td>
+														<td>
+															<select>
+																<option class="empty">---</option>
+																<option class="bad">Missing</option>
+																<option class="bad">Bad quality</option>
+																<option class="bad">Original needed</option>
+																<option class="bad">Option 4</option>
+																<option class="good">Received</option>
+															</select>
+														</td>
+														<td>
+															<select class="good">
+																<option class="empty">---</option>
+																<option class="bad">Missing</option>
+																<option class="bad">Bad quality</option>
+																<option class="bad">Original needed</option>
+																<option class="bad">Option 4</option>
+																<option class="good" selected>Received</option>
+															</select>
+														</td>
+													</tr>
+													<tr>
+														<td>Reg Form</td>
+														<td>
+															<select class="bad">
+																<option class="empty">---</option>
+																<option selected class="bad">Missing</option>
+																<option class="bad">Bad quality</option>
+																<option class="bad">Original needed</option>
+																<option class="bad">Option 4</option>
+																<option class="good">Received</option>
+															</select>
+														</td>
+														<td>
+															<select class="bad">
+																<option class="empty">---</option>
+																<option selected class="bad">Missing</option>
+																<option class="bad">Bad quality</option>
+																<option class="bad">Original needed</option>
+																<option class="bad">Option 4</option>
+																<option class="good">Received</option>
+															</select>
+														</td>
+														<td>
+															<select class="good">
+																<option class="empty">---</option>
+																<option class="bad">Missing</option>
+																<option class="bad">Bad quality</option>
+																<option class="bad">Original needed</option>
+																<option class="bad">Option 4</option>
+																<option class="good" selected>Received</option>
+															</select>
+														</td>
+														<td>
+															<select>
+																<option class="empty">---</option>
+																<option class="bad">Missing</option>
+																<option class="bad">Bad quality</option>
+																<option class="bad">Original needed</option>
+																<option class="bad">Option 4</option>
+																<option class="good">Received</option>
+															</select>
+														</td>
+														<td>
+															<select class="good">
+																<option class="empty">---</option>
+																<option class="bad">Missing</option>
+																<option class="bad">Bad quality</option>
+																<option class="bad">Original needed</option>
+																<option class="bad">Option 4</option>
+																<option class="good" selected>Received</option>
+															</select>
+														</td>
+														<td>
+															<select class="good">
+																<option class="empty">---</option>
+																<option class="bad">Missing</option>
+																<option class="bad">Bad quality</option>
+																<option class="bad">Original needed</option>
+																<option class="bad">Option 4</option>
+																<option class="good" selected>Received</option>
+															</select>
+														</td>
+													</tr>
+													<tr>
+														<td>Reg Form</td>
+														<td>
+															<select class="bad">
+																<option class="empty">---</option>
+																<option selected class="bad">Missing</option>
+																<option class="bad">Bad quality</option>
+																<option class="bad">Original needed</option>
+																<option class="bad">Option 4</option>
+																<option class="good">Received</option>
+															</select>
+														</td>
+														<td>
+															<select class="good">
+																<option class="empty">---</option>
+																<option class="bad">Missing</option>
+																<option class="bad">Bad quality</option>
+																<option class="bad">Original needed</option>
+																<option class="bad">Option 4</option>
+																<option class="good" selected>Received</option>
+															</select>
+														</td>
+														<td>
+															<select>
+																<option class="empty">---</option>
+																<option class="bad">Missing</option>
+																<option class="bad">Bad quality</option>
+																<option class="bad">Original needed</option>
+																<option class="bad">Option 4</option>
+																<option class="good">Received</option>
+															</select>
+														</td>
+														<td>
+															<select class="good">
+																<option class="empty">---</option>
+																<option class="bad">Missing</option>
+																<option class="bad">Bad quality</option>
+																<option class="bad">Original needed</option>
+																<option class="bad">Option 4</option>
+																<option class="good" selected>Received</option>
+															</select>
+														</td>
+														<td>
+															<select class="good">
+																<option class="empty">---</option>
+																<option class="bad">Missing</option>
+																<option class="bad">Bad quality</option>
+																<option class="bad">Original needed</option>
+																<option class="bad">Option 4</option>
+																<option class="good" selected>Received</option>
+															</select>
+														</td>
+														<td>
+															<select class="bad">
+																<option class="empty">---</option>
+																<option selected class="bad">Missing</option>
+																<option class="bad">Bad quality</option>
+																<option class="bad">Original needed</option>
+																<option class="bad">Option 4</option>
+																<option class="good">Received</option>
+															</select>
+														</td>
+													</tr>
+													<tr>
+														<td>Reg Form</td>
+														<td>
+															<select class="good">
+																<option class="empty">---</option>
+																<option class="bad">Missing</option>
+																<option class="bad">Bad quality</option>
+																<option class="bad">Original needed</option>
+																<option class="bad">Option 4</option>
+																<option class="good" selected>Received</option>
+															</select>
+														</td>
+														<td>
+															<select>
+																<option class="empty">---</option>
+																<option class="bad">Missing</option>
+																<option class="bad">Bad quality</option>
+																<option class="bad">Original needed</option>
+																<option class="bad">Option 4</option>
+																<option class="good">Received</option>
+															</select>
+														</td>
+														<td>
+															<select class="good">
+																<option class="empty">---</option>
+																<option class="bad">Missing</option>
+																<option class="bad">Bad quality</option>
+																<option class="bad">Original needed</option>
+																<option class="bad">Option 4</option>
+																<option class="good" selected>Received</option>
+															</select>
+														</td>
+														<td>
+															<select class="good">
+																<option class="empty">---</option>
+																<option class="bad">Missing</option>
+																<option class="bad">Bad quality</option>
+																<option class="bad">Original needed</option>
+																<option class="bad">Option 4</option>
+																<option class="good" selected>Received</option>
+															</select>
+														</td>
+														<td>
+															<select class="bad">
+																<option class="empty">---</option>
+																<option selected class="bad">Missing</option>
+																<option class="bad">Bad quality</option>
+																<option class="bad">Original needed</option>
+																<option class="bad">Option 4</option>
+																<option class="good">Received</option>
+															</select>
+														</td>
+														<td>
+															<select class="bad">
+																<option class="empty">---</option>
+																<option selected class="bad">Missing</option>
+																<option class="bad">Bad quality</option>
+																<option class="bad">Original needed</option>
+																<option class="bad">Option 4</option>
+																<option class="good">Received</option>
+															</select>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
 									</div><br>
 									<div class="expandable-title">
 										<a class="expand" role="button" data-toggle="collapse" href="#collapse97" aria-expanded="true" aria-controls="collapse1">
-											<span>Employment documents<span class="badge">4/48</span></span>
+											<span>Employment documents<span class="badge">3</span></span>
 										</a>
 										<div class="right">
 											<div>
 												<label>Tax Year:</label>
 												<select>
 													<option>All</option>
+													<option>2018</option>
+													<option>2017</option>
+													<option>2016</option>
+													<option>2015</option>
+													<option>2014</option>
+													<option>2013</option>
 												</select>
 											</div>
 											<div>
 												<label>Showing:</label>
 												<select>
-													<option>Only Missing</option>
+													<option>All</option>
+													<option>Received</option>
+													<option>Missing</option>
 												</select>
 											</div>
 											<div>
@@ -810,90 +1470,172 @@
 										</div>
 									</div>
 									<div class="collapse in" id="collapse97" aria-expanded="true">
-										<table cellpadding="0" cellspacing="0" class="table data-table4">
-											<thead>
-												<tr>
-													<th>Tax Year</th>
-													<th>Person</th>
-													<th>Employer</th>
-													<th><input type="checkbox"> <label>Start Date</label></th>
-													<th><input type="checkbox"> <label>Finish Date</label></th>
-													<th><input type="checkbox"> <label>P45</label></th>
-													<th><input type="checkbox"> <label>P60</label></th>
-													<th>Final PSP</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<td class="red">2017</td>
-													<td class="red">Self</td>
-													<td class="red">Company Name 1</td>
-													<td class="red"><input type="checkbox"> 
-														<select>
-															<option>Missing</option>
-														</select>
-													</td>
-													<td><input type="checkbox"> <label>-</label></td>
-													<td class="red"><input type="checkbox"> 
-														<select>
-															<option>Bad Scan</option>
-														</select>
-													</td>
-													<td class="red"><input type="checkbox"> 
-														<select>
-															<option>Missing</option>
-														</select>
-													</td>
-													<td><input type="checkbox"> <label>-</label></td>
-												</tr>
-												<tr>
-													<td class="red">2016</td>
-													<td class="red">Self</td>
-													<td class="red">Company Name 2</td>
-													<td><input type="checkbox"> <label>-</label></td>
-													<td class="green"><input type="checkbox" checked> <label>Received</label></td>
-													<td><input type="checkbox"> <label>-</label></td>
-													<td class="red"><input type="checkbox"> 
-														<select>
-															<option>Not Dated</option>
-														</select>
-													</td>
-													<td><input type="checkbox"> <label>-</label></td>
-												</tr>
-												<tr>
-													<td>2015</td>
-													<td>Self</td>
-													<td>Company Name 3</td>
-													<td><input type="checkbox"> <label>-</label></td>
-													<td><input type="checkbox"> <label>-</label></td>
-													<td><input type="checkbox"> <label>-</label></td>
-													<td><input type="checkbox"> <label>-</label></td>
-													<td><input type="checkbox"> <label>-</label></td>
-												</tr>
-												<tr>
-													<td class="red">2017</td>
-													<td class="red">Self</td>
-													<td class="red">Company Name 1</td>
-													<td><input type="checkbox"> <label>-</label></td>
-													<td><input type="checkbox"> <label>-</label></td>
-													<td class="green"><input type="checkbox"> 
-														<select>
-															<option>Received</option>
-														</select>
-													</td>
-													<td class="green"><input type="checkbox"> 
-														<select>
-															<option>Received</option>
-														</select>
-													</td>
-													<td class="red"><input type="checkbox"> 
-														<select>
-															<option>Original Needed</option>
-														</select>
-													</td>
-												</tr>
-											</tbody>
-										</table><br>
+										<div class="customscroll h300">
+											<table cellpadding="0" cellspacing="0" class="table data-table4">
+												<thead>
+													<tr>
+														<th>Tax Year</th>
+														<th>Person</th>
+														<th>Employer</th>
+														<th><label>Start Date</label></th>
+														<th><label>Finish Date</label></th>
+														<th><label>P45</label></th>
+														<th><label>P60</label></th>
+														<th>Final PSP</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>2017</td>
+														<td>Self</td>
+														<td>Company Name 1</td>
+														<td><a href="#" class="toggle-status good">Received</a></td>
+														<td><a href="#" class="toggle-status empty">---</a></td>
+														<td>
+															<select class="bad">
+																<option class="empty">---</option>
+																<option selected class="bad">Missing</option>
+																<option class="bad">Bad quality</option>
+																<option class="bad">Original needed</option>
+																<option class="bad">Option 4</option>
+																<option class="good">Received</option>
+															</select>
+														</td>
+														<td>
+															<select class="good">
+																<option class="empty">---</option>
+																<option class="bad">Missing</option>
+																<option class="bad">Bad quality</option>
+																<option class="bad">Original needed</option>
+																<option class="bad">Option 4</option>
+																<option selected class="good">Received</option>
+															</select>
+														</td>
+														<td>
+															<select>
+																<option class="empty">---</option>
+																<option class="bad">Missing</option>
+																<option class="bad">Bad quality</option>
+																<option class="bad">Original needed</option>
+																<option class="bad">Option 4</option>
+																<option class="good">Received</option>
+															</select>
+														</td>
+													</tr>
+													<tr>
+														<td>2017</td>
+														<td>Self</td>
+														<td>Company Name 1</td>
+														<td><a href="#" class="toggle-status bad">Missing</a></td>
+														<td><a href="#" class="toggle-status good">Received</a></td>
+														<td>
+															<select class="good">
+																<option class="empty">---</option>
+																<option class="bad">Missing</option>
+																<option class="bad">Bad quality</option>
+																<option class="bad">Original needed</option>
+																<option class="bad">Option 4</option>
+																<option selected class="good">Received</option>
+															</select>
+														</td>
+														<td>
+															<select>
+																<option class="empty">---</option>
+																<option class="bad">Missing</option>
+																<option class="bad">Bad quality</option>
+																<option class="bad">Original needed</option>
+																<option class="bad">Option 4</option>
+																<option class="good">Received</option>
+															</select>
+														</td>
+														<td>
+															<select class="bad">
+																<option class="empty">---</option>
+																<option selected class="bad">Missing</option>
+																<option class="bad">Bad quality</option>
+																<option class="bad">Original needed</option>
+																<option class="bad">Option 4</option>
+																<option class="good">Received</option>
+															</select>
+														</td>
+													</tr>
+													<tr>
+														<td>2017</td>
+														<td>Self</td>
+														<td>Company Name 1</td>
+														<td><a href="#" class="toggle-status empty">---</a></td>
+														<td><a href="#" class="toggle-status bad">Missing</a></td>
+														<td>
+															<select>
+																<option class="empty">---</option>
+																<option class="bad">Missing</option>
+																<option class="bad">Bad quality</option>
+																<option class="bad">Original needed</option>
+																<option class="bad">Option 4</option>
+																<option class="good">Received</option>
+															</select>
+														</td>
+														<td>
+															<select class="bad">
+																<option class="empty">---</option>
+																<option selected class="bad">Missing</option>
+																<option class="bad">Bad quality</option>
+																<option class="bad">Original needed</option>
+																<option class="bad">Option 4</option>
+																<option class="good">Received</option>
+															</select>
+														</td>
+														<td>
+															<select class="good">
+																<option class="empty">---</option>
+																<option class="bad">Missing</option>
+																<option class="bad">Bad quality</option>
+																<option class="bad">Original needed</option>
+																<option class="bad">Option 4</option>
+																<option selected class="good">Received</option>
+															</select>
+														</td>
+													</tr>
+													<tr>
+														<td>2017</td>
+														<td>Self</td>
+														<td>Company Name 1</td>
+														<td><a href="#" class="toggle-status bad">Missing</a></td>
+														<td><a href="#" class="toggle-status empty">---</a></td>
+														<td>
+															<select class="bad">
+																<option class="empty">---</option>
+																<option selected class="bad">Missing</option>
+																<option class="bad">Bad quality</option>
+																<option class="bad">Original needed</option>
+																<option class="bad">Option 4</option>
+																<option class="good">Received</option>
+															</select>
+														</td>
+														<td>
+															<select class="good">
+																<option class="empty">---</option>
+																<option class="bad">Missing</option>
+																<option class="bad">Bad quality</option>
+																<option class="bad">Original needed</option>
+																<option class="bad">Option 4</option>
+																<option selected class="good">Received</option>
+															</select>
+														</td>
+														<td>
+															<select>
+																<option class="empty">---</option>
+																<option class="bad">Missing</option>
+																<option class="bad">Bad quality</option>
+																<option class="bad">Original needed</option>
+																<option class="bad">Option 4</option>
+																<option class="good">Received</option>
+															</select>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div><br>
 									</div>
 								</div>
 								<div class="tab tab2">
