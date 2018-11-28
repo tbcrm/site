@@ -357,8 +357,10 @@ table.dataTable select.bad,
 table.dataTable select .bad { color: #e64d4d; }
 table.dataTable select.good,
 table.dataTable select .good { color: #4caf50; }
+table.dataTable select.edited { color: #eeaf00; }
 table.dataTable a.toggle-status.bad { color: #e64d4d; }
 table.dataTable a.toggle-status.good { color: #4caf50; }
+table.dataTable a.toggle-status.edited { color: #eeaf00; }
 table.dataTable td { color: #6b6b6b; font-weight: normal; }
 table.dataTable .icon-links a { color: #566376; transition: opacity 0.3s; }
 table.dataTable .icon-links a:hover { opacity: 0.75; }

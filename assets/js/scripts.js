@@ -64,6 +64,7 @@ $(document).ready(function(){
         } else if ( $(this).hasClass('good') ) {
             $(this).removeClass('good').addClass('bad').text('Missing');
         }
+        $(this).addClass('edited');
         return false;
     });
     
@@ -76,6 +77,7 @@ $(document).ready(function(){
         } else {
             $(this).removeClass('bad').removeClass('good');
         }
+        $(this).addClass('edited');
     });
 
     // employer comments - add new
