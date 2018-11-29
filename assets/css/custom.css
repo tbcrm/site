@@ -1604,6 +1604,12 @@ div.infinite-tabs sup.red { background-color: #e64d4d; }
 .addemployer-box .body li .meta a { color: #888; font-weight: bold; }
 .addemployer-box .body li .meta a:hover { color: #333; }
 
+.tab-content .leftside .top .fstElement { border: 1px solid #eee; font-size: 12px; }
+.tab-content .leftside .top .fstChoiceItem { background-color: #eee; border: 0; color: #333; margin: 0 5px 2px 0; padding: 2px 20px 2px 5px; }
+.tab-content .leftside .top .fstChoiceRemove { color: #333; left: auto; }
+.tab-content .leftside .top .fstMultipleMode .fstQueryInput { margin: 0; padding: 0; }
+.tab-content .leftside .top .fstMultipleMode .fstControls { background: transparent; display: inline-block; padding: 2px 0 0 2px; vertical-align: middle; }
+
 @media (max-width: 1599px) {
     .content .split-left .filter-options .right { clear: left; float: none; }
     .content .split-left .tab-content .toggler { float: none; margin-bottom: 5px;  }
