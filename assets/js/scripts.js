@@ -62,7 +62,7 @@ $(document).ready(function(){
         } else if ( $(this).hasClass('bad') ) {
             $(this).removeClass('bad').addClass('good').text('Received');
         } else if ( $(this).hasClass('good') ) {
-            $(this).removeClass('good').addClass('bad').text('Missing');
+            $(this).removeClass('good').addClass('empty').text('---');
         }
         $(this).addClass('edited');
         return false;
