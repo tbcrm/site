@@ -393,8 +393,17 @@ $(document).ready(function(){
         return false;
     });
     // good or bad buttons
-    $('.tab-content .leftside .doc-list .item .left .type a').on('click',function(){
+    $('.tab-content .leftside .doc-list .item .left .clicktomove a').on('click',function(){
         $(this).parents('.item').fadeOut();
+        return false;
+    });
+    $('.tab-content .leftside .doc-list .item .left .clicktochange a').on('click',function(){
+        if ( !$(this).hasClass('active') ) {
+            var confirmation = confirm("Please confirm you want to change document quality");
+            if ( confirmation ) {
+                $(this).addClass('active').parent().siblings().find('a').removeClass('active');
+            }
+        }
         return false;
     });
 

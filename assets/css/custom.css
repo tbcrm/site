@@ -256,7 +256,7 @@ table a { color: #08aedd; font-weight: bold; }
 table a:hover { text-decoration: none; }
 
 .tabs-body {}
-.tabs-body .tab { display: none; }
+.tabs-body .tab { display: none; overflow: hidden; }
 .tabs-body .tab.active { display: block; }
 
 .group-sort { font-size: 16px; margin-bottom: 15px; overflow: hidden; }
@@ -917,21 +917,28 @@ div.infinite-tabs sup.red { background-color: #e64d4d; }
 .tab-content .leftside .dropzone { border: 3px dashed #c2c6cd; }
 .tab-content .leftside .doc-list { margin: 0 0 30px 0; }
 .tab-content .leftside .doc-list .item { border-bottom: 1px solid #ddd; overflow: hidden; padding: 10px 30px 10px 5px;  position: relative; }
+.tab-content .leftside .doc-list .item.good { background-color: rgba(180, 255, 217,0.25); }
+.tab-content .leftside .doc-list .item.good.chosen { background-color: rgba(68, 139, 104,0.2); }
+.tab-content .leftside .doc-list .item.bad { background-color: rgba(255, 180, 180,0.25); }
 .tab-content .leftside .doc-list .item:hover { background-color: #fafafa; }
 .tab-content .leftside .doc-list .item .zoom { background: url(../img/icon-zoom.png) center center no-repeat; display: none; height: 18px; overflow: hidden; text-indent: 100%; white-space: nowrap; width: 18px; position: absolute; top: 12px; right: 10px; opacity: 0.3; transition: opacity 0.3s; }
 .tab-content .leftside .doc-list .item:hover .zoom { display: inline-block; }
 .tab-content .leftside .doc-list .item .zoom:hover {   opacity: 0.6; }
 .tab-content .leftside .doc-list .item .left { float: left; font-size: 12px; text-align: center; width: 70px; }
 .tab-content .leftside .doc-list .item .left .status { border: 1px solid #6d7787; border-radius: 5px; list-style: none; margin: 0 0 5px 0; padding: 0; text-align: center; text-transform: uppercase; }
+.tab-content .leftside .doc-list .item .left .status li { padding: 0; }
 .tab-content .leftside .doc-list .item .left .status li:first-child { border-bottom: 1px solid #6d7787; }
 .tab-content .leftside .doc-list .item .left .status a { color: #999; display: block; padding: 5px; transition: background-color 0.3s; }
 .tab-content .leftside .doc-list .item .left .status a.approve:hover { background-color: #4caf50; color: #fff; text-decoration: none; }
 .tab-content .leftside .doc-list .item .left .status a.discard:hover { background-color: #e64d4d; color: #fff; text-decoration: none; }
 .tab-content .leftside .doc-list .item .left .type { border: 1px solid #6d7787; border-radius: 5px; list-style: none; margin: 0 0 5px 0; padding: 0; text-align: center; text-transform: uppercase; }
+.tab-content .leftside .doc-list .item .left .type li { padding: 0; }
 .tab-content .leftside .doc-list .item .left .type li:first-child { border-bottom: 1px solid #6d7787; }
 .tab-content .leftside .doc-list .item .left .type a { color: #999; display: block; padding: 5px; transition: background-color 0.3s; }
-.tab-content .leftside .doc-list .item .left .type a.good:hover { background-color: #4caf50; color: #fff; text-decoration: none; }
-.tab-content .leftside .doc-list .item .left .type a.bad:hover { background-color: #e64d4d; color: #fff; text-decoration: none; }
+.tab-content .leftside .doc-list .item .left .type a.good:hover,
+.tab-content .leftside .doc-list .item .left .type a.good.active { background-color: #4caf50; color: #fff; text-decoration: none; }
+.tab-content .leftside .doc-list .item .left .type a.bad:hover,
+.tab-content .leftside .doc-list .item .left .type a.bad.active { background-color: #e64d4d; color: #fff; text-decoration: none; }
 .tab-content .leftside .doc-list .item .left p { color: #555; font-weight: bold; }
 .tab-content .leftside .doc-list .item .right { color: #555; float: right; width: calc(100% - 80px); }
 .tab-content .leftside .doc-list .item .right span { font-size: 15px; font-weight: bold; }
@@ -951,7 +958,7 @@ div.infinite-tabs sup.red { background-color: #e64d4d; }
 .tab-content .rightside .top .form-field button:hover { background-color: #888; border-color: #888; }
 .tab-content .rightside .top .form-options { display: inline-block; vertical-align: middle; }
 .tab-content .rightside .top .form-options ul { margin: 0; padding: 0; }
-.tab-content .rightside .top .form-options li { display: inline-block; list-style: none; margin: 0 0 0 10px; }
+.tab-content .rightside .top .form-options li { display: inline-block; list-style: none; margin: 0 0 0 10px; padding: 15px 0; }
 .tab-content .rightside .top .form-options a { background: url(../img/sprite-formoptions.png) no-repeat; display: inline-block; height: 17px; margin: 5px 0 0 0; overflow: hidden; text-indent: 100%; text-decoration: none; white-space: nowrap; width: 25px; }
 .tab-content .rightside .top .form-options a.print { background-position: 0 0; }
 .tab-content .rightside .top .form-options a.print:hover { background-position: 0 -17px; }
