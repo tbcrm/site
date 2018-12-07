@@ -966,7 +966,7 @@
 										<ul>
 											<li class="toggle"><a href="#">Toggle</a></li>
 											<li class="pass"><a href="#" data-toggle="modal" data-target="#emptyModal">P</a></li>
-											<li class="pass"><a href="#" data-toggle="modal" data-target="#emptyModal">R</a></li>
+											<li class="pass"><a href="#" data-toggle="modal" data-target="#reversionsModal">R</a></li>
 											<li class="pass"><a href="#" data-toggle="modal" data-target="#otsUpdate">UU</a></li>
 											<li class="todo"><a href="#" data-toggle="modal" data-target="#webRegistrations">WR<sup>3</sup></a></li>
 											<li class="pass"><a href="#" data-toggle="modal" data-target="#emptyModal">PN</a></li>
@@ -3459,21 +3459,117 @@
 
 	<!-- Empty  Modal -->
 	<div class="modal fade" id="emptyModal" tabindex="-1" role="dialog" aria-labelledby="emptyModalLabel">
-			<div class="modal-dialog" role="document">
-				<div class="modal-content">
-					<div class="modal-header">
-						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-						<h4 class="modal-title" id="emptyModalLabel">Title</h4>
-					</div>
-					<div class="modal-body">
-						[content]
-					</div>
-					<div class="modal-footer">
-						<button type="button" class="btn export">Close</button>
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title" id="emptyModalLabel">Title</h4>
+				</div>
+				<div class="modal-body">
+					[content]
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn export">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Reversions Modal -->
+	<div class="modal fade" id="reversionsModal" tabindex="-1" role="dialog" aria-labelledby="reversionsModalLabel">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title" id="reversionsModalLabel">Reversions (2)</h4>
+				</div>
+				<div class="modal-body">
+					<form class="form">
+						<div class="row">
+							<div class="col-lg-4">
+								<div class="form-group">
+									<label for=""><strong>Sent from</strong></label>
+									<select class="form-control" id="">
+										<option></option>
+										<option>Option 1</option>
+										<option>Option 2</option>
+										<option>Option 3</option>
+									</select>
+								</div>
+							</div>
+							<div class="col-lg-4">
+								<div class="form-group">
+									<label for=""><strong>Sent to</strong></label>
+									<select class="form-control" id="">
+										<option></option>
+										<option>Option 1</option>
+										<option>Option 2</option>
+										<option>Option 3</option>
+									</select>
+								</div>
+							</div>
+							<div class="col-lg-4">
+								<div class="form-group">
+									<label for=""><strong>Reason</strong></label>
+									<select class="form-control" id="">
+										<option></option>
+										<option>Missing Document Rcvd</option>
+										<option>Option 2</option>
+										<option>Option 3</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-12">
+								<button type="button" class="btn btn-primary">+ Add Reversion</button>
+							</div>
+						</div>
+					</form>
+				</div>
+				<div class="modal-body secondary">
+					<div class="h300 customscroll">
+						<table class="table table-hover">
+							<thead>
+								<tr>
+									<th>ID</th>
+									<th>Reversion Date</th>
+									<th>Direction</th>
+									<th>Reason</th>
+									<th>Sent by</th>
+									<th>Status</th>
+									<th>Processed date</th>
+									<th>Processed by</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>1</td>
+									<td>12/12/2017 15:33</td>
+									<td>ST > DT</td>
+									<td>Missing Docs Rcvd</td>
+									<td>Elvira King (EKG)</td>
+									<td><a href="#" class="btn btn-change">Process</a></td>
+									<td>-</td>
+									<td>-</td>
+								</tr>
+								<tr>
+									<td>2</td>
+									<td>12/12/2017 15:33</td>
+									<td>ST > DT</td>
+									<td>Missing Docs Rcvd</td>
+									<td>Elvira King (EKG)</td>
+									<td class="text-green">Processed</td>
+									<td>12/12/2017 15:33</td>
+									<td>DT - John Smith (JST)</td>
+								</tr>
+							</tbody>
+						</table>
 					</div>
 				</div>
 			</div>
 		</div>
+	</div>
 
 	<!-- Change Log Modal -->
 	<div class="modal fade" id="changeLog" tabindex="-1" role="dialog" aria-labelledby="changeLogLabel">
